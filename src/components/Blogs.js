@@ -9,7 +9,9 @@ const Blogs = () => {
   axios
     .get("https://blog.nus.edu.sg/geq1917symposium/wp-json/wp/v2/posts/", {
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        // "Access-Control-Allow-Origin": "*",
+        // "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+        // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
       },
     })
     .then((res) => {

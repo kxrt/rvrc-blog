@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import BlogItem from "./BlogItem";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -15,8 +16,6 @@ const Blogs = () => {
       console.log(err);
     });
 
-  console.log(blogs);
-
   return (
     <div>
       {loading ? (
@@ -24,11 +23,7 @@ const Blogs = () => {
       ) : (
         <div>
           {blogs.map((blog) => (
-            <div key={blog.id}>
-              <h1>{blog.title.rendered}</h1>
-              <p>{blog.excerpt.rendered}</p>
-              <p>{blog.content.rendered}</p>
-            </div>
+            <BlogItem key={blog.id} blog={blog} /> 
           ))}
         </div>
       )}

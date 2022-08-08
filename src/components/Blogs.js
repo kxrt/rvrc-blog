@@ -7,7 +7,11 @@ const Blogs = () => {
   const [loading, setLoading] = useState(true);
 
   axios
-    .get("https://blog.nus.edu.sg/geq1917symposium/wp-json/wp/v2/posts/")
+    .get("https://blog.nus.edu.sg/geq1917symposium/wp-json/wp/v2/posts/", {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
     .then((res) => {
       setBlogs(res.data);
       setLoading(false);
@@ -23,7 +27,7 @@ const Blogs = () => {
       ) : (
         <div>
           {blogs.map((blog) => (
-            <BlogItem key={blog.id} blog={blog} /> 
+            <BlogItem key={blog.id} blog={blog} />
           ))}
         </div>
       )}

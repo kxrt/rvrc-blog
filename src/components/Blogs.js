@@ -7,7 +7,7 @@ const Blogs = () => {
   const [loading, setLoading] = useState(true);
 
   axios
-    .get("https://blog.nus.edu.sg/geq1917symposium/wp-json/wp/v2/posts/")
+    .get("https://blog.nus.edu.sg/geq1917symposium/wp-json/wp/v2/posts/?per_page=100")
     .then((res) => {
       setBlogs(res.data);
       setLoading(false);

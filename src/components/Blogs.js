@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Modal, Box, Typography } from "@mui/material";
+import { Interweave } from "interweave";
+import { Button, Modal, Box, Typography } from "@mui/material";
 
 import BlogItem from "./BlogItem";
 
 const modalStyle = {
-  position: 'absolute',
-  top: '25%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
+  position: "absolute",
+  overflow: "scroll",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  bgcolor: "background.paper",
   p: 2,
+  width: "75%",
+  height: "75%",
 };
 
 const Blogs = () => {
@@ -37,30 +40,48 @@ const Blogs = () => {
         <h1>Loading...</h1>
       ) : (
         <>
-        {/* <Modal
-        open={modal !== null}
-        onClose={setModal(null)}
-      >
-        <Box sx={modalStyle}>
-          <Typography variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
-      </Modal> */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          {blogs.map((blog) => (
-            <BlogItem key={blog.id} blog={blog} setModal={setModal} />
-          ))}
-        </div>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            {blogs.map((blog) => (
+              <BlogItem key={blog.id} blog={blog} setModal={setModal} />
+            ))}
+          </div>
+          <Modal open={modal !== null} onClose={() => setModal(null)}>
+            <Box sx={modalStyle}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "right",
+                }}
+              >
+                <Button
+                  onClick={() => setModal(null)}
+                  sx={{ color: "#8821b5" }}
+                >
+                  CLOSE
+                </Button>
+              </Box>
+              <Typography variant="h6" component="h2">
+                {modal !== null ? (
+                  <Interweave content={modal.title.rendered} />
+                ) : (
+                  ""
+                )}
+              </Typography>
+              <Typography sx={{ mt: 2 }}>
+                {modal !== null ? (
+                  <Interweave content={modal.content.rendered} />
+                ) : (
+                  ""
+                )}
+              </Typography>
+            </Box>
+          </Modal>
         </>
       )}
     </div>

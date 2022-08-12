@@ -1,25 +1,56 @@
-import React, { useState } from "react";
+import React from "react";
 import { Interweave } from "interweave";
-import { Card } from "@mui/material";
+import { Button, Card, CardActions, Typography } from "@mui/material";
 
-const BlogItem = ({ blog }) => {
-  const [show, setShow] = useState(false);
+import BlogItemLengthMatcher from "./BlogItemLengthMatcher";
 
+const BlogItem = ({ blog, setModal }) => {
   return (
     <Card
+    elevation={0}
       sx={{
         maxWidth: 300,
         minWidth: 300,
-        maxHeight: 400,
-        minHeight: 400,
+        maxHeight: 200,
+        minHeight: 200,
         margin: "10px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexDirection: "column",
+        // backgroundColor: "#8821b5",
+        border: "1px dashed #8821b5",
       }}
     >
-      <h1>
-        <Interweave content={blog.title.rendered} />
-      </h1>
-      <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
-      {show ? <Interweave content={blog.content.rendered} /> : ""}
+      <Typography
+        style={{
+          margin: "20px",
+          fontSize: "18px",
+          color: "#8821b5",
+          // color: "white",
+          fontWeight: "bold",
+        }}
+      >
+        <Interweave
+          content={blog.title.rendered}
+          matchers={[BlogItemLengthMatcher]}
+        />
+      </Typography>
+      <CardActions>
+        <Button
+          variant="outlined"
+          onClick={() => setModal(blog)}
+          style={{ 
+            marginBottom: "20px", 
+            color: "#8821b5", 
+            // color: "white",
+            borderColor: "#8821b5",
+            // borderColor: "white",
+          }}
+        >
+          Explore
+        </Button>
+      </CardActions>
     </Card>
   );
 };

@@ -2,12 +2,13 @@ import React from "react";
 import { Interweave } from "interweave";
 import { Button, Card, CardActions, Typography } from "@mui/material";
 
-import BlogItemLengthMatcher from "./BlogItemLengthMatcher";
+import BlogItemLengthCut from "./BlogItemLengthCut";
+import parseDate from "./ParseDate";
 
 const BlogItem = ({ blog, setModal }) => {
   return (
     <Card
-    elevation={0}
+      elevation={0}
       sx={{
         maxWidth: 300,
         minWidth: 300,
@@ -33,16 +34,20 @@ const BlogItem = ({ blog, setModal }) => {
       >
         <Interweave
           content={blog.title.rendered}
-          matchers={[BlogItemLengthMatcher]}
+          matchers={[BlogItemLengthCut]}
         />
+      </Typography>
+      <Typography style={{ fontSize: "14px", color: "#8821b5" }}>
+        {parseDate(blog.modified.substring(0, 10))}
       </Typography>
       <CardActions>
         <Button
           variant="outlined"
           onClick={() => setModal(blog)}
-          style={{ 
-            marginBottom: "20px", 
-            color: "#8821b5", 
+          size="small"
+          style={{
+            marginBottom: "20px",
+            color: "#8821b5",
             // color: "white",
             borderColor: "#8821b5",
             // borderColor: "white",

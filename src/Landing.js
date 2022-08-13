@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 
-import Header from "./components/Header";
 import Blogs from "./components/Blogs";
 
 function TabPanel(props) {
@@ -40,7 +39,6 @@ const Landing = () => {
 
   return (
     <div>
-      <Header />
       <Box
         sx={{
           borderBottom: 1,

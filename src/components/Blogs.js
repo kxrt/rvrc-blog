@@ -4,6 +4,7 @@ import { Interweave } from "interweave";
 import { Button, Modal, Box, Typography } from "@mui/material";
 
 import BlogItem from "./BlogItem";
+import parseDate from "./ParseDate";
 
 const modalStyle = {
   position: "absolute",
@@ -76,6 +77,15 @@ const Blogs = () => {
               <Typography sx={{ mt: 2 }}>
                 {modal !== null ? (
                   <Interweave content={modal.content.rendered} />
+                ) : (
+                  ""
+                )}
+              </Typography>
+              <Typography sx={{ mt: 2 }}>
+                {modal !== null ? (
+                  <>
+                    <b>Published:</b> {parseDate(modal.date.substring(0, 10))}
+                  </>
                 ) : (
                   ""
                 )}

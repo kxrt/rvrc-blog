@@ -25,6 +25,7 @@ const Blogs = () => {
 
   axios
     .get(
+      // URL prefix fixes CORS access issues
       "https://rvrc-blog-cors.herokuapp.com/https://blog.nus.edu.sg/geq1917symposium/wp-json/wp/v2/posts/?per_page=100"
     )
     .then((res) => {
@@ -67,21 +68,28 @@ const Blogs = () => {
                   CLOSE
                 </Button>
               </Box>
-              <Typography variant="h6" component="h2">
+              <Typography
+                variant="h6"
+                component="h2"
+                fontFamily={"Jost"}
+                fontWeight={"bold"}
+              >
                 {modal !== null ? (
+                  // Format HTML to readable text
                   <Interweave content={modal.title.rendered} />
                 ) : (
                   ""
                 )}
               </Typography>
-              <Typography sx={{ mt: 2 }}>
+              <Typography sx={{ mt: 2, fontFamily: "Jost" }}>
                 {modal !== null ? (
+                  // Format HTML to readable text
                   <Interweave content={modal.content.rendered} />
                 ) : (
                   ""
                 )}
               </Typography>
-              <Typography sx={{ mt: 2 }}>
+              <Typography sx={{ mt: 2, fontFamily: "Jost" }}>
                 {modal !== null ? (
                   <>
                     <b>Published:</b> {parseDate(modal.date.substring(0, 10))}

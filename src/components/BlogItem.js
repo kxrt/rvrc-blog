@@ -30,14 +30,18 @@ const BlogItem = ({ blog, setModal }) => {
           color: "#8821b5",
           // color: "white",
           fontWeight: "bold",
+          fontFamily: "Jost",
         }}
       >
+        {/* Format HTML to readable text */}
         <Interweave
           content={blog.title.rendered}
           matchers={[BlogItemLengthCut]}
         />
       </Typography>
-      <Typography style={{ fontSize: "14px", color: "#8821b5" }}>
+      <Typography
+        style={{ fontSize: "14px", color: "#8821b5", fontFamily: "Jost" }}
+      >
         {parseDate(blog.modified.substring(0, 10))}
       </Typography>
       <CardActions>
@@ -51,6 +55,7 @@ const BlogItem = ({ blog, setModal }) => {
             // color: "white",
             borderColor: "#8821b5",
             // borderColor: "white",
+            fontFamily: "Jost",
           }}
         >
           Explore

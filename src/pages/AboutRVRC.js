@@ -8,6 +8,7 @@ const AboutRVRC = () => {
         RVRC is a residential college at the National University of Singapore,
         priding itself on its sustainability initiatives.
       </p>
+      {/* https://rvrc.nus.edu.sg/rvrc-programme/ */}
     </div>
   );
 };

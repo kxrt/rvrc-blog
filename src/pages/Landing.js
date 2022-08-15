@@ -2,19 +2,19 @@ import React from "react";
 import { Box, Card, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-import rvrc_bg from "../assets/rvrc_bg.jpeg";
+import rvrc_bg from "../assets/rvrc_bg.png";
 import schedule from "../components/Schedule";
 import links from "../components/PastLinks";
 
 const Landing = () => {
   return (
     <>
-      <Box sx={{ bgcolor: "#8821b5", padding: { xs: "5%", md: "2%" } }}>
+      <Box sx={{ bgcolor: "#592693", padding: { xs: "5%", md: "2%" } }}>
         <Typography
           variant="h1"
           sx={{
             color: "white",
-            fontSize: { xs: "20pt", md: "28pt" },
+            fontSize: { xs: "24pt", md: "40pt" },
             fontFamily: "Jost",
           }}
         >
@@ -39,9 +39,9 @@ const Landing = () => {
         knowledge and skills to tackle issues in sustainability.
       </p>
       <Box
-        sx={{ bgcolor: "#f7ecf8", marginInline: "5%", borderRadius: "16px" }}
+        sx={{ bgcolor: "#e1d0f5", marginInline: "5%", borderRadius: "16px" }}
       >
-        <p style={{ textAlign: "left", padding: "4%", fontSize: "12pt" }}>
+        <p style={{ textAlign: "left", padding: "4%", fontSize: "16pt" }}>
           Welcome to RVRC’s student finale of the integrated Year One programme.
           In GEQ1917, students identified and tackled real world sustainability
           issues over the three months and look forward to communicating their
@@ -70,10 +70,10 @@ const Landing = () => {
       <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: "14pt", md: "20pt" },
+          fontSize: { xs: "16pt", md: "26pt" },
           fontFamily: "Jost",
           paddingTop: "2%",
-          color: "#8821b5",
+          color: "#592693",
         }}
       >
         Programme Highlights
@@ -94,9 +94,10 @@ const Landing = () => {
               }}
               elevation={0}
             >
-              {item.title}
-              <br />
-              <Typography sx={{ fontFamily: "Jost", color: "navy" }}>
+              <Typography sx={{ fontFamily: "Jost", fontSize: "16pt" }}>
+                {item.title}
+              </Typography>
+              <Typography sx={{ fontFamily: "Jost", color: "#592693" }}>
                 {item.start} - {item.end}
               </Typography>
             </Card>
@@ -106,10 +107,10 @@ const Landing = () => {
       <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: "14pt", md: "20pt" },
+          fontSize: { xs: "16pt", md: "26pt" },
           fontFamily: "Jost",
           paddingTop: {xs: "6%", md: "3%"},
-          color: "#8821b5",
+          color: "#592693",
         }}
       >
         Links to Past Symposia

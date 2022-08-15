@@ -6,7 +6,7 @@ import Blogs from "../components/Blogs";
 const Abstracts = () => {
   return (
     <>
-      <Box sx={{ bgcolor: "#8821b5", padding: "2%" }}>
+      <Box sx={{ bgcolor: "#592693", padding: "2%" }}>
         <Typography
           variant="h1"
           sx={{ color: "white", fontSize: "28pt", fontFamily: "Jost" }}

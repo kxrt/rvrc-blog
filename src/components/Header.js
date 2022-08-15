@@ -35,7 +35,7 @@ const Header = () => {
     //   </AppBar>
     // </Box>
     <>
-      <AppBar position="static" elevation={0} sx={{ bgcolor: "#8821b5" }}>
+      <AppBar position="static" elevation={0} sx={{ bgcolor: "#592693" }}>
         <Container maxwidth="xl">
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -137,6 +137,7 @@ const Header = () => {
                   color: "white",
                   display: "block",
                   fontFamily: "Jost",
+                  fontSize: "13pt",
                 }}
               >
                 Overview
@@ -149,6 +150,7 @@ const Header = () => {
                   color: "white",
                   display: "block",
                   fontFamily: "Jost",
+                  fontSize: "13pt",
                 }}
               >
                 Keynote Speaker
@@ -161,6 +163,7 @@ const Header = () => {
                   color: "white",
                   display: "block",
                   fontFamily: "Jost",
+                  fontSize: "13pt",
                 }}
               >
                 Interactive Sessions
@@ -173,6 +176,7 @@ const Header = () => {
                   color: "white",
                   display: "block",
                   fontFamily: "Jost",
+                  fontSize: "13pt",
                 }}
               >
                 Project Abstracts
@@ -185,6 +189,7 @@ const Header = () => {
                   color: "white",
                   display: "block",
                   fontFamily: "Jost",
+                  fontSize: "13pt",
                 }}
               >
                 About RVRC

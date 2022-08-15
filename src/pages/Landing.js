@@ -88,7 +88,7 @@ const Landing = () => {
                 marginInline: "15%",
                 marginTop: { xs: "4%", md: "1%" },
                 paddingBlock: "1%",
-                border: "0.5px solid lightgray",
+                border: "0.5px solid gray",
                 boxSizing: "border-box",
                 paddingInline: "5%",
               }}
@@ -128,7 +128,7 @@ const Landing = () => {
             sx={{
               padding: "2%",
               margin: "1%",
-              border: "0.5px solid lightgray",
+              border: "0.5px solid gray",
               width: "150px",
               borderRadius: "12px",
             }}

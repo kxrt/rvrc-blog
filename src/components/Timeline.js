@@ -43,7 +43,7 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
@@ -75,11 +75,11 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
-            Welcome remarks by College Master
+            Welcome Remarks by College Master
           </Typography>
           <Typography fontFamily={"Jost"}>MPR 1 & 2</Typography>
         </TimelineContent>
@@ -108,7 +108,7 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
@@ -140,7 +140,7 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
@@ -173,11 +173,11 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
-            Thematic Thread 1 (Oral presentations)
+            Thematic Thread 1 (Oral Presentations)
           </Typography>
           <Typography fontFamily={"Jost"}>MPR 1</Typography>
         </TimelineContent>
@@ -205,11 +205,11 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
-            Thematic Thread 2 (Oral presentations)
+            Thematic Thread 2 (Oral Presentations)
           </Typography>
           <Typography fontFamily={"Jost"}>MPR 2</Typography>
         </TimelineContent>
@@ -238,11 +238,11 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
-            Closing remarks & Symposium Awards
+            Closing Remarks & Symposium Awards
           </Typography>
           <Typography fontFamily={"Jost"}>MPR 1</Typography>
         </TimelineContent>
@@ -270,7 +270,7 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
@@ -303,7 +303,7 @@ const ProgrammeHighlights = () => {
           <Typography
             variant="h6"
             component="span"
-            fontSize={"20px"}
+            fontSize={"18px"}
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >

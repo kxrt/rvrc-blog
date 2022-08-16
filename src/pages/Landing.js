@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, Card, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import rvrc_bg from "../assets/rvrc_bg.png";
-import schedule from "../components/Schedule";
 import links from "../components/PastLinks";
+import ProgrammeHighlights from "../components/Timeline";
 
 const Landing = () => {
   return (
@@ -70,7 +70,7 @@ const Landing = () => {
       <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: "16pt", md: "26pt" },
+          fontSize: { xs: "20pt", md: "26pt" },
           fontFamily: "Jost",
           paddingTop: "2%",
           color: "#592693",
@@ -78,38 +78,13 @@ const Landing = () => {
       >
         Programme Highlights
       </Typography>
-      <Box sx={{ marginTop: "2%" }}>
-        {schedule.map((item) => (
-          <>
-            <Card
-              sx={{
-                // bgcolor: "#f7ecf8",
-                width: "70%",
-                marginInline: "15%",
-                marginTop: { xs: "4%", md: "1%" },
-                paddingBlock: "1%",
-                border: "0.5px solid gray",
-                boxSizing: "border-box",
-                paddingInline: "5%",
-              }}
-              elevation={0}
-            >
-              <Typography sx={{ fontFamily: "Jost", fontSize: "16pt" }}>
-                {item.title}
-              </Typography>
-              <Typography sx={{ fontFamily: "Jost", color: "#592693" }}>
-                {item.start} - {item.end}
-              </Typography>
-            </Card>
-          </>
-        ))}
-      </Box>
+      <ProgrammeHighlights />
       <Typography
         variant="h1"
         sx={{
-          fontSize: { xs: "16pt", md: "26pt" },
+          fontSize: { xs: "20pt", md: "26pt" },
           fontFamily: "Jost",
-          paddingTop: {xs: "6%", md: "3%"},
+          paddingTop: { xs: "3%", md: "3%" },
           color: "#592693",
         }}
       >

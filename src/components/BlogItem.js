@@ -19,7 +19,6 @@ const BlogItem = ({ blog, setModal }) => {
         justifyContent: "space-between",
         alignItems: "center",
         flexDirection: "column",
-        // backgroundColor: "#8821b5",
         border: "1px dashed #8821b5",
       }}
     >
@@ -40,8 +39,9 @@ const BlogItem = ({ blog, setModal }) => {
         />
       </Typography>
       <Typography
-        style={{ fontSize: "14px", color: "#8821b5", fontFamily: "Jost" }}
+        style={{ fontSize: "14px", color: "black", fontFamily: "Jost" }}
       >
+      Published: <br />
         {parseDate(blog.modified.substring(0, 10))}
       </Typography>
       <CardActions>

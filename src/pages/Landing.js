@@ -34,8 +34,6 @@ const Landing = () => {
         alt="rvrc-bg"
         style={{
           maxWidth: "100%",
-          // marginTop: "32px",
-          borderRadius: "0px",
         }}
       />
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>

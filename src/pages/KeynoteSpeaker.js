@@ -24,7 +24,7 @@ const KeynoteSpeaker = () => {
             }
             alt="guest speaker"
             width={250}
-            style={{marginTop: "40px"}}
+            style={{ marginTop: "40px" }}
           />
         </Box>
         <Box>
@@ -35,6 +35,7 @@ const KeynoteSpeaker = () => {
               paddingTop: "18px",
               fontFamily: "Jost",
               textAlign: "left",
+              color: "#1d9077",
             }}
           >
             Mr Veerappan Swaminathan

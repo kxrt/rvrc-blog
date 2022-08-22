@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import rvrc_walk from "../assets/rvrc_walk_for_rice.jpg";
 
 const AboutRVRC = () => {
   return (
@@ -16,6 +17,13 @@ const AboutRVRC = () => {
           About RVRC
         </Typography>
       </Box>
+      <img
+        src={rvrc_walk}
+        alt="rvrc-bg"
+        style={{
+          maxWidth: "100%",
+        }}
+      />
       <Typography
         variant="h1"
         sx={{

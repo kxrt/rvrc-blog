@@ -18,8 +18,9 @@ const Abstracts = () => {
           Project Abstracts
         </Typography>
       </Box>
-
-      <Blogs />
+      <Box sx={{ marginTop: "10px" }}>
+        <Blogs number={100} />
+      </Box>
     </>
   );
 };

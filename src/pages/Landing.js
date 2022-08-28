@@ -42,9 +42,10 @@ const Landing = () => {
         Year 21/22. It will also provide a learner-centric platform for students
         to:
       </p>
-      {/* <Box
+      <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "flex", md: "flex" },
+          flexWrap: "wrap",
           justifyContent: "center",
         }}
       >
@@ -59,14 +60,22 @@ const Landing = () => {
                 minHeight: "250px",
                 maxHeight: "250px",
                 marginInline: "20px",
+                marginBlock: "10px",
+                boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.15)",
               }}
             >
-              <Lightbulb sx={{ paddingTop: "20px" }} />
+              <Typography
+                sx={{ fontSize: "30pt", paddingTop: "20px", color: "#592693" }}
+              >
+                {index + 1}
+              </Typography>
               <Typography
                 sx={{
                   textAlign: "center",
                   fontSize: "14pt",
-                  padding: "15px",
+                  paddingBottom: "15px",
+                  paddingInline: "15px",
+                  paddingTop: "5px",
                 }}
               >
                 {point}
@@ -74,30 +83,10 @@ const Landing = () => {
             </Box>
           </>
         ))}
-      </Box> */}
-      <Box
-        sx={{ bgcolor: "#e1d0f5", marginInline: "6%", borderRadius: "16px" }}
-      >
-        <p
-          style={{
-            textAlign: "left",
-            padding: "32px",
-            fontSize: "16pt",
-          }}
-        >
-          1. Share their <b>ideas, reflections, and learning</b> from the RVRCP
-          Modules. <br />
-          2. Engage in <b>academic conversations</b> about their RVRC learning
-          experience. <br />
-          3. Demonstrate, through projects relevant to{" "}
-          <b>real-world contexts</b>, how the “world as our classroom” impacted
-          their learning. <br />
-          4. Identify relevant opportunities to apply classroom learning to{" "}
-          <b>impact the real-world</b>. <br />
-          <br />
-          View their project abstracts <Link to="/abstracts">here</Link>.
-        </p>
       </Box>
+      <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
+        Project abstracts can be viewed <Link to="/abstracts">here</Link>.
+      </p>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         We are greatly honoured that{" "}
         <Link to="/keynote">Mr Veerappan Swaminathan</Link> will grace the
@@ -105,69 +94,71 @@ const Landing = () => {
         environmental, economic and social sustainaility, he is the ideal
         speaker for the opening keynote for RVRC Symposium 2022.
       </p>
-      <Typography
-        variant="h1"
-        sx={{
-          fontSize: { xs: "20pt", md: "26pt" },
-          fontFamily: "Jost",
-          paddingTop: "2%",
-          color: "#1d9077",
-          textAlign: "center",
-          paddingInline: "8%",
-        }}
-      >
-        Symposium Theme
-      </Typography>
-      <Box
-        sx={{
-          bgcolor: "#e1d0f5",
-          marginInline: "6%",
-          borderRadius: "16px",
-          marginTop: "20px",
-        }}
-      >
+      <Box sx={{ backgroundColor: "#e1d0f5" }}>
         <Typography
           variant="h1"
           sx={{
-            fontSize: { xs: "16pt", md: "18pt" },
+            fontSize: { xs: "20pt", md: "26pt" },
             fontFamily: "Jost",
-            paddingTop: "32px",
-            // color: "#592693",
+            paddingTop: "30px",
+            color: "#592693",
             textAlign: "center",
+            paddingInline: "8%",
           }}
         >
-          "Learning to Learn: The world as our classroom"
+          Symposium Theme
         </Typography>
-        <Typography
+        <Box
           sx={{
-            color: "black",
-            paddingTop: "16px",
-            paddingInline: "32px",
-            paddingBottom: "32px",
-            fontFamily: "Jost",
-            fontSize: "16pt",
-            textAlign: "justify",
+            bgcolor: "#e1d0f5",
+            marginInline: "6%",
+            borderRadius: "16px",
+            // marginTop: "20px",
           }}
         >
-          The working world today is in constant flux, defined by emerging
-          business models, new technologies, and evolving consumer behaviour.
-          The ability to acquire knowledge and skills continually is crucial to
-          success in such a world. For new graduates, this rapid pace of change
-          can be especially demanding. Hence, students must cultivate the
-          aspiration to be effective learners; they must ‘Learn to learn’ by
-          acquiring diverse capabilities, participating in meaningful growth
-          opportunities, and become willing to experiment with new ideas. The
-          symposium theme explores how the RVRCP fosters these attributes by
-          presenting the world as a classroom, with a focus on authentic
-          out-of-classroom and experiential learning.
-        </Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { xs: "16pt", md: "18pt" },
+              fontFamily: "Jost",
+              paddingTop: "32px",
+              // color: "#592693",
+              textAlign: "center",
+            }}
+          >
+            "Learning to Learn: The world as our classroom"
+          </Typography>
+          <Typography
+            sx={{
+              color: "black",
+              paddingTop: "16px",
+              paddingInline: "32px",
+              paddingBottom: "32px",
+              fontFamily: "Jost",
+              fontSize: {xs: "14pt", md: "16pt" },
+              textAlign: "justify",
+            }}
+          >
+            The working world today is in constant flux, defined by emerging
+            business models, new technologies, and evolving consumer behaviour.
+            The ability to acquire knowledge and skills continually is crucial
+            to success in such a world. For new graduates, this rapid pace of
+            change can be especially demanding. Hence, students must cultivate
+            the aspiration to be effective learners; they must ‘Learn to learn’
+            by acquiring diverse capabilities, participating in meaningful
+            growth opportunities, and become willing to experiment with new
+            ideas. The symposium theme explores how the RVRCP fosters these
+            attributes by presenting the world as a classroom, with a focus on
+            authentic out-of-classroom and experiential learning.
+          </Typography>
+        </Box>
       </Box>
       <Typography
         variant="h1"
         sx={{
           fontSize: { xs: "20pt", md: "26pt" },
           fontFamily: "Jost",
-          paddingTop: "2%",
+          paddingTop: "30px",
           // color: "#592693",
           color: "#1d9077",
         }}
@@ -189,56 +180,58 @@ const Landing = () => {
             color: "white",
             borderRadius: "16px",
             marginInline: "auto",
-            marginTop: "20px",
+            marginBottom: "20px",
           }}
         >
           Click here to RSVP
         </Button>
       </Box>
-      <Typography
-        variant="h1"
-        sx={{
-          fontSize: { xs: "20pt", md: "26pt" },
-          fontFamily: "Jost",
-          paddingTop: { xs: "3%", md: "3%" },
-          // color: "#592693",
-          color: "#1d9077",
-        }}
-      >
-        Links to Past Symposia
-      </Typography>
-      <Box
-        sx={{
-          marginBlock: "1%",
-          marginBottom: "3%",
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        {links.map((item) => (
-          <Box
-            sx={{
-              padding: "2%",
-              margin: "1%",
-              border: "0.5px solid gray",
-              width: "150px",
-              borderRadius: "12px",
-            }}
-          >
-            <Typography sx={{ fontFamily: "Jost" }}>
-              <a
-                href={item.href}
-                target={"_blank"}
-                rel="noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                {item.title}
-              </a>{" "}
-              <br />
-            </Typography>
-          </Box>
-        ))}
+      <Box sx={{ backgroundColor: "#e1d0f5" }}>
+        <Typography
+          variant="h1"
+          sx={{
+            fontSize: { xs: "20pt", md: "26pt" },
+            fontFamily: "Jost",
+            paddingTop: { xs: "30px", md: "30px" },
+            // color: "#592693",
+            color: "#592693",
+          }}
+        >
+          Links to Past Symposia
+        </Typography>
+        <Box
+          sx={{
+            paddingBlock: "20px",
+            paddingBottom: "20px",
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          {links.map((item) => (
+            <Box
+              sx={{
+                padding: "2%",
+                margin: "1%",
+                border: "0.5px solid gray",
+                width: "150px",
+                borderRadius: "12px",
+              }}
+            >
+              <Typography sx={{ fontFamily: "Jost" }}>
+                <a
+                  href={item.href}
+                  target={"_blank"}
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  {item.title}
+                </a>{" "}
+                <br />
+              </Typography>
+            </Box>
+          ))}
+        </Box>
       </Box>
     </>
   );

@@ -66,7 +66,7 @@ const ProgrammeHighlights = () => {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="secondary">
+          <TimelineDot sx={{ bgcolor: "#592693" }} >
             <Campaign />
           </TimelineDot>
           <TimelineConnector />
@@ -131,7 +131,7 @@ const ProgrammeHighlights = () => {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="secondary">
+          <TimelineDot sx={{ bgcolor: "#592693" }} >
             <AutoAwesomeMosaic />
           </TimelineDot>
           <TimelineConnector />
@@ -196,7 +196,7 @@ const ProgrammeHighlights = () => {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="secondary">
+          <TimelineDot sx={{ bgcolor: "#592693" }} >
             <Groups />
           </TimelineDot>
           <TimelineConnector />
@@ -261,7 +261,7 @@ const ProgrammeHighlights = () => {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="secondary">
+          <TimelineDot sx={{ bgcolor: "#592693" }} >
             <Restaurant />
           </TimelineDot>
           <TimelineConnector />

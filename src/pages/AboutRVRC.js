@@ -85,7 +85,7 @@ const AboutRVRC = () => {
           specified by your faculty.
         </p>
       </div>
-      <Box sx={{ backgroundColor: "#e1d0f5" }}>
+      <Box>
         <img
           src={
             "https://rvrc.nus.edu.sg/wp-content/uploads/2021/06/RVRC-GE-MODULES.jpg"
@@ -98,34 +98,38 @@ const AboutRVRC = () => {
           sx={{
             fontSize: { xs: "20pt", md: "26pt" },
             fontFamily: "Jost",
-            paddingTop: "30px",
-            color: "#592693",
+            paddingTop: "20px",
+            color: "#1d9077",
+            paddingInline: "7%",
           }}
         >
           Outdoor Learning
         </Typography>
-        <p
-          style={{
-            fontSize: "14pt",
-            paddingInline: "7%",
-            paddingBottom: "30px",
-            textAlign: "justify",
-            margin: 0,
-          }}
-        >
-          RVRC has a strong focus on outdoor education based on the foundation
-          of experiential learning, with a strong focus on environmental
-          stewardship. This focus is embedded in our academic modules, while
-          also being the foundation for our RVRC experiential learning
-          activities offered beyond the academic curriculum. All RVRC students
-          are encouraged to participate in a range of outdoor learning
-          experiences to engage with various causes in order to diversify their
-          learning journey and to become active members of the society. We oﬀer
-          our students a range of local and overseas opportunities to learn and
-          participate in. <br /> <br /> Students can choose to champion local
-          conservation programmes, or join overseas expeditions to countries
-          such as Malaysia, Nepal, and India.
-        </p>
+        <div>
+          <p
+            style={{
+              fontSize: "14pt",
+              paddingTop: "20px",
+              paddingInline: "7%",
+              paddingBottom: "30px",
+              textAlign: "justify",
+              margin: 0,
+            }}
+          >
+            RVRC has a strong focus on outdoor education based on the foundation
+            of experiential learning, with a strong focus on environmental
+            stewardship. This focus is embedded in our academic modules, while
+            also being the foundation for our RVRC experiential learning
+            activities offered beyond the academic curriculum. All RVRC students
+            are encouraged to participate in a range of outdoor learning
+            experiences to engage with various causes in order to diversify
+            their learning journey and to become active members of the society.
+            We oﬀer our students a range of local and overseas opportunities to
+            learn and participate in. <br /> <br /> Students can choose to
+            champion local conservation programmes, or join overseas expeditions
+            to countries such as Malaysia, Nepal, and India.
+          </p>
+        </div>
         <img src={rvrc_outdoor} alt="RVRC" width={"100%"} />
       </Box>
       {/* https://rvrc.nus.edu.sg/rvrc-programme/ */}

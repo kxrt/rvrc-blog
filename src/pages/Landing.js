@@ -5,13 +5,30 @@ import { Link } from "react-router-dom";
 import rvrc_bg from "../assets/rvrc_bg.png";
 import links from "../components/PastLinks";
 import ProgrammeHighlights from "../components/Timeline";
-import { Lightbulb } from "@mui/icons-material";
+import {
+  ForestOutlined,
+  LibraryBooksOutlined,
+  SchoolOutlined,
+  TungstenOutlined,
+} from "@mui/icons-material";
 
 const points = [
-  "Share their ideas, reflections, and learning from the RVRCP Modules.",
-  "Engage in academic conversations about their RVRC learning experience.",
-  "Demonstrate, through projects relevant to real-world contexts, how the “world as our classroom” impacted their learning.",
-  "Identify relevant opportunities to apply classroom learning to impact the real-world.",
+  {
+    desc: "Share their ideas, reflections, and learning from the RVRCP Modules.",
+    icon: <TungstenOutlined fontSize="60pt" />,
+  },
+  {
+    desc: "Engage in academic conversations about their RVRC learning experience.",
+    icon: <LibraryBooksOutlined fontSize="large" />,
+  },
+  {
+    desc: "Demonstrate, through projects relevant to real-world contexts, how the “world as our classroom” impacted their learning.",
+    icon: <SchoolOutlined fontSize="large" />,
+  },
+  {
+    desc: "Identify relevant opportunities to apply classroom learning to impact the real-world.",
+    icon: <ForestOutlined fontSize="large" />,
+  },
 ];
 
 const Landing = () => {
@@ -62,12 +79,25 @@ const Landing = () => {
                 marginInline: "20px",
                 marginBlock: "10px",
                 boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.15)",
+                position: "relative",
               }}
             >
               <Typography
-                sx={{ fontSize: "30pt", paddingTop: "20px", color: "#592693" }}
+                sx={{
+                  fontSize: "190pt",
+                  fontWeight: "bold",
+                  color: "rgba(89,38,147,0.08)",
+                  position: "absolute",
+                  right: "50px",
+                  bottom: "-70px",
+                }}
               >
                 {index + 1}
+              </Typography>
+              <Typography
+                sx={{ fontSize: "30pt", paddingTop: "20px", color: "#592693" }}
+              >
+                {point.icon}
               </Typography>
               <Typography
                 sx={{
@@ -78,7 +108,7 @@ const Landing = () => {
                   paddingTop: "5px",
                 }}
               >
-                {point}
+                {point.desc}
               </Typography>
             </Box>
           </>
@@ -135,7 +165,7 @@ const Landing = () => {
               paddingInline: "32px",
               paddingBottom: "32px",
               fontFamily: "Jost",
-              fontSize: {xs: "14pt", md: "16pt" },
+              fontSize: { xs: "14pt", md: "16pt" },
               textAlign: "justify",
             }}
           >
@@ -168,6 +198,7 @@ const Landing = () => {
       <ProgrammeHighlights />
       <Box>
         <Button
+          disableElevation
           variant="contained"
           onClick={() =>
             window.open("https://forms.office.com/r/AMJWqM5Dkt", "_black")
@@ -193,7 +224,6 @@ const Landing = () => {
             fontSize: { xs: "20pt", md: "26pt" },
             fontFamily: "Jost",
             paddingTop: { xs: "30px", md: "30px" },
-            // color: "#592693",
             color: "#592693",
           }}
         >

@@ -19,9 +19,9 @@ const BlogItem = ({ blog, setModal }) => {
         justifyContent: "space-between",
         alignItems: "center",
         flexDirection: "column",
-        // border: "0.2px dashed #8821b5",
-        bgcolor: "#e1d0f5",
-        boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.15)",
+        border: "0.2px dashed #8821b5",
+        // bgcolor: "#e1d0f5",
+        // boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.1)",
       }}
     >
       <Typography

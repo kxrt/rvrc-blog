@@ -13,7 +13,7 @@ import {
 import { Link } from "react-router-dom";
 
 import menuicon from "../assets/bars-solid.svg";
-import logo512 from "../assets/logo512.png";
+import logoIconWhite from "../assets/logo_icon_white.png";
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,9 +40,9 @@ const Header = () => {
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <img
-                src={logo512}
+                src={logoIconWhite}
                 alt="logo"
-                style={{ width: "32px", height: "32px", padding: "5%" }}
+                style={{ width: "29px", height: "32px", padding: "5%" }}
               />
               <IconButton
                 size="large"
@@ -125,9 +125,14 @@ const Header = () => {
               }}
             >
               <img
-                src={logo512}
+                src={logoIconWhite}
                 alt="logo"
-                style={{ width: "32px", height: "32px", padding: "1.5%" }}
+                style={{
+                  width: "29px",
+                  height: "32px",
+                  paddingTop: "20px",
+                  paddingRight: "10px",
+                }}
               />
               <Button
                 href="/"

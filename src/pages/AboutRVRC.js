@@ -116,18 +116,18 @@ const AboutRVRC = () => {
               margin: 0,
             }}
           >
-            RVRC has a strong focus on outdoor education based on the foundation
-            of experiential learning, with a strong focus on environmental
-            stewardship. This focus is embedded in our academic modules, while
-            also being the foundation for our RVRC experiential learning
-            activities offered beyond the academic curriculum. All RVRC students
-            are encouraged to participate in a range of outdoor learning
-            experiences to engage with various causes in order to diversify
-            their learning journey and to become active members of the society.
-            We oﬀer our students a range of local and overseas opportunities to
-            learn and participate in. <br /> <br /> Students can choose to
-            champion local conservation programmes, or join overseas expeditions
-            to countries such as Malaysia, Nepal, and India.
+            RVRC places a strong emphasis on experiential learning and
+            environmental stewardship, using the world as a classroom. This
+            emphasis is embedded in all academic modules, while also being the
+            foundation for out-of-classroom learning activities offered as part
+            of the co-academic experience at the college. All RVRC students are
+            encouraged to participate in these activities in order to enhance
+            and diversify their undergraduate learning and to become active
+            members of the society. <br /> <br /> RVRC offers students a range
+            of local and overseas opportunities to learn and participate in;
+            students can choose to champion local conservation programmes, or
+            join overseas expeditions to countries such as Malaysia, Nepal and
+            India.
           </p>
         </div>
         <img src={rvrc_outdoor} alt="RVRC" width={"100%"} />

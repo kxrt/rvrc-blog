@@ -17,13 +17,83 @@ const InteractiveSessions = () => {
           Interactive Sessions
         </Typography>
       </Box>
-      <Box>
-        <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-          The Symposium will have interactive sessions with the keynote speaker
-          and the students. The audience will be able to ask questions and
-          interact with the speakers. The Symposium also be featuring the
-          following interactive sessions:
-        </p>
+      <Box sx={{ paddingBlock: "20px" }}>
+        <Typography
+          style={{
+            fontFamily: "Jost",
+            fontSize: "14pt",
+            paddingInline: "10%",
+            paddingBlock: "0%",
+            textAlign: "center",
+          }}
+        >
+          Thematic Thread 1
+        </Typography>
+        <Typography
+          style={{
+            fontFamily: "Jost",
+            fontSize: "24pt",
+            paddingInline: "10%",
+            textAlign: "center",
+          }}
+        >
+          Examining ideas beyond the hegemony of the present
+        </Typography>
+        <Typography
+          style={{
+            fontFamily: "Jost",
+            fontSize: "16pt",
+            paddingInline: "10%",
+            textAlign: "left",
+          }}
+        >
+          This thread explores the importance of examining ideas beyond the
+          hegemony of the present and the limitations of the popular and the
+          immediate, to prime students for the lifelong process of learning and
+          personal development and to meet the challenges of a rapidly changing
+          world. Selected student work will showcase the ‘learning process’ and
+          application of complex skills such as reflective and critical
+          thinking, in order to examine their own thinking and that of others.
+        </Typography>
+        <br />
+        <Typography
+          style={{
+            fontFamily: "Jost",
+            fontSize: "14pt",
+            paddingInline: "10%",
+            paddingBlock: "0%",
+            textAlign: "center",
+          }}
+        >
+          Thematic Thread 2
+        </Typography>
+        <Typography
+          style={{
+            fontFamily: "Jost",
+            fontSize: "24pt",
+            paddingInline: "10%",
+            textAlign: "center",
+          }}
+        >
+          Engaging within and across the plurality of communities
+        </Typography>
+        <Typography
+          style={{
+            fontFamily: "Jost",
+            fontSize: "16pt",
+            paddingInline: "10%",
+            textAlign: "left",
+          }}
+        >
+          This thread explores the importance of communicating in ways sensitive
+          to differing contexts and cultivating an orientation towards (and
+          responsibility for) broad societal issues, to build meaningful
+          relationships within and across the plurality of communities that make
+          up the fabric of society. Selected work will showcase how
+          out-of-classroom learning and working with external partners enabled
+          students to develop these skills and achieve a demonstrable impact on
+          identified issues.
+        </Typography>
       </Box>
       <Box>
         <Blogs number={4} />

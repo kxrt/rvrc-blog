@@ -1,16 +1,17 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-
-import rvrc_bg from "../assets/rvrc_bg.png";
-import links from "../components/PastLinks";
-import ProgrammeHighlights from "../components/Timeline";
+import { Box, Button, Typography } from "@mui/material";
 import {
   ForestOutlined,
   LibraryBooksOutlined,
   SchoolOutlined,
   TungstenOutlined,
 } from "@mui/icons-material";
+
+import rvrc_bg from "../assets/rvrc_bg.png";
+import links from "../components/PastLinks";
+import ProgrammeHighlights from "../components/Timeline";
+import RVRCStepper from "../components/SwipeableTextMobileStepper";
 
 const points = [
   {
@@ -46,18 +47,20 @@ const Landing = () => {
           RVRC Symposium 2022
         </Typography>
       </Box>
-      <img
+      <RVRCStepper />
+      {/* <img
         src={rvrc_bg}
         alt="rvrc-bg"
         style={{
           maxWidth: "100%",
         }}
-      />
+      /> */}
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        The RVRC Symposium 2022 ‘Learning to Learn: The World as our Classroom’
-        will showcase exemplary student work nominated from the RVRCP Academic
-        Year 21/22. It will also provide a learner-centric platform for students
-        to:
+        The Ridge View Residential College (RVRC) Symposium 2022 ‘Learning to
+        Learn: The World as our Classroom’ will showcase exemplary student work
+        nominated from the new Ridge View Residential College Programme (RVRCP)
+        launched in Academic Year 21/22. It will also provide a learner-centric
+        platform for students to:
       </p>
       <Box
         sx={{
@@ -118,11 +121,12 @@ const Landing = () => {
         Project abstracts can be viewed <Link to="/abstracts">here</Link>.
       </p>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        We are greatly honoured that{" "}
+        We are honoured that NUS Alumnus{" "}
         <Link to="/keynote">Mr Veerappan Swaminathan</Link> will grace the
-        occasion with a keynote address. Given his work to innovate for
-        environmental, economic and social sustainaility, he is the ideal
-        speaker for the opening keynote for RVRC Symposium 2022.
+        occasion with a keynote address. We believe that his unique story that
+        began as an NUS undergraduate, and continues as an innovator of
+        solutions for environmental, economic and social sustainability issues,
+        is ideally placed to inspire RVRC students.
       </p>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
         <Typography

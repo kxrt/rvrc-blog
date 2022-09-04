@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
-import Blogs from "../components/Blogs";
+import { Box, Divider, Typography } from "@mui/material";
+import Interactives from "../components/Interactives";
+import meditation from "../assets/meditation.png";
+import teamdiscussion from "../assets/team-discussion.png";
 
 const InteractiveSessions = () => {
   return (
@@ -39,12 +41,18 @@ const InteractiveSessions = () => {
         >
           Examining ideas beyond the hegemony of the present
         </Typography>
+        <Box
+          component="img"
+          src={meditation}
+          alt="reading"
+          sx={{ width: { xs: "80%", md: "40%" } }}
+        />
         <Typography
           style={{
             fontFamily: "Jost",
             fontSize: "16pt",
             paddingInline: "10%",
-            textAlign: "left",
+            textAlign: "justify",
           }}
         >
           This thread explores the importance of examining ideas beyond the
@@ -55,6 +63,11 @@ const InteractiveSessions = () => {
           application of complex skills such as reflective and critical
           thinking, in order to examine their own thinking and that of others.
         </Typography>
+        <Box>
+          <Interactives number={1} />
+        </Box>
+        <br />
+        <Divider />
         <br />
         <Typography
           style={{
@@ -77,12 +90,18 @@ const InteractiveSessions = () => {
         >
           Engaging within and across the plurality of communities
         </Typography>
+        <Box
+          component="img"
+          src={teamdiscussion}
+          alt="team discussion"
+          sx={{ width: { xs: "80%", md: "40%" } }}
+        />
         <Typography
           style={{
             fontFamily: "Jost",
             fontSize: "16pt",
             paddingInline: "10%",
-            textAlign: "left",
+            textAlign: "justify",
           }}
         >
           This thread explores the importance of communicating in ways sensitive
@@ -96,7 +115,7 @@ const InteractiveSessions = () => {
         </Typography>
       </Box>
       <Box>
-        <Blogs number={4} />
+        <Interactives number={2} />
       </Box>
     </>
   );

@@ -30,7 +30,7 @@ const ProgrammeHighlights = () => {
           fontFamily={"Jost"}
           fontSize={"16px"}
         >
-          9:45 am
+          9:40 am
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -49,7 +49,7 @@ const ProgrammeHighlights = () => {
           >
             Registration Opens
           </Typography>
-          <Typography fontFamily={"Jost"}>Atrium</Typography>
+          <Typography fontFamily={"Jost"}>Atrium (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -81,7 +81,7 @@ const ProgrammeHighlights = () => {
           >
             Welcome Remarks by College Master
           </Typography>
-          <Typography fontFamily={"Jost"}>MPR 1 & 2</Typography>
+          <Typography fontFamily={"Jost"}>MPR 1 & 2 (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -114,7 +114,7 @@ const ProgrammeHighlights = () => {
           >
             Opening Keynote by Guest of Honour
           </Typography>
-          <Typography fontFamily={"Jost"}>MPR 1 & 2</Typography>
+          <Typography fontFamily={"Jost"}>MPR 1 & 2 (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -144,9 +144,9 @@ const ProgrammeHighlights = () => {
             fontWeight={"bold"}
             fontFamily={"Jost"}
           >
-            Poster Gallery Walk & Refreshments
+            Refreshments & interaction with Guest of Honour
           </Typography>
-          <Typography fontFamily={"Jost"}>Atrium</Typography>
+          <Typography fontFamily={"Jost"}>Atrium (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -160,7 +160,7 @@ const ProgrammeHighlights = () => {
           fontFamily={"Jost"}
           fontSize={"16px"}
         >
-          11:30 am
+          11:10 am
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -179,7 +179,7 @@ const ProgrammeHighlights = () => {
           >
             Thematic Thread 1 (Oral Presentations)
           </Typography>
-          <Typography fontFamily={"Jost"}>MPR 1</Typography>
+          <Typography fontFamily={"Jost"}>MPR 1 (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -192,7 +192,7 @@ const ProgrammeHighlights = () => {
           fontFamily={"Jost"}
           fontSize={"16px"}
         >
-          11:30 am
+          11:10 am
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -211,7 +211,7 @@ const ProgrammeHighlights = () => {
           >
             Thematic Thread 2 (Oral Presentations)
           </Typography>
-          <Typography fontFamily={"Jost"}>MPR 2</Typography>
+          <Typography fontFamily={"Jost"}>MPR 2 (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -225,7 +225,7 @@ const ProgrammeHighlights = () => {
           fontFamily={"Jost"}
           fontSize={"16px"}
         >
-          12:45 pm
+          12:30 pm
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -244,7 +244,7 @@ const ProgrammeHighlights = () => {
           >
             Closing Remarks & Symposium Awards
           </Typography>
-          <Typography fontFamily={"Jost"}>MPR 1</Typography>
+          <Typography fontFamily={"Jost"}>MPR 1 (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -276,7 +276,7 @@ const ProgrammeHighlights = () => {
           >
             Networking Lunch
           </Typography>
-          <Typography fontFamily={"Jost"}>Masters Lounge</Typography>
+          <Typography fontFamily={"Jost"}>Masters Lounge (Level 3, RVRC Block G)</Typography>
         </TimelineContent>
       </TimelineItem>
 

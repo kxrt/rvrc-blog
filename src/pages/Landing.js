@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Slide, Typography } from "@mui/material";
 import {
   ForestOutlined,
   LibraryBooksOutlined,
   SchoolOutlined,
   TungstenOutlined,
 } from "@mui/icons-material";
+import { useInView } from "react-intersection-observer";
 
-import rvrc_bg from "../assets/rvrc_bg.png";
 import links from "../components/PastLinks";
 import ProgrammeHighlights from "../components/Timeline";
 import RVRCStepper from "../components/SwipeableTextMobileStepper";
+import learningexpress from "../assets/learningexpress.png";
 
 const points = [
   {
@@ -33,6 +34,14 @@ const points = [
 ];
 
 const Landing = () => {
+  const [ref, inView] = useInView({
+    /* Optional options */
+    triggerOnce: true,
+    rootMargin: "0px 0px",
+  });
+
+  console.log(inView);
+
   return (
     <>
       <Box sx={{ bgcolor: "#592693", padding: { xs: "5%", md: "1.5%" } }}>
@@ -42,81 +51,83 @@ const Landing = () => {
             color: "white",
             fontSize: { xs: "24pt", md: "40pt" },
             fontFamily: "Jost",
+            fontWeight: "Bold",
           }}
         >
           RVRC Symposium 2022
         </Typography>
       </Box>
       <RVRCStepper />
-      {/* <img
-        src={rvrc_bg}
-        alt="rvrc-bg"
-        style={{
-          maxWidth: "100%",
-        }}
-      /> */}
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        The Ridge View Residential College (RVRC) Symposium 2022 ‘Learning to
-        Learn: The World as our Classroom’ will showcase exemplary student work
-        nominated from the new Ridge View Residential College Programme (RVRCP)
-        launched in Academic Year 21/22. It will also provide a learner-centric
-        platform for students to:
+        The Ridge View Residential College (RVRC) Symposium 2022{" "}
+        <b>‘Learning to Learn: The World as our Classroom’</b> will showcase
+        exemplary student work nominated from the new Ridge View Residential
+        College Programme (RVRCP) launched in Academic Year 21/22. It will also
+        provide a learner-centric platform for students to:
       </p>
-      <Box
-        sx={{
-          display: { xs: "flex", md: "flex" },
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
-        {points.map((point, index) => (
-          <>
-            <Box
-              sx={{
-                bgcolor: "#e1d0f5",
-                borderRadius: "16px",
-                minWidth: "250px",
-                maxWidth: "250px",
-                minHeight: "250px",
-                maxHeight: "250px",
-                marginInline: "20px",
-                marginBlock: "10px",
-                boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.15)",
-                position: "relative",
-              }}
-            >
-              <Typography
+      <Box ref={ref}></Box>
+      <Slide direction="up" in={inView} mountOnEnter unmountOnExit>
+        <Box
+          sx={{
+            display: { xs: "flex", md: "flex" },
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          {points.map((point, index) => (
+            <>
+              <Box
+                key={index}
                 sx={{
-                  fontSize: "190pt",
-                  fontWeight: "bold",
-                  color: "rgba(89,38,147,0.08)",
-                  position: "absolute",
-                  right: "50px",
-                  bottom: "-70px",
+                  bgcolor: "#e1d0f5",
+                  borderRadius: "16px",
+                  minWidth: "250px",
+                  maxWidth: "250px",
+                  minHeight: "250px",
+                  maxHeight: "250px",
+                  marginInline: "20px",
+                  marginBlock: "10px",
+                  boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.15)",
+                  position: "relative",
                 }}
               >
-                {index + 1}
-              </Typography>
-              <Typography
-                sx={{ fontSize: "30pt", paddingTop: "20px", color: "#592693" }}
-              >
-                {point.icon}
-              </Typography>
-              <Typography
-                sx={{
-                  textAlign: "center",
-                  fontSize: "14pt",
-                  paddingBottom: "15px",
-                  paddingInline: "15px",
-                  paddingTop: "5px",
-                }}
-              >
-                {point.desc}
-              </Typography>
-            </Box>
-          </>
-        ))}
-      </Box>
+                <Typography
+                  sx={{
+                    fontSize: "190pt",
+                    fontWeight: "bold",
+                    color: "rgba(89,38,147,0.08)",
+                    position: "absolute",
+                    right: "50px",
+                    bottom: "-70px",
+                  }}
+                >
+                  {index + 1}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "30pt",
+                    paddingTop: "20px",
+                    color: "#592693",
+                  }}
+                >
+                  {point.icon}
+                </Typography>
+                <Typography
+                  sx={{
+                    textAlign: "center",
+                    fontSize: "14pt",
+                    paddingBottom: "15px",
+                    paddingInline: "15px",
+                    paddingTop: "5px",
+                  }}
+                >
+                  {point.desc}
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+      </Slide>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         Project abstracts can be viewed <Link to="/abstracts">here</Link>.
       </p>
@@ -162,6 +173,11 @@ const Landing = () => {
           >
             "Learning to Learn: The world as our classroom"
           </Typography>
+          <Box
+            component="img"
+            src={learningexpress}
+            sx={{ width: { xs: "70%", md: "20%" }, paddingTop: "30px" }}
+          />
           <Typography
             sx={{
               color: "black",
@@ -244,6 +260,7 @@ const Landing = () => {
         >
           {links.map((item) => (
             <Box
+              key={item.title}
               sx={{
                 padding: "2%",
                 margin: "1%",

@@ -3,9 +3,10 @@ import { Interweave } from "interweave";
 import { Button, Card, CardActions, Typography } from "@mui/material";
 
 import BlogItemLengthCut from "./BlogItemLengthCut";
+import BlogItemTitleShorten from "./BlogItemTitleShorten";
 import parseDate from "./ParseDate";
 
-const BlogItem = ({ blog, setModal }) => {
+const BlogItem = ({ blog, setModal, parseStyle }) => {
   return (
     <Card
       elevation={0}
@@ -35,15 +36,22 @@ const BlogItem = ({ blog, setModal }) => {
         }}
       >
         {/* Format HTML to readable text */}
-        <Interweave
-          content={blog.title.rendered}
-          matchers={[BlogItemLengthCut]}
-        />
+        {parseDate ? (
+          <Interweave
+            content={blog.title.rendered}
+            matchers={[BlogItemTitleShorten]}
+          />
+        ) : (
+          <Interweave
+            content={blog.title.rendered}
+            matchers={[BlogItemLengthCut]}
+          />
+        )}
       </Typography>
       <Typography
         style={{ fontSize: "14px", color: "black", fontFamily: "Jost" }}
       >
-      Published: <br />
+        Published: <br />
         {parseDate(blog.modified.substring(0, 10))}
       </Typography>
       <CardActions>

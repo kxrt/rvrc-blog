@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Interactives from "../components/Interactives";
-import meditation from "../assets/meditation.png";
-import teamdiscussion from "../assets/team-discussion.png";
+import ideas from "../assets/ideas.png";
+import communities from "../assets/communities.png";
 
 const InteractiveSessions = () => {
   return (
@@ -19,6 +19,15 @@ const InteractiveSessions = () => {
           Interactive Sessions
         </Typography>
       </Box>
+      <Box
+        component="img"
+        src={ideas}
+        alt="ideas"
+        sx={{
+          width: { xs: "100%", md: "80%" },
+          paddingTop: { xs: "0px", md: "20px" },
+        }}
+      />
       <Box sx={{ paddingBlock: "20px" }}>
         <Typography
           style={{
@@ -36,17 +45,13 @@ const InteractiveSessions = () => {
             fontFamily: "Jost",
             fontSize: "24pt",
             paddingInline: "10%",
+            paddingBlock: "10px",
             textAlign: "center",
           }}
         >
           Examining ideas beyond the hegemony of the present
         </Typography>
-        <Box
-          component="img"
-          src={meditation}
-          alt="reading"
-          sx={{ width: { xs: "80%", md: "40%" } }}
-        />
+
         <Typography
           style={{
             fontFamily: "Jost",
@@ -67,14 +72,18 @@ const InteractiveSessions = () => {
           <Interactives number={1} />
         </Box>
         <br />
-        <Divider />
-        <br />
+        <Box
+          component="img"
+          src={communities}
+          alt="communities"
+          sx={{ width: { xs: "100%", md: "80%" } }}
+        />
         <Typography
           style={{
             fontFamily: "Jost",
             fontSize: "14pt",
             paddingInline: "10%",
-            paddingBlock: "0%",
+            paddingTop: "20px",
             textAlign: "center",
           }}
         >
@@ -85,17 +94,12 @@ const InteractiveSessions = () => {
             fontFamily: "Jost",
             fontSize: "24pt",
             paddingInline: "10%",
+            paddingBlock: "10px",
             textAlign: "center",
           }}
         >
           Engaging within and across the plurality of communities
         </Typography>
-        <Box
-          component="img"
-          src={teamdiscussion}
-          alt="team discussion"
-          sx={{ width: { xs: "80%", md: "40%" } }}
-        />
         <Typography
           style={{
             fontFamily: "Jost",

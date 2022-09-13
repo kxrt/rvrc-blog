@@ -84,6 +84,7 @@ const Interactives = ({ number }) => {
                 component="h2"
                 fontFamily={"Jost"}
                 fontWeight={"bold"}
+                sx={{ paddingInline: "15px" }}
               >
                 {modal !== null ? (
                   // Format HTML to readable text
@@ -92,7 +93,9 @@ const Interactives = ({ number }) => {
                   ""
                 )}
               </Typography>
-              <Typography sx={{ mt: 2, fontFamily: "Jost" }}>
+              <Typography
+                sx={{ mt: 2, fontFamily: "Jost", paddingInline: "15px" }}
+              >
                 {modal !== null ? (
                   // Format HTML to readable text
                   <Interweave content={modal.content.rendered} />
@@ -100,7 +103,9 @@ const Interactives = ({ number }) => {
                   ""
                 )}
               </Typography>
-              <Typography sx={{ mt: 2, fontFamily: "Jost" }}>
+              <Typography
+                sx={{ mt: 2, fontFamily: "Jost", paddingInline: "15px" }}
+              >
                 {modal !== null ? (
                   <>
                     <b>Published:</b> {parseDate(modal.date.substring(0, 10))}

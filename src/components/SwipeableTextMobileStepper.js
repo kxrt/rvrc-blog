@@ -17,18 +17,18 @@ const images = [
     label: "RVN1",
     imgPath: RVN1,
   },
-  {
-    label: "RVN2",
-    imgPath: RVN2,
-  },
+  // {
+    // label: "RVN2",
+    // imgPath: RVN2,
+  // },
   {
     label: "RVSS1",
     imgPath: RVSS1,
   },
-  {
-    label: "RVSS2",
-    imgPath: RVSS2,
-  },
+  // {
+    // label: "RVSS2",
+    // imgPath: RVSS2,
+  // },
   {
     label: "RVSS3",
     imgPath: RVSS3,

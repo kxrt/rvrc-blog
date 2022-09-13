@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Button, Slide, Typography } from "@mui/material";
+import { Box, Button, Typography, Zoom } from "@mui/material";
 import {
   ForestOutlined,
   LibraryBooksOutlined,
@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 import links from "../components/PastLinks";
 import ProgrammeHighlights from "../components/Timeline";
 import RVRCStepper from "../components/SwipeableTextMobileStepper";
-import learningexpress from "../assets/learningexpress.png";
+import learn from "../assets/learn.png";
 
 const points = [
   {
@@ -40,8 +40,6 @@ const Landing = () => {
     rootMargin: "0px 0px",
   });
 
-  console.log(inView);
-
   return (
     <>
       <Box sx={{ bgcolor: "#592693", padding: { xs: "5%", md: "1.5%" } }}>
@@ -60,13 +58,13 @@ const Landing = () => {
       <RVRCStepper />
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         The Ridge View Residential College (RVRC) Symposium 2022{" "}
-        <b>‘Learning to Learn: The World as our Classroom’</b> will showcase
+        <b style={{color: "#1d9077" }}>‘Learning to Learn: The World as our Classroom’</b> will showcase
         exemplary student work nominated from the new Ridge View Residential
         College Programme (RVRCP) launched in Academic Year 21/22. It will also
         provide a learner-centric platform for students to:
       </p>
       <Box ref={ref}></Box>
-      <Slide direction="up" in={inView} mountOnEnter unmountOnExit>
+      <Zoom in={inView} style={{transitionDelay: "100ms"}}>
         <Box
           sx={{
             display: { xs: "flex", md: "flex" },
@@ -127,9 +125,9 @@ const Landing = () => {
             </>
           ))}
         </Box>
-      </Slide>
+      </Zoom>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        Project abstracts can be viewed <Link to="/abstracts">here</Link>.
+        Project abstracts can be viewed <Link to="/interactive">here</Link>.
       </p>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         We are honoured that NUS Alumnus{" "}
@@ -140,6 +138,11 @@ const Landing = () => {
         is ideally placed to inspire RVRC students.
       </p>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
+        <Box
+          component="img"
+          src={learn}
+          sx={{ width: "100%" }}
+        />
         <Typography
           variant="h1"
           sx={{
@@ -158,7 +161,6 @@ const Landing = () => {
             bgcolor: "#e1d0f5",
             marginInline: "6%",
             borderRadius: "16px",
-            // marginTop: "20px",
           }}
         >
           <Typography
@@ -167,17 +169,11 @@ const Landing = () => {
               fontSize: { xs: "16pt", md: "18pt" },
               fontFamily: "Jost",
               paddingTop: "32px",
-              // color: "#592693",
               textAlign: "center",
             }}
           >
             "Learning to Learn: The world as our classroom"
           </Typography>
-          <Box
-            component="img"
-            src={learningexpress}
-            sx={{ width: { xs: "70%", md: "20%" }, paddingTop: "30px" }}
-          />
           <Typography
             sx={{
               color: "black",
@@ -209,7 +205,6 @@ const Landing = () => {
           fontSize: { xs: "20pt", md: "26pt" },
           fontFamily: "Jost",
           paddingTop: "30px",
-          // color: "#592693",
           color: "#1d9077",
         }}
       >

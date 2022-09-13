@@ -21,8 +21,6 @@ const BlogItem = ({ blog, setModal, parseStyle }) => {
         alignItems: "center",
         flexDirection: "column",
         border: "0.2px dashed #8821b5",
-        // bgcolor: "#e1d0f5",
-        // boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.1)",
       }}
     >
       <Typography
@@ -30,13 +28,12 @@ const BlogItem = ({ blog, setModal, parseStyle }) => {
           margin: "20px",
           fontSize: "18px",
           color: "#8821b5",
-          // color: "white",
           fontWeight: "bold",
           fontFamily: "Jost",
         }}
       >
         {/* Format HTML to readable text */}
-        {parseDate ? (
+        {parseStyle ? (
           <Interweave
             content={blog.title.rendered}
             matchers={[BlogItemTitleShorten]}
@@ -62,9 +59,7 @@ const BlogItem = ({ blog, setModal, parseStyle }) => {
           style={{
             marginBottom: "20px",
             color: "#8821b5",
-            // color: "white",
             borderColor: "#8821b5",
-            // borderColor: "white",
             fontFamily: "Jost",
           }}
         >

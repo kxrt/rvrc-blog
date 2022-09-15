@@ -49,7 +49,7 @@ const InteractiveSessions = () => {
             textAlign: "center",
           }}
         >
-          Examining ideas beyond the hegemony of the present
+          Engaging within and across the plurality of communities
         </Typography>
 
         <Typography
@@ -60,13 +60,14 @@ const InteractiveSessions = () => {
             textAlign: "justify",
           }}
         >
-          This thread explores the importance of examining ideas beyond the
-          hegemony of the present and the limitations of the popular and the
-          immediate, to prime students for the lifelong process of learning and
-          personal development and to meet the challenges of a rapidly changing
-          world. Selected student work will showcase the ‘learning process’ and
-          application of complex skills such as reflective and critical
-          thinking, in order to examine their own thinking and that of others.
+          This thread explores the importance of communicating in ways sensitive
+          to differing contexts and cultivating an orientation towards (and
+          responsibility for) broad societal issues, to build meaningful
+          relationships within and across the plurality of communities that make
+          up the fabric of society. Selected work will showcase how
+          out-of-classroom learning and working with external partners enabled
+          students to develop these skills and achieve a demonstrable impact on
+          identified issues.
         </Typography>
         <Box>
           <Interactives number={1} />
@@ -98,7 +99,7 @@ const InteractiveSessions = () => {
             textAlign: "center",
           }}
         >
-          Engaging within and across the plurality of communities
+          Examining ideas beyond the hegemony of the present
         </Typography>
         <Typography
           style={{
@@ -108,14 +109,13 @@ const InteractiveSessions = () => {
             textAlign: "justify",
           }}
         >
-          This thread explores the importance of communicating in ways sensitive
-          to differing contexts and cultivating an orientation towards (and
-          responsibility for) broad societal issues, to build meaningful
-          relationships within and across the plurality of communities that make
-          up the fabric of society. Selected work will showcase how
-          out-of-classroom learning and working with external partners enabled
-          students to develop these skills and achieve a demonstrable impact on
-          identified issues.
+          This thread explores the importance of examining ideas beyond the
+          hegemony of the present and the limitations of the popular and the
+          immediate, to prime students for the lifelong process of learning and
+          personal development and to meet the challenges of a rapidly changing
+          world. Selected student work will showcase the ‘learning process’ and
+          application of complex skills such as reflective and critical
+          thinking, in order to examine their own thinking and that of others.
         </Typography>
       </Box>
       <Box>

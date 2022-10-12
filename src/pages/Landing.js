@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Button, Typography, Zoom } from "@mui/material";
+import { Box, Typography, Zoom } from "@mui/material";
 import {
   ForestOutlined,
   LibraryBooksOutlined,
   SchoolOutlined,
   TungstenOutlined,
+  EmojiEventsOutlined,
 } from "@mui/icons-material";
 import { useInView } from "react-intersection-observer";
 
@@ -33,6 +34,27 @@ const points = [
   },
 ];
 
+const winners = [
+  {
+    topic: "Re-envisioning Labrador Park in the Greater Southern Waterfront",
+    presentedBy: "Charis Chow Hui Ning, Chloe Sau, Khin Hnin Su, Tan Yanni",
+    module: "RVSS1000 Exploring Sense of Place",
+  },
+  {
+    topic:
+      "On Objectivism and the Fall of Rapture: A Critical Inquiry of Rational Egoism and Negative Libertarianism",
+    presentedBy: "Jonathan Derryl Kartjito",
+    module: "RVX1001 Science Fiction and Society",
+  },
+  {
+    topic:
+      "Usage of medical jargon in clinician and patient communication and Minimal English as the solution",
+    presentedBy: "Yoon Su Lin",
+    module:
+      "RVX1002 ‘What do you mean?’ Meaning and communication in intercultural contexts",
+  },
+];
+
 const Landing = () => {
   const [ref, inView] = useInView({
     /* Optional options */
@@ -42,7 +64,7 @@ const Landing = () => {
 
   return (
     <>
-      <Box sx={{ bgcolor: "#592693", padding: { xs: "5%", md: "1.5%" } }}>
+      <Box sx={{ bgcolor: "#592693", padding: { xs: "3%", md: "1%" } }}>
         <Typography
           variant="h1"
           sx={{
@@ -58,13 +80,15 @@ const Landing = () => {
       <RVRCStepper />
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         The Ridge View Residential College (RVRC) Symposium 2022{" "}
-        <b style={{color: "#1d9077" }}>‘Learning to Learn: The World as our Classroom’</b> will showcase
-        exemplary student work nominated from the new Ridge View Residential
-        College Programme (RVRCP) launched in Academic Year 21/22. It will also
-        provide a learner-centric platform for students to:
+        <b style={{ color: "#1d9077" }}>
+          ‘Learning to Learn: The World as our Classroom’
+        </b>{" "}
+        will showcase exemplary student work nominated from the new Ridge View
+        Residential College Programme (RVRCP) launched in Academic Year 21/22.
+        It will also provide a learner-centric platform for students to:
       </p>
       <Box ref={ref}></Box>
-      <Zoom in={inView} style={{transitionDelay: "100ms"}}>
+      <Zoom in={inView} style={{ transitionDelay: "100ms" }}>
         <Box
           sx={{
             display: { xs: "flex", md: "flex" },
@@ -138,11 +162,7 @@ const Landing = () => {
         is ideally placed to inspire RVRC students.
       </p>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
-        <Box
-          component="img"
-          src={learn}
-          sx={{ width: "100%" }}
-        />
+        <Box component="img" src={learn} sx={{ width: "100%" }} />
         <Typography
           variant="h1"
           sx={{
@@ -211,7 +231,8 @@ const Landing = () => {
         Programme Highlights
       </Typography>
       <ProgrammeHighlights />
-      <Box>
+      {/* Sign up form removed as event has ended. */}
+      {/* <Box>
         <Button
           disableElevation
           variant="contained"
@@ -231,7 +252,7 @@ const Landing = () => {
         >
           Click here to RSVP
         </Button>
-      </Box>
+      </Box> */}
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
         <Typography
           variant="h1"
@@ -240,6 +261,85 @@ const Landing = () => {
             fontFamily: "Jost",
             paddingTop: { xs: "30px", md: "30px" },
             color: "#592693",
+          }}
+        >
+          Symposium Award Winners
+        </Typography>
+        <Box
+          sx={{
+            bgcolor: "#e1d0f5",
+            marginInline: "6%",
+            borderRadius: "16px",
+            paddingBottom: "32px",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "black",
+              paddingTop: "16px",
+              paddingInline: "32px",
+              paddingBottom: "32px",
+              fontFamily: "Jost",
+              fontSize: { xs: "14pt", md: "16pt" },
+              textAlign: "justify",
+            }}
+          >
+            The symposium audience, comprising RVRC students, staff, and invited
+            NUS partners, also had the opportunity to nominate the best
+            presentation from each thematic thread. After shortlisting the top
+            scorers, certificates of merit were awarded to the following three
+            presentations:
+          </Typography>
+          <Box
+            sx={{
+              display: { xs: "flex", md: "flex" },
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            {winners.map((winner, index) => (
+              <Box
+                sx={{
+                  paddingInline: "32px",
+                  marginInline: "32px",
+                  border: "1px solid #592693",
+                  paddingBlock: "32px",
+                  marginBottom: "20px",
+                  bgcolor: "#fcfcfc",
+                  minHeight: "300px",
+                  maxHeight: "300px",
+                  minWidth: "290px",
+                  maxWidth: "290px",
+                  borderRadius: "16px",
+                  position: "relative",
+                  boxShadow: "1px 2px 15px 1px rgba(89,38,147,0.25)",
+                }}
+              >
+                <Typography sx={{ color: "#1d9077", marginBottom: "10px" }}>
+                  <EmojiEventsOutlined fontSize="large" />
+                </Typography>
+                <Typography sx={{ fontSize: "14pt" }}>
+                  {winner.topic}
+                </Typography>
+                <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
+                  <i>{winner.presentedBy}</i>
+                </Typography>
+                <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
+                  <b>Module:</b> {winner.module}
+                </Typography>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+      <Box>
+        <Typography
+          variant="h1"
+          sx={{
+            fontSize: { xs: "20pt", md: "26pt" },
+            fontFamily: "Jost",
+            paddingTop: { xs: "30px", md: "30px" },
+            color: "#1d9077",
           }}
         >
           Links to Past Symposia

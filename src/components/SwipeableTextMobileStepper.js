@@ -4,34 +4,39 @@ import { Box } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
-import RVN1 from "../assets/stepper_images/rvn1.png";
-import RVN2 from "../assets/stepper_images/rvn2.png";
-import RVSS1 from "../assets/stepper_images/rvss1.png";
-import RVSS2 from "../assets/stepper_images/rvss2.png";
-import RVSS3 from "../assets/stepper_images/rvss3.png";
+import event1 from "../assets/stepper_images/event1.png";
+import event2 from "../assets/stepper_images/event2.png";
+import event3 from "../assets/stepper_images/event3.png";
+import event4 from "../assets/stepper_images/event4.png";
+import event5 from "../assets/stepper_images/event5.png";
+import event6 from "../assets/stepper_images/event6.png";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "RVN1",
-    imgPath: RVN1,
+    label: "event1",
+    imgPath: event1,
   },
-  // {
-    // label: "RVN2",
-    // imgPath: RVN2,
-  // },
   {
-    label: "RVSS1",
-    imgPath: RVSS1,
+    label: "event2",
+    imgPath: event2,
   },
-  // {
-    // label: "RVSS2",
-    // imgPath: RVSS2,
-  // },
   {
-    label: "RVSS3",
-    imgPath: RVSS3,
+    label: "event3",
+    imgPath: event3,
+  },
+  {
+    label: "event4",
+    imgPath: event4,
+  },
+  {
+    label: "event5",
+    imgPath: event5,
+  },
+  {
+    label: "event6",
+    imgPath: event6,
   },
 ];
 

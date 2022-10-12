@@ -12,7 +12,13 @@ import StudentPoints from "../components/LandingComponents/StudentPoints";
 const Landing = () => {
   return (
     <>
-      <Box sx={{ bgcolor: "#592693", padding: { xs: "3%", md: "1%" } }}>
+      <Box
+        sx={{
+          bgcolor: "#592693",
+          padding: { xs: "3%", md: "1%" },
+          paddingBottom: { md: "20px" },
+        }}
+      >
         <Typography
           variant="h1"
           sx={{

@@ -41,9 +41,10 @@ const StudentPoints = () => {
         <b style={{ color: "#1d9077" }}>
           ‘Learning to Learn: The World as our Classroom’
         </b>{" "}
-        will showcase exemplary student work nominated from the new Ridge View
-        Residential College Programme (RVRCP) launched in Academic Year 21/22.
-        It will also provide a learner-centric platform for students to:
+        was held on 19 September 2022. It showcased exemplary student work
+        nominated from the new Ridge View Residential College Programme (RVRCP)
+        launched in Academic Year 21/22. It provided a learner-centric
+        platform for students to:
       </p>
       <Box ref={ref}></Box>
       <Zoom in={inView} style={{ transitionDelay: "100ms" }}>

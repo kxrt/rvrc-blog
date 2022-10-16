@@ -37,8 +37,8 @@ const Landing = () => {
         Project abstracts can be viewed <Link to="/interactive">here</Link>.
       </p>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        We are honoured that NUS Alumnus{" "}
-        <Link to="/keynote">Mr Veerappan Swaminathan</Link> will grace the
+        We were honoured that NUS Alumnus{" "}
+        <Link to="/keynote">Mr Veerappan Swaminathan</Link> graced the
         occasion with a keynote address. We believe that his unique story that
         began as an NUS undergraduate, and continues as an innovator of
         solutions for environmental, economic and social sustainability issues,

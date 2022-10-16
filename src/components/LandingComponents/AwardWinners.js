@@ -58,9 +58,8 @@ const AwardWinners = () => {
             }}
           >
             The symposium audience, comprising RVRC students, staff, and invited
-            NUS partners, also had the opportunity to nominate the best
-            presentation from each thematic thread. After shortlisting the top
-            scorers, certificates of merit were awarded to the following three
+            NUS partners, nominated the best presentations from each thematic
+            thread. Certificates of merit were awarded to the following three
             presentations:
           </Typography>
           <Box

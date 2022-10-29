@@ -18,7 +18,7 @@ const points = [
     icon: <LibraryBooksOutlined fontSize="large" />,
   },
   {
-    desc: "Demonstrate, through projects relevant to real-world contexts, how the “world as our classroom” impacted their learning.",
+    desc: "Demonstrate, through projects relevant to real-world contexts, how the “world is our classroom” impacted their learning.",
     icon: <SchoolOutlined fontSize="large" />,
   },
   {
@@ -39,7 +39,7 @@ const StudentPoints = () => {
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         The Ridge View Residential College (RVRC) Symposium 2022{" "}
         <b style={{ color: "#1d9077" }}>
-          ‘Learning to Learn: The World as our Classroom’
+          ‘Learning to Learn: The World is our Classroom’
         </b>{" "}
         was held on 19 September 2022. It showcased exemplary student work
         nominated from the new Ridge View Residential College Programme (RVRCP)

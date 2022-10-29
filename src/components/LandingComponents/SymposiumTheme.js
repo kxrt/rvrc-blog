@@ -37,7 +37,7 @@ const SymposiumTheme = () => {
               textAlign: "center",
             }}
           >
-            "Learning to Learn: The world as our classroom"
+            "Learning to Learn: The world is our classroom"
           </Typography>
           <Typography
             sx={{

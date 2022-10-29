@@ -106,7 +106,7 @@ const KeynoteSpeaker = () => {
               away from a strictly academic pursuit to explore and acquire an
               education that granted him real experience, exposure, and the room
               to be creative. Aligned with RVRC’s{" "}
-              <i>‘World as our classroom’</i> approach to learning and tackling
+              <i>‘World is our classroom’</i> approach to learning and tackling
               real world problems, as a student he too worked on meaningful
               projects that directly addressed sustainability and social issues
               in Singapore and the SEA region. Hence, it was envisioned that he

@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
-import event1 from "../assets/stepper_images/event1.png";
+// import event1 from "../assets/stepper_images/event1.png";
 import event2 from "../assets/stepper_images/event2.png";
 import event3 from "../assets/stepper_images/event3.png";
 import event4 from "../assets/stepper_images/event4.png";
@@ -14,10 +14,10 @@ import event6 from "../assets/stepper_images/event6.png";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
-  {
-    label: "event1",
-    imgPath: event1,
-  },
+  // {
+  //   label: "event1",
+  //   imgPath: event1,
+  // },
   {
     label: "event2",
     imgPath: event2,

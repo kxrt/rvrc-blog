@@ -29,11 +29,6 @@ const Header = () => {
   // oldcolor #8821b5
 
   return (
-    // <Box>
-    //   <AppBar position="static" elevation={0}>
-    //     <img src={bg} alt="header-bg" />
-    //   </AppBar>
-    // </Box>
     <>
       <AppBar position="static" elevation={0} sx={{ bgcolor: "#592693" }}>
         <Container maxwidth="xl">
@@ -107,14 +102,14 @@ const Header = () => {
                 >
                   <Typography textAlign="center">Project Abstracts</Typography>
                 </MenuItem>
-                <MenuItem
+                {/* <MenuItem
                   key={"About"}
                   onClick={handleCloseNavMenu}
                   component={Link}
                   to="/about"
                 >
                   <Typography textAlign="center">About RVRC</Typography>
-                </MenuItem>
+                </MenuItem> */}
               </Menu>
             </Box>
             <Box
@@ -186,7 +181,7 @@ const Header = () => {
               >
                 Project Abstracts
               </Button>
-              <Button
+              {/* <Button
                 href="/about"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -198,7 +193,7 @@ const Header = () => {
                 }}
               >
                 About RVRC
-              </Button>
+              </Button> */}
             </Box>
           </Toolbar>
         </Container>

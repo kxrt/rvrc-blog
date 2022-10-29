@@ -6,7 +6,7 @@ import RVRCStepper from "../components/SwipeableTextMobileStepper";
 import SymposiumTheme from "../components/LandingComponents/SymposiumTheme";
 import ProgrammeHighlights from "../components/LandingComponents/ProgrammeHighlights";
 import AwardWinners from "../components/LandingComponents/AwardWinners";
-import PastSymposia from "../components/LandingComponents/PastSymposia";
+// import PastSymposia from "../components/LandingComponents/PastSymposia";
 import StudentPoints from "../components/LandingComponents/StudentPoints";
 
 const Landing = () => {
@@ -49,7 +49,7 @@ const Landing = () => {
       {/* Sign up button disabled as event has ended. */}
       {/* <SignupButton />  */}
       <AwardWinners />
-      <PastSymposia />
+      {/* <PastSymposia /> */}
     </>
   );
 };

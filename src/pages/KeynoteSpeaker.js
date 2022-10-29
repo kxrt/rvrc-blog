@@ -67,6 +67,7 @@ const KeynoteSpeaker = () => {
                   href="https://www.sustainablelivinglab.org/"
                   target={"_blank"}
                   rel="noreferrer"
+                  style={{ color: "#1d9077" }}
                 >
                   Sustainable Living Lab (SL2)
                 </a>
@@ -80,6 +81,7 @@ const KeynoteSpeaker = () => {
                   href="https://edm8ker.com/"
                   target={"_blank"}
                   rel="noreferrer"
+                  style={{ color: "#1d9077" }}
                 >
                   edm8ker
                 </a>
@@ -98,7 +100,7 @@ const KeynoteSpeaker = () => {
                 textAlign: "justify",
               }}
             >
-              Mr. Swaminathan is an ideal choice for the opening keynote, given
+              Mr. Swaminathan was an ideal choice for the opening keynote, given
               the symposium theme. As an undergraduate at the NUS Faculty of
               Engineering and the University Scholar’s Programme, he pivoted
               away from a strictly academic pursuit to explore and acquire an
@@ -107,7 +109,7 @@ const KeynoteSpeaker = () => {
               <i>‘World as our classroom’</i> approach to learning and tackling
               real world problems, as a student he too worked on meaningful
               projects that directly addressed sustainability and social issues
-              in Singapore and the SEA region. Hence, it is envisioned that he
+              in Singapore and the SEA region. Hence, it was envisioned that he
               would be able to inspire students with relevant and relatable
               ideas on how they too could explore and personalise their
               individual university education.

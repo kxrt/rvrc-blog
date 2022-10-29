@@ -67,7 +67,7 @@ const KeynoteSpeaker = () => {
                   href="https://www.sustainablelivinglab.org/"
                   target={"_blank"}
                   rel="noreferrer"
-                  style={{ color: "#1d9077" }}
+                  style={{ color: "#592693" }}
                 >
                   Sustainable Living Lab (SL2)
                 </a>
@@ -81,7 +81,7 @@ const KeynoteSpeaker = () => {
                   href="https://edm8ker.com/"
                   target={"_blank"}
                   rel="noreferrer"
-                  style={{ color: "#1d9077" }}
+                  style={{ color: "#592693" }}
                 >
                   edm8ker
                 </a>

@@ -34,15 +34,21 @@ const Landing = () => {
       <RVRCStepper />
       <StudentPoints />
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        Project abstracts can be viewed <Link to="/interactive">here</Link>.
+        Project abstracts can be viewed{" "}
+        <Link to="/interactive" style={{ color: "#592693" }}>
+          here
+        </Link>
+        .
       </p>
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         We were honoured that NUS Alumnus{" "}
-        <Link to="/keynote">Mr Veerappan Swaminathan</Link> graced the
-        occasion with a keynote address. We believe that his unique story that
-        began as an NUS undergraduate, and continues as an innovator of
-        solutions for environmental, economic and social sustainability issues,
-        is ideally placed to inspire RVRC students.
+        <Link to="/keynote" style={{ color: "#592693" }}>
+          Mr Veerappan Swaminathan
+        </Link>{" "}
+        graced the occasion with a keynote address. We believe that his unique
+        story that began as an NUS undergraduate, and continues as an innovator
+        of solutions for environmental, economic and social sustainability
+        issues, is ideally placed to inspire RVRC students.
       </p>
       <SymposiumTheme />
       <ProgrammeHighlights />

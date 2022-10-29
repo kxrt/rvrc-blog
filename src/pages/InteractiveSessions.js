@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Interactives from "../components/Interactives";
-import ideas from "../assets/ideas.png";
-import communities from "../assets/communities.png";
+import ideas from "../assets/stepper_images/event4.png";
+import communities from "../assets/stepper_images/event5.png";
 
 const InteractiveSessions = () => {
   return (
@@ -24,8 +24,8 @@ const InteractiveSessions = () => {
         src={ideas}
         alt="ideas"
         sx={{
-          width: { xs: "100%", md: "80%" },
-          paddingTop: { xs: "0px", md: "20px" },
+          width: { xs: "100%", md: "100%" },
+          paddingTop: { xs: "0px", md: "0px" },
         }}
       />
       <Box sx={{ paddingBlock: "20px" }}>
@@ -60,11 +60,11 @@ const InteractiveSessions = () => {
             textAlign: "justify",
           }}
         >
-          This thread explores the importance of communicating in ways sensitive
+          This thread explored the importance of communicating in ways sensitive
           to differing contexts and cultivating an orientation towards (and
           responsibility for) broad societal issues, to build meaningful
           relationships within and across the plurality of communities that make
-          up the fabric of society. Selected work will showcase how
+          up the fabric of society. Selected works showcased how
           out-of-classroom learning and working with external partners enabled
           students to develop these skills and achieve a demonstrable impact on
           identified issues.
@@ -77,7 +77,7 @@ const InteractiveSessions = () => {
           component="img"
           src={communities}
           alt="communities"
-          sx={{ width: { xs: "100%", md: "80%" } }}
+          sx={{ width: { xs: "100%", md: "100%" } }}
         />
         <Typography
           style={{
@@ -109,11 +109,11 @@ const InteractiveSessions = () => {
             textAlign: "justify",
           }}
         >
-          This thread explores the importance of examining ideas beyond the
+          This thread explored the importance of examining ideas beyond the
           hegemony of the present and the limitations of the popular and the
           immediate, to prime students for the lifelong process of learning and
           personal development and to meet the challenges of a rapidly changing
-          world. Selected student work will showcase the ‘learning process’ and
+          world. Selected student work showcased the ‘learning process’ and
           application of complex skills such as reflective and critical
           thinking, in order to examine their own thinking and that of others.
         </Typography>

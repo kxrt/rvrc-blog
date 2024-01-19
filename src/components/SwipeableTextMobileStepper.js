@@ -4,12 +4,12 @@ import { Box } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
-// import event1 from "../assets/stepper_images/event1.png";
-import event2 from "../assets/stepper_images/event2.png";
-import event3 from "../assets/stepper_images/event3.png";
-import event4 from "../assets/stepper_images/event4.png";
-import event5 from "../assets/stepper_images/event5.png";
-import event6 from "../assets/stepper_images/event6.png";
+// import event1 from "../assets/2022/event1.png";
+import event2 from "../assets/2022/event2.png";
+import event3 from "../assets/2022/event3.png";
+import event4 from "../assets/2022/event4.png";
+import event5 from "../assets/2022/event5.png";
+import event6 from "../assets/2022/event6.png";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 

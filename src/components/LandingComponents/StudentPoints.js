@@ -78,8 +78,9 @@ const StudentPoints = () => {
                     fontWeight: "bold",
                     color: "rgba(89,38,147,0.08)",
                     position: "absolute",
+                    lineHeight: "normal",
                     right: "50px",
-                    bottom: "-70px",
+                    top: "-20px",
                   }}
                 >
                   {index + 1}

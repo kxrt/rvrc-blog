@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
-import RVRCStepper from "../components/SwipeableTextMobileStepper";
-import SymposiumTheme from "../components/LandingComponents/SymposiumTheme";
-import ProgrammeHighlights from "../components/LandingComponents/ProgrammeHighlights";
-import AwardWinners from "../components/LandingComponents/AwardWinners";
+import RVRCStepper from "../../components/SwipeableTextMobileStepper";
+import SymposiumTheme from "../../components/LandingComponents/SymposiumTheme";
+import ProgrammeHighlights from "../../components/LandingComponents/ProgrammeHighlights";
+import AwardWinners from "../../components/LandingComponents/AwardWinners";
 // import PastSymposia from "../components/LandingComponents/PastSymposia";
-import StudentPoints from "../components/LandingComponents/StudentPoints";
+import StudentPoints from "../../components/LandingComponents/StudentPoints";
 
 const Landing = () => {
   return (

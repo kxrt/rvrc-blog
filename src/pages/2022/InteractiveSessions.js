@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Interactives from "../components/Interactives";
-import ideas from "../assets/2022/event4.png";
-import communities from "../assets/2022/event5.png";
+import Interactives from "../../components/Interactives";
+import ideas from "../../assets/2022/event4.png";
+import communities from "../../assets/2022/event5.png";
 
 const InteractiveSessions = () => {
   return (

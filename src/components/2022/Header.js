@@ -10,10 +10,10 @@ import {
   Typography,
   Button,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-import menuicon from "../assets/bars-solid.svg";
-import logoIconWhite from "../assets/logo_icon_white.png";
+import menuicon from "../../assets/bars-solid.svg";
+import logoIconWhite from "../../assets/logo_icon_white.png";
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -72,7 +72,7 @@ const Header = () => {
                   key={"Overview"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/"
+                  to="/2022"
                 >
                   <Typography textAlign="center">Overview</Typography>
                 </MenuItem>
@@ -80,7 +80,7 @@ const Header = () => {
                   key={"Keynote"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/keynote"
+                  to="/2022/keynote"
                 >
                   <Typography textAlign="center">Keynote Speaker</Typography>
                 </MenuItem>
@@ -88,7 +88,7 @@ const Header = () => {
                   key={"Interactive"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/interactive"
+                  to="/2022/interactive"
                 >
                   <Typography textAlign="center">
                     Interactive Sessions
@@ -98,7 +98,7 @@ const Header = () => {
                   key={"Abstracts"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/abstracts"
+                  to="/2022/abstracts"
                 >
                   <Typography textAlign="center">Project Abstracts</Typography>
                 </MenuItem>
@@ -130,7 +130,7 @@ const Header = () => {
                 }}
               />
               <Button
-                href="/"
+                href="/2022"
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -143,7 +143,7 @@ const Header = () => {
                 Overview
               </Button>
               <Button
-                href="/keynote"
+                href="/2022/keynote"
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -156,7 +156,7 @@ const Header = () => {
                 Keynote Speaker
               </Button>
               <Button
-                href="/interactive"
+                href="/2022/interactive"
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -169,7 +169,7 @@ const Header = () => {
                 Interactive Sessions
               </Button>
               <Button
-                href="/abstracts"
+                href="/2022/abstracts"
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -198,6 +198,7 @@ const Header = () => {
           </Toolbar>
         </Container>
       </AppBar>
+      <Outlet />
     </>
   );
 };

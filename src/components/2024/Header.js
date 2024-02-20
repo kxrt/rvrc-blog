@@ -77,18 +77,18 @@ const Header = () => {
                   <Typography textAlign="center">Overview</Typography>
                 </MenuItem>
                 <MenuItem
-                  key={"Keynote"}
+                  key={"Guest of Honour"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/keynote"
+                  to="/guest-of-honour"
                 >
                   <Typography textAlign="center">Guest of Honour</Typography>
                 </MenuItem>
                 <MenuItem
-                  key={"Interactive"}
+                  key={"Keynote Speaker"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/guest-of-honour"
+                  to="/keynote"
                 >
                   <Typography textAlign="center">Keynote Speaker</Typography>
                 </MenuItem>

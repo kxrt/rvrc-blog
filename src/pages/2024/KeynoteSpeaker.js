@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import keynoteSpeaker from "../../assets/2024/keynote-speaker.jpg";
 
 const KeynoteSpeaker = () => {
   return (
@@ -16,29 +17,26 @@ const KeynoteSpeaker = () => {
           Keynote Speaker
         </Typography>
       </Box>
-      <Box sx={{ display: { xs: "inline-block", md: "flex" } }}>
-        <Box sx={{ display: { xs: "block", md: "none" } }}>
+      <Box sx={{ display: { xs: "inline-block" } }}>
+        <Box sx={{ display: "inline-block" }}>
           <img
-            src={
-              "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/24588/thumb_veera_profile_pic.jpg"
-            }
-            alt="guest speaker"
+            src={keynoteSpeaker}
+            alt="Keynote Speaker"
             width={250}
             style={{ marginTop: "40px" }}
           />
         </Box>
-        <Box>
+        <Box sx={{ textAlign: { xs: "center" } }}>
           <Typography
             sx={{
               fontSize: { xs: "18pt", md: "24pt" },
               paddingInline: "7%",
               paddingTop: "18px",
               fontFamily: "Jost",
-              textAlign: "left",
               color: "#1d9077",
             }}
           >
-            Mr Veerappan Swaminathan
+            Mr. Victor Zhu
           </Typography>
           <Typography
             style={{
@@ -46,10 +44,9 @@ const KeynoteSpeaker = () => {
               paddingInline: "7%",
               paddingBottom: "0px",
               fontFamily: "Jost",
-              textAlign: "left",
             }}
           >
-            Founder and Director, Sustainable Living Lab
+            Founder and CEO, Hatch
           </Typography>
 
           <div>
@@ -60,40 +57,33 @@ const KeynoteSpeaker = () => {
                 textAlign: "justify",
               }}
             >
-              NUS Alumnus <b>Mr Veerappan Swaminathan</b> is the founder and
-              director of{" "}
+              RVRC Alumnus <b>Mr. Victor Zhu</b> is the Founder and CEO of{" "}
               <b>
                 <a
-                  href="https://www.sustainablelivinglab.org/"
-                  target={"_blank"}
+                  href="https://www.hatch.sg/"
+                  target="_blank"
                   rel="noreferrer"
                   style={{ color: "#592693" }}
                 >
-                  Sustainable Living Lab (SL2)
+                  Hatch
                 </a>
               </b>
-              , a consultancy which helps organisations innovate for
-              environmental, economic, and social sustainability. Recognised as
-              a leader of the maker movement in Singapore and Southeast Asia, he
-              is also the CEO and director of{" "}
-              <b>
-                <a
-                  href="https://edm8ker.com/"
-                  target={"_blank"}
-                  rel="noreferrer"
-                  style={{ color: "#592693" }}
-                >
-                  edm8ker
-                </a>
-              </b>
-              , which trains teachers to impart “maker education” to youths. He
-              was awarded the NUS Outstanding Young Alumni Award in 2019, and
-              the 2018 Joseph Jaworski Next Generation Foresight Asia Special
-              Award.
+              , an impact-driven business with the mission to leverage digital
+              as a tool for intentional impact. The business comprises two arms
+              - Hatch Academy, which runs skills and employability programs in
+              Digital Marketing and User Interface, User Experience (UI/UX)
+              Design for learners from all walks of life, as well as Hatch
+              Mediahouse, which provides a suite of digital and design services
+              to help small and medium-sized businesses and non-profits
+              digitalise. In his work, he brings in partnerships and resources
+              to make the dreams of social innovation a reality, such as
+              creating Singapore’s first digital employability program for
+              out-of-school and at-risk youths, and more recently, for persons
+              with disabilities.
             </p>
           </div>
           <div>
-            <p
+            {/* <p
               style={{
                 fontSize: "14pt",
                 paddingInline: "7%",
@@ -113,18 +103,8 @@ const KeynoteSpeaker = () => {
               would be able to inspire students with relevant and relatable
               ideas on how they too could explore and personalise their
               individual university education.
-            </p>
+            </p> */}
           </div>
-        </Box>
-        <Box sx={{ display: { xs: "none", md: "block" } }}>
-          <img
-            src={
-              "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/24588/thumb_veera_profile_pic.jpg"
-            }
-            alt="guest speaker"
-            width={250}
-            style={{ marginRight: "45px", marginTop: "45px" }}
-          />
         </Box>
       </Box>
     </>

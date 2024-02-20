@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SymposiumTheme from "../../components/LandingComponents/SymposiumTheme";
-import ProgrammeHighlights from "../../components/LandingComponents/ProgrammeHighlights";
-import AwardWinners from "../../components/LandingComponents/AwardWinners";
+import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
+import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighlights";
+// import AwardWinners from "../../components/LandingComponents/AwardWinners";
 // import PastSymposia from "../components/LandingComponents/PastSymposia";
-import StudentPoints from "../../components/LandingComponents/StudentPoints";
+import StudentPoints from "../../components/2024/landing/StudentPoints";
 
 const Landing = () => {
   return (
@@ -28,7 +28,7 @@ const Landing = () => {
             fontWeight: "Bold",
           }}
         >
-          RVRC Symposium 2022
+          RVRC Symposium 2024
         </Typography>
       </Box>
       <RVRCStepper />
@@ -43,7 +43,7 @@ const Landing = () => {
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         We were honoured that NUS Alumnus{" "}
         <Link to="/keynote" style={{ color: "#592693" }}>
-          Mr Veerappan Swaminathan
+          Mr. Victor Zhu
         </Link>{" "}
         graced the occasion with a keynote address. We believe that his unique
         story that began as an NUS undergraduate, and continues as an innovator
@@ -54,7 +54,7 @@ const Landing = () => {
       <ProgrammeHighlights />
       {/* Sign up button disabled as event has ended. */}
       {/* <SignupButton />  */}
-      <AwardWinners />
+      {/* <AwardWinners /> */}
       {/* <PastSymposia /> */}
     </>
   );

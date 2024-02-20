@@ -41,9 +41,13 @@ const StudentPoints = () => {
         <b style={{ color: "#1d9077" }}>
           ‘Living and Learning for a Shared Future: The RVRC Way’
         </b>{" "}
-        will be held on 24 February 2024. It is a student-led event that
-        features roundtables, panel discussions, oral, and poster presentations,
-        among other interactive features. The symposium provides a
+        will be held on 24 February 2024. The symposium will be a dynamic
+        showcase of exemplary student projects and the empowering tapestry of
+        co-curricular activities at our College. This event is designed as a
+        platform for networking, reflection, and mutual learning, focusing on
+        the crucial themes of sustainability education and workplace readiness
+        by garnering a diverse audience of 300 students, faculty members,
+        industry collaborators and community partners. The symposium provides a
         learner-centric platform for students to:
       </p>
       <Box ref={ref}></Box>

@@ -92,7 +92,7 @@ const Header = () => {
                 >
                   <Typography textAlign="center">Keynote Speaker</Typography>
                 </MenuItem>
-                <MenuItem
+                {/* <MenuItem
                   key={"Interactive"}
                   onClick={handleCloseNavMenu}
                   component={Link}
@@ -109,7 +109,7 @@ const Header = () => {
                   to="/abstracts"
                 >
                   <Typography textAlign="center">Project Abstracts</Typography>
-                </MenuItem>
+                </MenuItem> */}
                 {/* <MenuItem
                   key={"About"}
                   onClick={handleCloseNavMenu}
@@ -176,7 +176,7 @@ const Header = () => {
               >
                 Keynote Speaker
               </Button>
-              <Button
+              {/* <Button
                 href="/interactive"
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -201,7 +201,7 @@ const Header = () => {
                 }}
               >
                 Project Abstracts
-              </Button>
+              </Button> */}
               {/* <Button
                 href="/about"
                 onClick={handleCloseNavMenu}

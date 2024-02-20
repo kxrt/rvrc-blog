@@ -82,6 +82,14 @@ const Header = () => {
                   component={Link}
                   to="/keynote"
                 >
+                  <Typography textAlign="center">Guest of Honour</Typography>
+                </MenuItem>
+                <MenuItem
+                  key={"Interactive"}
+                  onClick={handleCloseNavMenu}
+                  component={Link}
+                  to="/guest-of-honour"
+                >
                   <Typography textAlign="center">Keynote Speaker</Typography>
                 </MenuItem>
                 <MenuItem
@@ -141,6 +149,19 @@ const Header = () => {
                 }}
               >
                 Overview
+              </Button>
+              <Button
+                href="/guest-of-honour"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "Jost",
+                  fontSize: "13pt",
+                }}
+              >
+                Guest of Honour
               </Button>
               <Button
                 href="/keynote"

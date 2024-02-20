@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
+import SignupButton from "../../components/2024/landing/SignupButton";
 import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
 import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighlights";
 // import AwardWinners from "../../components/LandingComponents/AwardWinners";
@@ -33,27 +34,31 @@ const Landing = () => {
       </Box>
       <RVRCStepper />
       <StudentPoints />
-      <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
+      {/* <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         Project abstracts can be viewed{" "}
         <Link to="/interactive" style={{ color: "#592693" }}>
           here
         </Link>
         .
-      </p>
+      </p> */}
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        We were honoured that NUS Alumnus{" "}
+        We are honoured to have{" "}
+        <Link to="/guest-of-honour" style={{ color: "#592693" }}>
+          Dr. Adrian Loo
+        </Link>{" "}
+        grace the occasion as the Guest of Honour and deliver the opening
+        address. We are also privileged to welcome back RVRC alumnus{" "}
         <Link to="/keynote" style={{ color: "#592693" }}>
           Mr. Victor Zhu
-        </Link>{" "}
-        graced the occasion with a keynote address. We believe that his unique
-        story that began as an NUS undergraduate, and continues as an innovator
-        of solutions for environmental, economic and social sustainability
-        issues, is ideally placed to inspire RVRC students.
+        </Link>
+        , who will share his insights as our Keynote Speaker. We believe that
+        their unique stories as innovators of solutions for environmental,
+        economic and social sustainability issues serve as powerful inspirations
+        for RVRC students.
       </p>
       <SymposiumTheme />
       <ProgrammeHighlights />
-      {/* Sign up button disabled as event has ended. */}
-      {/* <SignupButton />  */}
+      <SignupButton />
       {/* <AwardWinners /> */}
       {/* <PastSymposia /> */}
     </>

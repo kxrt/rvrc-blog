@@ -50,8 +50,8 @@ const SymposiumTheme = () => {
               textAlign: "justify",
             }}
           >
-            <i>One generation plants the trees and another gets the shade</i> -
-            Chinese Proverb
+            <i>One generation plants the trees and another gets the shade</i>{" "}
+            &#8212; Chinese Proverb
           </Typography>
           <Typography
             sx={{

@@ -41,10 +41,10 @@ const StudentPoints = () => {
         <b style={{ color: "#1d9077" }}>
           ‘Living and Learning for a Shared Future: The RVRC Way’
         </b>{" "}
-        will be held on 24 February 2024. It will showcase exemplary student
-        work nominated from the new Ridge View Residential College Programme
-        (RVRCP) launched in Academic Year 21/22. It provides a learner-centric
-        platform for students to:
+        will be held on 24 February 2024. It is a student-led event that
+        features roundtables, panel discussions, oral, and poster presentations,
+        among other interactive features. The symposium provides a
+        learner-centric platform for students to:
       </p>
       <Box ref={ref}></Box>
       <Zoom in={inView} style={{ transitionDelay: "100ms" }}>

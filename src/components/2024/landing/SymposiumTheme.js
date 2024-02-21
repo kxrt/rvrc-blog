@@ -8,62 +8,35 @@ const SymposiumTheme = () => {
     <>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
         <Box component="img" src={learn} sx={{ width: "100%" }} />
-        <Typography
-          variant="h1"
-          sx={{
-            fontSize: { xs: "20pt", md: "26pt" },
-            fontFamily: "Jost",
-            paddingTop: "30px",
-            color: "#592693",
-            textAlign: "center",
-            paddingInline: "8%",
-          }}
-        >
-          Symposium Theme
-        </Typography>
-        <Box
-          sx={{
-            bgcolor: "#e1d0f5",
-            marginInline: "6%",
-            borderRadius: "16px",
-          }}
-        >
+        <div style={{ paddingInline: "10%", paddingBlock: "30px" }}>
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "16pt", md: "18pt" },
+              fontSize: { xs: "20pt", md: "26pt" },
+              fontFamily: "Jost",
+              color: "#592693",
+              textAlign: "center",
+            }}
+          >
+            Symposium Theme
+          </Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: "20pt",
+              fontWeight: "bold",
               fontFamily: "Jost",
               paddingTop: "32px",
               textAlign: "center",
             }}
           >
-            "Living and Learning for a Shared Future: The RVRC Way"
+            'Living and Learning for a Shared Future: The RVRC Way'
           </Typography>
-          <Typography
-            variant="h2"
-            sx={{
-              color: "black",
-              paddingTop: "32px",
-              paddingInline: "32px",
-              fontSize: { xs: "14pt", md: "16pt" },
-              fontFamily: "Jost",
-              textAlign: "justify",
-            }}
-          >
+          <p style={{ fontSize: "16pt" }}>
             <i>One generation plants the trees and another gets the shade</i>{" "}
             &#8212; Chinese Proverb
-          </Typography>
-          <Typography
-            sx={{
-              color: "black",
-              paddingTop: "16px",
-              paddingInline: "32px",
-              paddingBottom: "32px",
-              fontFamily: "Jost",
-              fontSize: { xs: "14pt", md: "16pt" },
-              textAlign: "justify",
-            }}
-          >
+          </p>
+          <p style={{ fontSize: "16pt" }}>
             The Ridge View Residential College (RVRC) marks its 10th Anniversary
             in 2024, with a nod to its forward-looking mission of fostering
             sustainability education and workplace readiness in young adults.
@@ -71,8 +44,8 @@ const SymposiumTheme = () => {
             transcends the confines of the classroom and the immediacy of the
             present, towards a contribution to the future of our society and the
             environment.
-          </Typography>
-        </Box>
+          </p>
+        </div>
       </Box>
     </>
   );

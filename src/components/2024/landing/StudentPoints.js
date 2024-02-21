@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 
 const points = [
   {
-    desc: "Share their ideas, reflections, and learning from the RVRCP Modules.",
+    desc: "Share their ideas, reflections, and learning from the RVRC Courses.",
     icon: <TungstenOutlined fontSize="60pt" />,
   },
   {

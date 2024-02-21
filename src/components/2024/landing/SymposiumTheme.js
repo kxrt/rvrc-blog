@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import learn from "../../../assets/2022/event1.png";
+import LearningForest from "../../../assets/rvrc-learning-forest.jpeg";
 
 const SymposiumTheme = () => {
   return (
     <>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
-        <Box component="img" src={learn} sx={{ width: "100%" }} />
+        <Box component="img" src={LearningForest} sx={{ width: "100%" }} />
         <div style={{ paddingInline: "10%", paddingBlock: "30px" }}>
           <Typography
             variant="h1"

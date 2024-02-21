@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import learn from "../../assets/stepper_images/event1.png";
+import learn from "../../../assets/2022/event1.png";
 
 const SymposiumTheme = () => {
   return (
@@ -37,7 +37,21 @@ const SymposiumTheme = () => {
               textAlign: "center",
             }}
           >
-            "Learning to Learn: The world is our classroom"
+            "Living and Learning for a Shared Future: The RVRC Way"
+          </Typography>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "black",
+              paddingTop: "32px",
+              paddingInline: "32px",
+              fontSize: { xs: "14pt", md: "16pt" },
+              fontFamily: "Jost",
+              textAlign: "justify",
+            }}
+          >
+            <i>One generation plants the trees and another gets the shade</i>{" "}
+            &#8212; Chinese Proverb
           </Typography>
           <Typography
             sx={{
@@ -50,17 +64,13 @@ const SymposiumTheme = () => {
               textAlign: "justify",
             }}
           >
-            The working world today is in constant flux, defined by emerging
-            business models, new technologies, and evolving consumer behaviour.
-            The ability to acquire knowledge and skills continually is crucial
-            to success in such a world. For new graduates, this rapid pace of
-            change can be especially demanding. Hence, students must cultivate
-            the aspiration to be effective learners; they must ‘Learn to learn’
-            by acquiring diverse capabilities, participating in meaningful
-            growth opportunities, and become willing to experiment with new
-            ideas. The symposium theme explores how the RVRCP fosters these
-            attributes by presenting the world as a classroom, with a focus on
-            authentic out-of-classroom and experiential learning.
+            The Ridge View Residential College (RVRC) marks its 10th Anniversary
+            in 2024, with a nod to its forward-looking mission of fostering
+            sustainability education and workplace readiness in young adults.
+            This year’s symposium celebrates how learning at the college
+            transcends the confines of the classroom and the immediacy of the
+            present, towards a contribution to the future of our society and the
+            environment.
           </Typography>
         </Box>
       </Box>

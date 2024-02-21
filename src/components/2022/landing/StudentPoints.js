@@ -43,8 +43,8 @@ const StudentPoints = () => {
         </b>{" "}
         was held on 19 September 2022. It showcased exemplary student work
         nominated from the new Ridge View Residential College Programme (RVRCP)
-        launched in Academic Year 21/22. It provided a learner-centric
-        platform for students to:
+        launched in Academic Year 21/22. It provided a learner-centric platform
+        for students to:
       </p>
       <Box ref={ref}></Box>
       <Zoom in={inView} style={{ transitionDelay: "100ms" }}>
@@ -78,8 +78,9 @@ const StudentPoints = () => {
                     fontWeight: "bold",
                     color: "rgba(89,38,147,0.08)",
                     position: "absolute",
+                    lineHeight: "normal",
                     right: "50px",
-                    bottom: "-70px",
+                    top: "-20px",
                   }}
                 >
                   {index + 1}

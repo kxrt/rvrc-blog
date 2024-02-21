@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 
-import Timeline from "../Timeline";
+import Timeline from "./Timeline";
 
 const ProgrammeHighlights = () => {
   return (

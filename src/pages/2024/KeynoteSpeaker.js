@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import keynoteSpeaker from "../../assets/2024/keynote-speaker.jpg";
+import keynoteSpeaker from "../../assets/2024/keynote-speaker.png";
 
 const KeynoteSpeaker = () => {
   return (

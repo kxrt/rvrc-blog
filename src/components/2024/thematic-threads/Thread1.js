@@ -121,7 +121,7 @@ const Thread1 = () => {
           on environmental stewardship and conservation.
         </p>
         <Stack
-          direction={{ sm: "column", md: "row" }}
+          direction={{ xs: "column", sm: "column", md: "row" }}
           spacing={2}
           justifyContent="center"
         >

@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 import Thread2 from "../../components/2024/thematic-threads/Thread2";
 import Thread3 from "../../components/2024/thematic-threads/Thread3";
+import Thread1 from "../../components/2024/thematic-threads/Thread1";
 
 const Adventure = () => {
   return (
@@ -25,6 +26,7 @@ const Adventure = () => {
           Thematic Threads
         </Typography>
       </Box>
+      <Thread1 />
       <Thread2 />
       <Thread3 />
     </>

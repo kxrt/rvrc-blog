@@ -1,13 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-const SpeakerBiographyItem = ({
-  name,
-  title,
-  biography,
-  image,
-  isAlignedLeft,
-}) => {
+const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
   return (
     <>
       <Box
@@ -68,4 +62,4 @@ const SpeakerBiographyItem = ({
   );
 };
 
-export default SpeakerBiographyItem;
+export default SpeakerBiography;

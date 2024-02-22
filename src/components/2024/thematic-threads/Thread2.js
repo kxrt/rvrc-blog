@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import SpeakerBiographyItem from "../../../components/SpeakerBiographyItem";
+import SpeakerBiography from "../../SpeakerBiography";
 
 import Licher from "../../../assets/2024/thread-speakers/licher.jpg";
 import Youngkyu from "../../../assets/2024/thread-speakers/youngkyu.jpg";
@@ -137,7 +137,7 @@ const Thread2 = () => {
           Multipurpose Room 1 | 11:15am - 12:00pm
         </p>
         {thread2Panel1Speakers.map((speaker) => (
-          <SpeakerBiographyItem
+          <SpeakerBiography
             name={speaker.name}
             title={speaker.title}
             biography={speaker.biography}
@@ -152,7 +152,7 @@ const Thread2 = () => {
           Multipurpose Room 1 | 12:00pm - 12:45pm
         </p>
         {thread2Panel2Speakers.map((speaker) => (
-          <SpeakerBiographyItem
+          <SpeakerBiography
             name={speaker.name}
             title={speaker.title}
             biography={speaker.biography}

@@ -92,6 +92,14 @@ const Header = () => {
                 >
                   <Typography textAlign="center">Keynote Speaker</Typography>
                 </MenuItem>
+                <MenuItem
+                  key={"Thematic Threads"}
+                  onClick={handleCloseNavMenu}
+                  component={Link}
+                  to="/thematic-threads"
+                >
+                  <Typography textAlign="center">Thematic Threads</Typography>
+                </MenuItem>
                 {/* <MenuItem
                   key={"Interactive"}
                   onClick={handleCloseNavMenu}
@@ -175,6 +183,19 @@ const Header = () => {
                 }}
               >
                 Keynote Speaker
+              </Button>
+              <Button
+                href="/thematic-threads"
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "Jost",
+                  fontSize: "13pt",
+                }}
+              >
+                Thematic Threads
               </Button>
               {/* <Button
                 href="/interactive"

@@ -110,12 +110,10 @@ const Thread3 = () => {
             isAlignedLeft={true}
           />
         ))}
-      </Box>
-      <p style={{ fontSize: "16pt", fontWeight: "bold" }}>
-        Panel 2: ChangeMakers
-      </p>
-      <p style={{ fontSize: "16pt" }}>Master's Lounge | 12:15pm - 12:45pm</p>
-      <Box sx={{ paddingInline: "10%" }}>
+        <p style={{ fontSize: "16pt", fontWeight: "bold" }}>
+          Panel 2: ChangeMakers
+        </p>
+        <p style={{ fontSize: "16pt" }}>Master's Lounge | 12:15pm - 12:45pm</p>
         {thread3Panel2Speakers.map((speaker) => (
           <SpeakerBiographyItem
             name={speaker.name}

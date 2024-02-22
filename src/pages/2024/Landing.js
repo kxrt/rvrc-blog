@@ -17,7 +17,6 @@ const Landing = () => {
         sx={{
           bgcolor: "#592693",
           padding: { xs: "3%", md: "1%" },
-          paddingBottom: { md: "20px" },
         }}
       >
         <Typography

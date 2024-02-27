@@ -12,7 +12,7 @@ import {
   Star,
 } from "@mui/icons-material";
 
-import TimelineEvent from "../../landing/TimelineEvent";
+import TimelineEvent from "../../TimelineEvent";
 
 const events = [
   {

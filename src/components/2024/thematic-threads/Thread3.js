@@ -85,14 +85,13 @@ const Thread3 = () => {
             Initiating lasting change, innovation, and entrepreneurship{" "}
           </Typography>
           <p style={{ fontSize: "16pt" }}>
-            This thread provides a platform to reflect on how RVRC students
+            This thread provided a platform to reflect on how RVRC students
             extend learning meaningfully beyond the College curriculum and their
             formal university education, into creative and innovative
             non-academic pursuits. Diverse initiatives and entrepreneurial
-            efforts by current students and alumni will be showcased to
-            exemplify the impact of the RVRC living-learning experience. These
-            will be categorised under the panels for ‘Trendsetters’ and
-            ‘Changemakers’.
+            efforts by current students and alumni were showcased to exemplify
+            the impact of the RVRC living-learning experience. The speakers were
+            categorised under the panels for ‘Trendsetters’ and ‘Changemakers’.
           </p>
         </div>
       </Box>

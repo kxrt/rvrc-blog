@@ -37,10 +37,10 @@ const SymposiumTheme = () => {
             &#8212; Chinese Proverb
           </p>
           <p style={{ fontSize: "16pt" }}>
-            The Ridge View Residential College (RVRC) marks its 10th Anniversary
-            in 2024, with a nod to its forward-looking mission of fostering
-            sustainability education and workplace readiness in young adults.
-            This year’s symposium celebrates how learning at the college
+            The Ridge View Residential College (RVRC) marked its 10th
+            Anniversary in 2024, with a nod to its forward-looking mission of
+            fostering sustainability education and workplace readiness in young
+            adults. This year’s symposium celebrates how learning at the college
             transcends the confines of the classroom and the immediacy of the
             present, towards a contribution to the future of our society and the
             environment.

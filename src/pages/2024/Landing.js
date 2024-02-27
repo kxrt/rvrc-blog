@@ -32,27 +32,20 @@ const Landing = () => {
       </Box>
       <RVRCStepper />
       <StudentPoints />
-      {/* <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        Project abstracts can be viewed{" "}
-        <Link to="/interactive" style={{ color: "#592693" }}>
-          here
-        </Link>
-        .
-      </p> */}
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        We are honoured to have{" "}
+        We were honoured that{" "}
         <Link to="/guest-of-honour" style={{ color: "#592693" }}>
           Dr. Adrian Loo
         </Link>{" "}
-        grace the occasion as the Guest of Honour and deliver the opening
-        address. We are also privileged to welcome back RVRC alumnus{" "}
+        graced the occasion as the Guest of Honour and delivered the opening
+        address. We were also privileged to welcome back RVRC alumnus{" "}
         <Link to="/keynote" style={{ color: "#592693" }}>
           Mr. Victor Zhu
         </Link>
-        , who will share his insights as our Keynote Speaker. We believe that
-        their unique stories as innovators of solutions for environmental,
-        economic and social sustainability issues serve as powerful inspirations
-        for RVRC students.
+        , who shared his insights as our Keynote Speaker. We believe that their
+        unique stories as innovators of solutions for environmental, economic
+        and social sustainability issues serve as powerful inspirations for RVRC
+        students.
       </p>
       <SymposiumTheme />
       <ProgrammeHighlights />

@@ -99,13 +99,13 @@ const Thread1 = () => {
             Fostering a learning ecosystem that scales impact
           </Typography>
           <p style={{ fontSize: "16pt" }}>
-            This thread revolves around RVRC’s academic life and showcases how
-            learning activities and engagement opportunities can broaden
+            This thread revolved around RVRC’s academic life and showcased how
+            learning activities and engagement opportunities could broaden
             horizons, diversify skills, and enable students in an ever-changing
-            complex world. It features out-of-classroom learning and work with
+            complex world. It featured out-of-classroom learning and worked with
             external partners that enable students to achieve a demonstrable
             impact on identified issues in the real-world, while honing their
-            workplace readiness skills. Presentations highlight students’
+            workplace readiness skills. Presentations highlighted students’
             learning process and application of complex skills such as
             reflective and critical thinking.
           </p>
@@ -117,7 +117,7 @@ const Thread1 = () => {
           Multipurpose Room 2 | 11:15am - 12:00pm
         </p>
         <p style={{ fontSize: "16pt" }}>
-          Named after the Greek primordial Earth goddess, Project Gaia focuses
+          Named after the Greek primordial Earth goddess, Project Gaia focused
           on environmental stewardship and conservation.
         </p>
         <Stack
@@ -140,7 +140,7 @@ const Thread1 = () => {
         <p style={{ fontSize: "16pt" }}>
           As the bridge of communication between divinity and mortals, Iris, the
           Greek goddess of rainbows, symbolizes crucial elements in fostering
-          inclusivity. Project Iris focuses on inclusivity and social
+          inclusivity. Project Iris focused on inclusivity and social
           engagement.
         </p>
         <Stack

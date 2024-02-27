@@ -27,7 +27,6 @@ const PastSymposia = () => {
                 sx={{
                   width: "250px",
                   fontFamily: "Jost",
-                  fontSize: "12px",
                   backgroundColor: "transparent",
                   color: "#592693",
                   borderRadius: "16px",

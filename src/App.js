@@ -9,6 +9,7 @@ import Landing2024 from "./pages/2024/Landing";
 import KeynoteSpeaker2024 from "./pages/2024/KeynoteSpeaker";
 import GuestOfHonour2024 from "./pages/2024/GuestOfHonour";
 import ThematicThreads2024 from "./pages/2024/ThematicThreads";
+import Awards2024 from "./pages/2024/Awards";
 
 import Header2022 from "./components/2022/Header";
 import Landing2022 from "./pages/2022/Landing";
@@ -28,6 +29,7 @@ function App() {
             <Route path="keynote" element={<KeynoteSpeaker2024 />} />
             <Route path="guest-of-honour" element={<GuestOfHonour2024 />} />
             <Route path="thematic-threads" element={<ThematicThreads2024 />} />
+            <Route path="awards" element={<Awards2024 />} />
           </Route>
 
           <Route path="2022" element={<Header2022 />}>

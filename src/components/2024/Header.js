@@ -100,32 +100,14 @@ const Header = () => {
                 >
                   <Typography textAlign="center">Thematic Threads</Typography>
                 </MenuItem>
-                {/* <MenuItem
-                  key={"Interactive"}
-                  onClick={handleCloseNavMenu}
-                  component={Link}
-                  to="/interactive"
-                >
-                  <Typography textAlign="center">
-                    Interactive Sessions
-                  </Typography>
-                </MenuItem>
                 <MenuItem
-                  key={"Abstracts"}
+                  key={"Awards"}
                   onClick={handleCloseNavMenu}
                   component={Link}
-                  to="/abstracts"
+                  to="/awards"
                 >
-                  <Typography textAlign="center">Project Abstracts</Typography>
-                </MenuItem> */}
-                {/* <MenuItem
-                  key={"About"}
-                  onClick={handleCloseNavMenu}
-                  component={Link}
-                  to="/about"
-                >
-                  <Typography textAlign="center">About RVRC</Typography>
-                </MenuItem> */}
+                  <Typography textAlign="center">Awards</Typography>
+                </MenuItem>
               </Menu>
             </Box>
             <Box
@@ -197,21 +179,8 @@ const Header = () => {
               >
                 Thematic Threads
               </Button>
-              {/* <Button
-                href="/interactive"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  fontFamily: "Jost",
-                  fontSize: "13pt",
-                }}
-              >
-                Interactive Sessions
-              </Button>
               <Button
-                href="/abstracts"
+                href="/awards"
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -221,21 +190,8 @@ const Header = () => {
                   fontSize: "13pt",
                 }}
               >
-                Project Abstracts
-              </Button> */}
-              {/* <Button
-                href="/about"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                  fontFamily: "Jost",
-                  fontSize: "13pt",
-                }}
-              >
-                About RVRC
-              </Button> */}
+                Awards
+              </Button>
             </Box>
           </Toolbar>
         </Container>

@@ -4,7 +4,14 @@ import { Box, Typography } from "@mui/material";
 
 import { EmojiEventsOutlined } from "@mui/icons-material";
 
-const AwardCard = ({ thread, award, topic, presentedBy, module }) => {
+const AwardCard = ({
+  thread,
+  award,
+  topic,
+  explanation,
+  presentedBy,
+  course,
+}) => {
   return (
     <Box
       sx={{
@@ -36,17 +43,20 @@ const AwardCard = ({ thread, award, topic, presentedBy, module }) => {
       >
         {topic}
       </Typography>
-      {presentedBy ? (
-        <>
-          <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
-            <i>{presentedBy}</i>
-          </Typography>
-          <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
-            <b>Module:</b> {module}
-          </Typography>
-        </>
-      ) : (
-        <></>
+      {explanation && (
+        <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
+          {explanation}
+        </Typography>
+      )}
+      {presentedBy && (
+        <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
+          <i>{presentedBy}</i>
+        </Typography>
+      )}
+      {course && (
+        <Typography sx={{ fontSize: "12pt", marginBlock: "16px" }}>
+          <b>Course:</b> {course}
+        </Typography>
       )}
     </Box>
   );

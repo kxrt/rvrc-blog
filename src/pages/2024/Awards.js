@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import { EmojiEventsOutlined } from "@mui/icons-material";
 import AwardCard from "../../components/2024/AwardCard";
 
 const popularChoiceAwardWinners = [
@@ -10,19 +9,20 @@ const popularChoiceAwardWinners = [
     award: "Popular Choice Award for Best Presentation",
     topic: "ReseRVe your Food",
     presentedBy: "Wynnie Chia, Sourick Paul",
-    module: "RVN2000 Engaging Communities in Sustainability",
+    course: "RVN2000 Engaging Communities in Sustainability",
   },
   {
     thread: "Thread 1",
     award: "Popular Choice Award for Best Poster",
     topic: "The Call of Nature",
     presentedBy: "Gu Haocheng, Ng Jie Xin, Loh Shi Jie, Elaine, Sean Wang",
-    module: "RVN2002 Wild Asia: Conservation Matters",
+    course: "RVN2002 Wild Asia: Conservation Matters",
   },
   {
     thread: "Thread 2",
     award: "Popular Choice Award for Best Speaker",
     topic: "Jeong Youngkyu",
+    explanation: "RVRC Representative in the NUS Inter-College Games",
   },
 ];
 
@@ -33,14 +33,14 @@ const judgesAwardWinners = [
     topic: "Reducing Food Waste in RVRC",
     presentedBy:
       "Higashi Shion, Daniel Christopher Chan, Ryan Lim Guan Quan, Beatrice Chen Sung Ting",
-    module: "RVN2000 Engaging Communities in Sustainability",
+    course: "RVN2000 Engaging Communities in Sustainability",
   },
   {
     thread: "Thread 1",
     award: "Judge's Award for Best Poster",
     topic: "A Biophilic Yellow Walkway",
     presentedBy: "Lim Xin Quan, Ng Chee Fong, Michelle Lam Shiya, Lim Xiu Jia",
-    module: "RVSS1001 Imagining Wakanda: Cities for Work, Life and Play",
+    course: "RVSS1001 Imagining Wakanda: Cities for Work, Life and Play",
   },
 ];
 
@@ -98,8 +98,8 @@ const Awards = () => {
           >
             The symposium audience, comprising RVRC students, staff, and invited
             NUS partners, nominated the best presentations, posters, and
-            speakers. Certificates of merit were awarded to the following three
-            presentations:
+            speakers. Certificates of merit were awarded to the following
+            projects:
           </Typography>
           <Box
             sx={{
@@ -113,8 +113,9 @@ const Awards = () => {
                 thread={winner.thread}
                 award={winner.award}
                 topic={winner.topic}
+                explanation={winner.explanation}
                 presentedBy={winner.presentedBy}
-                module={winner.module}
+                course={winner.course}
               />
             ))}
           </Box>
@@ -152,7 +153,7 @@ const Awards = () => {
             }}
           >
             Based on the scoring of 3 senior student judges, certificates of
-            merit were awarded to the following three presentations:
+            merit were awarded to the following projects:
           </Typography>
           <Box
             sx={{
@@ -167,7 +168,7 @@ const Awards = () => {
                 award={winner.award}
                 topic={winner.topic}
                 presentedBy={winner.presentedBy}
-                module={winner.module}
+                course={winner.course}
               />
             ))}
           </Box>

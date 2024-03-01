@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import LearningForest from "../../../assets/rvrc-learning-forest.jpeg";
+import LandingThemeBanner from "../../../assets/2024/landing-theme-banner.jpg";
 
 const SymposiumTheme = () => {
   return (
     <>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
-        <Box component="img" src={LearningForest} sx={{ width: "100%" }} />
+        <Box component="img" src={LandingThemeBanner} sx={{ width: "100%" }} />
         <div style={{ paddingInline: "10%", paddingBlock: "30px" }}>
           <Typography
             variant="h1"

@@ -13,6 +13,8 @@ import Jiayi from "../../../assets/2024/thread-speakers/jiayi.jpg";
 import Yograrajan from "../../../assets/2024/thread-speakers/yogarajan.jpg";
 import Emmanuel from "../../../assets/2024/thread-speakers/emmanuel.jpg";
 
+import Thread2Image from "../../../assets/2024/thread-2.jpg";
+
 const thread2Panel1Speakers = [
   {
     name: "Li Cher",
@@ -129,6 +131,7 @@ const Thread2 = () => {
           </p>
         </div>
       </Box>
+      <Box component="img" src={Thread2Image} sx={{ width: "100%" }} />
       <Box sx={{ paddingInline: "10%" }}>
         <p style={{ fontSize: "16pt", fontWeight: "bold" }}>
           Panel 1: Student-initiated Endeavors

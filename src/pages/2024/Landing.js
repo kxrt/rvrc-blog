@@ -9,6 +9,35 @@ import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighligh
 import PastSymposia from "../../components/PastSymposia";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
 
+import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
+import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
+import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
+import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
+import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
+
+const images = [
+  {
+    label: "Guest of Honour",
+    imgPath: LandingBanner1,
+  },
+  {
+    label: "Participants",
+    imgPath: LandingBanner2,
+  },
+  {
+    label: "College Master",
+    imgPath: LandingBanner3,
+  },
+  {
+    label: "Lunch",
+    imgPath: LandingBanner4,
+  },
+  {
+    label: "Keynote Speaker",
+    imgPath: LandingBanner5,
+  },
+];
+
 const Landing = () => {
   return (
     <>
@@ -30,7 +59,7 @@ const Landing = () => {
           RVRC Symposium 2024
         </Typography>
       </Box>
-      <RVRCStepper />
+      <RVRCStepper images={images} />
       <StudentPoints />
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
         We were honoured that{" "}

@@ -9,6 +9,8 @@ import Wanting from "../../../assets/2024/thread-speakers/chan-wan-ting.jpg";
 import Pranav from "../../../assets/2024/thread-speakers/pranav-kalra.jpg";
 import Amira from "../../../assets/2024/thread-speakers/amira-rafi.jpg";
 
+import Thread3Image from "../../../assets/2024/thread-3.jpg";
+
 const thread3Panel1Speakers = [
   {
     name: "Qi Herng Kong",
@@ -95,6 +97,7 @@ const Thread3 = () => {
           </p>
         </div>
       </Box>
+      <Box component="img" src={Thread3Image} sx={{ width: "100%" }} />
       <p style={{ fontSize: "16pt", fontWeight: "bold" }}>
         Panel 1: TrendSetters
       </p>

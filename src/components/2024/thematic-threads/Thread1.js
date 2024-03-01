@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import ProjectCard from "../../ProjectCard";
 
+import Thread1Image from "../../../assets/2024/thread-1.jpg";
+
 const projectGaiaProjects = [
   {
     title: "Reducing Food Waste in RVRC",
@@ -165,6 +167,7 @@ const Thread1 = () => {
           </p>
         </div>
       </Box>
+      <Box component="img" src={Thread1Image} sx={{ width: "100%" }} />
       <Box sx={{ paddingInline: "10%", paddingBottom: "20px" }}>
         <p style={{ fontSize: "16pt", fontWeight: "bold" }}>Project Gaia</p>
         <p style={{ fontSize: "16pt" }}>

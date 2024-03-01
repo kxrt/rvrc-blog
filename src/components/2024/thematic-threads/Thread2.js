@@ -13,6 +13,8 @@ import Jiayi from "../../../assets/2024/thread-speakers/jiayi.jpg";
 import Yograrajan from "../../../assets/2024/thread-speakers/yogarajan.jpg";
 import Emmanuel from "../../../assets/2024/thread-speakers/emmanuel.jpg";
 
+import Thread2Image from "../../../assets/2024/thread-2.jpg";
+
 const thread2Panel1Speakers = [
   {
     name: "Li Cher",
@@ -117,18 +119,19 @@ const Thread2 = () => {
             Exploring interests, cultivating curiosity, and stewardship
           </Typography>
           <p style={{ fontSize: "16pt" }}>
-            This thread showcases the importance and impact of diverse
+            This thread showcased the importance and impact of diverse
             co-curricular and student life activities at RVRC that enable
             students to boldly, yet, curiously, pursue their passion, explore
             new interests, and connect with like-minded members in the broader
-            university community.​ Presentations from this thread also highlight
-            how the RVRC living-learning experience cultivates stewardship of
-            our society and environmental issues, as students strive towards the
-            cause of building a shared future that is more sustainable and
-            equitable.
+            university community.​ Presentations from this thread also
+            highlighted how the RVRC living-learning experience cultivates
+            stewardship of our society and environmental issues, as students
+            strive towards the cause of building a shared future that is more
+            sustainable and equitable.
           </p>
         </div>
       </Box>
+      <Box component="img" src={Thread2Image} sx={{ width: "100%" }} />
       <Box sx={{ paddingInline: "10%" }}>
         <p style={{ fontSize: "16pt", fontWeight: "bold" }}>
           Panel 1: Student-initiated Endeavors

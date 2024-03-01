@@ -3,12 +3,40 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SignupButton from "../../components/2024/landing/SignupButton";
+// import SignupButton from "../../components/2024/landing/SignupButton";
 import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
 import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighlights";
-// import AwardWinners from "../../components/LandingComponents/AwardWinners";
-// import PastSymposia from "../components/LandingComponents/PastSymposia";
+import PastSymposia from "../../components/PastSymposia";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
+
+import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
+import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
+import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
+import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
+import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
+
+const images = [
+  {
+    label: "Guest of Honour",
+    imgPath: LandingBanner1,
+  },
+  {
+    label: "Participants",
+    imgPath: LandingBanner2,
+  },
+  {
+    label: "College Master",
+    imgPath: LandingBanner3,
+  },
+  {
+    label: "Lunch",
+    imgPath: LandingBanner4,
+  },
+  {
+    label: "Keynote Speaker",
+    imgPath: LandingBanner5,
+  },
+];
 
 const Landing = () => {
   return (
@@ -31,35 +59,30 @@ const Landing = () => {
           RVRC Symposium 2024
         </Typography>
       </Box>
-      <RVRCStepper />
+      <RVRCStepper images={images} />
       <StudentPoints />
-      {/* <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        Project abstracts can be viewed{" "}
-        <Link to="/interactive" style={{ color: "#592693" }}>
-          here
-        </Link>
-        .
-      </p> */}
       <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        We are honoured to have{" "}
+        We were honoured that{" "}
         <Link to="/guest-of-honour" style={{ color: "#592693" }}>
           Dr. Adrian Loo
         </Link>{" "}
-        grace the occasion as the Guest of Honour and deliver the opening
-        address. We are also privileged to welcome back RVRC alumnus{" "}
+        graced the occasion as the Guest of Honour and delivered the opening
+        address. We were also privileged to welcome back RVRC alumnus{" "}
         <Link to="/keynote" style={{ color: "#592693" }}>
           Mr. Victor Zhu
         </Link>
-        , who will share his insights as our Keynote Speaker. We believe that
-        their unique stories as innovators of solutions for environmental,
-        economic and social sustainability issues serve as powerful inspirations
-        for RVRC students.
+        , who shared his insights as our Keynote Speaker. We believe that their
+        unique stories as innovators of solutions for environmental, economic
+        and social sustainability issues serve as powerful inspirations for RVRC
+        students.
       </p>
       <SymposiumTheme />
       <ProgrammeHighlights />
-      <SignupButton />
-      {/* <AwardWinners /> */}
-      {/* <PastSymposia /> */}
+
+      {/* SignupButton disabled, since event ended. */}
+      {/* <SignupButton /> */}
+
+      <PastSymposia />
     </>
   );
 };

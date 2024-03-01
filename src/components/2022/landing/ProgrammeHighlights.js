@@ -11,7 +11,7 @@ import {
 import Timeline from "@mui/lab/Timeline";
 import { Typography } from "@mui/material";
 
-import TimelineEvent from "../../landing/TimelineEvent";
+import TimelineEvent from "../../TimelineEvent";
 
 const events = [
   {

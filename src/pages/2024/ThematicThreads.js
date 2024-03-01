@@ -5,7 +5,7 @@ import Thread2 from "../../components/2024/thematic-threads/Thread2";
 import Thread3 from "../../components/2024/thematic-threads/Thread3";
 import Thread1 from "../../components/2024/thematic-threads/Thread1";
 
-const Adventure = () => {
+const ThematicThreads = () => {
   return (
     <>
       <Box
@@ -33,4 +33,4 @@ const Adventure = () => {
   );
 };
 
-export default Adventure;
+export default ThematicThreads;

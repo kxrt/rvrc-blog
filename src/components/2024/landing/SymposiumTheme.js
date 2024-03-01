@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import LearningForest from "../../../assets/rvrc-learning-forest.jpeg";
+import LandingThemeBanner from "../../../assets/2024/landing-theme-banner.jpg";
 
 const SymposiumTheme = () => {
   return (
     <>
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
-        <Box component="img" src={LearningForest} sx={{ width: "100%" }} />
+        <Box component="img" src={LandingThemeBanner} sx={{ width: "100%" }} />
         <div style={{ paddingInline: "10%", paddingBlock: "30px" }}>
           <Typography
             variant="h1"
@@ -37,10 +37,10 @@ const SymposiumTheme = () => {
             &#8212; Chinese Proverb
           </p>
           <p style={{ fontSize: "16pt" }}>
-            The Ridge View Residential College (RVRC) marks its 10th Anniversary
-            in 2024, with a nod to its forward-looking mission of fostering
-            sustainability education and workplace readiness in young adults.
-            This year’s symposium celebrates how learning at the college
+            The Ridge View Residential College (RVRC) marked its 10th
+            Anniversary in 2024, with a nod to its forward-looking mission of
+            fostering sustainability education and workplace readiness in young
+            adults. This year’s symposium celebrates how learning at the college
             transcends the confines of the classroom and the immediacy of the
             present, towards a contribution to the future of our society and the
             environment.

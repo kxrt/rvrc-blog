@@ -9,6 +9,8 @@ import Wanting from "../../../assets/2024/thread-speakers/chan-wan-ting.jpg";
 import Pranav from "../../../assets/2024/thread-speakers/pranav-kalra.jpg";
 import Amira from "../../../assets/2024/thread-speakers/amira-rafi.jpg";
 
+import Thread3Image from "../../../assets/2024/thread-3.jpg";
+
 const thread3Panel1Speakers = [
   {
     name: "Qi Herng Kong",
@@ -85,17 +87,17 @@ const Thread3 = () => {
             Initiating lasting change, innovation, and entrepreneurship{" "}
           </Typography>
           <p style={{ fontSize: "16pt" }}>
-            This thread provides a platform to reflect on how RVRC students
+            This thread provided a platform to reflect on how RVRC students
             extend learning meaningfully beyond the College curriculum and their
             formal university education, into creative and innovative
             non-academic pursuits. Diverse initiatives and entrepreneurial
-            efforts by current students and alumni will be showcased to
-            exemplify the impact of the RVRC living-learning experience. These
-            will be categorised under the panels for ‘Trendsetters’ and
-            ‘Changemakers’.
+            efforts by current students and alumni were showcased to exemplify
+            the impact of the RVRC living-learning experience. The speakers were
+            categorised under the panels for ‘Trendsetters’ and ‘Changemakers’.
           </p>
         </div>
       </Box>
+      <Box component="img" src={Thread3Image} sx={{ width: "100%" }} />
       <p style={{ fontSize: "16pt", fontWeight: "bold" }}>
         Panel 1: TrendSetters
       </p>

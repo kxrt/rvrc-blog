@@ -89,12 +89,12 @@ git push origin add-symposium-theme
 
 ## Deployment Preview
 
-After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to a _preview_ site, which is different from the production site. You can view the previews on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
+After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to a _preview_ site. You can view the preview sites on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
 
 - `dev`: **Preview** environment
 - `main`: **Production** environment (Different from production site)
 
-## Merging into the `main` Branch
+## Deploying to Production
 
 > The `main` branch is deployed onto the production site (https://rvrc-blog.vercel.app/).
 

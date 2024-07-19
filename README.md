@@ -1,4 +1,4 @@
-# RVRC Symposium
+# RVRC Symposium Website
 
 ![RVRC Symposium](/docs/assets/website.png)
 
@@ -35,4 +35,4 @@ npm run start
 
 5. Open http://localhost:3000/ to view the website in your browser.
 
-Congratulations! You have successfuly set up this project. :tada:
+Congratulations! You have successfully set up this project. :tada:

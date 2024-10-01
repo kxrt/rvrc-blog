@@ -48,3 +48,26 @@ export const headerLinks2024 = [
     label: "Awards",
   },
 ];
+
+export const headerLinks2025 = [
+  {
+    key: "overview",
+    link: "/",
+    label: "Overview",
+  },
+  //   {
+  //     key: "keynote",
+  //     link: "/keynote",
+  //     label: "Keynote Speaker",
+  //   },
+  //   {
+  //     key: "thematicThreads",
+  //     link: "/thematic-threads",
+  //     label: "Thematic Threads",
+  //   },
+  //   {
+  //     key: "awards",
+  //     link: "/awards",
+  //     label: "Awards",
+  //   },
+];

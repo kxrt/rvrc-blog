@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-// import SignupButton from "../../components/2024/landing/SignupButton";
 import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
 import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighlights";
-import PastSymposia from "../../components/PastSymposia";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
@@ -78,11 +76,6 @@ const Landing = () => {
       </p>
       <SymposiumTheme />
       <ProgrammeHighlights />
-
-      {/* SignupButton disabled, since event ended. */}
-      {/* <SignupButton /> */}
-
-      <PastSymposia />
     </>
   );
 };

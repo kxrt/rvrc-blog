@@ -23,6 +23,8 @@ import ThematicThreads2024 from "./pages/2024/ThematicThreads";
 import Awards2024 from "./pages/2024/Awards";
 
 import Landing2025 from "./pages/2025/Landing";
+import Thread12025 from "./pages/2025/Thread1";
+import Thread22025 from "./pages/2025/Thread2";
 
 function App() {
   return (
@@ -34,7 +36,8 @@ function App() {
           <Route path="/" element={<Header headerLinks={headerLinks2025} />}>
             <Route index element={<Landing2025 />} />
             {/* <Route path="keynote" element={<KeynoteSpeaker2025 />} /> */}
-            {/* <Route path="thematic-threads" element={<ThematicThreads2025 />} /> */}
+            <Route path="thread-1" element={<Thread12025 />} />
+            <Route path="thread-2" element={<Thread22025 />} />
             {/* <Route path="awards" element={<Awards2025 />} /> */}
           </Route>
 

@@ -60,11 +60,16 @@ export const headerLinks2025 = [
   //     link: "/keynote",
   //     label: "Keynote Speaker",
   //   },
-  //   {
-  //     key: "thematicThreads",
-  //     link: "/thematic-threads",
-  //     label: "Thematic Threads",
-  //   },
+  {
+    key: "thread1",
+    link: "/thread-1",
+    label: "Thread 1",
+  },
+  {
+    key: "thread2",
+    link: "/thread-2",
+    label: "Thread 2",
+  },
   //   {
   //     key: "awards",
   //     link: "/awards",

@@ -5,9 +5,10 @@ import { Box, Typography } from "@mui/material";
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 // import SignupButton from "../../components/2024/landing/SignupButton";
 import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
-import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighlights";
+import ProgrammeHighlights from "../../components/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
+import programmeEvents from "../../constants/2025/ProgrammeEvents";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
 import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
@@ -75,7 +76,7 @@ const Landing = () => {
       </p>
 
       <SymposiumTheme />
-      <ProgrammeHighlights />
+      <ProgrammeHighlights events={programmeEvents} />
 
       {/* TODO: Enable when sign up starts */}
       {/* <SignupButton /> */}

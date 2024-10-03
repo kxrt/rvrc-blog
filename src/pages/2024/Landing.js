@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
-import ProgrammeHighlights from "../../components/2024/landing/ProgrammeHighlights";
+import ProgrammeHighlights from "../../components/ProgrammeHighlights";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
@@ -12,6 +12,7 @@ import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
 import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
 import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
 import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
+import programmeEvents from "../../constants/2024/ProgrammeEvents";
 
 const images = [
   {
@@ -75,7 +76,7 @@ const Landing = () => {
         students.
       </p>
       <SymposiumTheme />
-      <ProgrammeHighlights />
+      <ProgrammeHighlights events={programmeEvents} />
     </>
   );
 };

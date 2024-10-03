@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AutoAwesomeMosaic,
   Campaign,
@@ -8,12 +7,8 @@ import {
   HowToReg,
   Restaurant,
 } from "@mui/icons-material";
-import Timeline from "@mui/lab/Timeline";
-import { Typography } from "@mui/material";
 
-import TimelineEvent from "../../TimelineEvent";
-
-const events = [
+const programmeEvents = [
   {
     time: "9:40 am",
     titles: ["Registration Opens"],
@@ -79,33 +74,4 @@ const events = [
   },
 ];
 
-const ProgrammeHighlights = () => {
-  return (
-    <>
-      <Typography
-        variant="h1"
-        sx={{
-          fontSize: { xs: "20pt", md: "26pt" },
-          fontFamily: "Jost",
-          paddingTop: "30px",
-          color: "#1d9077",
-        }}
-      >
-        Programme Highlights
-      </Typography>
-      <Timeline position="alternate">
-        {events.map((event) => (
-          <TimelineEvent
-            time={event.time}
-            titles={event.titles}
-            locations={event.locations}
-            icon={event.icon}
-            iconBackgroundColor={event.iconBackgroundColor}
-          />
-        ))}
-      </Timeline>
-    </>
-  );
-};
-
-export default ProgrammeHighlights;
+export default programmeEvents;

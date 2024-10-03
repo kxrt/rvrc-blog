@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 import SymposiumTheme from "../../components/2022/landing/SymposiumTheme";
-import ProgrammeHighlights from "../../components/2022/landing/ProgrammeHighlights";
+import ProgrammeHighlights from "../../components/ProgrammeHighlights";
 import AwardWinners from "../../components/2022/landing/AwardWinners";
 import StudentPoints from "../../components/2022/landing/StudentPoints";
 
@@ -13,6 +13,7 @@ import event3 from "../../assets/2022/event3.png";
 import event4 from "../../assets/2022/event4.png";
 import event5 from "../../assets/2022/event5.png";
 import event6 from "../../assets/2022/event6.png";
+import programmeEvents from "../../constants/2022/ProgrammeEvents";
 
 const images = [
   {
@@ -79,7 +80,7 @@ const Landing = () => {
         issues, is ideally placed to inspire RVRC students.
       </p>
       <SymposiumTheme />
-      <ProgrammeHighlights />
+      <ProgrammeHighlights events={programmeEvents} />
       <AwardWinners />
     </>
   );

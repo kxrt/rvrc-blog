@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 // import SignupButton from "../../components/2024/landing/SignupButton";
@@ -9,6 +8,7 @@ import ProgrammeHighlights from "../../components/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
 import programmeEvents from "../../constants/2025/ProgrammeEvents";
+import Title from "../../components/Title";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
 import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
@@ -42,24 +42,7 @@ const images = [
 const Landing = () => {
   return (
     <>
-      <Box
-        sx={{
-          bgcolor: "#592693",
-          padding: { xs: "3%", md: "1%" },
-        }}
-      >
-        <Typography
-          variant="h1"
-          sx={{
-            color: "white",
-            fontSize: { xs: "24pt", md: "40pt" },
-            fontFamily: "Jost",
-            fontWeight: "Bold",
-          }}
-        >
-          RVRC Symposium 2025
-        </Typography>
-      </Box>
+      <Title title="RVRC Symposium 2025" />
 
       <RVRCStepper images={images} />
 

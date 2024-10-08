@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import AboutRVRC from "./pages/AboutRVRC";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 
 import Landing2022 from "./pages/2022/Landing";
 import KeynoteSpeaker2022 from "./pages/2022/KeynoteSpeaker";

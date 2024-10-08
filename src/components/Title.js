@@ -5,14 +5,14 @@ const Title = ({ title }) => (
   <Box
     sx={{
       bgcolor: "#592693",
-      padding: { xs: "3%", md: "1%" },
+      padding: "20px",
     }}
   >
     <Typography
       variant="h1"
       sx={{
         color: "white",
-        fontSize: { xs: "24pt", md: "40pt" },
+        fontSize: { xs: "32pt", md: "40pt" },
         fontFamily: "Jost",
         fontWeight: "Bold",
       }}

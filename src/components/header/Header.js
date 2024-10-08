@@ -1,7 +1,6 @@
 import React from "react";
 import {
   AppBar,
-  Box,
   Container,
   Toolbar,
   IconButton,
@@ -9,11 +8,13 @@ import {
   MenuItem,
   Typography,
   Button,
+  Stack,
 } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
 
-import menuicon from "../assets/bars-solid.svg";
-import logoIconWhite from "../assets/logo_icon_white.png";
+import menuIcon from "../../assets/bars-solid.svg";
+import logoIconWhite from "../../assets/logo_icon_white.png";
+import AccordionMenuItem from "./AccordionMenuItem";
 
 const Header = ({ headerLinks }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,11 +32,20 @@ const Header = ({ headerLinks }) => {
       <AppBar position="static" elevation={0} sx={{ bgcolor: "#592693" }}>
         <Container maxwidth="xl">
           <Toolbar disableGutters>
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            {/* Mobile */}
+            <Stack
+              direction="row"
+              spacing={0}
+              sx={{
+                width: "100%",
+                display: { md: "none" },
+                justifyContent: "space-between",
+              }}
+            >
               <img
                 src={logoIconWhite}
                 alt="logo"
-                style={{ width: "29px", height: "32px", padding: "5%" }}
+                style={{ height: "32px", padding: "20px" }}
               />
               <IconButton
                 size="large"
@@ -44,29 +54,37 @@ const Header = ({ headerLinks }) => {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 color="inherit"
-                sx={{ marginLeft: "65%", alignItems: "right" }}
               >
-                <img src={menuicon} alt="menu" />
+                <img src={menuIcon} alt="menu" />
               </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: "block", md: "none" },
-                }}
-              >
-                {headerLinks.map((headerLink) => (
+            </Stack>
+
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {headerLinks.map((headerLink) =>
+                headerLink.sublinks ? (
+                  <AccordionMenuItem
+                    key={headerLink.key}
+                    label={headerLink.label}
+                    sublinks={headerLink.sublinks}
+                  />
+                ) : (
                   <MenuItem
                     key={headerLink.key}
                     onClick={handleCloseNavMenu}
@@ -77,25 +95,27 @@ const Header = ({ headerLinks }) => {
                       {headerLink.label}
                     </Typography>
                   </MenuItem>
-                ))}
-              </Menu>
-            </Box>
+                )
+              )}
+            </Menu>
 
-            <Box
+            {/* Desktop */}
+            <Stack
+              direction="row"
+              spacing={2}
               sx={{
-                flexGrow: 1,
+                width: "100%",
                 display: { xs: "none", md: "flex" },
                 justifyContent: "center",
+                alignItems: "center",
               }}
             >
               <img
                 src={logoIconWhite}
                 alt="logo"
                 style={{
-                  width: "29px",
                   height: "32px",
-                  paddingTop: "20px",
-                  paddingRight: "10px",
+                  padding: "20px",
                 }}
               />
               {headerLinks.map((headerLink) => (
@@ -104,9 +124,7 @@ const Header = ({ headerLinks }) => {
                   href={headerLink.link}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
                     color: "white",
-                    display: "block",
                     fontFamily: "Jost",
                     fontSize: "13pt",
                   }}
@@ -114,7 +132,7 @@ const Header = ({ headerLinks }) => {
                   {headerLink.label}
                 </Button>
               ))}
-            </Box>
+            </Stack>
           </Toolbar>
         </Container>
       </AppBar>

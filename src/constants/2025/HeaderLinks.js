@@ -5,6 +5,28 @@ const headerLinks = [
     label: "Overview",
   },
   //   {
+  //     key: "aboutUs",
+  //     link: "/",
+  //     label: "About Us",
+  //     sublinks: [
+  //       {
+  //         key: "organizingCommittee",
+  //         link: "/organizing-committee",
+  //         label: "Meet The Team",
+  //       },
+  //       {
+  //         key: "venue",
+  //         link: "/venue",
+  //         label: "Venue",
+  //       },
+  //     ],
+  //   },
+  {
+    key: "team",
+    link: "/team",
+    label: "Our Team",
+  },
+  //   {
   //     key: "keynote",
   //     link: "/keynote",
   //     label: "Keynote Speaker",
@@ -19,11 +41,6 @@ const headerLinks = [
     link: "/thread-2",
     label: "Thread 2",
   },
-  //   {
-  //     key: "awards",
-  //     link: "/awards",
-  //     label: "Awards",
-  //   },
 ];
 
 export default headerLinks;

@@ -4,23 +4,6 @@ const headerLinks = [
     link: "/",
     label: "Overview",
   },
-  //   {
-  //     key: "aboutUs",
-  //     link: "/",
-  //     label: "About Us",
-  //     sublinks: [
-  //       {
-  //         key: "organizingCommittee",
-  //         link: "/organizing-committee",
-  //         label: "Meet The Team",
-  //       },
-  //       {
-  //         key: "venue",
-  //         link: "/venue",
-  //         label: "Venue",
-  //       },
-  //     ],
-  //   },
   {
     key: "team",
     link: "/team",

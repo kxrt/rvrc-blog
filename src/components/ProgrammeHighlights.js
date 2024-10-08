@@ -12,7 +12,7 @@ const ProgrammeHighlights = ({ events }) => {
         sx={{
           fontSize: { xs: "20pt", md: "26pt" },
           fontFamily: "Jost",
-          paddingTop: "30px",
+          py: "20px",
           color: "#1d9077",
         }}
       >

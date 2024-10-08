@@ -1,22 +1,12 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import keynoteSpeaker from "../../assets/2024/keynote-speaker.png";
+import Title from "../../components/Title";
 
 const KeynoteSpeaker = () => {
   return (
     <>
-      <Box sx={{ bgcolor: "#592693", padding: { xs: "5%", md: "1.5%" } }}>
-        <Typography
-          variant="h1"
-          sx={{
-            color: "white",
-            fontSize: { xs: "24pt", md: "40pt" },
-            fontFamily: "Jost",
-          }}
-        >
-          Keynote Speaker
-        </Typography>
-      </Box>
+      <Title title="Keynote Speaker" />
       <Box sx={{ display: { xs: "inline-block" } }}>
         <Box sx={{ display: "inline-block" }}>
           <img

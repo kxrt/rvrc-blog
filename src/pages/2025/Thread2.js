@@ -5,7 +5,7 @@ import Title from "../../components/Title";
 const Thread2 = () => {
   return (
     <>
-      <Title title={"Thread 2: Adventure"} />
+      <Title title="Thread 2: Adventure" />
     </>
   );
 };

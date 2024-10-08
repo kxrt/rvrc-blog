@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 import AwardCard from "../../components/2024/AwardCard";
+import Title from "../../components/Title";
 
 const popularChoiceAwardWinners = [
   {
@@ -47,24 +48,8 @@ const judgesAwardWinners = [
 const Awards = () => {
   return (
     <>
-      <Box
-        sx={{
-          bgcolor: "#592693",
-          padding: { xs: "3%", md: "1%" },
-        }}
-      >
-        <Typography
-          variant="h1"
-          sx={{
-            color: "white",
-            fontSize: { xs: "24pt", md: "40pt" },
-            fontFamily: "Jost",
-            fontWeight: "Bold",
-          }}
-        >
-          Symposium Awards
-        </Typography>
-      </Box>
+      <Title title="Symposium Awards" />
+
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
         <Typography
           variant="h1"

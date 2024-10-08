@@ -78,12 +78,11 @@ const Landing = () => {
       <Box sx={{ backgroundColor: "#e1d0f5" }}>
         <Box component="img" src={LandingThemeBanner} sx={{ width: "100%" }} />
 
-        <Stack py="20px" px="10%" spacing={3}>
+        <Stack py="32px" px="10%" spacing={3}>
           <Typography
             variant="h1"
             sx={{
               fontSize: { xs: "20pt", md: "26pt" },
-              fontFamily: "Jost",
               color: "#592693",
               textAlign: "center",
             }}
@@ -95,7 +94,6 @@ const Landing = () => {
             sx={{
               fontSize: "24pt",
               fontWeight: "bold",
-              fontFamily: "Jost",
               textAlign: "center",
             }}
           >

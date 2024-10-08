@@ -4,8 +4,8 @@ import { Box, Typography } from "@mui/material";
 const Title = ({ title }) => (
   <Box
     sx={{
-      bgcolor: "#592693",
-      padding: "20px",
+      background: "#592693",
+      padding: "24px",
     }}
   >
     <Typography

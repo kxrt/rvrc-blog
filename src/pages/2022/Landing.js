@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 import SymposiumTheme from "../../components/2022/landing/SymposiumTheme";
-import ProgrammeHighlights from "../../components/ProgrammeHighlights";
+import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import AwardWinners from "../../components/2022/landing/AwardWinners";
 import StudentPoints from "../../components/2022/landing/StudentPoints";
 

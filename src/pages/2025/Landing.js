@@ -4,7 +4,7 @@ import { Box, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 // import SignupButton from "../../components/2024/landing/SignupButton";
-import ProgrammeHighlights from "../../components/ProgrammeHighlights";
+import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 // import StudentPoints from "../../components/2024/landing/StudentPoints";
 import programmeEvents from "../../constants/2025/ProgrammeEvents";

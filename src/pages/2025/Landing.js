@@ -16,6 +16,7 @@ import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
 import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
 import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
 import LandingThemeBanner from "../../assets/2024/landing-theme-banner.jpg";
+import Footer from "../../components/Footer";
 
 const images = [
   {
@@ -121,6 +122,8 @@ const Landing = () => {
       {/* <SignupButton /> */}
 
       <PastSymposia />
+
+      <Footer />
     </>
   );
 };

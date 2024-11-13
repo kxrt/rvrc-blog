@@ -1,12 +1,58 @@
 import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
 
+import Thread2Image from "../../assets/2024/thread-2.jpg";
+
 const Thread2 = () => {
   return (
-    <>
+    <Stack spacing={0}>
       <Title title="Thread 2: Adventure" />
-    </>
+      <Box component="img" src={Thread2Image} sx={{ width: "100%" }} />
+      <Stack
+        spacing={4}
+        sx={{
+          backgroundColor: "#e1d0f5",
+          paddingInline: "10%",
+          paddingBlock: "20px",
+        }}
+      >
+        <Stack spacing={1}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: "26pt",
+              color: "#592693",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
+          >
+            Adventure
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "16pt",
+              textAlign: "center",
+              fontStyle: "italic",
+            }}
+          >
+            Cultivating Curiosity and Stewardship
+          </Typography>
+        </Stack>
+        <Typography sx={{ fontSize: "16pt" }}>
+          Highlighting student-led co-academic and co-curricular endeavours,
+          discussions in this thread evidence the crucial acquisition of soft
+          skills, such as leadership and cultural awareness, towards the cause
+          of building a shared future that is more sustainable and equitable for
+          all. Presenters include students from RVRC, NUS, and other IHL’s, and
+          are invited to share their unique experiences and exchange ideas with
+          one another to discover new insights. The thread will also showcase
+          how the distinct RVRC living-learning experience instils stewardship
+          of society and environment.
+        </Typography>
+      </Stack>
+    </Stack>
   );
 };
 

@@ -75,7 +75,7 @@ const Landing = () => {
         issues serve as a powerful inspiration for RVRC students.
       </p> */}
 
-      <Box sx={{ backgroundColor: "#e1d0f5" }}>
+      <Box sx={{ backgroundColor: "#d8eded" }}>
         <Box component="img" src={LandingThemeBanner} sx={{ width: "100%" }} />
 
         <Stack py="32px" px="10%" spacing={3}>
@@ -83,7 +83,7 @@ const Landing = () => {
             variant="h1"
             sx={{
               fontSize: { xs: "20pt", md: "26pt" },
-              color: "#592693",
+              color: "#1d9077",
               textAlign: "center",
             }}
           >

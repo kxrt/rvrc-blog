@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
+import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import Thread1Image from "../../assets/2024/thread-1.jpg";
 
@@ -51,6 +52,7 @@ const Thread1 = () => {
           problem-solving.
         </Typography>
       </Stack>
+      <Footer />
     </Stack>
   );
 };

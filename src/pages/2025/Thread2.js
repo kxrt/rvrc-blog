@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
+import Footer from "../../components/Footer";
 
 import Thread2Image from "../../assets/2024/thread-2.jpg";
 
@@ -52,6 +53,7 @@ const Thread2 = () => {
           of society and environment.
         </Typography>
       </Stack>
+      <Footer />
     </Stack>
   );
 };

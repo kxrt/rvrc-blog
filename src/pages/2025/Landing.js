@@ -75,7 +75,7 @@ const Landing = () => {
         issues serve as a powerful inspiration for RVRC students.
       </p> */}
 
-      <Box sx={{ backgroundColor: "#d8eded" }}>
+      <Box sx={{ backgroundColor: "#008080" }}>
         <Box component="img" src={LandingThemeBanner} sx={{ width: "100%" }} />
 
         <Stack py="32px" px="10%" spacing={3}>
@@ -83,7 +83,7 @@ const Landing = () => {
             variant="h1"
             sx={{
               fontSize: { xs: "20pt", md: "26pt" },
-              color: "#1d9077",
+              color: "white",
               textAlign: "center",
             }}
           >
@@ -93,13 +93,14 @@ const Landing = () => {
             variant="h1"
             sx={{
               fontSize: "24pt",
+              color: "white",
               fontWeight: "bold",
               textAlign: "center",
             }}
           >
             'Living and Learning for a Shared Future'
           </Typography>
-          <p style={{ fontSize: "16pt" }}>
+          <p style={{ fontSize: "16pt", color: "white" }}>
             First crafted by the organising committee for the RVRC Symposium
             2024, the theme highlights how RVRC’s adoption of experiential
             learning pedagogies and extension of the world as a classroom

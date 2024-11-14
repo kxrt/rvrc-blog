@@ -14,7 +14,7 @@ const Thread2 = () => {
       <Stack
         spacing={4}
         sx={{
-          backgroundColor: "#e1d0f5",
+          backgroundColor: "#008080",
           paddingInline: "10%",
           paddingBlock: "20px",
         }}
@@ -24,7 +24,7 @@ const Thread2 = () => {
             variant="h1"
             sx={{
               fontSize: "26pt",
-              color: "#592693",
+              color: "white",
               textAlign: "center",
               fontWeight: "bold",
             }}
@@ -34,6 +34,7 @@ const Thread2 = () => {
           <Typography
             sx={{
               fontSize: "16pt",
+              color: "white",
               textAlign: "center",
               fontStyle: "italic",
             }}
@@ -41,7 +42,7 @@ const Thread2 = () => {
             Cultivating Curiosity and Stewardship
           </Typography>
         </Stack>
-        <Typography sx={{ fontSize: "16pt" }}>
+        <Typography sx={{ fontSize: "16pt", color: "white" }}>
           Highlighting student-led co-academic and co-curricular endeavours,
           discussions in this thread evidence the crucial acquisition of soft
           skills, such as leadership and cultural awareness, towards the cause

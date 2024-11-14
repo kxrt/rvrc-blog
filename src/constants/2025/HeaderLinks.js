@@ -4,11 +4,11 @@ const headerLinks = [
     link: "/",
     label: "Overview",
   },
-  //   {
-  //     key: "team",
-  //     link: "/team",
-  //     label: "Our Team",
-  //   },
+  {
+    key: "team",
+    link: "/team",
+    label: "Our Team",
+  },
   //   {
   //     key: "keynote",
   //     link: "/keynote",

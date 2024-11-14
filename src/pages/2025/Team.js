@@ -1,11 +1,35 @@
 import React from "react";
+import { Grid, Stack } from "@mui/material";
+
 import Title from "../../components/Title";
+import TeamMemberCard from "../../components/TeamMemberCard";
+import Footer from "../../components/Footer";
+import teamMembers from "../../constants/2025/TeamMembers";
 
 const Team = () => {
   return (
-    <>
-      <Title title="Meet Our Team" />
-    </>
+    <Stack spacing={2}>
+      <Title title="Our Team" />
+      <Grid
+        container
+        spacing={2}
+        sx={{
+          px: "10%",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {teamMembers.map((teamMember, index) => {
+          const { name, position, image } = teamMember;
+          return (
+            <Grid item key={index}>
+              <TeamMemberCard name={name} position={position} image={image} />
+            </Grid>
+          );
+        })}
+      </Grid>
+      <Footer />
+    </Stack>
   );
 };
 

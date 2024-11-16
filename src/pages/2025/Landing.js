@@ -1,52 +1,121 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grow, Stack, Typography } from "@mui/material";
 
-import RVRCStepper from "../../components/SwipeableTextMobileStepper";
+// import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 // import SignupButton from "../../components/2024/landing/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 // import StudentPoints from "../../components/2024/landing/StudentPoints";
 import programmeEvents from "../../constants/2025/ProgrammeEvents";
-import Title from "../../components/Title";
+// import Title from "../../components/Title";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
-import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
-import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
-import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
-import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
+// import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
+// import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
+// import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
+// import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
 import LandingThemeBanner from "../../assets/2024/landing-theme-banner.jpg";
 import Footer from "../../components/Footer";
 
-const images = [
-  {
-    label: "Guest of Honour",
-    imgPath: LandingBanner1,
-  },
-  {
-    label: "Participants",
-    imgPath: LandingBanner2,
-  },
-  {
-    label: "College Master",
-    imgPath: LandingBanner3,
-  },
-  {
-    label: "Lunch",
-    imgPath: LandingBanner4,
-  },
-  {
-    label: "Keynote Speaker",
-    imgPath: LandingBanner5,
-  },
-];
+// const images = [
+//   {
+//     label: "Guest of Honour",
+//     imgPath: LandingBanner1,
+//   },
+//   {
+//     label: "Participants",
+//     imgPath: LandingBanner2,
+//   },
+//   {
+//     label: "College Master",
+//     imgPath: LandingBanner3,
+//   },
+//   {
+//     label: "Lunch",
+//     imgPath: LandingBanner4,
+//   },
+//   {
+//     label: "Keynote Speaker",
+//     imgPath: LandingBanner5,
+//   },
+// ];
 
 const Landing = () => {
   return (
-    <>
-      <Title title="RVRC Symposium 2025" />
+    <Stack spacing={0}>
+      {/* <Title title="RVRC Symposium 2025" /> */}
 
-      <RVRCStepper images={images} />
+      <Box
+        component="div"
+        sx={{
+          position: "relative",
+        }}
+      >
+        <Box
+          component="img"
+          src={LandingBanner1}
+          sx={{
+            display: "block", // Ensures no extra space below the image
+            width: "100%",
+            height: "auto",
+          }}
+        />
+        {/* <RVRCStepper images={images} /> */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(to top, rgb(0,0,0,1), rgb(0,0,0,0) 80%)",
+            pointerEvents: "none", // Ensures the gradient layer doesn’t block interactions
+          }}
+        />
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Typography
+            variant="h1"
+            sx={{
+              position: "absolute",
+              bottom: { xs: 0, md: "32px" },
+              width: "80%",
+              mx: "10%",
+              color: "white",
+              fontSize: { xs: "24pt", md: "50pt" },
+              fontWeight: "bold",
+            }}
+          >
+            RVRC Symposium 2025
+          </Typography>
+        </Grow>
+      </Box>
+
+      <Stack
+        direction="column"
+        spacing={4}
+        sx={{
+          paddingTop: { xs: "32px", md: "0" },
+          paddingBottom: "32px",
+          px: "10%",
+          background: "black",
+          alignItems: "center",
+        }}
+      >
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Typography
+            sx={{
+              color: "white",
+              fontSize: { xs: "16pt", md: "18pt" },
+              maxWidth: "500px",
+            }}
+          >
+            Empowering youth to shape a sustainable and equitable future
+            together
+          </Typography>
+        </Grow>
+      </Stack>
 
       <Box py="20px" px="10%">
         <p style={{ fontSize: "16pt" }}>
@@ -54,13 +123,14 @@ const Landing = () => {
           <b style={{ color: "#1d9077" }}>
             ‘Living and Learning for a Shared Future’
           </b>{" "}
-          will be held on 8 February 2025. The symposium will be a dynamic
-          showcase of exemplary student projects and the empowering tapestry of
-          co-curricular activities at our College. This event is designed as a
-          platform for networking, reflection, and mutual learning, focusing on
-          the crucial themes of sustainability education and workplace readiness
-          by garnering a diverse audience of 200 students, faculty members,
-          industry collaborators and community partners.
+          will be held on 8 February 2025. The student-led symposium will be a
+          dynamic showcase of exemplary student projects and the empowering
+          tapestry of co-curricular activities at our College. This event is
+          designed as a platform for networking, reflection, and mutual
+          learning, focusing on the crucial themes of sustainability education
+          and workplace readiness by garnering a diverse audience of 200
+          students, faculty members, industry collaborators and community
+          partners.
         </p>
       </Box>
       {/* <StudentPoints /> */}
@@ -123,7 +193,7 @@ const Landing = () => {
       <PastSymposia />
 
       <Footer />
-    </>
+    </Stack>
   );
 };
 

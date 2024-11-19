@@ -8,9 +8,11 @@ import {
   Lightbulb,
   Person,
   Restaurant,
+  LocalCafe,
+  Fireplace,
 } from "@mui/icons-material";
 
-const programmeEvents = [
+export const programmeEvents = [
   {
     time: "8:30 am",
     titles: ["Registration Opens"],
@@ -78,4 +80,44 @@ const programmeEvents = [
   },
 ];
 
-export default programmeEvents;
+export const thread1Events = [
+  {
+    time: "11:10 am",
+    titles: ["Presentations"],
+    locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
+    icon: <CoPresent />,
+  },
+  {
+    time: "12:00 pm",
+    titles: ["Break"],
+    locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
+    icon: <LocalCafe />,
+  },
+  {
+    time: "12:10 pm",
+    titles: ["Presentations"],
+    locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
+    icon: <CoPresent />,
+  },
+];
+
+export const thread2Events = [
+  {
+    time: "11:10 am",
+    titles: ["Fireside Chat 1"],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <Fireplace />,
+  },
+  {
+    time: "11:50 am",
+    titles: ["Break"],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <LocalCafe />,
+  },
+  {
+    time: "12:00 pm",
+    titles: ["Fireside Chat 2"],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <Fireplace />,
+  },
+];

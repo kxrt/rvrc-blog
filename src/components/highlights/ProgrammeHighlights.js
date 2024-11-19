@@ -4,7 +4,7 @@ import Timeline from "@mui/lab/Timeline";
 
 import TimelineEvent from "./TimelineEvent";
 
-const ProgrammeHighlights = ({ events }) => {
+const ProgrammeHighlights = ({ title, events }) => {
   return (
     <>
       <Stack spacing={3} py="32px" px="10%">
@@ -15,7 +15,7 @@ const ProgrammeHighlights = ({ events }) => {
             color: "#1d9077",
           }}
         >
-          Programme Highlights
+          {title}
         </Typography>
         <Timeline position="alternate">
           {events.map((event, index) => (

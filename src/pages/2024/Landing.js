@@ -76,7 +76,10 @@ const Landing = () => {
         students.
       </p>
       <SymposiumTheme />
-      <ProgrammeHighlights events={programmeEvents} />
+      <ProgrammeHighlights
+        title="Programme Highlights"
+        events={programmeEvents}
+      />
     </>
   );
 };

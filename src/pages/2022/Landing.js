@@ -80,7 +80,10 @@ const Landing = () => {
         issues, is ideally placed to inspire RVRC students.
       </p>
       <SymposiumTheme />
-      <ProgrammeHighlights events={programmeEvents} />
+      <ProgrammeHighlights
+        title="Programme Highlights"
+        events={programmeEvents}
+      />
       <AwardWinners />
     </>
   );

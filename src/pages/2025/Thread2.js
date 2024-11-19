@@ -3,8 +3,9 @@ import { Box, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
-
 import Thread2Image from "../../assets/2024/thread-2.jpg";
+import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
+import { thread2Events } from "../../constants/2025/ProgrammeEvents";
 
 const Thread2 = () => {
   return (
@@ -54,6 +55,7 @@ const Thread2 = () => {
           of society and environment.
         </Typography>
       </Stack>
+      <ProgrammeHighlights title="Thread 2 Programme" events={thread2Events} />
       <Footer />
     </Stack>
   );

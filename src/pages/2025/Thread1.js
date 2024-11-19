@@ -4,6 +4,8 @@ import { Box, Stack, Typography } from "@mui/material";
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import Thread1Image from "../../assets/2024/thread-1.jpg";
+import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
+import { thread1Events } from "../../constants/2025/ProgrammeEvents";
 
 const Thread1 = () => {
   return (
@@ -53,6 +55,7 @@ const Thread1 = () => {
           problem-solving.
         </Typography>
       </Stack>
+      <ProgrammeHighlights title="Thread 1 Programme" events={thread1Events} />
       <Footer />
     </Stack>
   );

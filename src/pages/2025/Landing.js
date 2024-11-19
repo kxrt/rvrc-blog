@@ -7,7 +7,7 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 // import StudentPoints from "../../components/2024/landing/StudentPoints";
-import programmeEvents from "../../constants/2025/ProgrammeEvents";
+import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
 // import Title from "../../components/Title";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
@@ -185,7 +185,10 @@ const Landing = () => {
         </Stack>
       </Box>
 
-      <ProgrammeHighlights events={programmeEvents} />
+      <ProgrammeHighlights
+        title="Programme Highlights"
+        events={programmeEvents}
+      />
 
       {/* TODO: Enable when sign up starts */}
       {/* <SignupButton /> */}

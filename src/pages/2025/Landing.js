@@ -183,7 +183,14 @@ const Landing = () => {
         events={programmeEvents}
       />
 
-      <p style={{ fontSize: "12pt", paddingBlock: "20px", margin: "0" }}>
+      <p
+        style={{
+          fontSize: "14pt",
+          fontStyle: "italic",
+          paddingBlock: "20px",
+          margin: "0",
+        }}
+      >
         This event is made possible through the generous support of the Mrs Lee
         Choon Guan Trust Fund.
       </p>

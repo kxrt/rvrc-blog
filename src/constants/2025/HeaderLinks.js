@@ -5,11 +5,6 @@ const headerLinks = [
     label: "Overview",
   },
   {
-    key: "team",
-    link: "/team",
-    label: "Our Team",
-  },
-  {
     key: "keynote",
     link: "/keynote",
     label: "Keynote Speaker",
@@ -28,6 +23,11 @@ const headerLinks = [
     key: "poster",
     link: "/poster-gallery",
     label: "Poster Gallery",
+  },
+  {
+    key: "team",
+    link: "/team",
+    label: "The Team",
   },
 ];
 

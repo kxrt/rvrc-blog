@@ -7,7 +7,7 @@ import {
   TimelineOppositeContent,
   TimelineDot,
 } from "@mui/lab";
-import Typography from "@mui/material/Typography";
+import { Stack, Typography } from "@mui/material";
 
 const TimelineEvent = ({
   time,
@@ -29,7 +29,9 @@ const TimelineEvent = ({
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector />
-        <TimelineDot sx={{ bgcolor: iconBackgroundColor }}>{icon}</TimelineDot>
+        <TimelineDot sx={{ background: iconBackgroundColor }}>
+          {icon}
+        </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: "12px", px: 2 }}>
@@ -43,20 +45,12 @@ const zipParallelSessions = (titles, locations) =>
   titles.map((title, i) => {
     const location = locations[i];
     return (
-      <>
-        <Typography
-          variant="h6"
-          component="span"
-          fontSize={"18px"}
-          fontWeight={"bold"}
-          fontFamily={"Jost"}
-        >
+      <Stack key={i}>
+        <Typography variant="h6" fontSize="18px" fontWeight="bold">
           {title}
         </Typography>
-        <Typography fontFamily={"Jost"} marginBottom="10px">
-          {location}
-        </Typography>
-      </>
+        <Typography mb="10px">{location}</Typography>
+      </Stack>
     );
   });
 

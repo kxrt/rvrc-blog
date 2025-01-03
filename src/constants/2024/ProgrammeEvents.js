@@ -1,6 +1,3 @@
-import React from "react";
-import { Typography } from "@mui/material";
-import Timeline from "@mui/lab/Timeline";
 import {
   Campaign,
   EmojiEvents,
@@ -12,9 +9,7 @@ import {
   Star,
 } from "@mui/icons-material";
 
-import TimelineEvent from "../../TimelineEvent";
-
-const events = [
+const programmeEvents = [
   {
     time: "8:30 am",
     titles: ["Registration Opens"],
@@ -103,33 +98,4 @@ const events = [
   },
 ];
 
-const ProgrammeHighlights = () => {
-  return (
-    <>
-      <Typography
-        variant="h1"
-        sx={{
-          fontSize: { xs: "20pt", md: "26pt" },
-          fontFamily: "Jost",
-          paddingTop: "30px",
-          color: "#1d9077",
-        }}
-      >
-        Programme Highlights
-      </Typography>
-      <Timeline position="alternate">
-        {events.map((event) => (
-          <TimelineEvent
-            time={event.time}
-            titles={event.titles}
-            locations={event.locations}
-            icon={event.icon}
-            iconBackgroundColor={event.iconBackgroundColor}
-          />
-        ))}
-      </Timeline>
-    </>
-  );
-};
-
-export default ProgrammeHighlights;
+export default programmeEvents;

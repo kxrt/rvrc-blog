@@ -21,8 +21,10 @@ import headerLinks2024 from "./constants/2024/HeaderLinks";
 
 import Landing2025 from "./pages/2025/Landing";
 import Team2025 from "./pages/2025/Team";
+import KeynoteSpeaker2025 from "./pages/2025/KeynoteSpeaker";
 import Thread12025 from "./pages/2025/Thread1";
 import Thread22025 from "./pages/2025/Thread2";
+import PosterGallery2025 from "./pages/2025/PosterGallery";
 import headerLinks2025 from "./constants/2025/HeaderLinks";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -43,9 +45,10 @@ function App() {
             <Route path="/" element={<Header headerLinks={headerLinks2025} />}>
               <Route index element={<Landing2025 />} />
               <Route path="team" element={<Team2025 />} />
-              {/* <Route path="keynote" element={<KeynoteSpeaker2025 />} /> */}
+              <Route path="keynote" element={<KeynoteSpeaker2025 />} />
               <Route path="thread-1" element={<Thread12025 />} />
               <Route path="thread-2" element={<Thread22025 />} />
+              <Route path="poster-gallery" element={<PosterGallery2025 />} />
             </Route>
 
             <Route

@@ -1,21 +1,17 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 // import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-// import SignupButton from "../../components/2024/landing/SignupButton";
+import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
-// import StudentPoints from "../../components/2024/landing/StudentPoints";
 import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
-// import Title from "../../components/Title";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
 // import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
 // import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
 // import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
 // import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
-import LandingThemeBanner from "../../assets/2024/landing-theme-banner.jpg";
 import Footer from "../../components/Footer";
 
 // const images = [
@@ -44,8 +40,6 @@ import Footer from "../../components/Footer";
 const Landing = () => {
   return (
     <Stack spacing={0}>
-      {/* <Title title="RVRC Symposium 2025" /> */}
-
       <Box
         component="div"
         sx={{
@@ -115,6 +109,7 @@ const Landing = () => {
             together
           </Typography>
         </Grow>
+        <SignupButton link="https://tinyurl.com/RVRCSymposium2025" />
       </Stack>
 
       <Box py="20px" px="10%">
@@ -132,22 +127,20 @@ const Landing = () => {
           students, faculty members, industry collaborators and community
           partners.
         </p>
-      </Box>
-      {/* <StudentPoints /> */}
 
-      {/* <p style={{ fontSize: "16pt", paddingInline: "10%" }}>
-        We are honoured to have{" "}
-        <Link to="/keynote" style={{ color: "#592693" }}>
-          Dr. Adrian Loo
-        </Link>{" "}
-        as our Keynote Speaker. We believe that his unique story as an innovator
-        of solutions for environmental, economic and social sustainability
-        issues serve as a powerful inspiration for RVRC students.
-      </p> */}
+        <p style={{ fontSize: "16pt" }}>
+          We are honoured to have{" "}
+          <a href="/keynote" style={{ color: "#592693", fontWeight: "bold" }}>
+            Mr. Preston Wong
+          </a>{" "}
+          as our Keynote Speaker. We believe that his unique story as an
+          innovator of solutions for environmental, economic and social
+          sustainability issues serve as a powerful inspiration for our
+          participants.
+        </p>
+      </Box>
 
       <Box sx={{ backgroundColor: "#008080" }}>
-        <Box component="img" src={LandingThemeBanner} sx={{ width: "100%" }} />
-
         <Stack py="32px" px="10%" spacing={3}>
           <Typography
             variant="h1"
@@ -190,8 +183,10 @@ const Landing = () => {
         events={programmeEvents}
       />
 
-      {/* TODO: Enable when sign up starts */}
-      {/* <SignupButton /> */}
+      <p style={{ fontSize: "12pt", paddingBlock: "20px", margin: "0" }}>
+        This event is made possible through the generous support of the Mrs Lee
+        Choon Guan Trust Fund.
+      </p>
 
       <PastSymposia />
 

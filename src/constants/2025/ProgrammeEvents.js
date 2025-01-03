@@ -1,5 +1,6 @@
 import {
   AutoAwesome,
+  Collections,
   CoPresent,
   EmojiEvents,
   EmojiFoodBeverage,
@@ -33,7 +34,7 @@ export const programmeEvents = [
   },
   {
     time: "9:20 am",
-    titles: ["Keynote Address"],
+    titles: ["Keynote Address by Mr. Preston Wong"],
     locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
     icon: <Lightbulb />,
   },
@@ -46,7 +47,7 @@ export const programmeEvents = [
   {
     time: "10:00 am",
     titles: [
-      "Interactive Booths / Poster Presentations / Networking Tea Session",
+      "Interactive Booths by Community Partners / Poster Gallery / Networking Tea Session",
     ],
     locations: ["Atrium (Level 3, RVRC Block G)"],
     icon: <EmojiFoodBeverage />,
@@ -119,5 +120,16 @@ export const thread2Events = [
     titles: ["Fireside Chat 2"],
     locations: ["Master's Lounge (Level 3, RVRC Block G)"],
     icon: <Fireplace />,
+  },
+];
+
+export const posterGalleryEvents = [
+  {
+    time: "10:00 am",
+    titles: [
+      "Poster Gallery / Interactive Booths by Community Partners / Networking Tea Session",
+    ],
+    locations: ["Atrium (Level 3, RVRC Block G)"],
+    icon: <Collections />,
   },
 ];

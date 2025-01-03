@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import keynoteSpeaker from "../../assets/2024/keynote-speaker.png";
+import keynoteSpeaker from "../../assets/2025/keynote-speaker.jpeg";
 import Title from "../../components/Title";
 
 const KeynoteSpeaker = () => {
@@ -22,21 +22,19 @@ const KeynoteSpeaker = () => {
               fontSize: { xs: "18pt", md: "24pt" },
               paddingInline: "7%",
               paddingTop: "18px",
-              fontFamily: "Jost",
               color: "#1d9077",
             }}
           >
-            Mr. Victor Zhu
+            Mr. Preston Wong
           </Typography>
           <Typography
             style={{
               fontSize: { xs: "12pt", md: "16pt" },
               paddingInline: "7%",
               paddingBottom: "0px",
-              fontFamily: "Jost",
             }}
           >
-            Founder and CEO, Hatch
+            CEO and Cofounder, treatsure
           </Typography>
 
           <div>
@@ -47,53 +45,23 @@ const KeynoteSpeaker = () => {
                 textAlign: "justify",
               }}
             >
-              RVRC Alumnus <b>Mr. Victor Zhu</b> is the Founder and CEO of{" "}
-              <b>
-                <a
-                  href="https://www.hatch.sg/"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ color: "#592693" }}
-                >
-                  Hatch
-                </a>
-              </b>
-              , an impact-driven business with the mission to leverage digital
-              as a tool for intentional impact. The business comprises two arms
-              - Hatch Academy, which runs skills and employability programs in
-              Digital Marketing and User Interface, User Experience (UI/UX)
-              Design for learners from all walks of life, as well as Hatch
-              Mediahouse, which provides a suite of digital and design services
-              to help small and medium-sized businesses and non-profits
-              digitalise. In his work, he brings in partnerships and resources
-              to make the dreams of social innovation a reality, such as
-              creating Singapore’s first digital employability program for
-              out-of-school and at-risk youths, and more recently, for persons
-              with disabilities.
+              <b>Mr. Preston Wong</b> is the CEO and Cofounder of{" "}
+              <a
+                href="https://www.treatsure.co/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#592693", fontWeight: "bold" }}
+              >
+                treatsure
+              </a>
+              , Singapore's leading mobile app linking consumers to businesses
+              with surplus and sustainable food since 2017. Prior to his
+              entrepreneurship journey, Preston graduated from NUS Faculty of
+              Law and NUS Business School. He is currently also an Adjunct
+              Faculty for Sustainability Law and Policy at SMU Yong Pung How
+              School of Law and has been featured in various media and
+              conferences on his sustainability perspectives.
             </p>
-          </div>
-          <div>
-            {/* <p
-              style={{
-                fontSize: "14pt",
-                paddingInline: "7%",
-                textAlign: "justify",
-              }}
-            >
-              Mr. Swaminathan was an ideal choice for the opening keynote, given
-              the symposium theme. As an undergraduate at the NUS Faculty of
-              Engineering and the University Scholar’s Programme, he pivoted
-              away from a strictly academic pursuit to explore and acquire an
-              education that granted him real experience, exposure, and the room
-              to be creative. Aligned with RVRC’s{" "}
-              <i>‘World is our classroom’</i> approach to learning and tackling
-              real world problems, as a student he too worked on meaningful
-              projects that directly addressed sustainability and social issues
-              in Singapore and the SEA region. Hence, it was envisioned that he
-              would be able to inspire students with relevant and relatable
-              ideas on how they too could explore and personalise their
-              individual university education.
-            </p> */}
           </div>
         </Box>
       </Box>

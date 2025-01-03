@@ -4,7 +4,11 @@ import { Box, Stack, Typography } from "@mui/material";
 const TeamMemberCard = ({ image, name, position }) => {
   return (
     <Stack spacing={1} direction="column">
-      <Box component="img" src={image} sx={{ width: 300 }} />
+      <Box
+        component="img"
+        src={image}
+        sx={{ width: 300, alignSelf: "center" }}
+      />
       <Typography
         sx={{
           fontSize: "16pt",

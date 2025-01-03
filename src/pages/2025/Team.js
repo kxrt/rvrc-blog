@@ -9,14 +9,15 @@ import teamMembers from "../../constants/2025/TeamMembers";
 const Team = () => {
   return (
     <Stack spacing={2}>
-      <Title title="Our Team" />
+      <Title title="Organising Committee" />
       <Grid
         container
         spacing={2}
         sx={{
-          px: "10%",
+          px: "5%",
           justifyContent: "center",
-          alignItems: "center",
+          alignSelf: "center",
+          maxWidth: "1200px",
         }}
       >
         {teamMembers.map((teamMember, index) => {

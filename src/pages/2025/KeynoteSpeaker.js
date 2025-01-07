@@ -34,7 +34,7 @@ const KeynoteSpeaker = () => {
               paddingBottom: "0px",
             }}
           >
-            CEO and Cofounder, treatsure
+            CEO & Cofounder, treatsure
           </Typography>
 
           <div>
@@ -45,7 +45,7 @@ const KeynoteSpeaker = () => {
                 textAlign: "justify",
               }}
             >
-              <b>Mr. Preston Wong</b> is the CEO and Cofounder of{" "}
+              <b>Mr. Preston Wong</b> is the CEO & Cofounder of{" "}
               <a
                 href="https://www.treatsure.co/"
                 target="_blank"
@@ -54,13 +54,15 @@ const KeynoteSpeaker = () => {
               >
                 treatsure
               </a>
-              , Singapore's leading mobile app linking consumers to businesses
-              with surplus and sustainable food since 2017. Prior to his
-              entrepreneurship journey, Preston graduated from NUS Faculty of
-              Law and NUS Business School. He is currently also an Adjunct
-              Faculty for Sustainability Law and Policy at SMU Yong Pung How
-              School of Law and has been featured in various media and
-              conferences on his sustainability perspectives.
+              , Singapore's leading app platform linking consumers to surplus
+              food offered at hotels, grocers and retailers. Trained in law,
+              accountancy and environmental management at NUS, Preston is also
+              an adjunct lecturer for sustainability law at Yale-NUS College and
+              SMU. In 2023, Preston was conferred the inaugural Leader of the
+              Year Award at the UOB-Business Times Sustainability Impact Awards.
+              He has also been appointed an ASEAN Youth Fellow and a Youth Panel
+              Lead to provide sustainability policy recommendations for the
+              Ministry of Sustainability and the Environment.
             </p>
           </div>
         </Box>

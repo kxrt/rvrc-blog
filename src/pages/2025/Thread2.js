@@ -44,15 +44,15 @@ const Thread2 = () => {
           </Typography>
         </Stack>
         <Typography sx={{ fontSize: "16pt", color: "white" }}>
-          Highlighting student-led co-academic and co-curricular endeavours,
-          discussions in this thread evidence the crucial acquisition of soft
-          skills, such as leadership and cultural awareness, towards the cause
-          of building a shared future that is more sustainable and equitable for
-          all. Presenters include students from RVRC, NUS, and other IHL’s, and
-          are invited to share their unique experiences and exchange ideas with
-          one another to discover new insights. The thread will also showcase
-          how the distinct RVRC living-learning experience instils stewardship
-          of society and environment.
+          Highlighting student-led co-curricular endeavours, discussions in this
+          thread evidence the crucial acquisition of soft skills, such as
+          leadership and cultural awareness, towards the cause of building a
+          shared future that is more sustainable and equitable for all.
+          Presenters include students from RVRC, NUS, and other IHLs, and are
+          invited to share their unique experiences and exchange ideas with one
+          another to discover new insights. The thread will also showcase how
+          the distinct RVRC living-learning experience instils stewardship of
+          society and environment.
         </Typography>
       </Stack>
       <ProgrammeHighlights title="Thread 2 Programme" events={thread2Events} />

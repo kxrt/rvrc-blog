@@ -135,7 +135,7 @@ const Landing = () => {
           </a>{" "}
           as our Keynote Speaker. We believe that his unique story as an
           innovator of solutions for environmental, economic and social
-          sustainability issues serve as a powerful inspiration for our
+          sustainability issues serves as a powerful inspiration for our
           participants.
         </p>
       </Box>
@@ -166,11 +166,11 @@ const Landing = () => {
           <p style={{ fontSize: "16pt", color: "white" }}>
             First crafted by the organising committee for the RVRC Symposium
             2024, the theme highlights how RVRC’s adoption of experiential
-            learning pedagogies and extension of the world as a classroom
+            learning pedagogies and extension to the world as a classroom
             encourages students to tackle complex socio-environmental issues by
             engaging directly with community stakeholders and driving the
             implementation of novel ideas for meaningful impact. The symposium
-            enables the college to scale the impact of student projects through
+            enables the College to scale the impact of student projects through
             sharing of best practices and capacity building, enabling students
             to strive towards building a shared future that is more sustainable
             and equitable for all.
@@ -178,10 +178,7 @@ const Landing = () => {
         </Stack>
       </Box>
 
-      <ProgrammeHighlights
-        title="Programme Highlights"
-        events={programmeEvents}
-      />
+      <ProgrammeHighlights title="Programme" events={programmeEvents} />
 
       <p
         style={{

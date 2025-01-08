@@ -45,14 +45,14 @@ const Thread1 = () => {
         </Stack>
         <Typography sx={{ fontSize: "16pt", color: "white" }}>
           Focused on academic learning at RVRC, presentations in this thread
-          demonstrate how RVRCP courses enable students to hone their skills and
-          equip them with professional competencies to navigate a dynamic and
-          increasingly complex world. It also features experiential learning
-          beyond the classroom, such as partnering with external organizations,
-          empowering students to identify real-world issues and effect
-          meaningful change. Students will showcase the learning process and
-          successful application of skills like critical thinking and creative
-          problem-solving.
+          demonstrate how RVRC Programme courses enable students to hone their
+          skills and equip them with professional competencies to navigate a
+          dynamic and increasingly complex world. The thread also features
+          experiential learning beyond the classroom, such as partnering with
+          external organizations, empowering students to identify real-world
+          issues and effect meaningful change. Students will showcase the
+          learning process and successful application of skills like critical
+          thinking and creative problem-solving.
         </Typography>
       </Stack>
       <ProgrammeHighlights title="Thread 1 Programme" events={thread1Events} />

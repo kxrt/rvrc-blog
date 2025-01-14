@@ -5,7 +5,9 @@ import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import PosterGalleryImage from "../../assets/2025/poster-gallery.jpg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
+import ProjectCard from "../../components/ProjectCard";
 import { posterGalleryEvents } from "../../constants/2025/ProgrammeEvents";
+import { thread1Posters, thread2Posters } from "../../constants/2025/Projects";
 
 const Thread1 = () => {
   return (
@@ -20,7 +22,7 @@ const Thread1 = () => {
           paddingBlock: "20px",
         }}
       >
-        <Typography sx={{ fontSize: "16pt", color: "white" }}>
+        <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
           Featuring posters from Thread 1 and 2, the Poster Gallery highlights
           both academic learning and student-led initiatives. Attendees can
           explore projects at their own pace, interact with the material, and
@@ -37,6 +39,58 @@ const Thread1 = () => {
         title="Poster Gallery Programme"
         events={posterGalleryEvents}
       />
+
+      <Stack gap={2}>
+        <Typography
+          variant="h4"
+          sx={{
+            color: "#1d9077",
+          }}
+        >
+          Thread 1: Edu-venture Posters
+        </Typography>
+        <Stack
+          direction={{ xs: "column", lg: "row" }}
+          spacing={2}
+          justifyContent="center"
+          sx={{ paddingInline: "10%", marginBottom: "24px" }}
+        >
+          {thread1Posters.map((project) => (
+            <ProjectCard
+              title={project.title}
+              subtitle={project.course}
+              presenters={project.presenters}
+              abstract={project.abstract}
+            />
+          ))}
+        </Stack>
+      </Stack>
+
+      <Stack gap={2}>
+        <Typography
+          variant="h4"
+          sx={{
+            color: "#1d9077",
+          }}
+        >
+          Thread 2: Adventure Posters
+        </Typography>
+        <Stack
+          direction={{ xs: "column", lg: "row" }}
+          spacing={2}
+          justifyContent="center"
+          sx={{ paddingInline: "10%", marginBottom: "24px" }}
+        >
+          {thread2Posters.map((project) => (
+            <ProjectCard
+              title={project.title}
+              presenters={project.presenters}
+              abstract={project.description}
+            />
+          ))}
+        </Stack>
+      </Stack>
+
       <Footer />
     </Stack>
   );

@@ -5,7 +5,10 @@ import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import Thread1Image from "../../assets/2025/thread-1.jpg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import { thread1Events } from "../../constants/2025/ProgrammeEvents";
+import {
+  thread1MPR1Events,
+  thread1MPR2Events,
+} from "../../constants/2025/ProgrammeEvents";
 
 const Thread1 = () => {
   return (
@@ -54,7 +57,15 @@ const Thread1 = () => {
           like critical thinking and creative problem-solving.
         </Typography>
       </Stack>
-      <ProgrammeHighlights title="Thread 1 Programme" events={thread1Events} />
+      <ProgrammeHighlights
+        title="Thread 1 Programme"
+        subtitle="MPR 1 (Level 3, RVRC Block G)"
+        events={thread1MPR1Events}
+      />
+      <ProgrammeHighlights
+        subtitle="MPR 2 (Level 3, RVRC Block G)"
+        events={thread1MPR2Events}
+      />
       <Footer />
     </Stack>
   );

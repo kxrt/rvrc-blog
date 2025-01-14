@@ -12,7 +12,7 @@ const Title = ({ title }) => (
       variant="h1"
       sx={{
         color: "white",
-        fontSize: { xs: "32pt", md: "40pt" },
+        fontSize: { xs: "26pt", md: "40pt" },
         fontFamily: "Jost",
         fontWeight: "Bold",
       }}

@@ -4,19 +4,25 @@ import Timeline from "@mui/lab/Timeline";
 
 import TimelineEvent from "./TimelineEvent";
 
-const ProgrammeHighlights = ({ title, events }) => {
+const ProgrammeHighlights = ({ title, subtitle, events }) => {
   return (
     <>
-      <Stack spacing={3} py="32px" px="10%">
-        <Typography
-          variant="h1"
-          sx={{
-            fontSize: { xs: "20pt", md: "26pt" },
-            color: "#1d9077",
-          }}
-        >
-          {title}
-        </Typography>
+      <Stack spacing={3} py="32px">
+        <Stack spacing={1}>
+          {title && (
+            <Typography
+              variant="h4"
+              sx={{
+                color: "#1d9077",
+              }}
+            >
+              {title}
+            </Typography>
+          )}
+
+          {subtitle && <Typography variant="subtitle1">{subtitle}</Typography>}
+        </Stack>
+
         <Timeline position="alternate">
           {events.map((event, index) => (
             <TimelineEvent

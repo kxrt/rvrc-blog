@@ -1,3 +1,5 @@
+import Shuane from "../../assets/2025/thread-speakers/shuane.jpg";
+
 export const thread1MPR1Projects = [
   {
     title: "The Feng Shui Culture in Hong Kong",
@@ -94,6 +96,7 @@ export const firesideChat1Speakers = [
     title: "Peer Student Supporter",
     biography:
       "The Peer Student Supporters (PSS) of RVRC are a group of dedicated and passionate individuals committed to enhancing the mental health and well-being of the college's residents. This is achieved through the organization of events and the publication of materials aimed at promoting mental health and fostering a supportive environment.\nIn addition, each PSS member acts as immediate nodes of support for the individuals around them (including each other), collectively forming a network of care across the whole college.",
+    image: Shuane,
   },
 ];
 
@@ -110,11 +113,11 @@ export const firesideChat2Speakers = [
     biography:
       "Kayak and Clean is RVRC’s signature program that allows residents to engage in environmental stewardship through outdoor learning. This activity aims to educate participants on the ecosystem services provided by the marine environment in Singapore and allow participants to reflect on the impact of marine litter. Every year, experienced guides at KayakAsia and PAssionWave bring 18-22 students from each of the 7 houses to kayak and clean the waters in the seas along the way to Pulau Ubin, Sister’s Islands and Sentosa, or inland at Jurong Lake Gardens.",
   },
-  {
-    name: "Bob",
-    title: "SMU Verts Environmental Club",
-    biography: "test",
-  },
+  //   {
+  //     name: "Bob",
+  //     title: "SMU Verts Environmental Club",
+  //     biography: "test",
+  //   },
 ];
 
 export const thread1Posters = [

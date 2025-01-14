@@ -5,6 +5,11 @@ import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import Thread1Image from "../../assets/2025/thread-1.jpg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
+import ProjectCard from "../../components/ProjectCard";
+import {
+  thread1MPR1Projects,
+  thread1MPR2Projects,
+} from "../../constants/2025/Projects";
 import {
   thread1MPR1Events,
   thread1MPR2Events,
@@ -62,10 +67,44 @@ const Thread1 = () => {
         subtitle="MPR 1 (Level 3, RVRC Block G)"
         events={thread1MPR1Events}
       />
+
+      <Stack
+        direction={{ xs: "column", lg: "row" }}
+        spacing={2}
+        justifyContent="center"
+        sx={{ paddingInline: "10%" }}
+      >
+        {thread1MPR1Projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            subtitle={project.course}
+            presenters={project.presenters}
+            abstract={project.abstract}
+          />
+        ))}
+      </Stack>
+
       <ProgrammeHighlights
         subtitle="MPR 2 (Level 3, RVRC Block G)"
         events={thread1MPR2Events}
       />
+
+      <Stack
+        direction={{ xs: "column", lg: "row" }}
+        spacing={2}
+        justifyContent="center"
+        sx={{ paddingInline: "10%", marginBottom: "24px" }}
+      >
+        {thread1MPR2Projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            subtitle={project.course}
+            presenters={project.presenters}
+            abstract={project.abstract}
+          />
+        ))}
+      </Stack>
+
       <Footer />
     </Stack>
   );

@@ -7,7 +7,7 @@ import PosterGalleryImage from "../../assets/2025/poster-gallery.jpg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import { posterGalleryEvents } from "../../constants/2025/ProgrammeEvents";
-import { thread1Posters, thread2Posters } from "../../constants/2025/Projects";
+import { thread1Posters, thread2Posters } from "../../constants/2025/Speakers";
 
 const Thread1 = () => {
   return (
@@ -42,9 +42,9 @@ const Thread1 = () => {
 
       <Stack gap={2}>
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
-            color: "#1d9077",
+            fontWeight: "bold",
           }}
         >
           Thread 1: Edu-venture Posters
@@ -68,9 +68,9 @@ const Thread1 = () => {
 
       <Stack gap={2}>
         <Typography
-          variant="h4"
+          variant="h5"
           sx={{
-            color: "#1d9077",
+            fontWeight: "bold",
           }}
         >
           Thread 2: Adventure Posters

@@ -169,19 +169,19 @@ export const thread2Events = [
   {
     time: "11:10 am",
     titles: ["Fireside Chat 1"],
-    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    locations: ["Nguyen Tram Anh, Amanda Toh Lok Wun, Lim Ruey Shuane"],
     icon: <Fireplace />,
   },
   {
     time: "11:50 am",
     titles: ["Break"],
-    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    locations: ["Master's Lounge"],
     icon: <LocalCafe />,
   },
   {
     time: "12:00 pm",
     titles: ["Fireside Chat 2"],
-    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    locations: ["Lee Ru Xuan (Hazel), Ou Foong Ye, Cassandra"],
     icon: <Fireplace />,
   },
 ];

@@ -1,11 +1,16 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
 import Thread2Image from "../../assets/2024/thread-2.jpg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
+import SpeakerBiography from "../../components/SpeakerBiography";
 import { thread2Events } from "../../constants/2025/ProgrammeEvents";
+import {
+  firesideChat1Speakers,
+  firesideChat2Speakers,
+} from "../../constants/2025/Speakers";
 
 const Thread2 = () => {
   return (
@@ -21,41 +26,95 @@ const Thread2 = () => {
         }}
       >
         <Stack spacing={1}>
-          <Typography
-            variant="h1"
-            sx={{
-              fontSize: "26pt",
-              color: "white",
-              textAlign: "center",
-              fontWeight: "bold",
-            }}
-          >
-            Adventure
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: "16pt",
-              color: "white",
-              textAlign: "center",
-              fontStyle: "italic",
-            }}
-          >
-            Cultivating Curiosity and Stewardship
-          </Typography>
+          <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+            <Typography
+              variant="h4"
+              sx={{
+                color: "white",
+                textAlign: "center",
+                fontWeight: "bold",
+              }}
+            >
+              Adventure
+            </Typography>
+          </Grow>
+          <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+            <Typography
+              variant="subtitle1"
+              sx={{
+                fontSize: { md: "16pt" },
+                color: "white",
+                textAlign: "center",
+                fontStyle: "italic",
+              }}
+            >
+              Cultivating Curiosity and Stewardship
+            </Typography>
+          </Grow>
         </Stack>
-        <Typography sx={{ fontSize: "16pt", color: "white" }}>
-          Highlighting student-led co-curricular endeavours, discussions in this
-          thread evidence the crucial acquisition of soft skills, such as
-          leadership and cultural awareness, towards the cause of building a
-          shared future that is more sustainable and equitable for all.
-          Presenters include students from RVRC, NUS, and other IHLs, and are
-          invited to share their unique experiences and exchange ideas with one
-          another to discover new insights. The thread will also showcase how
-          the distinct RVRC living-learning experience instils stewardship of
-          society and environment.
-        </Typography>
+        <Grow
+          in
+          timeout={1000}
+          style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
+        >
+          <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+            Highlighting student-led co-curricular endeavours, discussions in
+            this thread evidence the crucial acquisition of soft skills, such as
+            leadership and cultural awareness, towards the cause of building a
+            shared future that is more sustainable and equitable for all.
+            Presenters include students from RVRC, NUS, and other IHLs, and are
+            invited to share their unique experiences and exchange ideas with
+            one another to discover new insights. The thread will also showcase
+            how the distinct RVRC living-learning experience instils stewardship
+            of society and environment.
+          </Typography>
+        </Grow>
       </Stack>
-      <ProgrammeHighlights title="Thread 2 Programme" events={thread2Events} />
+      <ProgrammeHighlights
+        title="Thread 2 Programme"
+        subtitle="Master's Lounge (Level 3, RVRC Block G)"
+        events={thread2Events}
+      />
+
+      <Stack gap={2} sx={{ paddingInline: "10%" }}>
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: "bold",
+          }}
+        >
+          Fireside Chat 1
+        </Typography>
+
+        {firesideChat1Speakers.map((speaker) => (
+          <SpeakerBiography
+            name={speaker.name}
+            title={speaker.title}
+            biography={speaker.biography}
+            image={speaker.image}
+            isAlignedLeft={true}
+          />
+        ))}
+
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: "bold",
+          }}
+        >
+          Fireside Chat 2
+        </Typography>
+
+        {firesideChat2Speakers.map((speaker) => (
+          <SpeakerBiography
+            name={speaker.name}
+            title={speaker.title}
+            biography={speaker.biography}
+            image={speaker.image}
+            isAlignedLeft={false}
+          />
+        ))}
+      </Stack>
       <Footer />
     </Stack>
   );

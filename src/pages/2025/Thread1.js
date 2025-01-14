@@ -9,7 +9,7 @@ import ProjectCard from "../../components/ProjectCard";
 import {
   thread1MPR1Projects,
   thread1MPR2Projects,
-} from "../../constants/2025/Projects";
+} from "../../constants/2025/Speakers";
 import {
   thread1MPR1Events,
   thread1MPR2Events,

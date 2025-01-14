@@ -76,6 +76,47 @@ export const thread1MPR2Projects = [
   },
 ];
 
+export const firesideChat1Speakers = [
+  {
+    name: "Nguyen Tram Anh",
+    title: "RV Learning Forest",
+    biography:
+      "RV Learning Forest is a green space dedicated to educating, inspiring, and enhancing the biological connectivity of our College in Nature. Accessible to all, this outdoor classroom features a diverse collection of native plants, inviting visitors to explore and deepen their understanding of local biodiversity. These native species do not only attract pollinators, but also establish an ecological link to the Kent Ridge Forest.\nThe forest is a community-driven initiative, with residents participating in its creation and ongoing upkeep. Our Learning Forest thus stands as a nurturing ground for environmental stewardship—a place where education, collaboration, and placemaking converge.",
+  },
+  {
+    name: "Amanda Toh Lok Wun",
+    title: "Ngee Ann Polytechnic Environmental Rangers Club",
+    biography:
+      "Ngee Ann Polytechnic's Environmental Rangers Club (ERC) is a community service club aimed to spread environmental awareness. With a wide range of events, everyone is sure to find an event they enjoy, such as beach clean-ups, upcycling workshops with beneficiaries, learning journeys, and environmental volunteerism. Through each event, ERC hopes to show NP students how easy sustainability can be, and to influence them into incorporating sustainability practices into their daily lives.",
+  },
+  {
+    name: "Lim Ruey Shuane",
+    title: "Peer Student Supporter",
+    biography:
+      "The Peer Student Supporters (PSS) of RVRC are a group of dedicated and passionate individuals committed to enhancing the mental health and well-being of the college's residents. This is achieved through the organization of events and the publication of materials aimed at promoting mental health and fostering a supportive environment.\nIn addition, each PSS member acts as immediate nodes of support for the individuals around them (including each other), collectively forming a network of care across the whole college.",
+  },
+];
+
+export const firesideChat2Speakers = [
+  {
+    name: "Lee Ru Xuan (Hazel)",
+    title: "RV FoRestore",
+    biography:
+      "RV FoRestore is an interest group that focuses on forest restoration. Besides tree plantings, our activities focus on caring for our trees at our plots at Chestnut Nature Park. This includes seedling salvage, tree monitoring and tagging, Seedling Protection Activity (SPA), and the annual Forest Restoration Workshop. We also hold nursery sessions at our nursery right behind the dining hall, where we take care of our seedlings before they're big enough to be planted out!",
+  },
+  {
+    name: "Ou Foong Ye, Cassandra",
+    title: "Kayak and Clean",
+    biography:
+      "Kayak and Clean is RVRC’s signature program that allows residents to engage in environmental stewardship through outdoor learning. This activity aims to educate participants on the ecosystem services provided by the marine environment in Singapore and allow participants to reflect on the impact of marine litter. Every year, experienced guides at KayakAsia and PAssionWave bring 18-22 students from each of the 7 houses to kayak and clean the waters in the seas along the way to Pulau Ubin, Sister’s Islands and Sentosa, or inland at Jurong Lake Gardens.",
+  },
+  {
+    name: "Bob",
+    title: "SMU Verts Environmental Club",
+    biography: "test",
+  },
+];
+
 export const thread1Posters = [
   {
     title:

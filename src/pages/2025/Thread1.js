@@ -121,6 +121,7 @@ const Thread1 = () => {
       >
         {thread1MPR1Projects.map((project) => (
           <ProjectCard
+            key={project.title}
             title={project.title}
             subtitle={project.course}
             presenters={project.presenters}
@@ -143,6 +144,7 @@ const Thread1 = () => {
       >
         {thread1MPR2Projects.map((project) => (
           <ProjectCard
+            key={project.title}
             title={project.title}
             subtitle={project.course}
             presenters={project.presenters}

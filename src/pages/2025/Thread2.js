@@ -88,6 +88,7 @@ const Thread2 = () => {
 
         {firesideChat1Speakers.map((speaker) => (
           <SpeakerBiography
+            key={speaker.name}
             name={speaker.name}
             title={speaker.title}
             biography={speaker.biography}
@@ -107,6 +108,7 @@ const Thread2 = () => {
 
         {firesideChat2Speakers.map((speaker) => (
           <SpeakerBiography
+            key={speaker.name}
             name={speaker.name}
             title={speaker.title}
             biography={speaker.biography}

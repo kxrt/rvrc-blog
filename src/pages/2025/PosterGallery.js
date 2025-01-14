@@ -57,6 +57,7 @@ const Thread1 = () => {
         >
           {thread1Posters.map((project) => (
             <ProjectCard
+              key={project.title}
               title={project.title}
               subtitle={project.course}
               presenters={project.presenters}
@@ -83,6 +84,7 @@ const Thread1 = () => {
         >
           {thread2Posters.map((project) => (
             <ProjectCard
+              key={project.title}
               title={project.title}
               presenters={project.presenters}
               abstract={project.description}

@@ -1,3 +1,4 @@
+import Cassandra from "../../assets/2025/thread-speakers/cassandra.jpg";
 import Shuane from "../../assets/2025/thread-speakers/shuane.jpg";
 
 export const thread1MPR1Projects = [
@@ -60,7 +61,8 @@ export const thread1MPR2Projects = [
       "The Discursive Construction of the Apple Owner: An Exclusionary Game of Catch Up",
     course: "RVX1000",
     presenters: ["Amias Goh Khee Guan"],
-    abstract: "",
+    abstract:
+      "This presentation examines Apple’s use of advertising to construct social distinction and exclusion, employing Social Identity Theory with particular emphasis on Attention to Social Comparison Information (ATSCI) and Need for Uniqueness (NFU). Through a semiotic analysis of visual and auditory elements in the iPhone 15 and MacBook Air 15” advertisements, it explores how Apple positions its products as symbols of technological superiority and social exclusivity. The session incorporates video excerpts to illustrate these dynamics and critically reflects on the societal implications of Apple’s branding strategies, focusing on their intersection with consumer identity and socio-economic stratification.",
   },
   {
     title: "Talking about Climate Change​",
@@ -95,7 +97,7 @@ export const firesideChat1Speakers = [
     name: "Lim Ruey Shuane",
     title: "Peer Student Supporter",
     biography:
-      "The Peer Student Supporters (PSS) of RVRC are a group of dedicated and passionate individuals committed to enhancing the mental health and well-being of the college's residents. This is achieved through the organization of events and the publication of materials aimed at promoting mental health and fostering a supportive environment.\nIn addition, each PSS member acts as immediate nodes of support for the individuals around them (including each other), collectively forming a network of care across the whole college.",
+      "The Peer Student Supporters (PSS) of RVRC are a group of dedicated and passionate individuals committed to enhancing the mental health and well-being of the college's residents. This is achieved through the organization of events (Eg. Mindfulness Monday, Pet Therapy) and the publication of materials (Eg. Video, Comics) aimed at promoting mental health and fostering a supportive environment.\nIn addition, each PSS member acts as immediate nodes of support for the individuals around them (including each other), collectively forming a network of care across the whole college.",
     image: Shuane,
   },
 ];
@@ -112,6 +114,7 @@ export const firesideChat2Speakers = [
     title: "Kayak and Clean",
     biography:
       "Kayak and Clean is RVRC’s signature program that allows residents to engage in environmental stewardship through outdoor learning. This activity aims to educate participants on the ecosystem services provided by the marine environment in Singapore and allow participants to reflect on the impact of marine litter. Every year, experienced guides at KayakAsia and PAssionWave bring 18-22 students from each of the 7 houses to kayak and clean the waters in the seas along the way to Pulau Ubin, Sister’s Islands and Sentosa, or inland at Jurong Lake Gardens.",
+    image: Cassandra,
   },
   //   {
   //     name: "Bob",

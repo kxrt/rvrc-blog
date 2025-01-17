@@ -14,20 +14,22 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
           padding: "20px",
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={image}
-            alt={name}
-            style={{ width: "175px", height: "250px", objectFit: "cover" }}
-          />
-        </Box>
+        {image && (
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={image}
+              alt={name}
+              style={{ width: "175px", height: "250px", objectFit: "cover" }}
+            />
+          </Box>
+        )}
         <Box
           sx={{
             display: "flex",

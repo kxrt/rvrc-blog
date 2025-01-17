@@ -1,5 +1,6 @@
 import Amanda from "../../assets/2025/thread-speakers/amanda.jpeg";
 import Cassandra from "../../assets/2025/thread-speakers/cassandra.jpg";
+import Hazel from "../../assets/2025/thread-speakers/hazel.jpg";
 import Shuane from "../../assets/2025/thread-speakers/shuane.jpg";
 import Tram from "../../assets/2025/thread-speakers/tram.jpg";
 
@@ -112,6 +113,7 @@ export const firesideChat2Speakers = [
     title: "RV FoRestore",
     biography:
       "RV FoRestore is an interest group that focuses on forest restoration. Besides tree plantings, our activities focus on caring for our trees at our plots at Chestnut Nature Park. This includes seedling salvage, tree monitoring and tagging, Seedling Protection Activity (SPA), and the annual Forest Restoration Workshop. We also hold nursery sessions at our nursery right behind the dining hall, where we take care of our seedlings before they're big enough to be planted out!",
+    image: Hazel,
   },
   {
     name: "Ou Foong Ye, Cassandra",

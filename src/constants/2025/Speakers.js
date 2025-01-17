@@ -1,5 +1,7 @@
+import Amanda from "../../assets/2025/thread-speakers/amanda.jpeg";
 import Cassandra from "../../assets/2025/thread-speakers/cassandra.jpg";
 import Shuane from "../../assets/2025/thread-speakers/shuane.jpg";
+import Tram from "../../assets/2025/thread-speakers/tram.jpg";
 
 export const thread1MPR1Projects = [
   {
@@ -86,12 +88,14 @@ export const firesideChat1Speakers = [
     title: "RV Learning Forest",
     biography:
       "RV Learning Forest is a green space dedicated to educating, inspiring, and enhancing the biological connectivity of our College in Nature. Accessible to all, this outdoor classroom features a diverse collection of native plants, inviting visitors to explore and deepen their understanding of local biodiversity. These native species do not only attract pollinators, but also establish an ecological link to the Kent Ridge Forest.\nThe forest is a community-driven initiative, with residents participating in its creation and ongoing upkeep. Our Learning Forest thus stands as a nurturing ground for environmental stewardship—a place where education, collaboration, and placemaking converge.",
+    image: Tram,
   },
   {
     name: "Amanda Toh Lok Wun",
     title: "Ngee Ann Polytechnic Environmental Rangers Club",
     biography:
       "Ngee Ann Polytechnic's Environmental Rangers Club (ERC) is a community service club aimed to spread environmental awareness. With a wide range of events, everyone is sure to find an event they enjoy, such as beach clean-ups, upcycling workshops with beneficiaries, learning journeys, and environmental volunteerism. Through each event, ERC hopes to show NP students how easy sustainability can be, and to influence them into incorporating sustainability practices into their daily lives.",
+    image: Amanda,
   },
   {
     name: "Lim Ruey Shuane",

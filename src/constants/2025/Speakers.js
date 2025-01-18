@@ -1,6 +1,7 @@
 import Amanda from "../../assets/2025/thread-speakers/amanda.jpeg";
 import Cassandra from "../../assets/2025/thread-speakers/cassandra.jpg";
 import Hazel from "../../assets/2025/thread-speakers/hazel.jpg";
+import Nadya from "../../assets/2025/thread-speakers/nadya.jpg";
 import Shuane from "../../assets/2025/thread-speakers/shuane.jpg";
 import Tram from "../../assets/2025/thread-speakers/tram.jpg";
 
@@ -122,11 +123,13 @@ export const firesideChat2Speakers = [
       "Kayak and Clean is RVRC’s signature program that allows residents to engage in environmental stewardship through outdoor learning. This activity aims to educate participants on the ecosystem services provided by the marine environment in Singapore and allow participants to reflect on the impact of marine litter. Every year, experienced guides at KayakAsia and PAssionWave bring 18-22 students from each of the 7 houses to kayak and clean the waters in the seas along the way to Pulau Ubin, Sister’s Islands and Sentosa, or inland at Jurong Lake Gardens.",
     image: Cassandra,
   },
-  //   {
-  //     name: "Bob",
-  //     title: "SMU Verts Environmental Club",
-  //     biography: "test",
-  //   },
+  {
+    name: "Nadya Heryanto",
+    title: "NUS SAVE",
+    biography:
+      "NUS Students' Association for Visions of the Earth (NUS SAVE) is a student club dedicated to raising awareness about sustainability issues, promoting behavioral change, and equipping members with the skills needed to contribute professionally to the sustainability field. With nearly 80 members across four specialized cells — Biodiversity, Green Audit, Green Canteens, and Green Materials — SAVE has spearheaded various initiatives. These include the Sustainability Fund supporting student-led green projects on campus; cooking workshops encouraging plant-based diets; a human library featuring professionals in energy and sustainability careers; green bazaars showcasing eco-friendly products; and beach clean-ups to foster environmental stewardship.",
+    image: Nadya,
+  },
 ];
 
 export const thread1Posters = [

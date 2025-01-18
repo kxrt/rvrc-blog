@@ -42,11 +42,13 @@ const Header = ({ headerLinks }) => {
                 justifyContent: "space-between",
               }}
             >
-              <img
-                src={logoIconWhite}
-                alt="logo"
-                style={{ height: "32px", padding: "20px" }}
-              />
+              <a href="/">
+                <img
+                  src={logoIconWhite}
+                  alt="logo"
+                  style={{ height: "32px", padding: "20px" }}
+                />
+              </a>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -110,14 +112,16 @@ const Header = ({ headerLinks }) => {
                 alignItems: "center",
               }}
             >
-              <img
-                src={logoIconWhite}
-                alt="logo"
-                style={{
-                  height: "32px",
-                  padding: "20px",
-                }}
-              />
+              <a href="/">
+                <img
+                  src={logoIconWhite}
+                  alt="logo"
+                  style={{
+                    height: "32px",
+                    padding: "20px",
+                  }}
+                />
+              </a>
               {headerLinks.map((headerLink) => (
                 <Button
                   key={headerLink.key}

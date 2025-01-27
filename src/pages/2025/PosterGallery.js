@@ -82,7 +82,22 @@ const Thread1 = () => {
           justifyContent="center"
           sx={{ paddingInline: "10%", marginBottom: "24px" }}
         >
-          {thread2Posters.map((project) => (
+          {thread2Posters.slice(0, 3).map((project) => (
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              presenters={project.presenters}
+              abstract={project.description}
+            />
+          ))}
+        </Stack>
+        <Stack
+          direction={{ xs: "column", lg: "row" }}
+          spacing={2}
+          justifyContent="center"
+          sx={{ paddingInline: "10%", marginBottom: "24px" }}
+        >
+          {thread2Posters.slice(3, 6).map((project) => (
             <ProjectCard
               key={project.title}
               title={project.title}

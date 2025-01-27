@@ -134,8 +134,7 @@ export const firesideChat2Speakers = [
 
 export const thread1Posters = [
   {
-    title:
-      "Preserving Indigenous Culture While Achieving Sustainability: Go or No-go?",
+    title: "Preserving Indigenous Culture Sustainably: Go or No-go?",
     course: "RVC2000",
     presenters: [
       "Chanel Ng Yu Xuan",
@@ -147,8 +146,7 @@ export const thread1Posters = [
       "Delving into a deeper look at complex relations between Culture and Sustainability in East Malaysia through a ten day trip, our team explores the nuances in the forms sustainability can take up, in light of economic growth in the oil drilling and the rise of eco-cultural tourism. Changes to the way people work, live and play place sustainability as both harbinger and by-product of economic and cultural changes. Join us as we also recount changes in indigenous traditions as big corporations, government policies and various grassroots initiatives prioritising different forms of sustainability come into play.",
   },
   {
-    title:
-      "Tradition in Transition:​ Malaysia’s Cultural Practices Amidst Economic Growth​",
+    title: "Traditions in Transition​",
     course: "RVC2000",
     presenters: [
       "Shao Guangda",
@@ -172,7 +170,7 @@ export const thread1Posters = [
       "Our sexual harassment awareness poster aims to raise visibility and promote action against inappropriate behavior. It serves as a powerful tool to stand up for those who experience harassment, offering support and resources for victims. The poster educates on the different forms of harassment—verbal, physical, and non-verbal—while emphasizing the importance of respect, consent, and safe environments. By highlighting the impact of harassment and encouraging bystander intervention, the poster fosters a culture of accountability and solidarity. It empowers individuals to speak out, report incidents, and take collective action toward eliminating harassment in all spaces.",
   },
   {
-    title: "Functional Programming​",
+    title: "Explicating Functional Programming in Minimal English​",
     course: "RVX1002",
     presenters: ["Tan Shi Xin"],
     abstract:
@@ -217,5 +215,17 @@ export const thread2Posters = [
     presenters: ["Wylma Angelica Zen"],
     description:
       "RVRC's \"Walk for Rice\" is an annual initiative under NTUC, encouraging residents to walk for a cause and foster a giving community. Participants log distances online, with every 300 meters walked or run translating into a donation by the FairPrice Foundation of 1 bowl each of white rice, brown rice, and oatmeal to vulnerable families. In light of RV10, last year the WFR 24' comm held a special 10KM nature walk in conjunction with RVRC Day, routing from Harbourfront to RVRC. Over 3 weeks (26 Oct–18 Nov), 318 participants collectively clocked an impressive 27,652.95km. This initiative exemplifies RVRC’s commitment to supporting the underprivileged through active and meaningful contributions.",
+  },
+  {
+    title: "RVRC Heritage Walks",
+    presenters: ["Becky Tan Yu Wen"],
+    description:
+      "Cultural and built heritage shape our present and future, guide sustainable development, and enrich urban experiences. UNESCO reports (2011, 2023) highlight heritage's role in achieving the SDG 2030 Agenda, aiming for culturally vibrant, economically prosperous, socially inclusive, and environmentally sustainable cities. Informed by this, the RVRC Heritage Walks aim to foster intercultural understanding, stewardship, and a deeper connection with shared history. These co-academic activities are curated to enhance youth knowledge and stewardship of heritage through a culture-based approach. Analysis of participant survey data from AY23/24 (n=138) showed significant learning outcomes from these activities, including increased intercultural knowledge, recognition of conservation challenges, and enhanced interactions between local and exchange students.",
+  },
+  {
+    title: "RVRC Artelier x NUSOne",
+    presenters: ["Lisa Lim Xin Quan", "Ho Hui Mei Joie"],
+    description:
+      "The RVRC x NUSOne Art Immersion Workshops are designed to cultivate a deeper appreciation for nature and environmental sustainability through the visual arts as an alternative medium of expression. In addition to providing exposure to various visual arts and crafts media such as watercolors and polymer clay, these workshops aim to enhance mental health through meaningful interaction and community building among NUS students. A total of eight workshops have been planned for AY24/25, and will be offered at a beginner-friendly level, featuring a combination of sessions led by invited artists and students. RVRC’s Artelier IG hosts all the workshops at the college, making them accessible to the wider NUS community.",
   },
 ];

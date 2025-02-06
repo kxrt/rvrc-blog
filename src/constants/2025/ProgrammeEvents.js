@@ -181,7 +181,7 @@ export const thread2Events = [
   {
     time: "12:00 pm",
     titles: ["Fireside Chat 2"],
-    locations: ["Lee Ru Xuan (Hazel), Ou Foong Ye, Cassandra"],
+    locations: ["Lee Ru Xuan (Hazel), Ou Foong Ye, Cassandra, Nadya Heryanto"],
     icon: <Fireplace />,
   },
 ];

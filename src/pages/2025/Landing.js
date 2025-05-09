@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
-import SignupButton from "../../components/SignupButton";
+// import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
@@ -27,7 +27,6 @@ const Landing = () => {
             height: "auto",
           }}
         />
-        {/* <RVRCStepper images={images} /> */}
         <Box
           sx={{
             position: "absolute",
@@ -81,7 +80,7 @@ const Landing = () => {
             together
           </Typography>
         </Grow>
-        <SignupButton link="https://tinyurl.com/RVRCSymposium2025" />
+        {/* <SignupButton link="https://tinyurl.com/RVRCSymposium2025" /> */}
       </Stack>
 
       <Box py="20px" px="10%">

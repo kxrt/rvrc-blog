@@ -23,16 +23,16 @@ const Thread1 = () => {
         }}
       >
         <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
-          Featuring posters from Thread 1 and 2, the Poster Gallery highlights
-          both academic learning and student-led initiatives. Attendees can
+          Featuring posters from Thread 1 and 2, the Poster Gallery highlighted
+          both academic learning and student-led initiatives. Attendees could
           explore projects at their own pace, interact with the material, and
           engage directly with creators encouraging deeper understanding and
-          personalized insights into each initiative. Attendees can also visit
-          the Interactive Booths by community partners such as Hatch, FiTree,
-          and NTUC to learn about how they tackle complex socio-environmental
-          issues. These two parallel sessions will be conducted within a shared
-          space for the tea break, enhancing meaningful learning and networking
-          opportunities for all.
+          personalized insights into each initiative. Attendees could also visit
+          Interactive Booths hosted by our community partners, NTUC, Hatch, the
+          moonbeam co., to learn about how they tackle complex
+          socio-environmental issues. These two parallel sessions was conducted
+          within a shared space for the tea break, enhancing meaningful learning
+          and networking opportunities for all.
         </Typography>
       </Stack>
       <ProgrammeHighlights

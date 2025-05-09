@@ -101,7 +101,7 @@ export const firesideChat1Speakers = [
   },
   {
     name: "Lim Ruey Shuane",
-    title: "Peer Student Supporter",
+    title: "Peer Student Supporters",
     biography:
       "The Peer Student Supporters (PSS) of RVRC are a group of dedicated and passionate individuals committed to enhancing the mental health and well-being of the college's residents. This is achieved through the organization of events (Eg. Mindfulness Monday, Pet Therapy) and the publication of materials (Eg. Video, Comics) aimed at promoting mental health and fostering a supportive environment.\nIn addition, each PSS member acts as immediate nodes of support for the individuals around them (including each other), collectively forming a network of care across the whole college.",
     image: Shuane,

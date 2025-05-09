@@ -59,14 +59,14 @@ const Thread2 = () => {
         >
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
             Highlighting student-led co-curricular endeavours, discussions in
-            this thread evidence the crucial acquisition of soft skills, such as
-            leadership and cultural awareness, towards the cause of building a
-            shared future that is more sustainable and equitable for all.
-            Presenters include students from RVRC, NUS, and other IHLs, and are
+            this thread evidenced the crucial acquisition of soft skills, such
+            as leadership and cultural awareness, towards the cause of building
+            a shared future that is more sustainable and equitable for all.
+            Presenters include students from RVRC, NUS, and other IHLs were
             invited to share their unique experiences and exchange ideas with
-            one another to discover new insights. The thread will also showcase
-            how the distinct RVRC living-learning experience instils stewardship
-            of society and environment.
+            one another to discover new insights. The thread also showcased how
+            the distinct RVRC living-learning experience instils stewardship of
+            society and environment.
           </Typography>
         </Grow>
       </Stack>

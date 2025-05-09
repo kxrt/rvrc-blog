@@ -62,13 +62,14 @@ const Thread1 = () => {
         >
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
             Focused on academic learning at RVRC, presentations in this thread
-            demonstrate how the RVRC Programme's courses enable students to hone
-            their skills in navigating a dynamic and increasingly complex world.
-            The thread also features experiential learning beyond the classroom,
-            such as partnering with external organizations, empowering students
-            to identify real-world issues and effect meaningful change. Students
-            will showcase the learning process and successful application of
-            skills like critical thinking and creative problem-solving.
+            demonstrated how the RVRC Programme's courses enable students to
+            hone their skills in navigating a dynamic and increasingly complex
+            world. The thread also featured experiential learning beyond the
+            classroom, such as partnering with external organizations,
+            empowering students to identify real-world issues and effect
+            meaningful change. Students showcased the learning process and
+            successful application of skills like critical thinking and creative
+            problem-solving.
           </Typography>
         </Grow>
         <Grow
@@ -77,7 +78,7 @@ const Thread1 = () => {
           style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
         >
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
-            Thread 1 is hosted separately in MPR 1 and 2. Presentations in{" "}
+            Thread 1 was hosted separately in MPR 1 and 2. Presentations in{" "}
             <a
               href="#MPR1"
               style={{
@@ -88,7 +89,7 @@ const Thread1 = () => {
             >
               MPR 1
             </a>{" "}
-            are from the RVC Cultures and Connections pillar and the RVN
+            were from the RVC Cultures and Connections pillar and the RVN
             Communities and Engagement pillar. Presentations in{" "}
             <a
               href="#MPR2"
@@ -100,7 +101,7 @@ const Thread1 = () => {
             >
               MPR 2
             </a>{" "}
-            are from the RVSS Singapore Studies pillar and the RVX Critique and
+            were from the RVSS Singapore Studies pillar and the RVX Critique and
             Expression pillar.
           </Typography>
         </Grow>

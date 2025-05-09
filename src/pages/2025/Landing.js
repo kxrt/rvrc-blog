@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
-import SignupButton from "../../components/SignupButton";
+// import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
@@ -27,7 +27,6 @@ const Landing = () => {
             height: "auto",
           }}
         />
-        {/* <RVRCStepper images={images} /> */}
         <Box
           sx={{
             position: "absolute",
@@ -81,7 +80,7 @@ const Landing = () => {
             together
           </Typography>
         </Grow>
-        <SignupButton link="https://tinyurl.com/RVRCSymposium2025" />
+        {/* <SignupButton link="https://tinyurl.com/RVRCSymposium2025" /> */}
       </Stack>
 
       <Box py="20px" px="10%">
@@ -90,18 +89,17 @@ const Landing = () => {
           <b style={{ color: "#1d9077" }}>
             ‘Living and Learning for a Shared Future’
           </b>{" "}
-          will be held on 8 February 2025. The student-led symposium will be a
-          dynamic showcase of exemplary student projects and the empowering
-          tapestry of co-curricular activities at our College. This event is
-          designed as a platform for networking, reflection, and mutual
-          learning, focusing on the crucial themes of sustainability education
-          and workplace readiness by garnering a diverse audience of 200
-          students, faculty members, industry collaborators and community
-          partners.
+          was held on 8 February 2025. The student-led symposium was a dynamic
+          showcase of exemplary student projects and the empowering tapestry of
+          co-curricular activities at our College. This event was designed as a
+          platform for networking, reflection, and mutual learning, focusing on
+          the crucial themes of sustainability education and workplace readiness
+          by garnering a diverse audience of 200 students, faculty members,
+          industry collaborators and community partners.
         </p>
 
         <p style={{ fontSize: "16pt" }}>
-          We are honoured to have{" "}
+          We were honoured to have{" "}
           <a href="/keynote" style={{ color: "#592693", fontWeight: "bold" }}>
             Mr. Preston Wong
           </a>{" "}
@@ -160,7 +158,7 @@ const Landing = () => {
           margin: "0",
         }}
       >
-        This event is made possible through the generous support of the Mrs Lee
+        This event was made possible through the generous support of the Mrs Lee
         Choon Guan Trust Fund.
       </p>
 

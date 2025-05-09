@@ -2,41 +2,27 @@
 
 This document describes the development workflow for this project.
 
-## Overview
-
-This website uses [React](https://react.dev/) for frontend and [Vercel](https://vercel.com/) for deployment.
+## Deployment
 
 Currently, this project has 2 branches:
 
 - `main`: For production
 - `dev`: For development
 
-## Development
+### Deployment Preview
 
-### Commit Message Conventions
+After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to a _preview_ site. You can view the preview sites on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
 
-Let's standardize our commit messages using the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/#summary).
+- `dev`: **Preview** environment
+- `main`: **Production** environment (Different from production site)
 
-```
-<type>[optional scope]: <description>
-```
+### Deploying to Production
 
-You may wish to include the symposium's year as the optional scope, because we update this website annually and retain the older symposium editions.
+> The `main` branch is deployed onto the production site (https://rvrc-blog.vercel.app/).
 
-Here are some example commit messages:
+To update the production site with your changes in the `dev` branch, open a pull request to merge from `dev` to `main`.
 
-```
-feat(2024): add symposium theme
-fix(2023): fix typo
-docs: add development workflow
-style: lint
-```
-
-### Branch Naming Conventions
-
-- **Lowercase**
-- **Hyphen-separated**: Use hyphens to separate words
-- **Descriptive**: The name should be descriptive and concise, ideally reflecting the work done on the branch.
+## Recommended Workflows
 
 ### Single Developer
 
@@ -87,15 +73,29 @@ git push origin add-symposium-theme
 
 6. Raise a pull request on GitHub to merge the feature branch into the `dev` branch.
 
-## Deployment Preview
+## Contribution Guidelines
 
-After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to a _preview_ site. You can view the preview sites on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
+### Commit Messages
 
-- `dev`: **Preview** environment
-- `main`: **Production** environment (Different from production site)
+Let's standardize our commit messages using the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/#summary).
 
-## Deploying to Production
+```
+<type>[optional scope]: <description>
+```
 
-> The `main` branch is deployed onto the production site (https://rvrc-blog.vercel.app/).
+You may wish to include the symposium's year as the optional scope, because we update this website annually and retain the older symposium editions.
 
-To update the production site with your changes in the `dev` branch, open a pull request to merge from `dev` to `main`.
+Here are some example commit messages:
+
+```
+feat(2024): add symposium theme
+fix(2023): fix typo
+docs: add development workflow
+style: lint
+```
+
+### Branch Naming
+
+- **Lowercase**
+- **Hyphen-separated**: Use hyphens to separate words
+- **Descriptive**: The name should be descriptive and concise, ideally reflecting the work done on the branch.

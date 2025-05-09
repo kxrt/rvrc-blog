@@ -8,7 +8,11 @@ The [RVRC Symposium](https://rvrc-blog.vercel.app/) showcases the best of [Ridge
 
 Check out the [RVRC Symposium website](https://rvrc-blog.vercel.app/) now!
 
-## Getting Started
+## Tech Stack
+
+Built with JavaScript, [React](https://react.dev/), and [MUI](https://mui.com/), deployed with [Vercel](https://vercel.com/).
+
+## Installation & Setup
 
 1. Clone the project repository.
 
@@ -17,7 +21,7 @@ git clone https://github.com/kxrt/rvrc-blog.git
 cd rvrc-blog
 ```
 
-2. Install `node 14.17.6`.
+2. Install `node 22.15.0`.
 
 > We recommend using [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) to install and manage node versions easily.
 

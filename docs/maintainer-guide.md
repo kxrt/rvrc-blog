@@ -1,15 +1,25 @@
-# Development Workflow
+# Maintainer Guide
 
-This document describes the development workflow for this project.
+This document details the development workflow and contribution guidelines for this project.
 
-## Deployment
+- [Development Workflow](#development-workflow)
+  - [Previewing Deployments](#previewing-deployments)
+  - [Deploying to Production](#deploying-to-production)
+  - [Recommended Workflows](#recommended-workflows)
+    - [Single Developer](#single-developer)
+    - [Multiple Developers](#multiple-developers)
+- [Contribution Guidelines](#contribution-guidelines)
+  - [Commit Messages](#commit-messages)
+  - [Branch Naming](#branch-naming)
+
+## Development Workflow
 
 Currently, this project has 2 branches:
 
 - `main`: For production
 - `dev`: For development
 
-### Deployment Preview
+### Previewing Deployments
 
 After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to a _preview_ site. You can view the preview sites on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
 
@@ -22,9 +32,9 @@ After pushing changes to the `dev` or `main` branch, Vercel deploys the changes 
 
 To update the production site with your changes in the `dev` branch, open a pull request to merge from `dev` to `main`.
 
-## Recommended Workflows
+### Recommended Workflows
 
-### Single Developer
+#### Single Developer
 
 > When working on this project alone, all development can be done in the `dev` branch.
 
@@ -52,7 +62,7 @@ git commit -m "feat(2024): add symposium theme"
 git push origin dev
 ```
 
-### Multiple Developers
+#### Multiple Developers
 
 If more developers are involved, we can adopt a [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) to make changes to the `dev` branch. The following steps outline this process:
 

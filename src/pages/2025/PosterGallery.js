@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
-import PosterGalleryImage from "../../assets/2025/poster-gallery.JPG";
+import PosterGalleryImage from "../../assets/2025/poster-gallery.jpeg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import { posterGalleryEvents } from "../../constants/2025/ProgrammeEvents";

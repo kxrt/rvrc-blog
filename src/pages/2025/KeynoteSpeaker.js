@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import keynoteSpeaker from "../../assets/2025/keynote-speaker.jpeg";
-import keynoteSpeaker2 from "../../assets/2025/keynote-speaker-2.JPG";
+import keynoteSpeaker2 from "../../assets/2025/keynote-speaker-2.jpeg";
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
 

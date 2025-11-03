@@ -10,8 +10,8 @@ import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
 import LandingBanner1 from "../../assets/2025/landing-banner-1.jpeg";
 import LandingBanner2 from "../../assets/2025/landing-banner-2.jpeg";
 import LandingBanner3 from "../../assets/2025/landing-banner-3.jpeg";
-import LandingBanner4 from "../../assets/2025/landing-banner-4.JPG";
-import LandingBanner5 from "../../assets/2025/landing-banner-5.JPG";
+import LandingBanner4 from "../../assets/2025/landing-banner-4.jpeg";
+import LandingBanner5 from "../../assets/2025/landing-banner-5.jpeg";
 import Footer from "../../components/Footer";
 
 const images = [

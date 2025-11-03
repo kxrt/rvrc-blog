@@ -3,7 +3,7 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
-import Thread1Image from "../../assets/2025/thread-1.jpg";
+import Thread1Image from "../../assets/2025/thread-1.JPG";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 import PosterGalleryImage from "../../assets/2025/poster-gallery.JPG";

@@ -3,7 +3,7 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
-import Thread2Image from "../../assets/2024/thread-2.jpg";
+import Thread2Image from "../../assets/2025/thread-2.jpeg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import SpeakerBiography from "../../components/SpeakerBiography";
 import { thread2Events } from "../../constants/2025/ProgrammeEvents";

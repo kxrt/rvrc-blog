@@ -1,20 +1,17 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import keynoteSpeaker from "../../assets/2025/keynote-speaker.jpeg";
+import keynoteSpeaker2 from "../../assets/2025/keynote-speaker-2.jpeg";
 import Title from "../../components/Title";
+import Footer from "../../components/Footer";
 
 const KeynoteSpeaker = () => {
   return (
-    <>
+    <Stack spacing={2}>
       <Title title="Keynote Speaker" />
       <Box sx={{ display: { xs: "inline-block" } }}>
         <Box sx={{ display: "inline-block" }}>
-          <img
-            src={keynoteSpeaker}
-            alt="Keynote Speaker"
-            width={250}
-            style={{ marginTop: "40px" }}
-          />
+          <img src={keynoteSpeaker} alt="Keynote Speaker" width={250} />
         </Box>
         <Box sx={{ textAlign: { xs: "center" } }}>
           <Typography
@@ -66,8 +63,18 @@ const KeynoteSpeaker = () => {
             </p>
           </div>
         </Box>
+        <Box
+          sx={{
+            display: "inline-block",
+            maxWidth: "600px",
+            paddingInline: "7%",
+          }}
+        >
+          <img src={keynoteSpeaker2} alt="Keynote Speaker 2" width="100%" />
+        </Box>
       </Box>
-    </>
+      <Footer />
+    </Stack>
   );
 };
 

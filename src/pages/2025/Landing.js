@@ -1,13 +1,41 @@
 import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
+import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 // import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
 
-import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
+import LandingBanner1 from "../../assets/2025/landing-banner-1.jpeg";
+import LandingBanner2 from "../../assets/2025/landing-banner-2.jpeg";
+import LandingBanner3 from "../../assets/2025/landing-banner-3.jpeg";
+import LandingBanner4 from "../../assets/2025/landing-banner-4.JPG";
+import LandingBanner5 from "../../assets/2025/landing-banner-5.JPG";
 import Footer from "../../components/Footer";
+
+const images = [
+  {
+    label: "Banner 1",
+    imgPath: LandingBanner1,
+  },
+  {
+    label: "Banner 2",
+    imgPath: LandingBanner2,
+  },
+  {
+    label: "Banner 3",
+    imgPath: LandingBanner3,
+  },
+  {
+    label: "Banner 4",
+    imgPath: LandingBanner4,
+  },
+  {
+    label: "Banner 5",
+    imgPath: LandingBanner5,
+  },
+];
 
 const Landing = () => {
   return (
@@ -16,17 +44,10 @@ const Landing = () => {
         component="div"
         sx={{
           position: "relative",
+          background: "black",
         }}
       >
-        <Box
-          component="img"
-          src={LandingBanner1}
-          sx={{
-            display: "block", // Ensures no extra space below the image
-            width: "100%",
-            height: "auto",
-          }}
-        />
+        <RVRCStepper images={images} />
         <Box
           sx={{
             position: "absolute",
@@ -36,52 +57,44 @@ const Landing = () => {
             height: "100%",
             background:
               "linear-gradient(to top, rgb(0,0,0,1), rgb(0,0,0,0) 80%)",
-            pointerEvents: "none", // Ensures the gradient layer doesn’t block interactions
+            pointerEvents: "none", // Ensures the gradient layer doesn't block interactions
+            zIndex: 1,
           }}
         />
-        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
-          <Typography
-            variant="h1"
+        <Grow in timeout={2000} style={{ transformOrigin: "center bottom" }}>
+          <Stack
+            direction="column"
+            spacing={{ xs: 1, md: 2 }}
             sx={{
               position: "absolute",
-              bottom: { xs: 0, md: "32px" },
-              width: "80%",
-              mx: "10%",
-              color: "white",
-              fontSize: { xs: "24pt", md: "50pt" },
-              fontWeight: "bold",
+              bottom: { xs: "5px", md: "80px" },
+              width: "100%",
+              zIndex: 2,
             }}
           >
-            RVRC Symposium 2025
-          </Typography>
+            <Typography
+              variant="h1"
+              sx={{
+                color: "white",
+                fontSize: { xs: "24pt", md: "50pt" },
+                fontWeight: "bold",
+              }}
+            >
+              RVRC Symposium 2025
+            </Typography>
+            <Typography
+              sx={{
+                color: "white",
+                fontSize: { xs: "16pt", md: "18pt" },
+              }}
+            >
+              Empowering youth to shape a sustainable and equitable future
+              together
+            </Typography>
+            {/* <SignupButton link="https://tinyurl.com/RVRCSymposium2025" /> */}
+          </Stack>
         </Grow>
       </Box>
-
-      <Stack
-        direction="column"
-        spacing={4}
-        sx={{
-          paddingTop: { xs: "32px", md: "0" },
-          paddingBottom: "32px",
-          px: "10%",
-          background: "black",
-          alignItems: "center",
-        }}
-      >
-        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
-          <Typography
-            sx={{
-              color: "white",
-              fontSize: { xs: "16pt", md: "18pt" },
-              maxWidth: "500px",
-            }}
-          >
-            Empowering youth to shape a sustainable and equitable future
-            together
-          </Typography>
-        </Grow>
-        {/* <SignupButton link="https://tinyurl.com/RVRCSymposium2025" /> */}
-      </Stack>
 
       <Box py="20px" px="10%">
         <p style={{ fontSize: "16pt" }}>

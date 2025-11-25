@@ -26,6 +26,14 @@ import Thread12025 from "./pages/2025/Thread1";
 import Thread22025 from "./pages/2025/Thread2";
 import PosterGallery2025 from "./pages/2025/PosterGallery";
 import headerLinks2025 from "./constants/2025/HeaderLinks";
+
+import Landing2026 from "./pages/2026/Landing";
+import Team2026 from "./pages/2026/Team";
+import KeynoteSpeaker2026 from "./pages/2026/KeynoteSpeaker";
+import Thread12026 from "./pages/2026/Thread1";
+import Thread22026 from "./pages/2026/Thread2";
+import PosterGallery2026 from "./pages/2026/PosterGallery";
+import headerLinks2026 from "./constants/2026/HeaderLinks";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 function App() {
@@ -42,7 +50,16 @@ function App() {
           <Routes>
             <Route path="about" element={<AboutRVRC />} />
 
-            <Route path="/" element={<Header headerLinks={headerLinks2025} />}>
+            <Route path="/" element={<Header headerLinks={headerLinks2026} />}>
+              <Route index element={<Landing2026 />} />
+              <Route path="team" element={<Team2026 />} />
+              <Route path="keynote" element={<KeynoteSpeaker2026 />} />
+              <Route path="thread-1" element={<Thread12026 />} />
+              <Route path="thread-2" element={<Thread22026 />} />
+              <Route path="poster-gallery" element={<PosterGallery2026 />} />
+            </Route>
+
+            <Route path="2025" element={<Header headerLinks={headerLinks2025} />}>
               <Route index element={<Landing2025 />} />
               <Route path="team" element={<Team2025 />} />
               <Route path="keynote" element={<KeynoteSpeaker2025 />} />

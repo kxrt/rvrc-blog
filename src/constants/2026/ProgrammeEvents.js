@@ -1,10 +1,18 @@
 import {
-  Add,
+  AutoAwesome,
+  Campaign,
   Collections,
   CoPresent,
+  EmojiEvents,
+  EmojiFoodBeverage,
+  EmojiPeople,
+  Fireplace,
+  Groups,
   HowToReg,
   LocalCafe,
-  Fireplace,
+  Lightbulb,
+  Person,
+  Restaurant,
 } from "@mui/icons-material";
 
 export const programmeEvents = [
@@ -16,9 +24,69 @@ export const programmeEvents = [
   },
   {
     time: "9:00 am",
-    titles: ["TO UPDATE"],
+    titles: ["Symposium Introduction by RVRC Symposium 2026 Co-Chairs (Bai Zirui and Jeong Youngkyu)"],
     locations: ["??"],
-    icon: <Add />,
+    icon: <CoPresent />,
+  },
+  {
+    time: "9:10 am",
+    titles: ["Welcome Address by RVRC College Master A/P Sim Tick Ngee"],
+    locations: ["??"],
+    icon: <Person />,
+  },
+  {
+    time: "9:20 am",
+    titles: ["Keynote Address by Mr. Sean Lam (Founder & CEO, Ecoworks)"],
+    locations: ["??"],
+    icon: <Lightbulb />,
+  },
+  {
+    time: "9:40 am",
+    titles: ["Thematic Thread Highlights"],
+    locations: ["??"],
+    icon: <AutoAwesome />,
+  },
+  {
+    time: "10:00 am",
+    titles: ["Poster Presentations and Interactive Booths / Networking Tea Session"],
+    locations: ["Community Partners - NTUC Youth, NYC (YEP), MINDS, WWF Singapore"],
+    icon: <EmojiFoodBeverage />,
+  },
+  {
+    time: "11:00 am",
+    titles: ["Announcement for Parallel Thematic Threads and Their Venues"],
+    locations: ["??"],
+    icon: <Campaign />,
+  },
+  {
+    time: "11:10 am",
+    titles: ["Presentations and Panels (Multiple venues with staggered timing)"],
+    locations: ["??"],
+    icon: <Groups />,
+  },
+  {
+    time: "1:00 pm",
+    titles: ["Announcement for Symposium Recognition Awards"],
+    locations: ["??"],
+    icon: <Campaign />,
+  },
+  {
+    time: "1:10 pm",
+    titles: ["Presentation of Symposium Recognition Awards by RVRC Rector, Dr. Noeleen Heyzer"],
+    locations: ["??"],
+    icon: <EmojiEvents />,
+  },
+  {
+    time: "1:20 pm",
+    titles: ["Closing Remarks by RVRC Symposium 2026 Co-Chairs"],
+    locations: ["??"],
+    icon: <EmojiPeople />,
+  },
+  {
+    time: "1:30 pm",
+    titles: ["Networking Lunch"],
+    locations: ["??"],
+    icon: <Restaurant />,
   },
 ];
 

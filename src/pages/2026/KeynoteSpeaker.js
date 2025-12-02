@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-// import keynoteSpeaker from "../../assets/2026/___.jpg";
+import keynoteSpeaker from "../../assets/2026/keynote-speaker.jpg";
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
 
@@ -9,9 +9,9 @@ const KeynoteSpeaker = () => {
     <Stack spacing={2}>
       <Title title="Keynote Speaker" />
       <Box sx={{ display: { xs: "inline-block" } }}>
-        {/* <Box sx={{ display: "inline-block" }}>
+        <Box sx={{ display: "inline-block" }}>
           <img src={keynoteSpeaker} alt="Keynote Speaker" width={250} />
-        </Box> */}
+        </Box>
         <Box sx={{ textAlign: { xs: "center" } }}>
           <Typography
             sx={{
@@ -21,7 +21,7 @@ const KeynoteSpeaker = () => {
               color: "#1d9077",
             }}
           >
-            Name
+            Mr. Sean Lam
           </Typography>
           <Typography
             style={{
@@ -30,7 +30,7 @@ const KeynoteSpeaker = () => {
               paddingBottom: "0px",
             }}
           >
-            Role, Company
+            Founder and CEO, Ecoworks
           </Typography>
 
           <div>
@@ -41,28 +41,25 @@ const KeynoteSpeaker = () => {
                 textAlign: "justify",
               }}
             >
-              <b>Name</b> is the (Role) of{" "}
+              <b>Mr. Sean Lam</b> is the Founder and CEO of{" "}
               <a
-                href=""
+                href="https://www.ecoworks.sg/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "#592693", fontWeight: "bold" }}
               >
-                link
+                Ecoworks
               </a>
-              , description...
+              , a social enterprise in Singapore that tackles single-use plastic 
+              waste by providing a network of automated refill stations for household 
+              cleaning products. His mission is to promote a packaging-free lifestyle 
+              and eliminate millions of plastic bottles annually. He is also recognised 
+              as a Philip Yeo Innovation Fellow (a "MAD COW" - Make A Difference, 
+              Change Our World) for his innovative environmental solutions and is 
+              active as a community leader and Volunteer Police Officer.
             </p>
           </div>
         </Box>
-        {/* <Box
-          sx={{
-            display: "inline-block",
-            maxWidth: "600px",
-            paddingInline: "7%",
-          }}
-        >
-          <img src={keynoteSpeaker2} alt="Keynote Speaker 2" width="100%" />
-        </Box> */}
       </Box>
       <Footer />
     </Stack>

@@ -31,7 +31,7 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
               titles={event.titles}
               locations={event.locations}
               icon={event.icon}
-              iconBackgroundColor={index % 2 === 0 ? "" : "#592693"}
+              iconBackgroundColor={index % 2 === 0 ? "#20a9a9ff" : "#592693"}
             />
           ))}
         </Timeline>

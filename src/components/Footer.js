@@ -24,7 +24,7 @@ const Footer = () => {
               maxWidth: { xs: "none", md: "200px" },
             }}
           >
-            RVRC Symposium 2025
+            RVRC Symposium 2026
           </Typography>
 
           <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
@@ -47,18 +47,6 @@ const Footer = () => {
               <PhoneOutlined sx={{ color: "white" }} />
               <Typography>(+65) 6601 3886</Typography>
             </Stack>
-            {/* <List>
-              <ListItem disablePadding>
-                <ListItemIcon></ListItemIcon>
-                askrvrc@nus.edu.sg
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>
-                  <PhoneOutlined sx={{ color: "white" }} />
-                </ListItemIcon>
-                (+65) 6601 3886
-              </ListItem>
-            </List> */}
           </Stack>
         </Stack>
       </Box>

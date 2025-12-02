@@ -68,7 +68,8 @@ const Landing = () => {
                 fontSize: { xs: "16pt", md: "18pt" },
               }}
             >
-              Add description here
+              Empowering youth to shape a sustainable and equitable future
+              together
             </Typography>
             {/* <SignupButton link="https://tinyurl.com/RVRCSymposium2025" /> */}
           </Stack>
@@ -77,19 +78,25 @@ const Landing = () => {
 
       <Box py="20px" px="10%">
         <p style={{ fontSize: "16pt" }}>
-          The Ridge View Residential College (RVRC) Symposium 2026{" "}
+          The Ridge View Residential College (RVRC) Symposium 2026, themed {" "}
           <b style={{ color: "#1d9077" }}>
-            ‘Add Theme'
+            ‘Living and Learning for a Shared Future’
           </b>{" "}
-          will be held on ____ 2026. Add description.
+          will be held on 7 February 2026. This student-led symposium serves as a 
+          dynamic showcase of outstanding student projects and the rich spectrum 
+          of co-curricular activities within our College. Designed as a platform 
+          for networking, reflection, and shared learning, the event highlights key 
+          themes in sustainability education and workplace readiness.
         </p>
 
         <p style={{ fontSize: "16pt" }}>
           We are honoured to have{" "}
           <a href="/keynote" style={{ color: "#592693", fontWeight: "bold" }}>
-            Special Guest Name
+            Mr. Sean Lam
           </a>{" "}
-          as our Keynote Speaker. Add description here.
+          as our Keynote Speaker. We believe that his leadership in environmental 
+          innovation and his engagement with the RVRC community will make his insights 
+          meaningful for our participants.
         </p>
       </Box>
 
@@ -114,26 +121,26 @@ const Landing = () => {
               textAlign: "center",
             }}
           >
-            'Add Theme'
+            'Living and Learning for a Shared Future'
           </Typography>
           <p style={{ fontSize: "16pt", color: "white" }}>
-            Describe theme.
+            Retained from the RVRC Symposium 2024, the theme continues to underscore 
+            RVRC’s commitment to experiential learning and the extension of the world 
+            as a classroom. This approach empowers students to address complex challenges 
+            in social and environmental sustainability by collaborating with community 
+            stakeholders and translating innovative ideas into meaningful action.
+
+            In 2026, the symposium places renewed emphasis on sustainability and workplace 
+            readiness — key pillars for building a shared future. By showcasing student projects, 
+            sharing best practices, and fostering capacity building, the symposium equips 
+            students with the skills, perspectives, and adaptability needed to thrive in diverse 
+            professional environments while contributing to a more sustainable, inclusive, and 
+            equitable world.
           </p>
         </Stack>
       </Box>
 
       <ProgrammeHighlights title="Programme" events={programmeEvents} />
-
-      <p
-        style={{
-          fontSize: "14pt",
-          fontStyle: "italic",
-          paddingBlock: "20px",
-          margin: "0",
-        }}
-      >
-        This event was made possible through the generous support of ___. (Add sponsors here)
-      </p>
 
       <PastSymposia />
 

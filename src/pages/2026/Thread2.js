@@ -3,10 +3,10 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
-import Thread2Image from "../../assets/2025/thread-2.jpeg";
+// import Thread2Image from "../../assets/2026/thread-2.jpeg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import SpeakerBiography from "../../components/SpeakerBiography";
-import { thread2Events } from "../../constants/2025/ProgrammeEvents";
+import { thread2Events } from "../../constants/2026/ProgrammeEvents";
 import {
   firesideChat1Speakers,
   firesideChat2Speakers,
@@ -16,7 +16,7 @@ const Thread2 = () => {
   return (
     <Stack spacing={0}>
       <Title title="Thread 2: Adventure" />
-      <Box component="img" src={Thread2Image} sx={{ width: "100%" }} />
+      {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
       <Stack
         spacing={4}
         sx={{
@@ -25,8 +25,8 @@ const Thread2 = () => {
           paddingBlock: "20px",
         }}
       >
-        <Stack spacing={1}>
-          <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Stack spacing={1}>
             <Typography
               variant="h4"
               sx={{
@@ -37,8 +37,6 @@ const Thread2 = () => {
             >
               Adventure
             </Typography>
-          </Grow>
-          <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
             <Typography
               variant="subtitle1"
               sx={{
@@ -50,24 +48,35 @@ const Thread2 = () => {
             >
               Cultivating Curiosity and Stewardship
             </Typography>
-          </Grow>
-        </Stack>
+          </Stack>
+        </Grow>
         <Grow
           in
           timeout={1000}
           style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
         >
+          <Stack spacing={1}>
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
-            Highlighting student-led co-curricular endeavours, discussions in
-            this thread evidenced the crucial acquisition of soft skills, such
-            as leadership and cultural awareness, towards the cause of building
-            a shared future that is more sustainable and equitable for all.
-            Presenters include students from RVRC, NUS, and other IHLs were
-            invited to share their unique experiences and exchange ideas with
-            one another to discover new insights. The thread also showcased how
-            the distinct RVRC living-learning experience instils stewardship of
-            society and environment.
+            This thread celebrates the rich array of student-led co-curricular and 
+            co-academic initiatives spearheaded by our residents. Discussions in this 
+            thread seek to showcase the vibrancy of student life in RVRC and beyond, 
+            showcasing how these experiences nurtu re essential workplace soft skills, 
+            including leadership, teamwork and cultural awareness. 
           </Typography>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: "white"}}>
+            While the previous symposium focused solely on sustainability, 
+            the 2026 edition will also spotlight RVRC’s other key theme — workplace 
+            readiness. Dedicated panel discussions will be held for each theme, 
+            providing deeper engagement and diverse perspectives.
+          </Typography>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: "white"}}>
+            Presenters include students from RVRC, NUS and external IHLs, who are invited 
+            to share their unique experiences, and foster dialogue and idea exchange 
+            across diverse groups. At the same time, this thread will also showcase how 
+            RVRC’s distinct living-learning programme cultivates a strong sense of 
+            stewardship towards both society and the environment.
+          </Typography>
+          </Stack>
         </Grow>
       </Stack>
       <ProgrammeHighlights

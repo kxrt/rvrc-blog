@@ -82,11 +82,12 @@ const Landing = () => {
           <b style={{ color: "#1d9077" }}>
             ‘Living and Learning for a Shared Future’
           </b>{" "}
-          will be held on 7 February 2026. This student-led symposium serves as a 
-          dynamic showcase of outstanding student projects and the rich spectrum 
-          of co-curricular activities within our College. Designed as a platform 
-          for networking, reflection, and shared learning, the event highlights key 
-          themes in sustainability education and workplace readiness.
+          will be held on 7 February 2026. This student-led symposium provides a 
+          formal platform for the presentation of exemplary student projects and 
+          the diverse range of co-curricular activities undertaken within the 
+          College. It is designed to facilitate meaningful networking, reflection 
+          and shared learning among participants. The Symposium is also foregrounding 
+          the RVRC’s integrated themes of sustainability and workplace readiness.
         </p>
 
         <p style={{ fontSize: "16pt" }}>

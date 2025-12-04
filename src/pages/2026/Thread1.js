@@ -3,7 +3,7 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
-import Thread1Image from "../../assets/2025/thread-1.jpeg";
+// import Thread1Image from "../../assets/2026/thread-1.jpeg";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import {
@@ -13,13 +13,13 @@ import {
 import {
   thread1MPR1Events,
   thread1MPR2Events,
-} from "../../constants/2025/ProgrammeEvents";
+} from "../../constants/2026/ProgrammeEvents";
 
 const Thread1 = () => {
   return (
     <Stack spacing={0}>
       <Title title="Thread 1: Edu-venture" />
-      <Box component="img" src={Thread1Image} sx={{ width: "100%" }} />
+      {/* <Box component="img" src={Thread1Image} sx={{ width: "100%" }} /> */}
       <Stack
         spacing={4}
         sx={{
@@ -28,8 +28,8 @@ const Thread1 = () => {
           paddingBlock: "20px",
         }}
       >
-        <Stack spacing={1}>
-          <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Stack spacing={1}>
             <Typography
               variant="h4"
               sx={{
@@ -40,8 +40,6 @@ const Thread1 = () => {
             >
               Edu-venture
             </Typography>
-          </Grow>
-          <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
             <Typography
               variant="subtitle1"
               sx={{
@@ -53,57 +51,54 @@ const Thread1 = () => {
             >
               Cultivating Skills through Experiential Learning
             </Typography>
-          </Grow>
-        </Stack>
-        <Grow
-          in
-          timeout={1000}
-          style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
-        >
-          <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
-            Focused on academic learning at RVRC, presentations in this thread
-            demonstrated how the RVRC Programme's courses enable students to
-            hone their skills in navigating a dynamic and increasingly complex
-            world. The thread also featured experiential learning beyond the
-            classroom, such as partnering with external organizations,
-            empowering students to identify real-world issues and effect
-            meaningful change. Students showcased the learning process and
-            successful application of skills like critical thinking and creative
-            problem-solving.
-          </Typography>
+          </Stack>
         </Grow>
         <Grow
           in
           timeout={1000}
           style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
         >
-          <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
-            Thread 1 was hosted separately in MPR 1 and 2. Presentations in{" "}
-            <a
-              href="#MPR1"
-              style={{
-                color: "#fff",
-                fontWeight: "bold",
-                textDecoration: "underline",
-              }}
-            >
-              MPR 1
-            </a>{" "}
-            were from the RVC Cultures and Connections pillar and the RVN
-            Communities and Engagement pillar. Presentations in{" "}
-            <a
-              href="#MPR2"
-              style={{
-                color: "#fff",
-                fontWeight: "bold",
-                textDecoration: "underline",
-              }}
-            >
-              MPR 2
-            </a>{" "}
-            were from the RVSS Singapore Studies pillar and the RVX Critique and
-            Expression pillar.
-          </Typography>
+          <Stack spacing={1}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+              Focused on academic learning at RVRC, presentations in this thread demonstrate 
+              how RVRC Programme's (RVRCP) courses enable students to hone their skills and equip 
+              them with professional competencies to navigate a dynamic and increasingly 
+              complex world.
+            </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+              In addition to poster and oral presentations, interactive sessions are introduced 
+              to better reflect the experiential and participatory nature of RVRCP course 
+              projects, many of which involve showcases and peer teaching. This addition 
+              will offer a more authentic and comprehensive representation of the diversity 
+              within RVRCP courses.
+            </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white"}}>
+              Thread 1 will be hosted separately in MPR 1 and 2. Presentations in{" "}
+              <a
+                href="#MPR1"
+                style={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  textDecoration: "underline",
+                }}
+              >
+                MPR 1
+              </a>{" "}
+              are from the RVC Cultures and Connections pillar and the RVN 
+              Communities and Engagement pillar. Presentations in{" "}
+              <a
+                href="#MPR2"
+                style={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  textDecoration: "underline",
+                }}
+              >
+                MPR 2
+              </a>{" "}
+              are from the RVSS Singapore Studies pillar and the RVX Critique and Expression pillar.
+            </Typography>
+          </Stack>
         </Grow>
       </Stack>
 

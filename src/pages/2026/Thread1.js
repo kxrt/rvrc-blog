@@ -7,10 +7,6 @@ import Title from "../../components/Title";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import {
-  thread1MPR1Projects,
-  thread1MPR2Projects,
-} from "../../constants/2025/Speakers";
-import {
   thread1MPR1Events,
   thread1MPR2Events,
 } from "../../constants/2026/ProgrammeEvents";
@@ -115,12 +111,13 @@ const Thread1 = () => {
         justifyContent="center"
         sx={{ paddingInline: "10%" }}
       >
-        {thread1MPR1Projects.map((project) => (
+        {thread1MPR1Events.filter(e => e.abstract) // ignore breaks in timeline
+        .map((project) => (
           <ProjectCard
-            key={project.title}
-            title={project.title}
+            key={project.titles[0]}
+            title={project.titles[0]}
             subtitle={project.course}
-            presenters={project.presenters}
+            presenters={project.locations}
             abstract={project.abstract}
           />
         ))}
@@ -138,12 +135,13 @@ const Thread1 = () => {
         justifyContent="center"
         sx={{ paddingInline: "10%", marginBottom: "24px" }}
       >
-        {thread1MPR2Projects.map((project) => (
+        {thread1MPR2Events.filter(e => e.abstract) // ignore breaks
+        .map((project) => (
           <ProjectCard
-            key={project.title}
-            title={project.title}
+            key={project.titles[0]}
+            title={project.titles[0]}
             subtitle={project.course}
-            presenters={project.presenters}
+            presenters={project.locations}
             abstract={project.abstract}
           />
         ))}

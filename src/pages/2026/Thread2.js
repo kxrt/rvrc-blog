@@ -10,7 +10,7 @@ import { thread2Events } from "../../constants/2026/ProgrammeEvents";
 import {
   firesideChat1Speakers,
   firesideChat2Speakers,
-} from "../../constants/2025/Speakers";
+} from "../../constants/2026/FiresideChats";
 
 const Thread2 = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grow, Stack, Typography } from "@mui/material";
+import { Box, Grid, Grow, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
@@ -98,54 +98,58 @@ const Thread1 = () => {
         </Grow>
       </Stack>
 
-      <div id="MPR1"></div>
-      <ProgrammeHighlights
-        title="Thread 1 Programme"
-        subtitle="MPR 1 (Level 3, RVRC Block G)"
-        events={thread1MPR1Events}
-      />
+      <div id="MPR1">
+        <ProgrammeHighlights
+          title="Thread 1 Programme"
+          subtitle="MPR 1 (Level 3, RVRC Block G)"
+          events={thread1MPR1Events}
+        />
 
-      <Stack
-        direction={{ xs: "column", lg: "row" }}
-        spacing={2}
-        justifyContent="center"
-        sx={{ paddingInline: "10%" }}
-      >
-        {thread1MPR1Events.filter(e => e.abstract) // ignore breaks in timeline
-        .map((project) => (
-          <ProjectCard
-            key={project.titles[0]}
-            title={project.titles[0]}
-            subtitle={project.course}
-            presenters={project.locations}
-            abstract={project.abstract}
-          />
-        ))}
-      </Stack>
+        <Grid container 
+          spacing={2} 
+          justifyContent="center" 
+          sx={{ paddingInline: "10%" }}>
+          {thread1MPR1Events.filter(e => e.abstract) // ignore breaks in timeline
+          .map((project) => (
+            <Grid item sm={12} md={6} lg={4}
+              sx={{ display: "flex", width: "100%" }}>
+              <ProjectCard
+                key={project.titles[0]}
+                title={project.titles[0]}
+                subtitle={project.course}
+                presenters={project.locations}
+                abstract={project.abstract}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
 
-      <div id="MPR2"></div>
-      <ProgrammeHighlights
-        subtitle="MPR 2 (Level 3, RVRC Block G)"
-        events={thread1MPR2Events}
-      />
+      <div id="MPR2" style={{ marginBottom: "32px" }}>
+        <ProgrammeHighlights
+          subtitle="MPR 2 (Level 3, RVRC Block G)"
+          events={thread1MPR2Events}
+        />
 
-      <Stack
-        direction={{ xs: "column", lg: "row" }}
-        spacing={2}
-        justifyContent="center"
-        sx={{ paddingInline: "10%", marginBottom: "24px" }}
-      >
-        {thread1MPR2Events.filter(e => e.abstract) // ignore breaks
-        .map((project) => (
-          <ProjectCard
-            key={project.titles[0]}
-            title={project.titles[0]}
-            subtitle={project.course}
-            presenters={project.locations}
-            abstract={project.abstract}
-          />
-        ))}
-      </Stack>
+        <Grid container 
+          spacing={2} 
+          justifyContent="center" 
+          sx={{ paddingInline: "10%" }}>
+          {thread1MPR2Events.filter(e => e.abstract) // ignore breaks in timeline
+          .map((project) => (
+            <Grid item sm={12} md={6} lg={4}
+              sx={{ display: "flex", width: "100%" }}>
+              <ProjectCard
+                key={project.titles[0]}
+                title={project.titles[0]}
+                subtitle={project.course}
+                presenters={project.locations}
+                abstract={project.abstract}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
 
       <Footer />
     </Stack>

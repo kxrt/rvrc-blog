@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
 // import PosterGalleryImage from "../../assets/2025/poster-gallery.jpeg";
@@ -37,12 +37,13 @@ const PosterGallery = () => {
           networking among participants.
         </Typography>
       </Stack>
+
       <ProgrammeHighlights
         title="Poster Gallery Programme"
         events={posterGalleryEvents}
       />
 
-      <Stack gap={2}>
+      <Stack gap={2} marginBottom={4}>
         <Typography
           variant="h5"
           sx={{
@@ -51,41 +52,24 @@ const PosterGallery = () => {
         >
           Thread 1: Edu-venture Posters
         </Typography>
-        <Stack
-          direction={{ xs: "column", lg: "row" }}
-          spacing={2}
-          justifyContent="center"
-          sx={{ paddingInline: "10%" }}
-        >
-          {thread1Posters.slice(0, 4).map((project) => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              subtitle={project.course}
-              presenters={project.presenters}
-              abstract={project.abstract}
-            />
+        <Grid container 
+          spacing={2} 
+          justifyContent="center" 
+          sx={{ paddingInline: "10%" }}>
+          {thread1Posters.map((project) => (
+            <Grid item sm={12} md={6} lg={4}
+              sx={{ display: "flex", width: "100%" }}>
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                subtitle={project.course}
+                presenters={project.presenters}
+                abstract={project.abstract}
+                sx={{ flex: 1 }}
+              />
+            </Grid>
           ))}
-        </Stack>
-        <Stack
-          direction={{ xs: "column", lg: "row" }}
-          spacing={2}
-          justifyContent="center"
-          sx={{ paddingInline: "10%", marginBottom: "24px" }}
-        >
-          {thread1Posters.slice(4, 8).map((project) => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              subtitle={project.course}
-              presenters={project.presenters}
-              abstract={project.abstract}
-            />
-          ))}
-        </Stack>
-      </Stack>
-
-      <Stack gap={2}>
+        </Grid> 
         <Typography
           variant="h5"
           sx={{
@@ -94,36 +78,23 @@ const PosterGallery = () => {
         >
           Thread 2: Adventure Posters
         </Typography>
-        <Stack
-          direction={{ xs: "column", lg: "row" }}
-          spacing={2}
-          justifyContent="center"
-          sx={{ paddingInline: "10%" }}
-        >
-          {thread2Posters.slice(0, 3).map((project) => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              presenters={project.presenters}
-              abstract={project.abstract}
-            />
+        <Grid container 
+          spacing={2} 
+          justifyContent="center" 
+          sx={{ paddingInline: "10%" }}>
+          {thread2Posters.map((project) => (
+            <Grid item sm={12} md={6} lg={4}
+              sx={{ display: "flex", width: "100%"}}>
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                presenters={project.presenters}
+                abstract={project.abstract}
+                sx={{ flex: 1 }}
+              />
+            </Grid>
           ))}
-        </Stack>
-        <Stack
-          direction={{ xs: "column", lg: "row" }}
-          spacing={2}
-          justifyContent="center"
-          sx={{ paddingInline: "10%", marginBottom: "24px" }}
-        >
-          {thread2Posters.slice(3, 6).map((project) => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              presenters={project.presenters}
-              abstract={project.abstract}
-            />
-          ))}
-        </Stack>
+        </Grid>
       </Stack>
 
       <Footer />

@@ -1,38 +1,47 @@
 import YoungkyuImage from "../../assets/2025/team/youngkyu.jpg";
-import SadafImage from "../../assets/2025/team/sadaf.png";
 import DesmondImage from "../../assets/2025/team/desmond.jpg";
 import HafsahImage from "../../assets/2025/team/hafsah.jpeg";
 
 const teamMembers = [
   {
-    name: "??",
+    name: "Bai Zirui",
     position: "Chair",
     image: null,
   },
   {
     name: "Jeong Youngkyu",
-    position: "Co Chair",
+    position: "Chair",
     image: YoungkyuImage,
   },
   {
-    name: "??",
+    name: "Yeo Jaye Lin",
     position: "Programmes Head",
     image: null,
   },
   {
-    name: "??",
-    position: "Logistics Head",
+    name: "Lisa Lim Yu Qi",
+    position: "Programmes Head",
     image: null,
   },
   {
-    name: "??",
+    name: "Zhuang Ying'En Shanice",
     position: "Publicity Head",
     image: null,
   },
   {
-    name: "Sadaf Ansari",
+    name: "Tan Hewie",
+    position: "Logistics Head",
+    image: null,
+  },
+  {
+    name: "Eliza Lim Siew Ping",
+    position: "Logistics Head",
+    image: null,
+  },
+  {
+    name: "Kevin Lim",
     position: "Staff Advisor",
-    image: SadafImage,
+    image: null,
   },
   {
     name: "Desmond Ng",

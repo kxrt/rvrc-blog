@@ -11,6 +11,7 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
           flex: 1,
           fontFamily: "Jost",
           fontSize: "16pt",
+          "&:hover": { transform: "scale(1.05)", boxShadow: 6 },
         }}
       >
         <Box

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Fade, Typography } from "@mui/material";
 
 const Title = ({ title }) => (
   <Box
@@ -8,17 +8,19 @@ const Title = ({ title }) => (
       padding: "24px",
     }}
   >
-    <Typography
-      variant="h1"
-      sx={{
-        color: "white",
-        fontSize: { xs: "26pt", md: "40pt" },
-        fontFamily: "Jost",
-        fontWeight: "Bold",
-      }}
-    >
-      {title}
-    </Typography>
+    <Fade in timeout={1000}>
+      <Typography
+        variant="h1"
+        sx={{
+          color: "white",
+          fontSize: { xs: "26pt", md: "40pt" },
+          fontFamily: "Jost",
+          fontWeight: "Bold",
+        }}
+      >
+        {title}
+      </Typography>
+    </Fade>
   </Box>
 );
 

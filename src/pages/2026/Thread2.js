@@ -8,9 +8,9 @@ import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights
 import SpeakerBiography from "../../components/SpeakerBiography";
 import { thread2Events } from "../../constants/2026/ProgrammeEvents";
 import {
-  firesideChat1Speakers,
-  firesideChat2Speakers,
-} from "../../constants/2026/FiresideChats";
+  panelDiscussion1Speakers,
+  panelDiscussion2Speakers,
+} from "../../constants/2026/PanelDiscussions";
 
 const Thread2 = () => {
   return (
@@ -92,10 +92,10 @@ const Thread2 = () => {
             fontWeight: "bold",
           }}
         >
-          Fireside Chat 1
+          Panel Discussion 1
         </Typography>
 
-        {firesideChat1Speakers.map((speaker) => (
+        {panelDiscussion1Speakers.map((speaker) => (
           <SpeakerBiography
             key={speaker.name}
             name={speaker.name}
@@ -112,10 +112,10 @@ const Thread2 = () => {
             fontWeight: "bold",
           }}
         >
-          Fireside Chat 2
+          Panel Discussion 2
         </Typography>
 
-        {firesideChat2Speakers.map((speaker) => (
+        {panelDiscussion2Speakers.map((speaker) => (
           <SpeakerBiography
             key={speaker.name}
             name={speaker.name}

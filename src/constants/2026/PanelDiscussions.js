@@ -1,7 +1,7 @@
 import Hazel from "../../assets/2025/thread-speakers/hazel.jpg";
 import Tram from "../../assets/2025/thread-speakers/tram.jpg";
 
-export const firesideChat1Speakers = [
+export const panelDiscussion1Speakers = [
   {
     name: "PlaceHolder",
     title: "RV Learning Forest",
@@ -10,7 +10,7 @@ export const firesideChat1Speakers = [
     image: Tram,
   },
 ];
-export const firesideChat2Speakers = [
+export const panelDiscussion2Speakers = [
 {
     name: "PlaceHolder",
     title: "RV FoRestore",

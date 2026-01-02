@@ -186,7 +186,7 @@ export const thread1MPR2Events = [
 export const thread2Events = [
   {
     time: "11:10 am",
-    titles: ["Fireside Chat 1"],
+    titles: ["Panel Discussion 1"],
     locations: ["Speakers"],
     icon: <Fireplace />,
   },
@@ -198,7 +198,7 @@ export const thread2Events = [
   },
   {
     time: "12:00 pm",
-    titles: ["Fireside Chat 2"],
+    titles: ["Panel Discussion 2"],
     locations: ["Speakers"],
     icon: <Fireplace />,
   },

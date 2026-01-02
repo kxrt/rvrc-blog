@@ -23,7 +23,7 @@ const Team = () => {
         {teamMembers.slice(0, 7).map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
-            <Grid item key={index} xs={12} sm={6} md={3} sx={{ display: "flex" }}>
+            <Grid item key={index} xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
               <TeamMemberCard name={name} position={position} image={image} />
             </Grid>
           );
@@ -42,7 +42,7 @@ const Team = () => {
         {teamMembers.slice(7, 10).map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
-            <Grid item key={index} xs={12} sm={6} md={3} sx={{ display: "flex" }}>
+            <Grid item key={index} xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
               <TeamMemberCard name={name} position={position} image={image} />
             </Grid>
           );

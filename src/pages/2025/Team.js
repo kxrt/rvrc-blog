@@ -23,7 +23,7 @@ const Team = () => {
         {teamMembers.map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
-            <Grid item key={index}>
+            <Grid item key={index} xs={12} sm={6} md={4}>
               <TeamMemberCard name={name} position={position} image={image} />
             </Grid>
           );

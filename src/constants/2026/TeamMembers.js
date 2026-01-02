@@ -39,7 +39,7 @@ const teamMembers = [
     image: null,
   },
   {
-    name: "Kevin Lim",
+    name: "Kelvin Lee",
     position: "Staff Advisor",
     image: null,
   },

@@ -28,11 +28,11 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
             <Typography variant="subtitle1">{subtitle}</Typography>
           </Box>
         )}
-        <Box sx={{ padding: "5px" }}>
-          <Typography>{abstract}</Typography>
+        <Box sx={{ padding: "10px", marginX: "10px" }}>
+          <Typography sx={{ textAlign: "justify" }}>{abstract}</Typography>
         </Box>
         <Divider variant="middle" />
-        <Box sx={{ padding: "5px" }}>
+        <Box sx={{ padding: "5px", marginX: "10px" }}>
           <Typography color="text.secondary" sx={{}}>
             {presentersString}
           </Typography>

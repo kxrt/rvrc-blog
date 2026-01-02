@@ -14,6 +14,11 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
           padding: "20px",
           boxShadow: 1,
           borderRadius: 2,
+          "&:hover": {
+            transform: "translateY(-6px)",
+            boxShadow: "0px 12px 24px rgba(0,0,0,0.12)",
+            backgroundColor: "#f4f9f8",
+          },
         }}
       >
         {image && (

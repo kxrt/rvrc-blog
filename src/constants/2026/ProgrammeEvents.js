@@ -1,11 +1,11 @@
 import {
   AutoAwesome,
+  Chair,
   Collections,
   CoPresent,
   EmojiEvents,
   EmojiFoodBeverage,
   EmojiPeople,
-  Fireplace,
   Groups,
   HowToReg,
   LocalCafe,
@@ -161,7 +161,7 @@ export const thread1MPR2Events = [
     time: "12:10 pm",
     course: "RVSS1003",
     titles: ["The Amazing Berlayer-Labrador Nature Walk"],
-    abstract: "?",
+    abstract: "",
     locations: [
       "Tan Yi Jun Keith, Jordan Teo Qi Dian, Joey Liew Zi Yi, Marcus Lee Wei, Se Bo Heng",
     ],
@@ -186,9 +186,9 @@ export const thread1MPR2Events = [
 export const thread2Events = [
   {
     time: "11:10 am",
-    titles: ["Panel Discussion 1"],
-    locations: ["Speakers"],
-    icon: <Fireplace />,
+    titles: ["Panel Discussion 1 (Sustainability)"],
+    locations: ["RV Forestore, Intertidal Walk & Clean, Ngee Ann Poly Environmental Club"],
+    icon: <Chair />,
   },
   {
     time: "11:50 am",
@@ -198,9 +198,9 @@ export const thread2Events = [
   },
   {
     time: "12:00 pm",
-    titles: ["Panel Discussion 2"],
-    locations: ["Speakers"],
-    icon: <Fireplace />,
+    titles: ["Panel Discussion 2 (Workplace Readiness)"],
+    locations: ["PAVE, RV Sustainability Consulting, NUS Entrepreneurship Society"],
+    icon: <Chair />,
   },
 ];
 

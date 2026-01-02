@@ -3,19 +3,47 @@ import Tram from "../../assets/2025/thread-speakers/tram.jpg";
 
 export const panelDiscussion1Speakers = [
   {
-    name: "PlaceHolder",
-    title: "RV Learning Forest",
+    name: "Dean Tan",
+    title: "RV Forestore",
     biography:
-      "RV Learning Forest is a green space dedicated to educating, inspiring, and enhancing the biological connectivity of our College in Nature. Accessible to all, this outdoor classroom features a diverse collection of native plants, inviting visitors to explore and deepen their understanding of local biodiversity. These native species do not only attract pollinators, but also establish an ecological link to the Kent Ridge Forest.\nThe forest is a community-driven initiative, with residents participating in its creation and ongoing upkeep. Our Learning Forest thus stands as a nurturing ground for environmental stewardship—a place where education, collaboration, and placemaking converge.",
-    image: Tram,
+      "RV Forestore is an IG dedicated to forest restoration and educating both members of public, and RVRC students about how we can revitalise our forests. Through our hands-on sessions in our very own Nursery and plots in Singapore, RVForestore makes forest restoration accessible to anyone interested! We have plots in Chestnut Nature Park and Thomson Nature Park! Our sessions include Seedling Salvage, Nursery Work, Tree Planting, Plot Maintenance and Tagging & Monitoring -- not to mention our annual Forest Restoration Workshop in conjunction with NParks! Join us for a fulfilling time basking in nature!",
+    image: null,
+  },
+  {
+    name: "Samuel Loh Junhan",
+    title: "Intertidal Walk & Clean",
+    biography:
+      "The RV Intertidal Walk and Beach Clean-Up is an experiential learning opportunity aimed at fostering a deeper appreciation for Singapore’s unique coastal ecosystems. Participants embark on a guided intertidal walk led by fellow peers and seasoned guides, exploring the rich biodiversity and ecological significance of these habitats. The event highlights the challenges of marine pollution and human impact through hands-on engagement, culminating in a meaningful beach clean-up activity. This initiative not only educates students about marine ecology and biodiversity, but also inspires active stewardship of natural environments, aligning with RVRC’s mission to nurture environmentally conscious and socially responsible global citizens.",
+    image: null,
+  },
+  {
+    name: "",
+    title: "Ngee Ann Poly Environmental Club",
+    biography:
+      "",
+    image: null,
   },
 ];
 export const panelDiscussion2Speakers = [
-{
-    name: "PlaceHolder",
-    title: "RV FoRestore",
+  {
+      name: "",
+      title: "PAVE",
+      biography:
+        "",
+      image: null,
+  },
+  {
+    name: "",
+    title: "RV Sustainability Consulting",
     biography:
-      "RV FoRestore is an interest group that focuses on forest restoration. Besides tree plantings, our activities focus on caring for our trees at our plots at Chestnut Nature Park. This includes seedling salvage, tree monitoring and tagging, Seedling Protection Activity (SPA), and the annual Forest Restoration Workshop. We also hold nursery sessions at our nursery right behind the dining hall, where we take care of our seedlings before they're big enough to be planted out!",
-    image: Hazel,
+      "",
+    image: null,
+  },
+  {
+    name: "",
+    title: "NUS Entrepreneurship Society",
+    biography:
+      "",
+    image: null,
   },
 ];

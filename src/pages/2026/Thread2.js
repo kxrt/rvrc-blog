@@ -85,14 +85,15 @@ const Thread2 = () => {
         events={thread2Events}
       />
 
-      <Stack gap={2} sx={{ paddingInline: "10%" }}>
+      <Stack gap={2} sx={{ paddingInline: "10%", marginBottom: 4 }}>
         <Typography
           variant="h5"
           sx={{
             fontWeight: "bold",
+            color: "#592693",
           }}
         >
-          Panel Discussion 1
+          Panel Discussion 1 (Sustainability)
         </Typography>
 
         {panelDiscussion1Speakers.map((speaker) => (
@@ -110,9 +111,11 @@ const Thread2 = () => {
           variant="h5"
           sx={{
             fontWeight: "bold",
+            color: "#592693",
+            marginTop: 3,
           }}
         >
-          Panel Discussion 2
+          Panel Discussion 2 (Workplace Readiness)
         </Typography>
 
         {panelDiscussion2Speakers.map((speaker) => (

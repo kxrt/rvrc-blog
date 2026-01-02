@@ -12,6 +12,8 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
             sm: isAlignedLeft ? "row" : "row-reverse",
           },
           padding: "20px",
+          boxShadow: 1,
+          borderRadius: 2,
         }}
       >
         {image && (
@@ -50,14 +52,22 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
             {name}
           </Typography>
           <Typography
-            style={{
+            sx={{
               fontSize: { xs: "12pt", md: "16pt" },
               fontFamily: "Jost",
+              fontWeight: "bold",
             }}
           >
             {title}
           </Typography>
-          <p>{biography}</p>
+          <Typography
+            sx={{
+              fontSize: { xs: "10pt", md: "14pt" },
+              fontFamily: "Jost",
+            }}
+          >
+            {biography}
+          </Typography>
         </Box>
       </Box>
     </>

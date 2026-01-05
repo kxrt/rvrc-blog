@@ -18,7 +18,7 @@ const Thread2 = () => {
       <Title title="Thread 2: Adventure" />
       {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
       <Stack
-        spacing={4}
+        spacing={2}
         sx={{
           backgroundColor: "#008080",
           paddingInline: "10%",
@@ -56,20 +56,20 @@ const Thread2 = () => {
           style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
         >
           <Stack spacing={1}>
-          <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
             This thread celebrates the rich array of student-led co-curricular and 
             co-academic initiatives spearheaded by our residents. Discussions in this 
             thread seek to showcase the vibrancy of student life in RVRC and beyond, 
-            showcasing how these experiences nurtu re essential workplace soft skills, 
+            showcasing how these experiences nurture essential workplace soft skills, 
             including leadership, teamwork and cultural awareness. 
           </Typography>
-          <Typography sx={{ fontSize: { md: "16pt" }, color: "white"}}>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
             While the previous symposium focused solely on sustainability, 
             the 2026 edition will also spotlight RVRC’s other key theme — workplace 
             readiness. Dedicated panel discussions will be held for each theme, 
             providing deeper engagement and diverse perspectives.
           </Typography>
-          <Typography sx={{ fontSize: { md: "16pt" }, color: "white"}}>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
             Presenters include students from RVRC, NUS and external IHLs, who are invited 
             to share their unique experiences, and foster dialogue and idea exchange 
             across diverse groups. At the same time, this thread will also showcase how 

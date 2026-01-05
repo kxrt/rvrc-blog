@@ -17,7 +17,7 @@ const Thread1 = () => {
       <Title title="Thread 1: Edu-venture" />
       {/* <Box component="img" src={Thread1Image} sx={{ width: "100%" }} /> */}
       <Stack
-        spacing={4}
+        spacing={2}
         sx={{
           backgroundColor: "#008080",
           paddingInline: "10%",
@@ -55,20 +55,20 @@ const Thread1 = () => {
           style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
         >
           <Stack spacing={1}>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               Focused on academic learning at RVRC, presentations in this thread demonstrate 
               how RVRC Programme's (RVRCP) courses enable students to hone their skills and equip 
               them with professional competencies to navigate a dynamic and increasingly 
               complex world.
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               In addition to poster and oral presentations, interactive sessions are introduced 
               to better reflect the experiential and participatory nature of RVRCP course 
               projects, many of which involve showcases and peer teaching. This addition 
               will offer a more authentic and comprehensive representation of the diversity 
               within RVRCP courses.
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white"}}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
               Thread 1 will be hosted separately in MPR 1 and 2. Presentations in{" "}
               <a
                 href="#MPR1"
@@ -100,7 +100,7 @@ const Thread1 = () => {
 
       <div id="MPR1">
         <ProgrammeHighlights
-          title="Thread 1 Programme"
+          title="RVC and RVN Projects"
           subtitle="MPR 1 (Level 3, RVRC Block G)"
           events={thread1MPR1Events}
         />
@@ -127,6 +127,7 @@ const Thread1 = () => {
 
       <div id="MPR2" style={{ marginBottom: "32px" }}>
         <ProgrammeHighlights
+          title="RVSS and RVX Projects"
           subtitle="MPR 2 (Level 3, RVRC Block G)"
           events={thread1MPR2Events}
         />

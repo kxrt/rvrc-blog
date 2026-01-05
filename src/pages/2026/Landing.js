@@ -77,7 +77,7 @@ const Landing = () => {
       </Box>
 
       <Box py="20px" px="10%">
-        <p style={{ fontSize: "16pt" }}>
+        <p style={{ fontSize: "16pt", textAlign: "justify" }}>
           The Ridge View Residential College (RVRC) Symposium 2026, themed {" "}
           <b style={{ color: "#1d9077" }}>
             ‘Living and Learning for a Shared Future’
@@ -90,7 +90,7 @@ const Landing = () => {
           the RVRC’s integrated themes of sustainability and workplace readiness.
         </p>
 
-        <p style={{ fontSize: "16pt" }}>
+        <p style={{ fontSize: "16pt", textAlign: "justify" }}>
           We are honoured to have{" "}
           <a href="/keynote" style={{ color: "#592693", fontWeight: "bold" }}>
             Mr. Sean Lam
@@ -124,7 +124,7 @@ const Landing = () => {
           >
             'Living and Learning for a Shared Future'
           </Typography>
-          <p style={{ fontSize: "16pt", color: "white" }}>
+          <p style={{ fontSize: "16pt", color: "white", textAlign: "justify" }}>
             Retained from the RVRC Symposium 2024, the theme continues to underscore 
             RVRC’s commitment to experiential learning and the extension of the world 
             as a classroom. This approach empowers students to address complex challenges 

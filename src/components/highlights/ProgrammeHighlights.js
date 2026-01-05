@@ -20,7 +20,16 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
             </Typography>
           )}
 
-          {subtitle && <Typography variant="subtitle1">{subtitle}</Typography>}
+          {subtitle && (
+            <Typography 
+              variant="h6"
+            sx={{
+              fontWeight: "bold",
+              color: "#1d9077",
+            }}>
+              {subtitle} 
+              </Typography>
+          )}
         </Stack>
 
         <Timeline position="alternate">

@@ -28,14 +28,14 @@ const PosterGallery = () => {
           style={{ transformOrigin: "center bottom"}}
         > 
           <Stack spacing={1}>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               Featuring posters from Threads 1 and 2, the Poster Gallery showcases both 
               academic learning and student-led initiatives. Attendees are able to explore 
               the projects at their own pace, engage with the materials and interact directly 
               with the presenters, fostering deeper understanding and personalised insights 
               into each initiative.
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               Alongside the Poster Gallery, Interactive Booths hosted by our community partners, 
               WWF, MINDS, and NTUC Youth, provide attendees with opportunities to learn about 
               their work in advancing environmental conservation, social inclusion and youth 
@@ -57,6 +57,7 @@ const PosterGallery = () => {
           variant="h5"
           sx={{
             fontWeight: "bold",
+            color: "#1d9077",
           }}
         >
           Thread 1: Edu-venture Posters
@@ -82,6 +83,8 @@ const PosterGallery = () => {
           variant="h5"
           sx={{
             fontWeight: "bold",
+            color: "#1d9077",
+            marginTop: 3,
           }}
         >
           Thread 2: Adventure Posters

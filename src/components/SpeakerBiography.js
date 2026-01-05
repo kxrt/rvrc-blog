@@ -49,7 +49,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
         >
           <Typography
             sx={{
-              fontSize: { xs: "18pt", md: "24pt" },
+              fontSize: { xs: "18pt", md: "22pt" },
               fontFamily: "Jost",
               color: "#1d9077",
             }}

@@ -32,7 +32,7 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
           )}
         </Stack>
 
-        <Timeline position="alternate">
+        <Timeline position="alternate" sx={{ px: { xs: 5, md: 10, lg: 14 }, }} >
           {events.map((event, index) => (
             <TimelineEvent
               key={index}

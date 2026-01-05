@@ -161,7 +161,7 @@ export const thread1MPR2Events = [
     time: "12:10 pm",
     course: "RVSS1003",
     titles: ["The Amazing Berlayer-Labrador Nature Walk"],
-    abstract: "",
+    abstract: "We created a guided learning walk through Berlayer Creek and Labrador Nature Reserve to help participants see Singapore’s green spaces in new ways. Rather than focusing on biodiversity alone, the walk examined how natural ecosystems, historical landmarks, and human activities intersect within this coastal landscape. Through a series of planned stops, participants were introduced to mangrove habitats, local wildlife, wartime heritage, and the impacts of urban development. Together, these elements highlighted the value of ecosystem services and encouraged reflection on shared responsibility in caring for Singapore’s natural spaces.",
     locations: [
       "Tan Yi Jun Keith, Jordan Teo Qi Dian, Joey Liew Zi Yi, Marcus Lee Wei, Se Bo Heng",
     ],

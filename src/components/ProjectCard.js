@@ -19,6 +19,7 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
             color: "#592693",
             fontWeight: "bold",
             padding: "5px",
+            marginX: "10px",
           }}
         >
           {title}

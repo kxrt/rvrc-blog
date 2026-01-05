@@ -5,7 +5,7 @@ export const thread1Posters = [
     presenters: [
       "Lee Jing Min",
     ],
-    abstract: "",
+    abstract: "While Jane Austen’s Pride and Prejudice critiques the limited agency of women in a patriarchal society, Joe Wright’s Pride & Prejudice (2005) modernises Elizabeth Bennet’s autonomy by highlighting emotional expression and personal freedom as feminist resistance against social constraints. In contrast to Austen’s use of irony and rationality to critique patriarchal structures, the film shifts its focus to Elizabeth’s emotional interiority. This repositioning aligns with cinematic approaches that foreground female subjectivity, casting emotional expressiveness as a strategy of agency that resists objectification and reclaims narrative control. The paper examines this reframing through feminist film theory, showing how the film both empowers Elizabeth through emotional autonomy and romanticises wealth and propriety, creating tension with Austen’s sharper critique of class and patriarchy.",
   },
   {
     title: "Reimagining the NUS Campus: Identifying Place Narratives — Alice Lee Plaza",
@@ -92,12 +92,12 @@ export const thread2Posters = [
   {
     title: "RV CIP",
     presenters: ["Hong Yi", "Jun Kang"],
-    abstract: "",
+    abstract: "RV CIP (Community Involvement Programme) is a student-led interest group committed to cultivating a strong spirit of service and social responsibility among RVRC residents. We believe in giving back meaningfully while gaining a deeper understanding of real needs on the ground. Through fun and engaging volunteering activities, residents interact with diverse groups such as children, seniors and animal welfare organisations, fostering empathy, teamwork and holistic learning. Our initiatives extend both within and beyond RVRC, allowing residents to better understand community concerns across different contexts. With a myriad of events planned this academic year, residents can look forward to meaningful opportunities to serve and learn together.",
   },
   {
     title: "PSS",
     presenters: ["Hao Cheng"],
-    abstract: "",
+    abstract: "We support the mental wellness of RVRC residents by building care within the community. We believe that mental health is supported not only by professionals, but through shared experiences, conversations of equals, and by people who care. Through hosting interesting workshops, creating related content and supporting residents in individual supporting sessions, we aim to make support accessible and empower residents to care for one another. We are also acommunity of peers who support one another so that we can better support RVRC residents! What’s next? ❖ Expand training for peer supporters and formalising peer supporting services to support referrals from RAs & RFs as a pilot run. ❖ Hosting events and creating mental health content relevant to our residents’ concerns (Eg. Procrastination).",
   },
   {
     title: "RV Explorers",
@@ -106,7 +106,7 @@ export const thread2Posters = [
   },
   {
     title: "Artelier",
-    presenters: ["Faiz"],
+    presenters: ["Muhammad Faiz Bin Muhd Faizal Abdullah Tan", "Nicole Chong Jia Li"],
     abstract: "This co-curricular initiative hosted by RVRC’s Artelier Interest Group and open to the wider NUS community leverages visual arts to deepen students’ engagement with nature and environmental sustainability while fostering mental well-being and community connectedness. The program offers exposure to diverse media, including watercolours and sketching, through beginner-friendly sessions led by invited artists and student facilitators, lowering barriers to participation for students with varying levels of prior art experience. By situating arts-based practice within environmental and student support contexts, the initiative contributes a replicable model for integrating creative expression into sustainability education and campus mental health programming.",
   },
 ];

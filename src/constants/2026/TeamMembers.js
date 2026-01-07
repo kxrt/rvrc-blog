@@ -1,4 +1,11 @@
+import ZiruiImage from "../../assets/2026/team/zirui.jpg";
 import YoungkyuImage from "../../assets/2025/team/youngkyu.jpg";
+import JayeImage from "../../assets/2026/team/jaye.jpg";
+import LisaImage from "../../assets/2026/team/lisa.jpg";
+import ShaniceImage from "../../assets/2026/team/shanice.jpg";
+import HewieImage from "../../assets/2026/team/hewie.jpg";
+import ElizaImage from "../../assets/2026/team/eliza.jpg";
+import KelvinImage from "../../assets/2026/team/kelvin.jpg";
 import DesmondImage from "../../assets/2025/team/desmond.jpg";
 import HafsahImage from "../../assets/2025/team/hafsah.jpeg";
 
@@ -6,7 +13,7 @@ const teamMembers = [
   {
     name: "Bai Zirui",
     position: "Chair",
-    image: null,
+    image: ZiruiImage,
   },
   {
     name: "Jeong Youngkyu",
@@ -16,32 +23,32 @@ const teamMembers = [
   {
     name: "Yeo Jaye Lin",
     position: "Programmes Head",
-    image: null,
+    image: JayeImage,
   },
   {
     name: "Lisa Lim Yu Qi",
     position: "Programmes Head",
-    image: null,
+    image: LisaImage,
   },
   {
     name: "Zhuang Ying'En Shanice",
     position: "Publicity Head",
-    image: null,
+    image: ShaniceImage,
   },
   {
     name: "Tan Hewie",
     position: "Logistics Head",
-    image: null,
+    image: HewieImage,
   },
   {
     name: "Eliza Lim Siew Ping",
     position: "Logistics Head",
-    image: null,
+    image: ElizaImage,
   },
   {
     name: "Kelvin Lee",
     position: "Staff Advisor",
-    image: null,
+    image: KelvinImage,
   },
   {
     name: "Desmond Ng",

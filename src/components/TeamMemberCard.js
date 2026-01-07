@@ -12,9 +12,8 @@ const TeamMemberCard = ({ image, name, position }) => {
         component="img"
         src={image}
         sx={{
-          width: "100%",
-          maxWidth: "300px",
-          height: "100%",
+          width: "250px",
+          height: "325px",
           alignSelf: "center",
           objectFit: "cover",
           borderRadius: "8px",

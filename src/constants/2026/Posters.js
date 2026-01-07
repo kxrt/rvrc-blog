@@ -91,7 +91,7 @@ export const thread2Posters = [
   },
   {
     title: "RV CIP",
-    presenters: ["Hong Yi", "Jun Kang"],
+    presenters: ["Ng Hong Yi", "Wong Jun Kang"],
     abstract: "RV CIP (Community Involvement Programme) is a student-led interest group committed to cultivating a strong spirit of service and social responsibility among RVRC residents. We believe in giving back meaningfully while gaining a deeper understanding of real needs on the ground. Through fun and engaging volunteering activities, residents interact with diverse groups such as children, seniors and animal welfare organisations, fostering empathy, teamwork and holistic learning. Our initiatives extend both within and beyond RVRC, allowing residents to better understand community concerns across different contexts. With a myriad of events planned this academic year, residents can look forward to meaningful opportunities to serve and learn together.",
   },
   {
@@ -101,7 +101,7 @@ export const thread2Posters = [
   },
   {
     title: "RV Explorers",
-    presenters: ["Najwa"],
+    presenters: ["Chew Ker Xyn", "Nor Najwa Binti Zainuddin", "Netanya Faith Tham"],
     abstract: "RV Explorers is an interest group that organises guided walks for RVRC residents to lesser-known yet fascinating places in Singapore. Our walks aim to inspire RVRC residents to stay curious to explore and discover Singapore’s cultural, historical, and natural heritage, while cultivating an appreciation for its beauty and taking a break from the fast-paced university life. The participants will be guided by our Executive Committee members who will highlight interesting wildlife and heritage sites while sharing the significance and fun facts along the way. Our popular trips include Sourthern Island Hopping to Kusu, St John's and Sister's Island, and Supper Stretch Walk at the start of every academic year to take our residents around the campus and enjoy supper at 'Supper Stretch'.",
   },
   {

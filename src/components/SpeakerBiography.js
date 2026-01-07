@@ -30,10 +30,16 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
               justifyContent: "center",
             }}
           >
-            <img
+            <Box
+              component="img"
               src={image}
               alt={name}
-              style={{ width: "175px", height: "250px", objectFit: "cover" }}
+              sx={{ 
+                width: {xs:"180px", md:"220px"}, 
+                height: {xs:"200px", md:"250px"}, 
+                objectFit: "cover", 
+                borderRadius: 2,
+              }}
             />
           </Box>
         )}
@@ -49,7 +55,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
         >
           <Typography
             sx={{
-              fontSize: { xs: "18pt", md: "22pt" },
+              fontSize: { xs: "18pt", md: "20pt", lg: "22pt" },
               fontFamily: "Jost",
               color: "#1d9077",
             }}
@@ -58,7 +64,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "12pt", md: "16pt" },
+              fontSize: { xs: "12pt", md: "14pt", lg: "16pt" },
               fontFamily: "Jost",
               fontWeight: "bold",
             }}
@@ -67,7 +73,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "10pt", md: "14pt" },
+              fontSize: { xs: "10pt", md: "12pt", lg: "14pt" },
               fontFamily: "Jost",
             }}
           >

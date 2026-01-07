@@ -199,7 +199,7 @@ export const thread2Events = [
   {
     time: "12:00 pm",
     titles: ["Panel Discussion 2 (Workplace Readiness)"],
-    locations: ["PAVE, RV Sustainability Consulting, NUS Entrepreneurship Society"],
+    locations: ["Industry Engagement, RV Sustainability Consulting, NUS Entrepreneurship Society"],
     icon: <Chair />,
   },
 ];

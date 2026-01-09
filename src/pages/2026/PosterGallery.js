@@ -64,14 +64,14 @@ const PosterGallery = () => {
           >
             Thread 1: Edu-venture Posters
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
             <Breadcrumbs>
               <Typography sx={{ color: 'text.primary' }}>Thread 1 Edu-venture</Typography>
               <Link underline="hover" color="inherit" href="#thread2-posters">
                 Thread 2 Adventure
               </Link>
               <Link underline="hover" color="inherit" href="#thread2-funding-posters">
-                Thread 2 Recipients of MAC3 Funding
+                Thread 2 MAC3 Funded
               </Link>
             </Breadcrumbs>
           </Box>
@@ -104,14 +104,14 @@ const PosterGallery = () => {
           >
             Thread 2: Adventure Posters
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
             <Breadcrumbs>
               <Link underline="hover" color="inherit" href="#thread1-posters">
                 Thread 1 Edu-venture
               </Link>
               <Typography sx={{ color: 'text.primary' }}>Thread 2 Adventure</Typography>
               <Link underline="hover" color="inherit" href="#thread2-funding-posters">
-                Thread 2 Recipients of MAC3 Funding
+                Thread 2 MAC3 Funded
               </Link>
             </Breadcrumbs>
           </Box>
@@ -143,7 +143,7 @@ const PosterGallery = () => {
           >
             Thread 2: Recipients of MAC3 Funding
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
             <Breadcrumbs>
               <Link underline="hover" color="inherit" href="#thread1-posters">
                 Thread 1 Edu-venture
@@ -151,7 +151,7 @@ const PosterGallery = () => {
               <Link underline="hover" color="inherit" href="#thread2-posters">
                 Thread 2 Adventure
               </Link>
-              <Typography sx={{ color: 'text.primary' }}>Thread 2 Recipients of MAC3 Funding</Typography>
+              <Typography sx={{ color: 'text.primary' }}>Thread 2 MAC3 Funded</Typography>
             </Breadcrumbs>
           </Box>
           <Box sx={{ 

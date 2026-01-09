@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Card, Divider, Typography } from "@mui/material";
+import { Box, Card, Divider, Stack, Typography } from "@mui/material";
 
 const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
-  const presentersString = presenters.join(", ");
+  const presentersString = presenters ? presenters.join(", "): "";
 
   return (
     <>
@@ -32,12 +32,16 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
         <Box sx={{ padding: "10px", marginX: "10px" }}>
           <Typography sx={{ textAlign: "justify" }}>{abstract}</Typography>
         </Box>
-        <Divider variant="middle" />
-        <Box sx={{ padding: "5px", marginX: "10px" }}>
-          <Typography color="text.secondary" sx={{}}>
-            {presentersString}
-          </Typography>
-        </Box>
+        {presenters && (
+          <Stack>
+            <Divider variant="middle" />
+            <Box sx={{ padding: "5px", marginX: "10px" }}>
+              <Typography color="text.secondary" sx={{}}>
+                {presentersString}
+              </Typography>
+            </Box>
+          </Stack>
+        )}
       </Card>
     </>
   );

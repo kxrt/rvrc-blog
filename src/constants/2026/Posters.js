@@ -110,3 +110,26 @@ export const thread2Posters = [
     abstract: "This co-curricular initiative hosted by RVRC’s Artelier Interest Group and open to the wider NUS community leverages visual arts to deepen students’ engagement with nature and environmental sustainability while fostering mental well-being and community connectedness. The program offers exposure to diverse media, including watercolours and sketching, through beginner-friendly sessions led by invited artists and student facilitators, lowering barriers to participation for students with varying levels of prior art experience. By situating arts-based practice within environmental and student support contexts, the initiative contributes a replicable model for integrating creative expression into sustainability education and campus mental health programming.",
   },
 ];
+
+export const thread2FundingPosters = [
+  {
+    title: "Kayak and Clean",
+    abstract: "Kayak and Clean is RVRC’s signature program that allows residents to engage in environmental stewardship through outdoor learning. This activity aims to educate participants on the ecosystem services provided by the marine environment in Singapore and allow participants to reflect on the impact of marine litter. Every year, experienced guides at KayakAsia and PAssionWave bring 18-22 students from each of the 7 houses to kayak and clean the waters in the seas along the way to Pulau Ubin, Sister’s Islands and Sentosa, or inland at Jurong Lake Gardens.",
+  },
+  {
+    title: "Intertidal Walk and Clean",
+    abstract: "The RV Intertidal Walk and Beach Clean-Up is an experiential learning opportunity aimed at fostering a deeper appreciation for Singapore’s unique coastal ecosystems. Participants embark on a guided intertidal walk led by fellow peers and seasoned guides, exploring the rich biodiversity and ecological significance of these habitats. The event highlights the challenges of marine pollution and human impact through hands-on engagement, culminating in a meaningful beach clean-up activity. This initiative not only educates students about marine ecology and biodiversity, but also inspires active stewardship of natural environments, aligning with RVRC’s mission to nurture environmentally conscious and socially responsible global citizens.",
+  },
+  {
+    title: "Heritage Walks",
+    abstract: "Cultural and built heritage shape contemporary urban life, inform sustainable development, and enrich place-based experiences. UNESCO reports (2011, 2023) underscore heritage’s contribution to the 2030 Agenda for Sustainable Development, advancing culturally vibrant, economically prosperous, socially inclusive, and environmentally sustainable cities. In this context, the RVRC Heritage Walks are designed as co-academic activities to foster intercultural understanding, heritage stewardship, and deeper connections to shared history among university students. Curated through a culture-based approach that integrates local narratives, conservation sites, and dialogic engagement, the walks position students as active learners in situ.",
+  },
+  {
+    title: "RV Forestore",
+    abstract: "RV Forestore is an IG dedicated to forest restoration and educating both members of public, and RVRC students about how we can revitalise our forests. Through our hands-on sessions in our very own Nursery and plots in Singapore, RVForestore makes forest restoration accessible to anyone interested! We have plots in Chestnut Nature Park and Thomson Nature Park! Our sessions include Seedling Salvage, Nursery Work, Tree Planting, Plot Maintenance and Tagging & Monitoring -- not to mention our annual Forest Restoration Workshop in conjunction with NParks! Join us for a fulfilling time basking in nature!",
+  },
+  {
+    title: "Leopard Cat Quest",
+    abstract: "The RVRC Leopard Cat Quest is an experiential learning programme that takes students on guided night walks on Pulau Ubin to explore Singapore’s native wildlife and ecosystems. Led by professional guides from the Singapore Wildcat Action Group (SWAG), participants learn about biodiversity loss, conservation challenges, and the importance of habitats such as secondary forests and mangroves. The programme places special emphasis on the critically endangered Leopard Cat, Singapore’s last remaining wild cat. Through citizen science wildlife recording and reflection activities, students contribute directly to conservation efforts while experiencing the wellbeing benefits of spending time in nature.",
+  },
+];

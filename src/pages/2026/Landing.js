@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-// import SignupButton from "../../components/SignupButton";
+import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2026/ProgrammeEvents";
@@ -71,7 +71,7 @@ const Landing = () => {
               Empowering youth to shape a sustainable and equitable future
               together
             </Typography>
-            {/* <SignupButton link="https://tinyurl.com/RVRCSymposium2025" /> */}
+            <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" />
           </Stack>
         </Grow>
       </Box>

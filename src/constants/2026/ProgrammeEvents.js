@@ -123,7 +123,7 @@ export const thread1MPR1Events = [
   {
     time: "12:40 am",
     course: "RVC1000",
-    titles: ["Building Jeong Without Words"],
+    titles: ["Building Jeong Without Words (Interactive Session)"],
     abstract: "Workplace cultures vary across different countries around the world. While some cultures may appear similar, subtle differences often influence professional interactions. One such example is the comparison between Singaporean and Korean workplace cultures. As South Korea is a major economic and business partner in Asia, there are increasing opportunities to collaborate with Korean professionals. Understanding Korean workplace culture and recognising how it differs from Singapore’s is both relevant and important to ensure successful collaboration. Jeong culture, a uniquely Korean concept emphasising emotional bonds, loyalty, and long-term relationships, plays a significant role in workplace dynamics. Our group aims to explore how Jeong culture shapes professional relationships in Korea.",
     locations: ["Chen Kaiwen, Mah Hao Jun, Tay Chik Kong, Shawn"],
     icon: <CoPresent />,
@@ -176,7 +176,7 @@ export const thread1MPR2Events = [
   {
     time: "12:40 pm",
     course: "RVSS1004",
-    titles: ["Echoes of Kristang Heritage: Bringing Branyo"],
+    titles: ["Echoes of Kristang Heritage: Bringing Branyo (Interactive Session)"],
     abstract: "Regardless of Race profoundly reshaped our understanding of race in Singapore. The course challenged assumptions shaped by dominant narratives of multiculturalism and meritocracy, pushing us to confront the gap between policy ideals and lived realities. Through a cultural immersion project on the Kristang community, we learned how smaller ethnic groups face cultural erosion not through overt discrimination, but structural neglect under the CMIO framework. This experience highlighted that racial harmony does not guarantee cultural equity. Overall, RVSS1004 deepened our awareness of race as a structural issue and strengthened our commitment to empathy, inclusion, and informed dialogue in a diverse society.",
     locations: ["Chee Wei En, Nguyen Tram Anh, Ikeda Fuyu"],
     icon: <CoPresent />,
@@ -187,7 +187,7 @@ export const thread2Events = [
   {
     time: "11:10 am",
     titles: ["Panel Discussion 1 (Sustainability)"],
-    locations: ["RV Forestore, Intertidal Walk & Clean, Ngee Ann Poly Environmental Club"],
+    locations: ["RV Forestore, Intertidal Walk & Clean, Ngee Ann Polytechnic Environmental Rangers Club"],
     icon: <Chair />,
   },
   {

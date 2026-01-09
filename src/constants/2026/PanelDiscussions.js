@@ -1,8 +1,11 @@
 import Dean from "../../assets/2026/panel-discussions/dean.jpg";
 import Samuel from "../../assets/2026/panel-discussions/samuel.jpg";
+import Clarissa from "../../assets/2026/panel-discussions/clarissa.jpg";
 import Javier from "../../assets/2026/panel-discussions/javier.jpg";
 import KangTing from "../../assets/2026/panel-discussions/kang-ting.jpg";
+import Elkan from "../../assets/2026/panel-discussions/elkan.jpg";
 
+// Update ProgrammeEvents.js accordingly if changes are made here
 export const panelDiscussion1Speakers = [
   {
     name: "Dean Tan",
@@ -19,11 +22,11 @@ export const panelDiscussion1Speakers = [
     image: Samuel,
   },
   {
-    name: "",
-    title: "Ngee Ann Poly Environmental Club",
+    name: "Clarissa Lee Huai En",
+    title: "Ngee Ann Polytechnic Environmental Rangers Club",
     biography:
-      "",
-    image: null,
+      "Environmental Rangers Club (ERC) is Ngee Ann Polytechnic’s main environmental club. Guided by our motto, “Be the solution, not pollution,” we inspire students to adopt and share creative and practical approaches to sustainability by transforming waste into meaningful creations through internal and external collaborative workshops-between CCAs and with organisations like HYC. In our efforts to build a greener campus, ERC actively supports campus-wide sustainability initiatives, including the Maple Tree Planting event and food-waste reduction campaigns. Our flagship initiative, Cleanshores, is a monthly beach clean-up that empowers members to give back to the community and protect marine ecosystems—one trash bag at a time.",
+    image: Clarissa,
   },
 ];
 export const panelDiscussion2Speakers = [
@@ -42,10 +45,10 @@ export const panelDiscussion2Speakers = [
     image: Javier,
   },
   {
-    name: "",
+    name: "Elkan Chua Zheng Long",
     title: "NUS Entrepreneurship Society",
     biography:
-      "",
-    image: null,
+      "NUS Entrepreneurship Society (NES) supports student founders from zero to one through a structured startup pipeline. We drive early exposure through UNICON, Asia’s largest student-run entrepreneurship and technology conference, and Ground Zero, Singapore’s largest student startup competition where teams ideate, build, and pitch from scratch. Founders then move into ideation and validation via NES Start, a NUS-accredited 2-unit module focused on problem discovery and product-market fit. High-potential teams progress into The Foundry for hands-on scaling, before entering further scaling pipelines to incubators like BLOCK71. NES is backed by partners including Google, AWS, Enterprise Singapore, HSBC, and Shopee.",
+    image: Elkan,
   },
 ];

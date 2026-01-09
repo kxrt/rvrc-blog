@@ -61,13 +61,6 @@ const Thread1 = () => {
               them with professional competencies to navigate a dynamic and increasingly 
               complex world.
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-              In addition to poster and oral presentations, interactive sessions are introduced 
-              to better reflect the experiential and participatory nature of RVRCP course 
-              projects, many of which involve showcases and peer teaching. This addition 
-              will offer a more authentic and comprehensive representation of the diversity 
-              within RVRCP courses.
-            </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
               Thread 1 will be hosted separately in MPR 1 and 2. Presentations in{" "}
               <a
@@ -93,6 +86,13 @@ const Thread1 = () => {
                 MPR 2
               </a>{" "}
               are from the RVSS Singapore Studies pillar and the RVX Critique and Expression pillar.
+            </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
+              In addition to poster and oral presentations, interactive sessions are introduced to 
+              better reflect the experiential and participatory nature of RVRCP course projects, 
+              many of which involve showcases and peer teaching. This addition will offer a more 
+              authentic and comprehensive representation of the diversity within RVRCP courses. 
+              These interactive sessions will be held at the end of the programme in each MPR.
             </Typography>
           </Stack>
         </Grow>

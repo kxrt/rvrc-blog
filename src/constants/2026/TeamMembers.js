@@ -1,5 +1,5 @@
 import ZiruiImage from "../../assets/2026/team/zirui.jpg";
-import YoungkyuImage from "../../assets/2025/team/youngkyu.jpg";
+import YoungkyuImage from "../../assets/2026/team/youngkyu.jpg";
 import JayeImage from "../../assets/2026/team/jaye.jpg";
 import LisaImage from "../../assets/2026/team/lisa.jpg";
 import ShaniceImage from "../../assets/2026/team/shanice.jpg";

@@ -96,12 +96,12 @@ export const thread2Posters = [
   },
   {
     title: "PSS",
-    presenters: ["Hao Cheng"],
+    presenters: ["Gu Hao Cheng"],
     abstract: "We support the mental wellness of RVRC residents by building care within the community. We believe that mental health is supported not only by professionals, but through shared experiences, conversations of equals, and by people who care. Through hosting interesting workshops, creating related content and supporting residents in individual supporting sessions, we aim to make support accessible and empower residents to care for one another. We are also acommunity of peers who support one another so that we can better support RVRC residents! What’s next? ❖ Expand training for peer supporters and formalising peer supporting services to support referrals from RAs & RFs as a pilot run. ❖ Hosting events and creating mental health content relevant to our residents’ concerns (Eg. Procrastination).",
   },
   {
     title: "RV Explorers",
-    presenters: ["Chew Ker Xyn", "Nor Najwa Binti Zainuddin", "Netanya Faith Tham"],
+    presenters: ["Chew Ker Xyn", "Nor Najwa Binti Zainuddin", "Netanya Faith Tham", "Gerald Lau Jin Yang"],
     abstract: "RV Explorers is an interest group that organises guided walks for RVRC residents to lesser-known yet fascinating places in Singapore. Our walks aim to inspire RVRC residents to stay curious to explore and discover Singapore’s cultural, historical, and natural heritage, while cultivating an appreciation for its beauty and taking a break from the fast-paced university life. The participants will be guided by our Executive Committee members who will highlight interesting wildlife and heritage sites while sharing the significance and fun facts along the way. Our popular trips include Sourthern Island Hopping to Kusu, St John's and Sister's Island, and Supper Stretch Walk at the start of every academic year to take our residents around the campus and enjoy supper at 'Supper Stretch'.",
   },
   {

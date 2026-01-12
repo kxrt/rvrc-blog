@@ -1,9 +1,9 @@
-import Amanda from "../../assets/2025/thread-speakers/amanda.jpeg";
-import Cassandra from "../../assets/2025/thread-speakers/cassandra.jpg";
-import Hazel from "../../assets/2025/thread-speakers/hazel.jpg";
-import Nadya from "../../assets/2025/thread-speakers/nadya.jpg";
-import Shuane from "../../assets/2025/thread-speakers/shuane.jpg";
-import Tram from "../../assets/2025/thread-speakers/tram.jpg";
+import Amanda from "../../assets/2025/thread-speakers/amanda.webp";
+import Cassandra from "../../assets/2025/thread-speakers/cassandra.webp";
+import Hazel from "../../assets/2025/thread-speakers/hazel.webp";
+import Nadya from "../../assets/2025/thread-speakers/nadya.webp";
+import Shuane from "../../assets/2025/thread-speakers/shuane.webp";
+import Tram from "../../assets/2025/thread-speakers/tram.webp";
 
 export const thread1MPR1Projects = [
   {

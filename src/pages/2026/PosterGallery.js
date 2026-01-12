@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Breadcrumbs, Grid, Grow, Link, Stack, Typography } from "@mui/material";
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
-// import PosterGalleryImage from "../../assets/2025/poster-gallery.jpeg";
+// import PosterGalleryImage from "../../assets/2025/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import { posterGalleryEvents } from "../../constants/2026/ProgrammeEvents";

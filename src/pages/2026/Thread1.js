@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Grid, Grow, Stack, Typography } from "@mui/material";
+import { Grid, Grow, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/Footer";
 import Title from "../../components/Title";
-// import Thread1Image from "../../assets/2026/thread-1.jpeg";
+// import Thread1Image from "../../assets/2026/thread-1.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";
 import {

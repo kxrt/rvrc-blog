@@ -1,13 +1,13 @@
-import ZiruiImage from "../../assets/2026/team/zirui.jpg";
-import YoungkyuImage from "../../assets/2026/team/youngkyu.jpg";
-import JayeImage from "../../assets/2026/team/jaye.jpg";
-import LisaImage from "../../assets/2026/team/lisa.jpg";
-import ShaniceImage from "../../assets/2026/team/shanice.jpg";
-import HewieImage from "../../assets/2026/team/hewie.jpg";
-import ElizaImage from "../../assets/2026/team/eliza.jpg";
-import KelvinImage from "../../assets/2026/team/kelvin.jpg";
-import DesmondImage from "../../assets/2025/team/desmond.jpg";
-import HafsahImage from "../../assets/2025/team/hafsah.jpeg";
+import ZiruiImage from "../../assets/2026/team/zirui.webp";
+import YoungkyuImage from "../../assets/2026/team/youngkyu.webp";
+import JayeImage from "../../assets/2026/team/jaye.webp";
+import LisaImage from "../../assets/2026/team/lisa.webp";
+import ShaniceImage from "../../assets/2026/team/shanice.webp";
+import HewieImage from "../../assets/2026/team/hewie.webp";
+import ElizaImage from "../../assets/2026/team/eliza.webp";
+import KelvinImage from "../../assets/2026/team/kelvin.webp";
+import DesmondImage from "../../assets/2025/team/desmond.webp";
+import HafsahImage from "../../assets/2025/team/hafsah.webp";
 
 const teamMembers = [
   {

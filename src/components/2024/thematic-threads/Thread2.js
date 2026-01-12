@@ -2,18 +2,18 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import SpeakerBiography from "../../SpeakerBiography";
 
-import Licher from "../../../assets/2024/thread-speakers/licher.jpg";
-import Youngkyu from "../../../assets/2024/thread-speakers/youngkyu.jpg";
-import Nicholas from "../../../assets/2024/thread-speakers/nicholas.jpg";
-import Jean from "../../../assets/2024/thread-speakers/jean.png";
-import Edice from "../../../assets/2024/thread-speakers/edice.jpg";
-import Cassandra from "../../../assets/2024/thread-speakers/cassandra.jpg";
-import Jiayu from "../../../assets/2024/thread-speakers/jiayu.jpg";
-import Jiayi from "../../../assets/2024/thread-speakers/jiayi.jpg";
-import Yograrajan from "../../../assets/2024/thread-speakers/yogarajan.jpg";
-import Emmanuel from "../../../assets/2024/thread-speakers/emmanuel.jpg";
+import Licher from "../../../assets/2024/thread-speakers/licher.webp";
+import Youngkyu from "../../../assets/2024/thread-speakers/youngkyu.webp";
+import Nicholas from "../../../assets/2024/thread-speakers/nicholas.webp";
+import Jean from "../../../assets/2024/thread-speakers/jean.webp";
+import Edice from "../../../assets/2024/thread-speakers/edice.webp";
+import Cassandra from "../../../assets/2024/thread-speakers/cassandra.webp";
+import Jiayu from "../../../assets/2024/thread-speakers/jiayu.webp";
+import Jiayi from "../../../assets/2024/thread-speakers/jiayi.webp";
+import Yograrajan from "../../../assets/2024/thread-speakers/yogarajan.webp";
+import Emmanuel from "../../../assets/2024/thread-speakers/emmanuel.webp";
 
-import Thread2Image from "../../../assets/2024/thread-2.jpg";
+import Thread2Image from "../../../assets/2024/thread-2.webp";
 
 const thread2Panel1Speakers = [
   {

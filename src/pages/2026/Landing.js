@@ -7,7 +7,7 @@ import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2026/ProgrammeEvents";
 
-import LandingBanner1 from "../../assets/rvrc_bg.jpeg";
+import LandingBanner1 from "../../assets/rvrc_bg.webp";
 import Footer from "../../components/Footer";
 
 const images = [

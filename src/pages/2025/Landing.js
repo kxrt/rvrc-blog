@@ -7,11 +7,11 @@ import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
 
-import LandingBanner1 from "../../assets/2025/landing-banner-1.jpeg";
-import LandingBanner2 from "../../assets/2025/landing-banner-2.jpeg";
-import LandingBanner3 from "../../assets/2025/landing-banner-3.jpeg";
-import LandingBanner4 from "../../assets/2025/landing-banner-4.jpeg";
-import LandingBanner5 from "../../assets/2025/landing-banner-5.jpeg";
+import LandingBanner1 from "../../assets/2025/landing-banner-1.webp";
+import LandingBanner2 from "../../assets/2025/landing-banner-2.webp";
+import LandingBanner3 from "../../assets/2025/landing-banner-3.webp";
+import LandingBanner4 from "../../assets/2025/landing-banner-4.webp";
+import LandingBanner5 from "../../assets/2025/landing-banner-5.webp";
 import Footer from "../../components/Footer";
 
 const images = [

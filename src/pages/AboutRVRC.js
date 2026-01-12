@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import rvrc_walk from "../assets/rvrc_walk_for_rice.jpg";
-import rvrc_outdoor from "../assets/rvrc_outdoor_learning.png";
+import rvrc_walk from "../assets/rvrc_walk_for_rice.webp";
+import rvrc_outdoor from "../assets/rvrc_outdoor_learning.webp";
+import rvlf from "../assets/rvrc-learning-forest.webp";
 
 const AboutRVRC = () => {
   return (
@@ -87,9 +88,7 @@ const AboutRVRC = () => {
       </div>
       <Box>
         <img
-          src={
-            "https://rvrc.nus.edu.sg/wp-content/uploads/2021/06/RVRC-GE-MODULES.jpg"
-          }
+          src={rvlf}
           alt="RVRC"
           width={"100%"}
         />

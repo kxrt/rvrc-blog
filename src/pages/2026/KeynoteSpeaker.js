@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import keynoteSpeaker from "../../assets/2026/keynote-speaker.jpg";
+import keynoteSpeaker from "../../assets/2026/keynote-speaker.webp";
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
 
@@ -10,7 +10,7 @@ const KeynoteSpeaker = () => {
       <Title title="Keynote Speaker" />
       <Box sx={{ display: { xs: "inline-block" } }}>
         <Box sx={{ display: "inline-block" }}>
-          <img src={keynoteSpeaker} alt="Keynote Speaker" width={250} />
+          <Box component="img" src={keynoteSpeaker} alt="Keynote Speaker" sx={{ width: 250, borderRadius: "8px" }} />
         </Box>
         <Box sx={{ textAlign: { xs: "center" } }}>
           <Typography

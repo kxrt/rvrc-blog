@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import keynoteSpeaker from "../../assets/2022/keynote-speaker.webp";
 
 const KeynoteSpeaker = () => {
   return (
@@ -19,9 +20,7 @@ const KeynoteSpeaker = () => {
       <Box sx={{ display: { xs: "inline-block", md: "flex" } }}>
         <Box sx={{ display: { xs: "block", md: "none" } }}>
           <img
-            src={
-              "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/24588/thumb_veera_profile_pic.jpg"
-            }
+            src={keynoteSpeaker}
             alt="guest speaker"
             width={250}
             style={{ marginTop: "40px" }}
@@ -118,9 +117,7 @@ const KeynoteSpeaker = () => {
         </Box>
         <Box sx={{ display: { xs: "none", md: "block" } }}>
           <img
-            src={
-              "https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/24588/thumb_veera_profile_pic.jpg"
-            }
+            src={keynoteSpeaker}
             alt="guest speaker"
             width={250}
             style={{ marginRight: "45px", marginTop: "45px" }}

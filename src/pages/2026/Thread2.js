@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Grow, Stack, Typography } from "@mui/material";
+import { Grow, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/Title";
 import Footer from "../../components/Footer";
-// import Thread2Image from "../../assets/2026/thread-2.jpeg";
+// import Thread2Image from "../../assets/2026/thread-2.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import SpeakerBiography from "../../components/SpeakerBiography";
 import { thread2Events } from "../../constants/2026/ProgrammeEvents";

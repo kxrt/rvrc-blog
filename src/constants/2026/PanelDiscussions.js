@@ -1,9 +1,9 @@
-import Dean from "../../assets/2026/panel-discussions/dean.jpg";
-import Samuel from "../../assets/2026/panel-discussions/samuel.jpg";
-import Clarissa from "../../assets/2026/panel-discussions/clarissa.jpg";
-import Javier from "../../assets/2026/panel-discussions/javier.jpg";
-import KangTing from "../../assets/2026/panel-discussions/kang-ting.jpg";
-import Elkan from "../../assets/2026/panel-discussions/elkan.jpg";
+import Dean from "../../assets/2026/panel-discussions/dean.webp";
+import Samuel from "../../assets/2026/panel-discussions/samuel.webp";
+import Clarissa from "../../assets/2026/panel-discussions/clarissa.webp";
+import Javier from "../../assets/2026/panel-discussions/javier.webp";
+import KangTing from "../../assets/2026/panel-discussions/kang-ting.webp";
+import Elkan from "../../assets/2026/panel-discussions/elkan.webp";
 
 // Update ProgrammeEvents.js accordingly if changes are made here
 export const panelDiscussion1Speakers = [

@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Card, Divider, Typography } from "@mui/material";
+import { Box, Card, Divider, Stack, Typography } from "@mui/material";
 
 const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
-  const presentersString = presenters.join(", ");
+  const presentersString = presenters ? presenters.join(", "): "";
 
   return (
     <>
@@ -11,6 +11,7 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
           flex: 1,
           fontFamily: "Jost",
           fontSize: "16pt",
+          "&:hover": { transform: "scale(1.05)", boxShadow: 6 },
         }}
       >
         <Box
@@ -18,6 +19,7 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
             color: "#592693",
             fontWeight: "bold",
             padding: "5px",
+            marginX: "10px",
           }}
         >
           {title}
@@ -27,15 +29,19 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
             <Typography variant="subtitle1">{subtitle}</Typography>
           </Box>
         )}
-        <Box sx={{ padding: "5px" }}>
-          <Typography>{abstract}</Typography>
+        <Box sx={{ padding: "10px", marginX: "10px" }}>
+          <Typography sx={{ textAlign: "justify" }}>{abstract}</Typography>
         </Box>
-        <Divider variant="middle" />
-        <Box sx={{ padding: "5px" }}>
-          <Typography color="text.secondary" sx={{}}>
-            {presentersString}
-          </Typography>
-        </Box>
+        {presenters && (
+          <Stack>
+            <Divider variant="middle" />
+            <Box sx={{ padding: "5px", marginX: "10px" }}>
+              <Typography color="text.secondary" sx={{}}>
+                {presentersString}
+              </Typography>
+            </Box>
+          </Stack>
+        )}
       </Card>
     </>
   );

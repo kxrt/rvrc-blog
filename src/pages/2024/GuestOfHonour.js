@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import guestOfHonour from "../../assets/2024/guest-of-honour.jpg";
+import guestOfHonour from "../../assets/2024/guest-of-honour.webp";
 
 const GuestOfHonour = () => {
   return (

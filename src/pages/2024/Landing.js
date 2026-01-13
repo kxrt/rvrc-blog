@@ -7,11 +7,11 @@ import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import StudentPoints from "../../components/2024/landing/StudentPoints";
 
-import LandingBanner1 from "../../assets/2024/landing-banner-1.jpg";
-import LandingBanner2 from "../../assets/2024/landing-banner-2.jpg";
-import LandingBanner3 from "../../assets/2024/landing-banner-3.jpg";
-import LandingBanner4 from "../../assets/2024/landing-banner-4.jpg";
-import LandingBanner5 from "../../assets/2024/landing-banner-5.jpg";
+import LandingBanner1 from "../../assets/2024/landing-banner-1.webp";
+import LandingBanner2 from "../../assets/2024/landing-banner-2.webp";
+import LandingBanner3 from "../../assets/2024/landing-banner-3.webp";
+import LandingBanner4 from "../../assets/2024/landing-banner-4.webp";
+import LandingBanner5 from "../../assets/2024/landing-banner-5.webp";
 import programmeEvents from "../../constants/2024/ProgrammeEvents";
 
 const images = [

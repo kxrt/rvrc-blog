@@ -1,12 +1,12 @@
-import JasonImage from "../../assets/2025/team/jason.jpg";
-import YoungkyuImage from "../../assets/2025/team/youngkyu.jpg";
-import AyumiImage from "../../assets/2025/team/ayumi.jpg";
-import ManakaImage from "../../assets/2025/team/manaka.jpg";
-import WeilaiImage from "../../assets/2025/team/weilai.jpg";
-import ChloeImage from "../../assets/2025/team/chloe.jpg";
-import SadafImage from "../../assets/2025/team/sadaf.png";
-import DesmondImage from "../../assets/2025/team/desmond.jpg";
-import HafsahImage from "../../assets/2025/team/hafsah.jpeg";
+import JasonImage from "../../assets/2025/team/jason.webp";
+import YoungkyuImage from "../../assets/2025/team/youngkyu.webp";
+import AyumiImage from "../../assets/2025/team/ayumi.webp";
+import ManakaImage from "../../assets/2025/team/manaka.webp";
+import WeilaiImage from "../../assets/2025/team/weilai.webp";
+import ChloeImage from "../../assets/2025/team/chloe.webp";
+import SadafImage from "../../assets/2025/team/sadaf.webp";
+import DesmondImage from "../../assets/2025/team/desmond.webp";
+import HafsahImage from "../../assets/2025/team/hafsah.webp";
 
 const teamMembers = [
   {

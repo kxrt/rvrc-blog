@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import learn from "../../../assets/2022/event1.png";
+import learn from "../../../assets/2022/event1.webp";
 
 const SymposiumTheme = () => {
   return (

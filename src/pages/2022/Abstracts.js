@@ -19,7 +19,7 @@ const Abstracts = () => {
         </Typography>
       </Box>
       <Box sx={{ marginTop: "10px" }}>
-        <Blogs number={100} />
+        <Blogs/>
       </Box>
     </>
   );

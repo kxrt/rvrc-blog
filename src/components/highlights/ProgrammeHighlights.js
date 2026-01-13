@@ -20,10 +20,19 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
             </Typography>
           )}
 
-          {subtitle && <Typography variant="subtitle1">{subtitle}</Typography>}
+          {subtitle && (
+            <Typography 
+              variant="h6"
+            sx={{
+              fontWeight: "bold",
+              color: "#1d9077",
+            }}>
+              {subtitle} 
+              </Typography>
+          )}
         </Stack>
 
-        <Timeline position="alternate">
+        <Timeline position="alternate" sx={{ px: { xs: 5, md: 10, lg: 14 }, }} >
           {events.map((event, index) => (
             <TimelineEvent
               key={index}
@@ -31,7 +40,7 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
               titles={event.titles}
               locations={event.locations}
               icon={event.icon}
-              iconBackgroundColor={index % 2 === 0 ? "" : "#592693"}
+              iconBackgroundColor={index % 2 === 0 ? "#20a9a9ff" : "#592693"}
             />
           ))}
         </Timeline>

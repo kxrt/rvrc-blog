@@ -8,11 +8,11 @@ import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights
 import AwardWinners from "../../components/2022/landing/AwardWinners";
 import StudentPoints from "../../components/2022/landing/StudentPoints";
 
-import event2 from "../../assets/2022/event2.png";
-import event3 from "../../assets/2022/event3.png";
-import event4 from "../../assets/2022/event4.png";
-import event5 from "../../assets/2022/event5.png";
-import event6 from "../../assets/2022/event6.png";
+import event2 from "../../assets/2022/event2.webp";
+import event3 from "../../assets/2022/event3.webp";
+import event4 from "../../assets/2022/event4.webp";
+import event5 from "../../assets/2022/event5.webp";
+import event6 from "../../assets/2022/event6.webp";
 import programmeEvents from "../../constants/2022/ProgrammeEvents";
 
 const images = [

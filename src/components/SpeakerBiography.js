@@ -12,6 +12,13 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
             sm: isAlignedLeft ? "row" : "row-reverse",
           },
           padding: "20px",
+          boxShadow: 1,
+          borderRadius: 2,
+          "&:hover": {
+            transform: "translateY(-6px)",
+            boxShadow: "0px 12px 24px rgba(0,0,0,0.12)",
+            backgroundColor: "#f4f9f8",
+          },
         }}
       >
         {image && (
@@ -23,10 +30,16 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
               justifyContent: "center",
             }}
           >
-            <img
+            <Box
+              component="img"
               src={image}
               alt={name}
-              style={{ width: "175px", height: "250px", objectFit: "cover" }}
+              sx={{ 
+                width: {xs:"180px", md:"220px"}, 
+                height: {xs:"200px", md:"250px"}, 
+                objectFit: "cover", 
+                borderRadius: 2,
+              }}
             />
           </Box>
         )}
@@ -42,7 +55,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
         >
           <Typography
             sx={{
-              fontSize: { xs: "18pt", md: "24pt" },
+              fontSize: { xs: "18pt", md: "20pt", lg: "22pt" },
               fontFamily: "Jost",
               color: "#1d9077",
             }}
@@ -50,14 +63,22 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
             {name}
           </Typography>
           <Typography
-            style={{
-              fontSize: { xs: "12pt", md: "16pt" },
+            sx={{
+              fontSize: { xs: "12pt", md: "14pt", lg: "16pt" },
               fontFamily: "Jost",
+              fontWeight: "bold",
             }}
           >
             {title}
           </Typography>
-          <p>{biography}</p>
+          <Typography
+            sx={{
+              fontSize: { xs: "10pt", md: "12pt", lg: "14pt" },
+              fontFamily: "Jost",
+            }}
+          >
+            {biography}
+          </Typography>
         </Box>
       </Box>
     </>

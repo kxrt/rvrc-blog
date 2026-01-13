@@ -21,10 +21,12 @@ Currently, this project has 2 branches:
 
 ### Previewing Deployments
 
-After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to a _preview_ site. You can view the preview sites on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
+After pushing changes to the `dev` or `main` branch, Vercel deploys the changes to commit specific _preview_ sites. You can view the preview sites on GitHub under [Deployments](https://github.com/kxrt/rvrc-blog/deployments):
 
 - `dev`: **Preview** environment
 - `main`: **Production** environment (Different from production site)
+
+The above links are useful for sharing a snapshot of the project at a specific point in time. Alternatively, to always see the most recent version of changes on the `dev` branch, use the preview site (https://rvrc-blog-git-dev-karts-projects-ce0fd1d2.vercel.app).
 
 ### Deploying to Production
 

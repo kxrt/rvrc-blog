@@ -38,6 +38,10 @@ const links = [
     title: "AY 2023/24",
     href: "http://rvrc-blog.vercel.app/2024",
   },
+  {
+    title: "AY 2024/25",
+    href: "http://rvrc-blog.vercel.app/2025",
+  }
 ];
 
 const PastSymposia = () => {

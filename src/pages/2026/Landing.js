@@ -56,7 +56,7 @@ const Landing = () => {
               variant="h1"
               sx={{
                 color: "white",
-                fontSize: { xs: "24pt", md: "50pt" },
+                fontSize: { xs: "22pt", md: "50pt" },
                 fontWeight: "bold",
               }}
             >
@@ -65,7 +65,7 @@ const Landing = () => {
             <Typography
               sx={{
                 color: "white",
-                fontSize: { xs: "16pt", md: "18pt" },
+                fontSize: { xs: "14pt", md: "18pt" },
               }}
             >
               Empowering youth to shape a sustainable and equitable future

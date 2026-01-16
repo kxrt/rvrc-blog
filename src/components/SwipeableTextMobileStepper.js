@@ -20,7 +20,7 @@ function SwipeableTextMobileStepper({ images }) {
             <SwiperSlide key={step.label}>
               <Box
                 component="img"
-                sx={{ display: "block", width: "100%" }}
+                sx={{ display: "block", width: "100%", minHeight: { xs: "30vh" } }}
                 src={step.imgPath}
                 alt={step.label}
               />

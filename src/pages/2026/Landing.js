@@ -2,18 +2,33 @@ import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SignupButton from "../../components/SignupButton";
+// import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2026/ProgrammeEvents";
 
-import LandingBanner1 from "../../assets/rvrc_bg.webp";
+import LandingBanner1 from "../../assets/2026/landing-banner-1.webp";
+import LandingBanner2 from "../../assets/2026/landing-banner-2.webp";
+import LandingBanner3 from "../../assets/2026/landing-banner-3.webp";
+import LandingBanner4 from "../../assets/2026/landing-banner-4.webp";
 import Footer from "../../components/Footer";
 
 const images = [
   {
     label: "Banner 1",
     imgPath: LandingBanner1,
+  },
+  {
+    label: "Banner 2",
+    imgPath: LandingBanner2,
+  },
+  {
+    label: "Banner 3",
+    imgPath: LandingBanner3,
+  },
+  {
+    label: "Banner 4",
+    imgPath: LandingBanner4,
   },
 ];
 
@@ -71,7 +86,7 @@ const Landing = () => {
               Empowering youth to shape a sustainable and equitable future
               together
             </Typography>
-            <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" />
+            {/* <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" /> */}
           </Stack>
         </Grow>
       </Box>

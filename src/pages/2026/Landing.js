@@ -100,7 +100,7 @@ const Landing = () => {
           was held on 7 February 2026. This student-led symposium provided a 
           formal platform for the presentation of exemplary student projects and 
           the diverse range of co-curricular activities undertaken within the 
-          College. It is designed to facilitate meaningful networking, reflection 
+          College. It was designed to facilitate meaningful networking, reflection 
           and shared learning among participants. The Symposium also foregrounded 
           the RVRC’s integrated themes of sustainability and workplace readiness.
         </p>
@@ -111,7 +111,7 @@ const Landing = () => {
             Mr. Sean Lam
           </a>{" "}
           as our Keynote Speaker. We believe that his leadership in environmental 
-          innovation and his engagement with the RVRC community makes his insights 
+          innovation and his engagement with the RVRC community made his insights 
           meaningful for our participants.
         </p>
       </Box>

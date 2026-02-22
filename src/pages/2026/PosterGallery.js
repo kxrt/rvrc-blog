@@ -39,7 +39,7 @@ const PosterGallery = () => {
               Alongside the Poster Gallery, Interactive Booths hosted by our community partners, 
               WWF Singapore, NTUC Youth, MINDS and SG Cares, provided attendees with opportunities 
               to learn about their work in advancing environmental conservation, social inclusion 
-              and youth advocacy. These parallel sessions are held within a shared space during the 
+              and youth advocacy. These parallel sessions were held within a shared space during the 
               tea break, creating a vibrant environment that encouraged meaningful learning, dialogue 
               and networking among participants.
             </Typography>

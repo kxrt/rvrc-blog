@@ -65,14 +65,14 @@ const Thread2 = () => {
           </Typography>
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
             While the previous symposium focused solely on sustainability, 
-            the 2026 edition will also spotlight RVRC’s other key theme — workplace 
-            readiness. Dedicated panel discussions will be held for each theme, 
+            the 2026 edition also spotlights RVRC’s other key theme — workplace 
+            readiness. Dedicated panel discussions were held for each theme, 
             providing deeper engagement and diverse perspectives.
           </Typography>
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
-            Presenters include students from RVRC, NUS and external IHLs, who are invited 
+            Presenters include students from RVRC, NUS and external IHLs, who were invited 
             to share their unique experiences, and foster dialogue and idea exchange 
-            across diverse groups. At the same time, this thread will also showcase how 
+            across diverse groups. At the same time, this thread also showcases how 
             RVRC’s distinct living-learning programme cultivates a strong sense of 
             stewardship towards both society and the environment.
           </Typography>

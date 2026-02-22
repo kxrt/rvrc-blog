@@ -62,7 +62,7 @@ const Landing = () => {
             spacing={{ xs: 1, md: 2 }}
             sx={{
               position: "absolute",
-              bottom: { xs: "5px", md: "80px" },
+              bottom: { xs: "10px", md: "80px" },
               width: "100%",
               zIndex: 2,
             }}
@@ -97,21 +97,21 @@ const Landing = () => {
           <b style={{ color: "#1d9077" }}>
             ‘Living and Learning for a Shared Future’
           </b>{" "}
-          will be held on 7 February 2026. This student-led symposium provides a 
+          was held on 7 February 2026. This student-led symposium provided a 
           formal platform for the presentation of exemplary student projects and 
           the diverse range of co-curricular activities undertaken within the 
           College. It is designed to facilitate meaningful networking, reflection 
-          and shared learning among participants. The Symposium is also foregrounding 
+          and shared learning among participants. The Symposium also foregrounded 
           the RVRC’s integrated themes of sustainability and workplace readiness.
         </p>
 
         <p style={{ fontSize: "16pt", textAlign: "justify" }}>
-          We are honoured to have{" "}
+          We were honoured to have{" "}
           <a href="/keynote" style={{ color: "#592693", fontWeight: "bold" }}>
             Mr. Sean Lam
           </a>{" "}
           as our Keynote Speaker. We believe that his leadership in environmental 
-          innovation and his engagement with the RVRC community will make his insights 
+          innovation and his engagement with the RVRC community makes his insights 
           meaningful for our participants.
         </p>
       </Box>

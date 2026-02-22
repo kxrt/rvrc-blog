@@ -29,15 +29,15 @@ const PosterGallery = () => {
         > 
           <Stack spacing={1}>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-              Featuring posters from Threads 1 and 2, the Poster Gallery showcases both 
-              academic learning and student-led initiatives. Attendees are able to explore 
+              Featuring posters from Threads 1 and 2, the Poster Gallery showcased both 
+              academic learning and student-led initiatives. Attendees were able to explore 
               the projects at their own pace, engage with the materials and interact directly 
               with the presenters, fostering deeper understanding and personalised insights 
               into each initiative.
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               Alongside the Poster Gallery, Interactive Booths hosted by our community partners, 
-              WWF Singapore, NTUC Youth, MINDS and SG Cares, provide attendees with opportunities 
+              WWF Singapore, NTUC Youth, MINDS and SG Cares, provided attendees with opportunities 
               to learn about their work in advancing environmental conservation, social inclusion 
               and youth advocacy. These parallel sessions are held within a shared space during the 
               tea break, creating a vibrant environment that encouraged meaningful learning, dialogue 

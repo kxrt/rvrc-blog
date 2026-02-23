@@ -2,18 +2,33 @@ import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SignupButton from "../../components/SignupButton";
+// import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2026/ProgrammeEvents";
 
-import LandingBanner1 from "../../assets/rvrc_bg.webp";
+import LandingBanner1 from "../../assets/2026/landing-banner-1.webp";
+import LandingBanner2 from "../../assets/2026/landing-banner-2.webp";
+import LandingBanner3 from "../../assets/2026/landing-banner-3.webp";
+import LandingBanner4 from "../../assets/2026/landing-banner-4.webp";
 import Footer from "../../components/Footer";
 
 const images = [
   {
     label: "Banner 1",
     imgPath: LandingBanner1,
+  },
+  {
+    label: "Banner 2",
+    imgPath: LandingBanner2,
+  },
+  {
+    label: "Banner 3",
+    imgPath: LandingBanner3,
+  },
+  {
+    label: "Banner 4",
+    imgPath: LandingBanner4,
   },
 ];
 
@@ -47,7 +62,7 @@ const Landing = () => {
             spacing={{ xs: 1, md: 2 }}
             sx={{
               position: "absolute",
-              bottom: { xs: "5px", md: "80px" },
+              bottom: { xs: "10px", md: "80px" },
               width: "100%",
               zIndex: 2,
             }}
@@ -71,7 +86,7 @@ const Landing = () => {
               Empowering youth to shape a sustainable and equitable future
               together
             </Typography>
-            <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" />
+            {/* <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" /> */}
           </Stack>
         </Grow>
       </Box>
@@ -82,21 +97,21 @@ const Landing = () => {
           <b style={{ color: "#1d9077" }}>
             ‘Living and Learning for a Shared Future’
           </b>{" "}
-          will be held on 7 February 2026. This student-led symposium provides a 
+          was held on 7 February 2026. This student-led symposium provided a 
           formal platform for the presentation of exemplary student projects and 
           the diverse range of co-curricular activities undertaken within the 
-          College. It is designed to facilitate meaningful networking, reflection 
-          and shared learning among participants. The Symposium is also foregrounding 
+          College. It was designed to facilitate meaningful networking, reflection 
+          and shared learning among participants. The Symposium also foregrounded 
           the RVRC’s integrated themes of sustainability and workplace readiness.
         </p>
 
         <p style={{ fontSize: "16pt", textAlign: "justify" }}>
-          We are honoured to have{" "}
+          We were honoured to have{" "}
           <a href="/keynote" style={{ color: "#592693", fontWeight: "bold" }}>
             Mr. Sean Lam
           </a>{" "}
           as our Keynote Speaker. We believe that his leadership in environmental 
-          innovation and his engagement with the RVRC community will make his insights 
+          innovation and his engagement with the RVRC community made his insights 
           meaningful for our participants.
         </p>
       </Box>

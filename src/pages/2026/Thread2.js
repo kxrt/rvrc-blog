@@ -57,22 +57,22 @@ const Thread2 = () => {
         >
           <Stack spacing={1}>
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-            This thread celebrates the rich array of student-led co-curricular and 
+            This thread celebrated the rich array of student-led co-curricular and 
             co-academic initiatives spearheaded by our residents. Discussions in this 
-            thread seek to showcase the vibrancy of student life in RVRC and beyond, 
-            showcasing how these experiences nurture essential workplace soft skills, 
+            thread sought to showcase the vibrancy of student life in RVRC and beyond, 
+            showcasing how these experiences nurtured essential workplace soft skills, 
             including leadership, teamwork and cultural awareness. 
           </Typography>
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
             While the previous symposium focused solely on sustainability, 
-            the 2026 edition will also spotlight RVRC’s other key theme — workplace 
-            readiness. Dedicated panel discussions will be held for each theme, 
+            the 2026 edition also spotlighted RVRC’s other key theme — workplace 
+            readiness. Dedicated panel discussions were held for each theme, 
             providing deeper engagement and diverse perspectives.
           </Typography>
           <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
-            Presenters include students from RVRC, NUS and external IHLs, who are invited 
+            Presenters included students from RVRC, NUS and external IHLs, who were invited 
             to share their unique experiences, and foster dialogue and idea exchange 
-            across diverse groups. At the same time, this thread will also showcase how 
+            across diverse groups. At the same time, this thread also showcased how 
             RVRC’s distinct living-learning programme cultivates a strong sense of 
             stewardship towards both society and the environment.
           </Typography>

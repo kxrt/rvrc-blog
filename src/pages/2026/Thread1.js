@@ -56,13 +56,13 @@ const Thread1 = () => {
         >
           <Stack spacing={1}>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-              Focused on academic learning at RVRC, presentations in this thread demonstrate 
-              how RVRC Programme's (RVRCP) courses enable students to hone their skills and equip 
+              Focused on academic learning at RVRC, presentations in this thread demonstrated 
+              how RVRC Programme's (RVRCP) courses enabled students to hone their skills and equipped 
               them with professional competencies to navigate a dynamic and increasingly 
               complex world.
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify"}}>
-              Thread 1 will be hosted separately in MPR 1 and 2. Presentations in{" "}
+              Thread 1 was hosted separately in MPR 1 and 2. Presentations in{" "}
               <a
                 href="#MPR1"
                 style={{
@@ -88,11 +88,11 @@ const Thread1 = () => {
               are from the RVSS Singapore Studies pillar and the RVX Critique and Expression pillar.
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-              In addition to poster and oral presentations, interactive sessions are introduced to 
+              In addition to poster and oral presentations, interactive sessions were introduced to 
               better reflect the experiential and participatory nature of RVRCP course projects, 
-              many of which involve showcases and peer teaching. This addition will offer a more 
+              many of which involve showcases and peer teaching. This addition offered a more 
               authentic and comprehensive representation of the diversity within RVRCP courses. 
-              These interactive sessions will be held at the end of the programme in each MPR.
+              These interactive sessions were held at the end of the programme in each MPR.
             </Typography>
           </Stack>
         </Grow>

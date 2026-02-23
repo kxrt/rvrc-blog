@@ -12,7 +12,7 @@ const KeynoteSpeaker = () => {
       <Box sx={{ display: { xs: "inline-block" } }}>
         <Box sx={{ display: "inline-block", height: "250px" }}>
           <Box component="img" src={keynoteSpeaker} alt="Keynote Speaker" sx={{ height: "100%", borderRadius: "8px" }} />
-          <Box component="img" src={keynoteSpeaker2} alt="Keynote Speaker 2" sx={{ height: "100%", paddingLeft: "20px", borderRadius: "8px" }} />
+          <Box component="img" src={keynoteSpeaker2} alt="Keynote Speaker 2" sx={{ height: "100%", marginLeft: "20px", borderRadius: "8px" }} />
         </Box>
         <Box sx={{ textAlign: { xs: "center" } }}>
           <Typography

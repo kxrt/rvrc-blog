@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-// import SignupButton from "../../components/SignupButton";
+import SignupButton from "../../components/2027/SignupButton";
 import ImageHeader from "../../components/2027/ImageHeader";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
@@ -37,7 +37,7 @@ const images = [
 const Landing = () => {
   return (
     <Stack spacing={0}>
-      <ImageHeader />
+      { /* <ImageHeader /> */ }
 
       <Box
         component="div"
@@ -90,7 +90,7 @@ const Landing = () => {
               Empowering youth to shape a sustainable and equitable future
               together
             </Typography>
-            {/* <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" /> */}
+            <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" />
           </Stack>
         </Grow>
       </Box>
@@ -111,7 +111,7 @@ const Landing = () => {
 
         <p style={{ fontSize: "16pt", textAlign: "justify" }}>
           We were honoured to have{" "}
-          <a href="/keynote" style={{ color: COLOURS.brandPurple, fontWeight: "bold" }}>
+          <a href="/external-partners#keynote" style={{ color: COLOURS.brandPurple, fontWeight: "bold" }}>
             Keynote Speaker 
           </a>{" "}
           as our Keynote Speaker. We believe that his leadership in environmental 

@@ -23,6 +23,7 @@ const ExternalPartners = () => {
           paddingInline: "10%",
           paddingBlock: "20px",
         }}
+        id="keynote"
       >
         <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
           <Stack spacing={1}>

@@ -19,9 +19,6 @@ import AccordionMenuItem from "../header/AccordionMenuItem";
 
 const Header = ({ headerLinks }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const midpoint = Math.ceil(headerLinks.length / 2);
-  const leftLinks = headerLinks.slice(0, midpoint);
-  const rightLinks = headerLinks.slice(midpoint);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -49,7 +46,7 @@ const Header = ({ headerLinks }) => {
                 <img
                   src={logoIconWhite}
                   alt="logo"
-                  style={{ height: "64px", padding: "4px" }}
+                  style={{ height: "128px", padding: "4px" }}
                 />
               </a>
               <IconButton
@@ -108,44 +105,28 @@ const Header = ({ headerLinks }) => {
                 width: "100%",
                 display: { xs: "none", md: "flex" },
                 alignItems: "center",
-                justifyContent: "space-between",
+                justifyContent: "flex-start",
                 px: 2,
+                gap: 3,
               }}
             >
-              <Stack direction="row" spacing={1} sx={{ flex: 1, justifyContent: "flex-end" }}>
-                {leftLinks.map((headerLink) => (
-                  <Button
-                    key={headerLink.key}
-                    href={headerLink.link}
-                    onClick={handleCloseNavMenu}
-                    sx={{
-                      color: COLOURS.white,
-                      fontFamily: "Jost",
-                      fontSize: "13pt",
-                      whiteSpace: "nowrap",
-                      minWidth: "auto",
-                      px: 1,
-                    }}
-                  >
-                    {headerLink.label}
-                  </Button>
-                ))}
-              </Stack>
-
               <a href="/">
                 <img
                   src={logoIconWhite}
                   alt="logo"
                   style={{
                     height: "120px",
-                    padding: "4px",
-                    marginInline: "16px",
+                    padding: "0px",
                   }}
                 />
               </a>
 
-              <Stack direction="row" spacing={1} sx={{ flex: 1, justifyContent: "flex-start" }}>
-                {rightLinks.map((headerLink) => (
+              <Stack
+                direction="row"
+                spacing={1}
+                sx={{ flex: 1, justifyContent: "flex-start", flexWrap: "wrap" }}
+              >
+                {headerLinks.map((headerLink) => (
                   <Button
                     key={headerLink.key}
                     href={headerLink.link}

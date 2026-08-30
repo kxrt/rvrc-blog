@@ -5,7 +5,7 @@ import "./App.css";
 
 import AboutRVRC from "./pages/AboutRVRC";
 import Header from "./components/header/Header";
-import Header2027 from "./components/2027/Header";
+import Header2027 from "./components/2027/HeaderLeft";
 
 import Landing2022 from "./pages/2022/Landing";
 import KeynoteSpeaker2022 from "./pages/2022/KeynoteSpeaker";

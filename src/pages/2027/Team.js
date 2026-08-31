@@ -20,10 +20,10 @@ const Team = () => {
           maxWidth: "1200px",
         }}
       >
-        {teamMembers.slice(0, 7).map((teamMember, index) => {
+        {teamMembers.slice(0, 6).map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
-            <Grid item key={index} xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+            <Grid item key={index} xs={12} sm={6} md={4} sx={{ display: "flex" }}>
               <TeamMemberCard name={name} position={position} image={image} />
             </Grid>
           );
@@ -39,10 +39,10 @@ const Team = () => {
           maxWidth: "1200px",
         }}
       >
-        {teamMembers.slice(7, 10).map((teamMember, index) => {
+        {teamMembers.slice(6, 10).map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
-            <Grid item key={index} xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+            <Grid item key={index} xs={12} sm={6} md={4} sx={{ display: "flex" }}>
               <TeamMemberCard name={name} position={position} image={image} />
             </Grid>
           );

@@ -109,3 +109,49 @@ export const posterGalleryEvents = [
     icon: <Collections />,
   },
 ];
+
+export const studentRoundtableEvents = [
+  {
+    time: "12:15 pm",
+    titles: [
+      "Student Roundtable",
+    ],
+    locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
+    icon: <Collections />,
+  },
+];
+
+export const dialogueSessionsEvents = [
+  {
+    time: "12:15 pm",
+    titles: [
+      "Introduction by Moderator",
+    ],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <Collections />,
+  },
+  {
+    time: "12:25 pm",
+    titles: [
+      "Alumni 1 Sessions",
+    ],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <Collections />,
+  },
+  {
+    time: "12:35 pm",
+    titles: [
+      "Alumni 2 Sessions",
+    ],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <Collections />,
+  },
+  {
+    time: "12:45 pm",
+    titles: [
+      "Alumni 3 Sessions",
+    ],
+    locations: ["Master's Lounge (Level 3, RVRC Block G)"],
+    icon: <Collections />,
+  },
+];

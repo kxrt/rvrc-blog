@@ -10,14 +10,25 @@ const headerLinks = [
     label: "External Partners",
   },
   {
-    key: "thread1",
-    link: "/thread-1",
-    label: "Thread 1: Re-Synergy",
+    key: "threads",
+    label: "Threads",
+    sublinks: [
+      {
+        key: "thread1",
+        link: "/thread-1",
+        label: "Thread 1: Re-Synergy",
+      },
+      {
+        key: "thread2",
+        link: "/thread-2",
+        label: "Thread 2: In-Synergy",
+      },
+    ],
   },
   {
-    key: "thread2",
-    link: "/thread-2",
-    label: "Thread 2: In-Synergy",
+    key: "programme",
+    link: "/programme",
+    label: "Programme",
   },
   {
     key: "poster",

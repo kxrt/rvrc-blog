@@ -3,7 +3,6 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 import SignupButton from "../../components/2027/SignupButton";
-import ImageHeader from "../../components/2027/ImageHeader";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2027/ProgrammeEvents";

@@ -69,17 +69,29 @@ const Header = ({ headerLinks }) => {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "center",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "center",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                "& .MuiPaper-root": {
+                  bgcolor: COLOURS.brandPurple,
+                  color: COLOURS.white,
+                  minWidth: 220,
+                },
+              }}
+              slotProps={{
+                list: {
+                  sx: {
+                    py: 0.5,
+                  },
+                },
               }}
             >
               {headerLinks.map((headerLink) =>
@@ -95,6 +107,11 @@ const Header = ({ headerLinks }) => {
                     onClick={handleCloseNavMenu}
                     component={Link}
                     to={headerLink.link}
+                    sx={{
+                      justifyContent: "center",
+                      textAlign: "center",
+                      color: COLOURS.white,
+                    }}
                   >
                     <Typography textAlign="center">{headerLink.label}</Typography>
                   </MenuItem>

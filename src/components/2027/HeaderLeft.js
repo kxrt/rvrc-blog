@@ -9,7 +9,9 @@ import {
   Typography,
   Button,
   Stack,
+  ListItemText,
 } from "@mui/material";
+import { ExpandMore } from "@mui/icons-material";
 import { Link, Outlet } from "react-router-dom";
 
 import menuIcon from "../../assets/bars-solid.svg";
@@ -19,6 +21,8 @@ import AccordionMenuItem from "../header/AccordionMenuItem";
 
 const Header = ({ headerLinks }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElDesktopSubNav, setAnchorElDesktopSubNav] = React.useState(null);
+  const [desktopSubLinks, setDesktopSubLinks] = React.useState([]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -26,6 +30,16 @@ const Header = ({ headerLinks }) => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleOpenDesktopSubMenu = (event, sublinks) => {
+    setAnchorElDesktopSubNav(event.currentTarget);
+    setDesktopSubLinks(sublinks);
+  };
+
+  const handleCloseDesktopSubMenu = () => {
+    setAnchorElDesktopSubNav(null);
+    setDesktopSubLinks([]);
   };
 
   return (
@@ -105,7 +119,7 @@ const Header = ({ headerLinks }) => {
                 width: "100%",
                 display: { xs: "none", md: "flex" },
                 alignItems: "center",
-                justifyContent: "flex-start",
+                justifyContent: "space-between",
                 px: 2,
                 gap: 3,
               }}
@@ -124,26 +138,67 @@ const Header = ({ headerLinks }) => {
               <Stack
                 direction="row"
                 spacing={1}
-                sx={{ flex: 1, justifyContent: "flex-start", flexWrap: "wrap" }}
+                sx={{
+                  flex: 1,
+                  justifyContent: "space-evenly",
+                  flexWrap: "wrap",
+                  maxWidth: "960px",
+                  mx: "auto",
+                }}
               >
-                {headerLinks.map((headerLink) => (
-                  <Button
-                    key={headerLink.key}
-                    href={headerLink.link}
-                    onClick={handleCloseNavMenu}
-                    sx={{
-                      color: COLOURS.white,
-                      fontFamily: "Jost",
-                      fontSize: "13pt",
-                      whiteSpace: "nowrap",
-                      minWidth: "auto",
-                      px: 1,
-                    }}
-                  >
-                    {headerLink.label}
-                  </Button>
-                ))}
+                {headerLinks.map((headerLink) =>
+                  headerLink.sublinks ? (
+                    <Button
+                      key={headerLink.key}
+                      onClick={(event) => handleOpenDesktopSubMenu(event, headerLink.sublinks)}
+                      endIcon={<ExpandMore />}
+                      sx={{
+                        color: COLOURS.white,
+                        fontFamily: "Jost",
+                        fontSize: "13pt",
+                        whiteSpace: "nowrap",
+                        minWidth: "auto",
+                        px: 1,
+                      }}
+                    >
+                      {headerLink.label}
+                    </Button>
+                  ) : (
+                    <Button
+                      key={headerLink.key}
+                      component={Link}
+                      to={headerLink.link}
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        color: COLOURS.white,
+                        fontFamily: "Jost",
+                        fontSize: "13pt",
+                        whiteSpace: "nowrap",
+                        minWidth: "auto",
+                        px: 1,
+                      }}
+                    >
+                      {headerLink.label}
+                    </Button>
+                  )
+                )}
               </Stack>
+              <Menu
+                anchorEl={anchorElDesktopSubNav}
+                open={Boolean(anchorElDesktopSubNav)}
+                onClose={handleCloseDesktopSubMenu}
+              >
+                {desktopSubLinks.map((sublink) => (
+                  <MenuItem
+                    key={sublink.key}
+                    component={Link}
+                    to={sublink.link}
+                    onClick={handleCloseDesktopSubMenu}
+                  >
+                    <ListItemText>{sublink.label}</ListItemText>
+                  </MenuItem>
+                ))}
+              </Menu>
             </Stack>
           </Toolbar>
         </Container>

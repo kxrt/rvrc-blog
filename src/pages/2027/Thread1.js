@@ -85,7 +85,7 @@ const Thread1 = () => {
 
       <div id="MPR1">
         <ProgrammeHighlights
-          title="RVC and RVN Projects"
+          title="Thread 1 Presentations"
           subtitle="MPR 1 (Level 3, RVRC Block G)"
           events={thread1Events}
         />

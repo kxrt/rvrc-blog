@@ -85,34 +85,7 @@ const Thread2 = () => {
 
       <div id="MPR1">
         <ProgrammeHighlights
-          title="RVC and RVN Projects"
-          subtitle="MPR 1 (Level 3, RVRC Block G)"
-          events={thread2Events}
-        />
-
-        <Grid container 
-          spacing={2} 
-          justifyContent="center" 
-          sx={{ paddingInline: "10%" }}>
-          {thread2Events.filter(e => e.abstract) // ignore breaks in timeline
-          .map((project) => (
-            <Grid item sm={12} md={6} lg={4}
-              sx={{ display: "flex", width: "100%" }}>
-              <ProjectCard
-                key={project.titles[0]}
-                title={project.titles[0]}
-                subtitle={project.course}
-                presenters={project.locations}
-                abstract={project.abstract}
-              />
-            </Grid>
-          ))}
-        </Grid>
-      </div>
-
-      <div id="MPR2" style={{ marginBottom: "32px" }}>
-        <ProgrammeHighlights
-          title="RVSS and RVX Projects"
+          title="Thread 2 Presentations"
           subtitle="MPR 2 (Level 3, RVRC Block G)"
           events={thread2Events}
         />
@@ -136,6 +109,33 @@ const Thread2 = () => {
           ))}
         </Grid>
       </div>
+
+      { /* <div id="MPR2" style={{ marginBottom: "32px" }}>
+        <ProgrammeHighlights
+          title="Thread 2 Presentations"
+          subtitle="MPR 2 (Level 3, RVRC Block G)"
+          events={thread2Events}
+        />
+
+        <Grid container 
+          spacing={2} 
+          justifyContent="center" 
+          sx={{ paddingInline: "10%" }}>
+          {thread2Events.filter(e => e.abstract) // ignore breaks in timeline
+          .map((project) => (
+            <Grid item sm={12} md={6} lg={4}
+              sx={{ display: "flex", width: "100%" }}>
+              <ProjectCard
+                key={project.titles[0]}
+                title={project.titles[0]}
+                subtitle={project.course}
+                presenters={project.locations}
+                abstract={project.abstract}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </div> */ }
 
       <Footer />
     </Stack>

@@ -63,16 +63,13 @@ const PosterGallery = () => {
               marginTop: 2,
             }}
           >
-            Thread 1: Edu-venture Posters
+            Thread 1: Re-Synergy Posters
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
             <Breadcrumbs>
-              <Typography sx={{ color: 'text.primary' }}>Thread 1 Edu-venture</Typography>
+              <Typography sx={{ color: 'text.primary' }}>Thread 1 Re-Synergy</Typography>
               <Link underline="hover" color="inherit" href="#thread2-posters">
-                Thread 2 Adventure
-              </Link>
-              <Link underline="hover" color="inherit" href="#thread2-funding-posters">
-                Thread 2 MAC3 Funded
+                Thread 2 In-Synergy
               </Link>
             </Breadcrumbs>
           </Box>
@@ -103,17 +100,14 @@ const PosterGallery = () => {
               marginTop: 2,
             }}
           >
-            Thread 2: Adventure Posters
+            Thread 2: In-Synergy Posters
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
             <Breadcrumbs>
               <Link underline="hover" color="inherit" href="#thread1-posters">
-                Thread 1 Edu-venture
+                Thread 1 Re-Synergy
               </Link>
-              <Typography sx={{ color: 'text.primary' }}>Thread 2 Adventure</Typography>
-              <Link underline="hover" color="inherit" href="#thread2-funding-posters">
-                Thread 2 MAC3 Funded
-              </Link>
+              <Typography sx={{ color: 'text.primary' }}>Thread 2 In-Synergy</Typography>
             </Breadcrumbs>
           </Box>
           <Grid container 
@@ -133,86 +127,7 @@ const PosterGallery = () => {
             ))}
           </Grid>
         </Stack>
-        <Stack id="thread2-funding-posters" gap={2}>
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: "bold",
-              color: "#1d9077",
-              marginTop: 2,
-            }}
-          >
-            Thread 2: Recipients of MAC3 Funding
-          </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
-            <Breadcrumbs>
-              <Link underline="hover" color="inherit" href="#thread1-posters">
-                Thread 1 Edu-venture
-              </Link>
-              <Link underline="hover" color="inherit" href="#thread2-posters">
-                Thread 2 Adventure
-              </Link>
-              <Typography sx={{ color: 'text.primary' }}>Thread 2 MAC3 Funded</Typography>
-            </Breadcrumbs>
-          </Box>
-          <Box sx={{ 
-            marginX: "8%", 
-            marginBottom: "10px",
-            }}
-          >
-            <Stack spacing={1} 
-              sx={{
-                padding: "20px",
-                backgroundColor: "#e1d4f0ff",
-                borderRadius: "16px",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-              }}
-            >
-              <Typography variant="h7" sx={{ textAlign: "justify" }}>
-                <span
-                style={{
-                  fontWeight: "bold",
-                  textDecoration: "underline",
-                }}
-                >
-                  MAC3 Impact Philanthropies Singapore,
-                </span>
-                {" "}co-founded by Dr. Antoine Firmenich and Mr. Christopher Louis Franck, is a 
-                giving and impact organization that finances 
-                activities and investments to achieve large-scale, sustainable change. It 
-                supports Early Childhood, Health & Education (EHE), and Environmental 
-                initiatives, including ocean-focused work, and collaborates with donors and 
-                partners to scale proven, systemic solutions across countries in Asia.
-              </Typography>
-              <Typography variant="h7" sx={{ textAlign: "justify" }}>
-                Since 2018, RVRC has received MAC3 funding for a range of impactful sustainability 
-                initiatives and expeditions co-facilitated by RVRC Fellows and students, 
-                including the Kayak and Clean Programme, Intertidal Walk and Clean, Heritage Walks, 
-                RVForestore's Chestnut Reforestation Programme, and the Leopard Cat Quest. RVRC 
-                records its deep gratitude to MAC3 and its donors, whose support continues to 
-                enable sustained sustainability education and meaningful environmental impact 
-                learning for our students.
-              </Typography>
-            </Stack>
-          </Box>
-          <Grid container 
-            spacing={2} 
-            justifyContent="center" 
-            sx={{ paddingInline: "10%" }}>
-            {thread2Posters.map((project) => (
-              <Grid item sm={12} md={6} lg={4}
-                key={project.title}
-                sx={{ display: "flex", width: "100%" }}>
-                <ProjectCard
-                  title={project.title}
-                  abstract={project.abstract}
-                />
-              </Grid>
-            ))}
-          </Grid> 
-        </Stack>
       </Stack>
-
       <Footer />
     </Stack>
   );

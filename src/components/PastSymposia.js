@@ -41,6 +41,10 @@ const links = [
   {
     title: "AY 2024/25",
     href: "http://rvrc-blog.vercel.app/2025",
+  },
+  {
+    title: "AY 2025/26",
+    href: "http://rvrc-blog.vercel.app/",
   }
 ];
 

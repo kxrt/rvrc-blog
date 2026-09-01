@@ -1,0 +1,73 @@
+import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
+import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
+import { COLOURS } from "../../constants/Colours";
+import logoIconWhite from "../../assets/logo-2027.png";
+
+const Footer = () => {
+  return (
+    <>
+      <Box py="32px" px="10%" sx={{ background: COLOURS.brandPurple, color: "white" }}>
+        <Stack
+          direction={{ xs: "column", md: "row" }}
+          spacing={{ xs: 3, md: 0 }}
+          sx={{
+            alignItems: { xs: "center", md: "flex-start" },
+            justifyContent: { xs: "none", md: "space-evenly" },
+          }}
+        >
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 2, md: 3 }}
+            sx={{
+              alignItems: { xs: "center", md: "flex-start" },
+              justifyContent: { xs: "none", md: "space-evenly" },
+            }}
+          >
+            <img
+              src={logoIconWhite}
+              alt="logo"
+              style={{ height: "124px", padding: "0px" }}
+            />
+            <Typography
+              variant="h1"
+              sx={{
+                textAlign: "left",
+                color: "white",
+                fontSize: "24pt",
+                fontWeight: "Bold",
+                maxWidth: { xs: "none", md: "200px" },
+              }}
+            >
+              RVRC Symposium 2027
+            </Typography>
+          </Stack>
+
+          <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
+            <Typography mb="10px" sx={{ fontWeight: "bold" }}>
+              Address
+            </Typography>
+            <Typography>25 Lower Kent Ridge Road</Typography>
+            <Typography>Block G, Level 3</Typography>
+            <Typography>Singapore 119081</Typography>
+          </Stack>
+          <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
+            <Typography mb="10px" sx={{ fontWeight: "bold" }}>
+              Contact Us
+            </Typography>
+            <Stack direction="row" spacing={3}>
+              <EmailOutlined sx={{ color: "white" }} />
+              <Typography>askrvrc@nus.edu.sg</Typography>
+            </Stack>
+            <Stack direction="row" spacing={3}>
+              <PhoneOutlined sx={{ color: "white" }} />
+              <Typography>(+65) 6601 3886</Typography>
+            </Stack>
+          </Stack>
+        </Stack>
+      </Box>
+    </>
+  );
+};
+
+export default Footer;

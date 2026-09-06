@@ -1,5 +1,5 @@
 import React from "react";
-import { Grow, Stack, Typography } from "@mui/material";
+import { Grid, Grow, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/2027/Title";
 import Footer from "../../components/2027/Footer";
@@ -7,6 +7,7 @@ import Footer from "../../components/2027/Footer";
 import SpeakerBiography from "../../components/SpeakerBiography";
 import { communityPartners, partnerInstitutions } from "../../constants/2027/PartnersDelegates";
 import { COLOURS } from "../../constants/Colours";
+import PartnerUniversityCard from "../../components/PartnerUniversityCard";
 
 const PartnersDelegates = () => {
   return (
@@ -144,16 +145,24 @@ const PartnersDelegates = () => {
           Partner Institutions
         </Typography>
 
-        {partnerInstitutions.map((partner) => (
-          <SpeakerBiography
-            key={partner.name}
-            name={partner.name}
-            title={partner.title}
-            biography={partner.biography}
-            image={partner.image}
-            isAlignedLeft={true}
-          />
-        ))}
+        <Grid
+          container
+          spacing={6}
+          sx={{
+            px: "5%",
+            justifyContent: "center",
+            alignSelf: "center",
+            maxWidth: "1200px",
+          }}
+        >
+          {partnerInstitutions.map((partner) => {
+            return (
+              <Grid item key={partner.name} xs={10} sm={10} md={6} sx={{ display: "flex" }}>
+                <PartnerUniversityCard name={partner.name} country={partner.country} image={partner.image} />
+              </Grid>
+            );
+          })}
+        </Grid>
       </Stack>
       <Footer />
     </Stack>

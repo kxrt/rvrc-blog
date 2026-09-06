@@ -5,11 +5,6 @@ const headerLinks = [
     label: "Overview",
   },
   {
-    key: "external-partners",
-    link: "/external-partners",
-    label: "External Partners",
-  },
-  {
     key: "threads",
     label: "Threads",
     sublinks: [
@@ -26,14 +21,19 @@ const headerLinks = [
     ],
   },
   {
-    key: "programme",
-    link: "/programme",
-    label: "Programme",
+    key: "interactive",
+    link: "/interactive",
+    label: "Interactive",
   },
   {
     key: "poster",
     link: "/poster-gallery",
     label: "Poster Gallery",
+  },
+  {
+    key: "partners-delegates",
+    link: "/partners-delegates",
+    label: "Partners/Delegates",
   },
   {
     key: "team",

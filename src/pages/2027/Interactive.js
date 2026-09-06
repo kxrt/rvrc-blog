@@ -13,10 +13,10 @@ import { studentRoundtableEvents, dialogueSessionsEvents } from "../../constants
 import keynoteSpeaker from "../../assets/2026/keynote-speaker.webp";
 import keynoteSpeaker2 from "../../assets/2026/keynote-speaker-2.webp";
 
-const Programme = () => {
+const Interactive = () => {
   return (
     <Stack>
-      <Title title="Programme" />
+      <Title title="Interactive" />
       <Stack
         spacing={2}
         sx={{
@@ -200,4 +200,4 @@ const Programme = () => {
   );
 };
 
-export default Programme;
+export default Interactive;

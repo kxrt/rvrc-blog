@@ -38,11 +38,11 @@ import headerLinks2026 from "./constants/2026/HeaderLinks";
 
 import Landing2027 from "./pages/2027/Landing";
 import Team2027 from "./pages/2027/Team";
-import ExternalPartners2027 from "./pages/2027/ExternalPartners";
+import PartnersDelegates2027 from "./pages/2027/PartnersDelegates";
 import Thread12027 from "./pages/2027/Thread1";
 import Thread22027 from "./pages/2027/Thread2";
 import PosterGallery2027 from "./pages/2027/PosterGallery";
-import Programme2027 from "./pages/2027/Programme";
+import Interactive2027 from "./pages/2027/Interactive";
 import headerLinks2027 from "./constants/2027/HeaderLinks";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -63,11 +63,11 @@ function App() {
             <Route path="/" element={<Header2027 headerLinks={headerLinks2027} />}>
               <Route index element={<Landing2027 />} />
               <Route path="team" element={<Team2027 />} />
-              <Route path="external-partners" element={<ExternalPartners2027 />} />
+              <Route path="partners-delegates" element={<PartnersDelegates2027 />} />
               <Route path="thread-1" element={<Thread12027 />} />
               <Route path="thread-2" element={<Thread22027 />} />
               <Route path="poster-gallery" element={<PosterGallery2027 />} />
-              <Route path="programme" element={<Programme2027 />} />
+              <Route path="interactive" element={<Interactive2027 />} />
             </Route>
 
             <Route path="2026" element={<Header headerLinks={headerLinks2026} />}>

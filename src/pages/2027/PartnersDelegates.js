@@ -11,10 +11,10 @@ import { COLOURS } from "../../constants/Colours";
 import keynoteSpeaker from "../../assets/2026/keynote-speaker.webp";
 import keynoteSpeaker2 from "../../assets/2026/keynote-speaker-2.webp";
 
-const ExternalPartners = () => {
+const PartnersDelegates = () => {
   return (
     <Stack spacing={0}>
-      <Title title="External Partners" />
+      <Title title="Partners/Delegates" />
       {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
       <Stack
         spacing={2}
@@ -199,4 +199,4 @@ const ExternalPartners = () => {
   );
 };
 
-export default ExternalPartners;
+export default PartnersDelegates;

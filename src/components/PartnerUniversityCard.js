@@ -12,10 +12,11 @@ const PartnerUniversityCard = ({ image, name, country }) => {
         component="img"
         src={image}
         sx={{
-          width: "540px",
+          width: "auto",
           height: "150px",
+          maxWidth: "100%",
           alignSelf: "center",
-          objectFit: "cover",
+          objectFit: "contain",
           borderRadius: "8px",
           "&:hover": {
             boxShadow: "0px 12px 30px rgba(0,0,0,0.15)",

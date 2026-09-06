@@ -47,11 +47,14 @@ const Interactive = () => {
         >
           <Stack spacing={1}>
           <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
-            The Student Roundtable introduces a unique format for engaging with global sustainability challenges. 
-            Instead of working towards a white paper, there will be a discussion about how ecotourism benefits or conversely detriments
-            Southeast Asian economies and how it is promoted across different countries in Southeast Asia. With the input of moderators and professors
-            in the expertise, we hope to push our students and international delegates to create meaningful dialogue and come up with 
-            innovative solutions to the challenges presented.
+            The Student Roundtable will introduce a distinctive forum for engaging with pressing 
+            global sustainability challenges. In place of a traditional white paper format, 
+            delegates will participate in a structured discussion examining the benefits and 
+            drawbacks of ecotourism on Southeast Asian economies, as well as the varying approaches 
+            to its promotion across the region. Under the guidance of an experienced moderator 
+            and subject-matter expert, student participants and international delegates will be 
+            encouraged to engage in substantive dialogue and develop innovative, evidence-informed 
+            responses to the challenges under consideration.
           </Typography>
           </Stack>
         </Grow>
@@ -86,7 +89,7 @@ const Interactive = () => {
                   color: "#1d9077",
                   }}
               >
-                  Professor Movin
+                  Dr. Movin N (RVRC Fellow) 
               </Typography>
               <Typography
                   style={{
@@ -106,11 +109,10 @@ const Interactive = () => {
                         textAlign: "justify",
                     }}
                   >
-                  We are privileged to have <b>Professor Movin</b> as our moderator for this year's roundtable. He is the 
-                  RVRC Fellow and Professor of Environmental Studies at the National University of Singapore. 
-                  His research focuses on sustainable development and environmental policy, with a particular 
-                  emphasis on addressing climate change and promoting green technologies. He has published numerous papers 
-                  in leading journals and is a sought-after speaker at international conferences.
+                  RVRC Fellow Dr Movin will serve as the moderator for the Student Roundtable. Dr. Movin's research 
+                  focuses on biodiversity impact assessments, community-based conservation, and developing regional 
+                  frameworks for biodiversity. A trained ornithologist and freshwater biologist,he has conducted 
+                  fieldwork across Southeast Asia, with a particular focus on the Philippines. 
                   </p>
               </div>
               </Box>
@@ -181,7 +183,7 @@ const Interactive = () => {
             color: COLOURS.brandPurple,
           }}
         >
-          Alummni Speakers
+          Alumni Speakers
         </Typography>
 
         {humanLibrarySpeakers.map((speaker) => (

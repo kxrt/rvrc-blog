@@ -1,126 +1,17 @@
 import React from "react";
-import { Box, Grow, Stack, Typography } from "@mui/material";
+import { Grow, Stack, Typography } from "@mui/material";
 
 import Title from "../../components/2027/Title";
 import Footer from "../../components/2027/Footer";
 // import Thread2Image from "../../assets/2026/thread-2.webp";
 import SpeakerBiography from "../../components/SpeakerBiography";
-import communityPartners from "../../constants/2027/ExternalPartners";
+import { communityPartners, partnerInstitutions } from "../../constants/2027/PartnersDelegates";
 import { COLOURS } from "../../constants/Colours";
-
-import keynoteSpeaker from "../../assets/2026/keynote-speaker.webp";
-import keynoteSpeaker2 from "../../assets/2026/keynote-speaker-2.webp";
 
 const PartnersDelegates = () => {
   return (
     <Stack spacing={0}>
       <Title title="Partners/Delegates" />
-      {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
-      <Stack
-        spacing={2}
-        sx={{
-          backgroundColor: COLOURS.brandTeal,
-          paddingInline: "10%",
-          paddingBlock: "20px",
-        }}
-        id="keynote"
-      >
-        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
-          <Stack spacing={1}>
-            <Typography
-              variant="h4"
-              sx={{
-                color: COLOURS.white,
-                textAlign: "center",
-                fontWeight: "bold",
-              }}
-            >
-              Keynote Speaker
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                fontSize: { md: "16pt" },
-                color: COLOURS.white,
-                textAlign: "center",
-                fontStyle: "italic",
-              }}
-            >
-              Mr Name Here
-            </Typography>
-          </Stack>
-        </Grow>
-        <Grow
-          in
-          timeout={1000}
-          style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
-        >
-          <Stack spacing={1}>
-          <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
-            We are pleased to invite Mr Name Here, a distinguished leader in environmental innovation, 
-            as our Keynote Speaker for the RVRC Symposium 2027. His extensive experience and commitment 
-            to sustainability have made significant contributions to the field, and we are honoured 
-            to have him share his insights with our community.
-          </Typography>
-          </Stack>
-        </Grow>
-      </Stack>
-      <Stack spacing={2}>
-        <Box sx={{ display: { xs: "inline-block", md: "block" } }}>
-            <Box sx={{ display: "inline-block", height: "250px", marginTop: "20px" }}>
-            <Box component="img" src={keynoteSpeaker} alt="Keynote Speaker" sx={{ height: "100%", borderRadius: "8px" }} />
-            <Box component="img" src={keynoteSpeaker2} alt="Keynote Speaker 2" sx={{ height: "100%", marginLeft: "20px", borderRadius: "8px" }} />
-            </Box>
-            <Box sx={{ textAlign: { xs: "center" } }}>
-            <Typography
-                sx={{
-                fontSize: { xs: "18pt", md: "24pt" },
-                paddingInline: "7%",
-                paddingTop: "18px",
-                color: "#1d9077",
-                }}
-            >
-                Mr. Sean Lam
-            </Typography>
-            <Typography
-                style={{
-                fontSize: { xs: "12pt", md: "16pt" },
-                paddingInline: "7%",
-                paddingBottom: "0px",
-                }}
-            >
-                Founder and CEO, Ecoworks
-            </Typography>
-
-            <div>
-                <p
-                style={{
-                    fontSize: "14pt",
-                    paddingInline: "7%",
-                    textAlign: "justify",
-                }}
-                >
-                <b>Mr. Sean Lam</b> is the Founder and CEO of{" "}
-                <a
-                    href="https://www.ecoworks.sg/"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ color: "#592693", fontWeight: "bold" }}
-                >
-                    Ecoworks
-                </a>
-                , a social enterprise in Singapore that tackles single-use plastic 
-                waste by providing a network of automated refill stations for household 
-                cleaning products. His mission is to promote a packaging-free lifestyle 
-                and eliminate millions of plastic bottles annually. He is also recognised 
-                as a Philip Yeo Innovation Fellow (a "MAD COW" - Make A Difference, 
-                Change Our World) for his innovative environmental solutions and is 
-                active as a community leader and Volunteer Police Officer.
-                </p>
-            </div>
-            </Box>
-        </Box>
-    </Stack>
       <Stack
         spacing={2}
         sx={{
@@ -161,12 +52,11 @@ const PartnersDelegates = () => {
         >
           <Stack spacing={1}>
           <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
-            Many thanks to the Partners of the RVRC Symposium 2027, WWF Singapore, NTUC Youth, MINDS and SG Cares. 
-            Our community partners will provide Interactive Booths to bring attendees opportunities 
-            to learn about their work in advancing environmental conservation, social inclusion 
-            and youth advocacy. These parallel sessions are held within a shared space during the 
-            tea break, creating a vibrant environment that encouraged meaningful learning, dialogue 
-            and networking among participants.
+            RVRC Symposium 2027 community partners will host interactive booths offering attendees 
+            the opportunity to learn about their work in environmental conservation, social inclusion, 
+            and youth advocacy. These parallel sessions take place in a shared space during the 
+            Networking Tea, creating a vibrant environment that fosters meaningful learning, dialogue, 
+            and networking among symposium attendees.
           </Typography>
           </Stack>
         </Grow>
@@ -184,6 +74,77 @@ const PartnersDelegates = () => {
         </Typography>
 
         {communityPartners.map((partner) => (
+          <SpeakerBiography
+            key={partner.name}
+            name={partner.name}
+            title={partner.title}
+            biography={partner.biography}
+            image={partner.image}
+            isAlignedLeft={true}
+          />
+        ))}
+      </Stack>
+      <Stack
+        spacing={2}
+        sx={{
+          backgroundColor: COLOURS.brandTeal,
+          paddingInline: "10%",
+          paddingBlock: "20px",
+        }}
+      >
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Stack spacing={1}>
+            <Typography
+              variant="h4"
+              sx={{
+                color: COLOURS.white,
+                textAlign: "center",
+                fontWeight: "bold",
+              }}
+            >
+              Foreign Delegates
+            </Typography>
+          </Stack>
+        </Grow>
+        <Grow
+          in
+          timeout={1000}
+          style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
+        >
+          <Stack spacing={1}>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
+            The RVRC Symposium 2027 extends a formal invitation to outstanding student delegates 
+            from selected partner universities across ASEAN and Asia to engage in a rigorous 
+            exchange of ideas on sustainability, community engagement, and workplace readiness. 
+            In keeping with this year's theme, international delegates will be at the heart of the 
+            Symposium, bringing diverse cross-cultural perspectives that enrich dialogue across 
+            different communities and contexts. 
+          </Typography>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
+            Selected international delegates will have the opportunity to participate in a curated 
+            programme of academic and experiential activities, encompassing student poster presentations, 
+            roundtable discussions and dialogue sessions, lightning workshops facilitated by community 
+            partners, and structured networking engagements with students, educators, and partners. 
+            In recognition of their contribution to the Symposium, presenting delegates will be provided 
+            with return flights and on-campus accommodation by RVRC for a 3-day, 2-night special programme, 
+            from 29 to 31 January 2027.
+          </Typography>
+          </Stack>
+        </Grow>
+      </Stack>
+
+      <Stack gap={2} sx={{ paddingInline: "10%", marginBottom: 4, marginTop: 4 }}>
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: "bold",
+            color: COLOURS.brandPurple,
+          }}
+        >
+          Partner Institutions
+        </Typography>
+
+        {partnerInstitutions.map((partner) => (
           <SpeakerBiography
             key={partner.name}
             name={partner.name}

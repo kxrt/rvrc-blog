@@ -23,4 +23,25 @@ const communityPartners = [
   },
 ];
 
-export default communityPartners;
+const partnerInstitutions = [
+  {
+    name: "Partner 1",
+    title: "Partner 1 Title",
+    biography: "Biography for Partner 1.",
+    image: Partner1Logo,
+  },
+  {
+    name: "Partner 2",
+    title: "Partner 2 Title",
+    biography: "Biography for Partner 2.",
+    image: Partner2Logo,
+  },
+  {
+    name: "Partner 3",
+    title: "Partner 3 Title",
+    biography: "Biography for Partner 3.",
+    image: Partner3Logo,
+  },
+];
+
+export { communityPartners, partnerInstitutions };

@@ -204,7 +204,7 @@ const Landing = () => {
         </Grow>
       </Box>
 
-      <Box sx={{ backgroundColor: "#e1d0f5" }}>
+      <Box sx={{ backgroundColor: COLOURS.lightPurple }}>
         <Stack py="32px" px="10%" spacing={3}>
           <Typography
             variant="h1"

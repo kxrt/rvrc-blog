@@ -33,7 +33,7 @@ export const programmeEvents = [
   },
   {
     time: "9:20 am",
-    titles: ["Keynote Address by [tbc]"],
+    titles: ["Keynote Address"],
     locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
     icon: <Lightbulb />,
   },
@@ -45,7 +45,7 @@ export const programmeEvents = [
   },
   {
     time: "9:50 am",
-    titles: ["Poster Presentations and Interactive Booths / Networking Tea Session", "Lightning Workshops"],
+    titles: ["Poster Presentations / Interactive Booths / Networking Tea Session", "Lightning Workshops"],
     locations: ["Atrium (Level 3, RVRC Block G)", "MPR 1 & 2 (Level 3, RVRC Block G)"],
     icon: <EmojiFoodBeverage />,
   },
@@ -60,7 +60,7 @@ export const programmeEvents = [
   },
 {
     time: "12:15 pm",
-    titles: ["Student Roundtable", "Off-the-Record Dialogue Sessions"],
+    titles: ["Student Roundtable", "Off-the-Record Human Library"],
     locations: [
       "MPR 1 & 2 (Level 3, RVRC Block G)",
       "Master's Lounge (Level 3, RVRC Block G)",
@@ -69,7 +69,7 @@ export const programmeEvents = [
   },
   {
     time: "1:00 pm",
-    titles: ["Presentation of Symposium Recognition Awards by RVRC Rector"],
+    titles: ["Presentation of Symposium Recognition Awards"],
     locations: ["MPR 1 & 2 (Level 3, RVRC Block G)"],
     icon: <EmojiEvents />,
   },

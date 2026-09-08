@@ -65,20 +65,6 @@ const Thread1 = () => {
               develop professional skills, and develop their capacity to drive meaningful change in support 
               of the sustainable development goals.  
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify"}}>
-              Thread 1 was hosted in the {" "}
-              <a
-                href="#MPR1"
-                style={{
-                  color: COLOURS.white,
-                  fontWeight: "bold",
-                  textDecoration: "underline",
-                }}
-              >
-                MPR 1
-              </a>{" "}
-              .
-            </Typography>
           </Stack>
         </Grow>
       </Stack>

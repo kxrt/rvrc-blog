@@ -14,6 +14,8 @@ import LandingBanner3 from "../../assets/2026/landing-banner-3.webp";
 import LandingBanner4 from "../../assets/2026/landing-banner-4.webp";
 import Footer from "../../components/2027/Footer";
 
+import keynoteSpeaker from "../../assets/2026/keynote-speaker.webp";
+
 const images = [
   {
     label: "Banner 1",
@@ -100,32 +102,115 @@ const Landing = () => {
           <b style={{ color: COLOURS.accentGreen }}>
             ‘Beyond Borders: Shaping Sustainable Futures Together’
           </b>{" "}
-          is held on 30 January 2027. This student-led symposium provides a 
-          formal platform for the presentation of exemplary student projects and 
-          the diverse range of co-curricular activities undertaken within the 
-          College. It is designed to facilitate meaningful networking, reflection 
-          and shared learning among participants. The Symposium also foregrounds 
-          the RVRC’s integrated themes of sustainability and workplace readiness.
-        </p>
-
-        <p style={{ fontSize: "16pt", textAlign: "justify" }}>
-          We were honoured to have{" "}
-          <a href="/external-partners#keynote" style={{ color: COLOURS.brandPurple, fontWeight: "bold" }}>
-            Keynote Speaker 
-          </a>{" "}
-          as our Keynote Speaker. We believe that his leadership in environmental 
-          innovation and his engagement with the RVRC community made his insights 
-          meaningful for our participants.
+          will be held on 30 January 2027. This annual student-led symposium provides a 
+          formal platform for the presentation of exemplary projects and 
+          the diverse range of co-curricular activities undertaken by the students of the 
+          college, foregrounding RVRC’s integrated themes of sustainability and workplace 
+          readiness. It is designed to facilitate meaningful networking, reflection and 
+          shared learning among participants.
         </p>
       </Box>
 
-      <Box sx={{ backgroundColor: COLOURS.brandTeal }}>
+      {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
+      <Box
+        id="keynote"
+        sx={{
+          backgroundColor: COLOURS.brandTeal,
+          paddingInline: "10%",
+          paddingBlock: { xs: "28px", md: "40px" },
+        }}
+      >
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Stack spacing={{ xs: 2.5, md: 3 }}>
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              spacing={{ xs: 3, md: 5 }}
+              alignItems={{ xs: "center", md: "stretch" }}
+            >
+              <Stack spacing={1.5} sx={{ flex: 1 }}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    color: COLOURS.white,
+                    textAlign: { xs: "center", md: "center" },
+                    fontWeight: "bold",
+                  }}
+                >
+                  Keynote Speaker
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "18pt", md: "24pt" },
+                    color: COLOURS.white,
+                    textAlign: { xs: "center", md: "center" },
+                    paddingTop: "8px",
+                  }}
+                >
+                  Mr. Sean Lam
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12pt", md: "16pt" },
+                    color: COLOURS.white,
+                    textAlign: { xs: "center", md: "center" },
+                  }}
+                >
+                  Founder and CEO, Ecoworks
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "16pt",
+                    color: COLOURS.white,
+                    textAlign: "justify",
+                  }}
+                >
+                  <b>Mr. Sean Lam</b> is the Founder and CEO of{" "}
+                  <a
+                    href="https://www.ecoworks.sg/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: COLOURS.white, fontWeight: "bold" }}
+                  >
+                    Ecoworks
+                  </a>
+                  , a social enterprise in Singapore that tackles single-use plastic
+                  waste by providing a network of automated refill stations for
+                  household cleaning products. His mission is to promote a
+                  packaging-free lifestyle and eliminate millions of plastic bottles
+                  annually. He is also recognised as a Philip Yeo Innovation Fellow
+                  (a "MAD COW" - Make A Difference, Change Our World) for his
+                  innovative environmental solutions and is active as a community
+                  leader and Volunteer Police Officer.
+                </Typography>
+              </Stack>
+              <Box sx={{ width: { xs: "100%", md: "auto" }, display: "flex", justifyContent: { xs: "center", md: "flex-end" } }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: "20px",
+                    height: { xs: "220px", md: "300px" },
+                  }}
+                >
+                  <Box
+                    component="img"
+                    src={keynoteSpeaker}
+                    alt="Keynote Speaker"
+                    sx={{ height: "100%", borderRadius: "8px" }}
+                  />
+                </Box>
+              </Box>
+            </Stack>
+          </Stack>
+        </Grow>
+      </Box>
+
+      <Box sx={{ backgroundColor: COLOURS.lightPurple }}>
         <Stack py="32px" px="10%" spacing={3}>
           <Typography
             variant="h1"
             sx={{
               fontSize: { xs: "20pt", md: "26pt" },
-              color: COLOURS.white,
+              color: COLOURS.brandPurple,
               textAlign: "center",
             }}
           >
@@ -135,20 +220,20 @@ const Landing = () => {
             variant="h1"
             sx={{
               fontSize: "24pt",
-              color: COLOURS.white,
+              color: COLOURS.accentGreen,
               fontWeight: "bold",
               textAlign: "center",
             }}
           >
             'Beyond Borders: Shaping Sustainable Futures Together'
           </Typography>
-          <p style={{ fontSize: "16pt", color: COLOURS.white, textAlign: "justify" }}>
-            Beyond Borders: Forging Sustainable Futures Together marks a new chapter for the RVRC Symposium, evolving 
+          <p style={{ fontSize: "16pt", color: COLOURS.black, textAlign: "justify" }}>
+            Beyond Borders: Forging Sustainable Futures Together marks a new chapter for the annual RVRC Symposium, evolving 
             from a college platform into a regional stage for cross-institutional dialogue and collective action. 
             Grounded in RVRC's commitment to experiential learning and its established foundations in sustainability 
-            and workplace readiness, this edition brings together students, educators, and industry experts from RVRC 
-            and across ASEAN to exchange research, practice, and lived experience in social and environmental resilience. 
-            Through project presentations, sharing sessions, and student roundtables, Beyond Borders puts conversation 
+            and workplace readiness, the 2027 edition brings together students, educators, and industry experts from RVRC, 
+            ASEAN, and Asia to exchange research, practice, and lived experience centered on socio-environmental sustainable futures. 
+            Through project presentations, interactive sessions, and student roundtables, Beyond Borders puts conversation 
             at the heart of how participants and partners come together and co-create resilient, sustainable futures.
           </p>
         </Stack>

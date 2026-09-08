@@ -65,20 +65,6 @@ const Thread2 = () => {
               and community partners, where students develop professional, communication, and intercultural 
               competencies while applying their learning to real-world contexts. 
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify"}}>
-              Thread 2 is hosted separately in {" "}
-              <a
-                href="#MPR2"
-                style={{
-                  color: COLOURS.white,
-                  fontWeight: "bold",
-                  textDecoration: "underline",
-                }}
-              >
-                MPR 2
-              </a>{" "}
-              .
-            </Typography>
           </Stack>
         </Grow>
       </Stack>

@@ -121,7 +121,7 @@ const Interactive = () => {
                     paddingTop: "8px",
                   }}
                 >
-                  Dr. Movin N (RVRC Fellow)
+                  Dr. Movin Nyanasengaran (RVRC Fellow)
                 </Typography>
                 <Typography
                   sx={{
@@ -177,7 +177,7 @@ const Interactive = () => {
                 fontWeight: "bold",
               }}
             >
-              Off-the-Record Dialogues
+              Off-the-Record Human Library
             </Typography>
             <Typography
               variant="subtitle1"
@@ -188,7 +188,7 @@ const Interactive = () => {
                 fontStyle: "italic",
               }}
             >
-              Human Library with RVRC Alumni
+              Dialogue Sessions with RVRC Alumni
             </Typography>
           </Stack>
         </Grow>
@@ -199,20 +199,21 @@ const Interactive = () => {
         >
           <Stack spacing={1}>
           <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
-            In this segment, we are planning to provide a comfortable and interactive environment for our 
-            attendees to gain deeper insight regarding Singapore's career landscape. We plan to invite 
-            three different alumni speakers from three different sectors to share their experiences.  
-            This will be conducted in a human library manner, where attendees can have one-on-one 
-            conversations with the speakers to gain a better understanding of their career paths and 
-            experiences. This will provide attendees with a unique opportunity to learn from the experiences 
-            of our alumni and gain valuable insights into the different career paths available in Singapore.
+            In this segment, attendees gain deeper insight into Singapore's career landscape. 
+            We are joined by three alumni speakers from different sectors who share their 
+            experiences and perspectives within a safe and interactive space. The segment is 
+            conducted in a human library format, allowing attendees to engage in one-on-one 
+            conversations with the speakers and gain a better understanding of their career paths 
+            and experiences. This provides attendees with a unique opportunity to learn from the 
+            experiences of our alumni and gain valuable insights into the different career paths 
+            available in Singapore.
           </Typography>
           </Stack>
         </Grow>
       </Stack>
 
       <ProgrammeHighlights
-        title="Off-the-Record Dialogues"
+        title="Off-the-Record Human Library"
         events={dialogueSessionsEvents}
       />
 

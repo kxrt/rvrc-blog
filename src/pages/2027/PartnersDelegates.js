@@ -55,9 +55,11 @@ const PartnersDelegates = () => {
           <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
             RVRC Symposium 2027 community partners will host interactive booths offering attendees 
             the opportunity to learn about their work in environmental conservation, social inclusion, 
-            and youth advocacy. These parallel sessions take place in a shared space during the 
-            Networking Tea, creating a vibrant environment that fosters meaningful learning, dialogue, 
-            and networking among symposium attendees.
+            and youth advocacy. Select community partners will also conduct lightning workshops, 
+            providing participants with hands-on learning experiences and practical insights into their 
+            initiatives and areas of expertise. These parallel sessions take place in a shared space 
+            during the Networking Tea, creating a vibrant environment that fosters meaningful learning, 
+            dialogue, and networking among symposium attendees.
           </Typography>
           </Stack>
         </Grow>

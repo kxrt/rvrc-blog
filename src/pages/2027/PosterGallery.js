@@ -37,7 +37,7 @@ const PosterGallery = () => {
               deeper understanding of and personalised insight into each initiative.
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-              Complementing the Poster Gallery, Interactive Booths hosted by community partners 
+              Alongside the Poster Gallery, Interactive Booths hosted by community partners 
               will provide attendees with the opportunity to learn about their respective work 
               in advancing environmental conservation, social inclusion, and youth advocacy. 
               These parallel sessions will be held within a shared space during the Networking Tea, 

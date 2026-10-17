@@ -1,5 +1,5 @@
-import A1 from "../../assets/2027/partners/a1.webp";
 import WWF from "../../assets/2027/partners/wwf.webp";
+import A1 from "../../assets/2027/partners/a1.webp";
 import NES from "../../assets/2027/partners/nes.webp";
 
 import Ateneo from "../../assets/2027/delegates/ateneo.webp";
@@ -12,16 +12,16 @@ import Usm from "../../assets/2027/delegates/usm.webp";
 
 const communityPartners = [
   {
-    name: "A1 Environment",
-    title: "Lightning Workshops",
-    biography: "Biography for A1 Environment.",
-    image: A1,
-  },
-  {
     name: "WWF Singapore",
     title: "Lightning Workshops",
     biography: "Biography for WWF Singapore.",
     image: WWF,
+  },
+  {
+    name: "A1 Environment",
+    title: "Lightning Workshops",
+    biography: "Biography for A1 Environment.",
+    image: A1,
   },
   {
     name: "NUS Entrepreneurship Society",

@@ -6,7 +6,7 @@ import Ateneo from "../../assets/2027/delegates/ateneo.webp";
 import Macau from "../../assets/2027/delegates/macau.webp";
 import Malaya from "../../assets/2027/delegates/malaya.webp";
 import Mara from "../../assets/2027/delegates/mara.webp";
-import Sunway from "../../assets/2027/delegates/sunway.webp";
+import Seoul from "../../assets/2027/delegates/seoul.webp";
 import Ums from "../../assets/2027/delegates/ums.webp";
 import Usm from "../../assets/2027/delegates/usm.webp";
 
@@ -63,9 +63,9 @@ const partnerInstitutions = [
     image: Usm,
   },
   {
-    name: "Sunway University",
-    country: "Malaysia",
-    image: Sunway,
+    name: "Seoul National University",
+    country: "Korea",
+    image: Seoul,
   }
 ];
 

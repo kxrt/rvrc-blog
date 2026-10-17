@@ -8,13 +8,13 @@ import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2027/ProgrammeEvents";
 import { COLOURS } from "../../constants/Colours";
 
-import LandingBanner1 from "../../assets/2026/landing-banner-1.webp";
-import LandingBanner2 from "../../assets/2026/landing-banner-2.webp";
-import LandingBanner3 from "../../assets/2026/landing-banner-3.webp";
-import LandingBanner4 from "../../assets/2026/landing-banner-4.webp";
+import LandingBanner1 from "../../assets/2027/landing-banner-1.webp";
+import LandingBanner2 from "../../assets/2027/landing-banner-2.webp";
+import LandingBanner3 from "../../assets/2027/landing-banner-3.webp";
+import LandingBanner4 from "../../assets/2027/landing-banner-4.webp";
 import Footer from "../../components/2027/Footer";
 
-import keynoteSpeaker from "../../assets/2026/keynote-speaker.webp";
+import Anne from "../../assets/2027/anne.webp";
 
 const images = [
   {
@@ -146,7 +146,7 @@ const Landing = () => {
                     paddingTop: "8px",
                   }}
                 >
-                  Mr. Sean Lam
+                  Anne Langourieux
                 </Typography>
                 <Typography
                   sx={{
@@ -155,7 +155,7 @@ const Landing = () => {
                     textAlign: { xs: "center", md: "center" },
                   }}
                 >
-                  Founder and CEO, Ecoworks
+                  Founding Member & Leader, The Matcha Initiative  |  Co-Founder, AlterCOP Singapore
                 </Typography>
                 <Typography
                   sx={{
@@ -164,26 +164,39 @@ const Landing = () => {
                     textAlign: "justify",
                   }}
                 >
-                  <b>Mr. Sean Lam</b> is the Founder and CEO of{" "}
+                  <b>Dr. Anne Langourieux</b> is a seasoned professional with over two 
+                  decades of experience living and working across Asia. Her career spans 
+                  two distinct yet complementary fields: the digital and e-commerce industry, 
+                  and the humanitarian non-governmental sector, a dual background that 
+                  informs her deep commitment to purpose-driven leadership. As Founding Member and Leader of {" "}
                   <a
-                    href="https://www.ecoworks.sg/"
+                    href="https://www.thematchainitiative.com/"
                     target="_blank"
                     rel="noreferrer"
                     style={{ color: COLOURS.white, fontWeight: "bold" }}
                   >
-                    Ecoworks
+                    The Matcha Initiative
+                  </a>, 
+                  Anne bridges the worlds of business and social impact. The initiative brings together 
+                  volunteers who generously contribute their expertise, experience, and personal 
+                  journeys towards sustainability, creating a platform where professional knowledge 
+                  meets meaningful community action. Anne is also the Co-Founder of {" "}
+                  <a
+                    href="https://www.altercop.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: COLOURS.white, fontWeight: "bold" }}
+                  >
+                    Altercop Singapore
                   </a>
-                  , a social enterprise in Singapore that tackles single-use plastic
-                  waste by providing a network of automated refill stations for
-                  household cleaning products. His mission is to promote a
-                  packaging-free lifestyle and eliminate millions of plastic bottles
-                  annually. He is also recognised as a Philip Yeo Innovation Fellow
-                  (a "MAD COW" - Make A Difference, Change Our World) for his
-                  innovative environmental solutions and is active as a community
-                  leader and Volunteer Police Officer.
+                  , a cooperative initiative designed to foster alternative economic models rooted in 
+                  solidarity, collaboration, and shared value. Through Altercop, she works to promote 
+                  cooperative principles within the Singapore community, supporting individuals and 
+                  organisations seeking to build more equitable and sustainable ways of working and 
+                  doing business.
                 </Typography>
               </Stack>
-              <Box sx={{ width: { xs: "100%", md: "auto" }, display: "flex", justifyContent: { xs: "center", md: "flex-end" } }}>
+              <Box sx={{ width: { xs: "100%", md: "auto" }, display: "flex", alignItems: "center", justifyContent: { xs: "center", md: "flex-end" } }}>
                 <Box
                   sx={{
                     display: "flex",
@@ -193,7 +206,7 @@ const Landing = () => {
                 >
                   <Box
                     component="img"
-                    src={keynoteSpeaker}
+                    src={Anne}
                     alt="Keynote Speaker"
                     sx={{ height: "100%", borderRadius: "8px" }}
                   />

@@ -130,7 +130,16 @@ const PartnersDelegates = () => {
             partners, and structured networking engagements with students, educators, and partners. 
             In recognition of their contribution to the Symposium, presenting delegates will be provided 
             with return flights and on-campus accommodation by RVRC for a 3-day, 2-night special programme, 
-            from 29 to 31 January 2027.
+            from 29 to 31 January 2027. More details about the specially curated programme of academic 
+            and experiential activities for international delegates can be found here: {" "}
+            <a
+              href={`${process.env.PUBLIC_URL}/RVRC%20Symposium%202027%20Delegates%20Programme%20Overview.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: COLOURS.white, fontWeight: "bold" }}
+            >
+              RVRC Symposium 2027 Delegates Programme Overview
+            </a>
           </Typography>
           </Stack>
         </Grow>

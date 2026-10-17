@@ -13,7 +13,7 @@ const PartnerUniversityCard = ({ image, name, country }) => {
         src={image}
         sx={{
           width: "auto",
-          height: "140px",
+          height: "112px",
           maxWidth: "100%",
           alignSelf: "center",
           objectFit: "contain",

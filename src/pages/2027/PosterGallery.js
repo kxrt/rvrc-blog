@@ -1,15 +1,44 @@
 import React from "react";
-import { Box, Breadcrumbs, Grid, Grow, Link, Stack, Typography } from "@mui/material";
-import Footer from "../../components/Footer";
+import { useEffect, useState } from "react";
+import {
+  Box,
+  Breadcrumbs,
+  Grow,
+  Link,
+  Stack,
+  Typography,
+} from "@mui/material";
+import Footer from "../../components/2027/Footer";
 import Title from "../../components/2027/Title";
+import PosterTypeAccordion from "../../components/2027/PosterTypeAccordion";
 // import PosterGalleryImage from "../../assets/2027/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import ProjectCard from "../../components/ProjectCard";
 import { posterGalleryEvents } from "../../constants/2027/ProgrammeEvents";
-import { thread1Posters, thread2Posters } from "../../constants/2027/Posters";
+import {
+  thread1InteractivePosters,
+  thread1Posters,
+  thread2InteractivePosters,
+  thread2Posters,
+} from "../../constants/2027/Posters";
 import { COLOURS } from "../../constants/Colours";
 
 const PosterGallery = () => {
+  const [thread1Expanded, setThread1Expanded] = useState(null);
+  const [thread2Expanded, setThread2Expanded] = useState(null);
+
+  useEffect(() => {
+    const animationFrame = requestAnimationFrame(() => {
+      setThread1Expanded("interactive");
+      setThread2Expanded("interactive");
+    });
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
+
+  const handleAccordionChange = (setExpanded, section) => (_event, isExpanded) => {
+    setExpanded(isExpanded ? section : null);
+  };
+
   return (
     <Stack spacing={0}>
       <Title title="Poster Gallery" />
@@ -73,23 +102,20 @@ const PosterGallery = () => {
               </Link>
             </Breadcrumbs>
           </Box>
-          <Grid container 
-            spacing={2} 
-            justifyContent="center" 
-            sx={{ paddingInline: "10%" }}>
-            {thread1Posters.map((project) => (
-              <Grid item sm={12} md={6} lg={4}
-                key={project.title}
-                sx={{ display: "flex", width: "100%" }}>
-                <ProjectCard
-                  title={project.title}
-                  subtitle={project.course}
-                  presenters={project.presenters}
-                  abstract={project.abstract}
-                />
-              </Grid>
-            ))}
-          </Grid> 
+          <PosterTypeAccordion
+            id="thread1-interactive-posters"
+            title="Interactive Display Posters"
+            projects={thread1InteractivePosters}
+            expanded={thread1Expanded === "interactive"}
+            onChange={handleAccordionChange(setThread1Expanded, "interactive")}
+          />
+          <PosterTypeAccordion
+            id="thread1-standard-posters"
+            title="Standard Posters"
+            projects={thread1Posters}
+            expanded={thread1Expanded === "standard"}
+            onChange={handleAccordionChange(setThread1Expanded, "standard")}
+          />
         </Stack>
         <Stack id="thread2-posters" gap={2}>
           <Typography
@@ -110,22 +136,20 @@ const PosterGallery = () => {
               <Typography sx={{ color: 'text.primary' }}>Thread 2 In-Synergy</Typography>
             </Breadcrumbs>
           </Box>
-          <Grid container 
-            spacing={2} 
-            justifyContent="center" 
-            sx={{ paddingInline: "10%" }}>
-            {thread2Posters.map((project) => (
-              <Grid item sm={12} md={6} lg={4}
-                sx={{ display: "flex", width: "100%"}}
-                key={project.title}>
-                <ProjectCard
-                  title={project.title}
-                  presenters={project.presenters}
-                  abstract={project.abstract}
-                />
-              </Grid>
-            ))}
-          </Grid>
+          <PosterTypeAccordion
+            id="thread2-interactive-posters"
+            title="Interactive Display Posters"
+            projects={thread2InteractivePosters}
+            expanded={thread2Expanded === "interactive"}
+            onChange={handleAccordionChange(setThread2Expanded, "interactive")}
+          />
+          <PosterTypeAccordion
+            id="thread2-standard-posters"
+            title="Standard Posters"
+            projects={thread2Posters}
+            expanded={thread2Expanded === "standard"}
+            onChange={handleAccordionChange(setThread2Expanded, "standard")}
+          />
         </Stack>
       </Stack>
       <Footer />

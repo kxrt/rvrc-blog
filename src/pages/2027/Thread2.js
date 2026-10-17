@@ -69,7 +69,7 @@ const Thread2 = () => {
         </Grow>
       </Stack>
 
-      <div id="MPR1">
+      <div id="MPR2" style={{ marginBottom: "32px" }}>
         <ProgrammeHighlights
           title="Thread 2 Presentations"
           subtitle="MPR 2 (Level 3, RVRC Block G)"

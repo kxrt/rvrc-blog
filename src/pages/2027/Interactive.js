@@ -121,7 +121,7 @@ const Interactive = () => {
                     paddingTop: "8px",
                   }}
                 >
-                  Dr. Movin Nyanasengaran (RVRC Fellow)
+                  Dr. Movin Nyanasengaran
                 </Typography>
                 <Typography
                   sx={{
@@ -129,14 +129,14 @@ const Interactive = () => {
                     textAlign: "center",
                   }}
                 >
-                  RVRC Fellow and Professor of Environmental Studies
+                  RVRC Fellow
                 </Typography>
                 <Typography sx={{ fontSize: "16pt", textAlign: "justify" }}>
-                  RVRC Fellow Dr. Movin will serve as the moderator for the Student Roundtable.
-                  Dr. Movin's research focuses on biodiversity impact assessments, community-based
-                  conservation, and developing regional frameworks for biodiversity. A trained
-                  ornithologist and freshwater biologist, he has conducted fieldwork across
-                  Southeast Asia, with a particular focus on the Philippines.
+                  Dr. Movin will serve as the moderator for the Student Roundtable focused on 
+                  'Ecotourism in ASEAN'. His research focuses on biodiversity impact assessments, 
+                  community-based conservation, and developing regional frameworks for biodiversity. 
+                  A trained ornithologist and freshwater biologist, he has conducted fieldwork across 
+                  Southeast Asia, with a particular focus on the Philippines. 
                 </Typography>
               </Stack>
               <Box

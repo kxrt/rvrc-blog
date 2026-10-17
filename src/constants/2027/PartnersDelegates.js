@@ -1,6 +1,6 @@
-import Partner1Logo from "../../assets/2027/partners/partner-1.webp";
-import Partner2Logo from "../../assets/2027/partners/partner-2.webp";
-import Partner3Logo from "../../assets/2027/partners/partner-3.webp";
+import A1 from "../../assets/2027/partners/a1.webp";
+import WWF from "../../assets/2027/partners/wwf.webp";
+import NES from "../../assets/2027/partners/nes.webp";
 
 import Ateneo from "../../assets/2027/delegates/ateneo.webp";
 import Macau from "../../assets/2027/delegates/macau.webp";
@@ -12,22 +12,22 @@ import Usm from "../../assets/2027/delegates/usm.webp";
 
 const communityPartners = [
   {
-    name: "Partner 1",
-    title: "Partner 1 Title",
-    biography: "Biography for Partner 1.",
-    image: Partner1Logo,
+    name: "A1 Environment",
+    title: "Lightning Workshops",
+    biography: "Biography for A1 Environment.",
+    image: A1,
   },
   {
-    name: "Partner 2",
-    title: "Partner 2 Title",
-    biography: "Biography for Partner 2.",
-    image: Partner2Logo,
+    name: "WWF Singapore",
+    title: "Lightning Workshops",
+    biography: "Biography for WWF Singapore.",
+    image: WWF,
   },
   {
-    name: "Partner 3",
-    title: "Partner 3 Title",
-    biography: "Biography for Partner 3.",
-    image: Partner3Logo,
+    name: "NUS Entrepreneurship Society",
+    title: "Community Booths",
+    biography: "Biography for NUS Entrepreneurship Society.",
+    image: NES,
   },
 ];
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Breadcrumbs,
@@ -25,6 +25,15 @@ import { COLOURS } from "../../constants/Colours";
 const PosterGallery = () => {
   const [thread1Expanded, setThread1Expanded] = useState(null);
   const [thread2Expanded, setThread2Expanded] = useState(null);
+
+  useEffect(() => {
+    const animationFrame = requestAnimationFrame(() => {
+      setThread1Expanded("interactive");
+      setThread2Expanded("interactive");
+    });
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
 
   const handleAccordionChange = (setExpanded, section) => (_event, isExpanded) => {
     setExpanded(isExpanded ? section : null);

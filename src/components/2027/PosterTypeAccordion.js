@@ -25,7 +25,7 @@ const PosterTypeAccordion = ({ id, title, projects, expanded, onChange }) => (
       aria-controls={`${id}-content`}
       id={`${id}-header`}
     >
-      <Typography sx={{ fontWeight: "bold" }}>{title}</Typography>
+      <Typography sx={{ fontWeight: "bold", fontSize: "1.4em" }}>{title}</Typography>
     </AccordionSummary>
     <AccordionDetails id={`${id}-content`}>
       <Grid container spacing={2} justifyContent="center">

@@ -21,7 +21,7 @@ const PosterGallery = () => {
     <Stack component="ul" spacing={1.5} sx={{ listStyle: "none", m: 0, p: 0, mx: "5%" }}>
       {posters.map((poster) => (
         <Stack component="li" key={poster.title} spacing={0.5}>
-          <Typography sx={{ fontWeight: "bold", color: "#592693" }}>
+          <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693" }}>
             {poster.title}
           </Typography>
           <Typography color="text.secondary">

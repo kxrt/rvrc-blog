@@ -95,7 +95,7 @@ export const thread1Events = [
     // time, course, titles, abstract, locations, icon
         {
       time: "11:00am",
-      course: "RVN2000",
+      course: "Ridge View Residential College, National University of Singapore",
       titles: ["Stride by Side"],
       abstract: "This project analyses the environmental organisation Stridy and evaluates its role in addressing littering, waste management, and community participation in Singapore. Through an assessment of Stridy’s mission, internal capabilities, and external operating environment, the study identifies both strengths and challenges influencing its long-term impact. Key strengths include its technology-enabled, data-driven approach, strong community networks, and alignment with national sustainability goals. However, public litter apathy, limited accountability, and reliance on unstable funding sources present significant barriers to growth.  Building on these findings, the project proposes Silver Striders, an initiative that engages older adults through community clean-up activities integrated with active ageing programmes. The proposal combines age-friendly app enhancements, social and recreational elements during clean-ups, and partnerships with Active Ageing Centres, community organisations, and volunteer networks to encourage sustained participation and environmental stewardship. By empowering seniors to take ownership of local environmental efforts, Silver Striders aims to transform litter picking from a one-off activity into a meaningful community habit. The project demonstrates how leveraging existing social infrastructure can strengthen civic engagement, promote active ageing, and support more sustainable and cleaner communities.",
       locations: ["Yap Rui Hao Augustine, Kaitlynne Maree Ang Chua, Teo Gui Jun Vera, Jaron Ng Jin Rui, Yap Yu Ning"],
@@ -103,7 +103,7 @@ export const thread1Events = [
     },
     {
       time: "11:15am",
-      course: "RVX1000",
+      course: "Ridge View Residential College, National University of Singapore",
       titles: ["Framing the Land-Use Dilemma in Singapore: A Corpus Assisted Framing Analysis"],
       abstract: "This study investigates how the Singapore government rhetorically frames the land-use dilemma between national development and biodiversity conservation in official communications. Using a corpus-assisted framing analysis, the author evaluated 1,670 sentences extracted from 49 filtered press releases and speeches published by the Urban Redevelopment Authority (URA) and the National Parks Board (NParks) between 2021 and 2025. Applying BERTopic for topic modeling alongside Robert Entman’s framing framework, the paper identifies four primary thematic frames corresponding to the broad pillars of sustainability: urban development, communal services, ecological conservation, and heritage preservation.   The findings reveal a significant structural imbalance in government messaging. Despite a deliberate selection bias toward sustainability-focused texts, socioeconomic considerations heavily dominate state discourse. The urban development frame—centered on housing and infrastructure needs—represents the largest proportion of communications, while green spaces are frequently framed through an anthropocentric lens as communal amenities for human recreation and bonding. Although NParks independently utilizes ecocentric framing grounded in ecological conservation science, overall official rhetoric prioritizes economic pragmatism and human utility. The paper concludes that this systemic anthropocentric orientation risks sidelining critical ecological trade-offs in public discourse.",
       locations: ["Qiu Ziming"],
@@ -111,7 +111,7 @@ export const thread1Events = [
     },
     {
       time: "11:30am",
-      course: "RVSS1001",
+      course: "Ridge View Residential College, National University of Singapore",
       titles: ["Designing at the Nexus of Biodiversity, Sustainability, and Community Resilience"],
       abstract: "University campuses are living ecosystems where the choices we make about space, nature, and community directly shape our collective future. Empowered as change agents through fieldtrips and coursework, our team engaged a real-world design challenge commissioned as part of the Campus Masterplan redevelopment, to reimagine an underutilised precinct into a vibrant, multi-functional hub. Anchored at the nexus of heritage, biodiversity conservation and sustainable development, our project drew intentionally from the site's layered historical and ecological richness to develop design solutions that are both environmentally responsive and community-centred. Through iterative stakeholder engagement with campus policymakers and a broad spectrum of end-users, we interrogated how thoughtful spatial intervention can strengthen environmental and community resilience. Critically, AI-powered visualisations enabled us to rapidly explore multiple creative alternatives, test concepts in real time, and refine our proposals with greater precision, equipping us with future-ready competencies increasingly valued in professional practice. Our proposed interventions address entrenched deficits in campus walkability, stakeholder inclusivity, and spatial vitality, directly advancing the SDG#11 goals among others. This project affirms that when students are trusted with authentic challenges and equipped with contemporary tools, we rise as critical thinkers, emerging professionals, and genuine drivers of meaningful, sustainable change.",
       locations: ["Tang Yu John, Pang Wei Quan Wilber, See Weixuan Ryan, Tan Soon Ting Emma"],
@@ -139,7 +139,7 @@ export const thread2Events = [
     },
     {
       time: "11:15am",
-      course: "RVR2000X",
+      course: "Ridge View Residential College, National University of Singapore",
       titles: ["Mapping Belonging for User-Centred Placemaking in Asian Cities"],
       abstract: "Placemaking shapes how communities inhabit, navigate, and find belonging in shared environments. Yet in Asia's fast-evolving cities, top-down, functionality-driven urban development frequently sidelines the lived experiences of the very users these spaces are meant to serve. Drawing on methods and frameworks that span geography, urban theory, and environmental psychology, this study investigates how mental mapping can surface the spatial perceptions, navigation patterns, and emotional connections of urban users. By analysing mental maps through Lynch's (1960) framework of salient environmental elements, we identify how physical structures and social functions are experienced on the ground, and where targeted interventions can better align urban environments with authentic user needs. This interdisciplinary approach mirrors the collaborative, evidence-based methods increasingly demanded of policymakers and built environment professionals navigating complex real-world challenges. Beyond the urban setting, our findings carry direct implications for community-based placemaking practices as Asian cities undergo rapid urbanisation, offering practitioners and policymakers a replicable, user-centred toolkit for designing more resilient and inclusive spaces in support of sustainable development goals.",
       locations: ["Jo Anna Wong Shi Ling, Ong Kai Siang Lionel"],
@@ -155,7 +155,7 @@ export const thread2Events = [
     },
     {
       time: "11:45am",
-      course: "RVC2000E",
+      course: "Ridge View Residential College, National University of Singapore",
       titles: ["Evolution of Dayak Culture amidst Sustainable Development in Borneo"],
       abstract: "This interactive poster obtained the highest score for the Field Project assignment, which is based on the students’ engagements and experiences during the study trip to East Malaysia. The poster presents their insights on the topic of culture and the discourse surrounding its ‘preservation’, ‘dilution’ and ‘authenticity’ by unpacking what cultural change looks like for the Dayak community in Borneo through the diverse perspectives and voices from Sabah and Sarawak.",
       locations: ["Iris Kok Yu Xi, Lim Kai Jie Zachary, Tara-Jade Sim, Vishesh Jally "],

@@ -62,7 +62,8 @@ const Thread2 = () => {
               places while deepening understanding of the diverse perspectives across ASEAN. The thread 
               also showcases student workplace readiness through internships and projects with industry 
               and community partners, where students develop professional, communication, and intercultural 
-              competencies while applying their learning to real-world contexts. 
+              competencies while applying their learning to real-world contexts. Abstracts for the presentations 
+              can be found here: RVRC Symposium 2027 Programme Booklet.
             </Typography>
           </Stack>
         </Grow>

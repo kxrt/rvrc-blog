@@ -62,7 +62,8 @@ const Thread1 = () => {
               projects that provide authentic learning experiences beyond the classroom. By applying 
               their knowledge to real-world challenges, students are empowered to think critically, 
               develop professional skills, and develop their capacity to drive meaningful change in support 
-              of the sustainable development goals.  
+              of the sustainable development goals. Abstracts for the presentations can be found here: 
+              RVRC Symposium 2027 Programme Booklet.
             </Typography>
           </Stack>
         </Grow>

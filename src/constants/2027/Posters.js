@@ -16,12 +16,6 @@ export const thread1Posters = [
         abstract: "Universities across ASEAN are making public climate commitments, yet few can demonstrate whether their planned initiatives will actually deliver them. Universiti Malaya (UM) has pledged carbon neutrality by 2030 and net zero by 2050, but its institutional planning documents set targets without quantified reduction trajectories or scenario testing. This study addresses that gap by developing a scenario model of UM's operational greenhouse gas (GHG) emissions using the Low Emissions Analysis Platform (LEAP). Following the GHG Protocol, the model covers Scope 1 (stationary combustion, mobile combustion and fugitive emissions) and Scope 2 (purchased electricity). It establishes a baseline inventory, identifies emissions hotspots, and projects alternative decarbonisation pathways to 2050, ranging from business-as-usual to accelerated measures such as energy efficiency, on-campus solar and national grid decarbonisation. These pathways are then tested against UM's 2030 and 2050 targets to evaluate whether existing initiatives are sufficient and what additional action would be required. The work builds on the author's emissions data compilation and GHG calculations for UM's Carbon Neutrality Acceleration project. The study offers a transferable approach for regional universities to turn climate pledges into accountable, measurable pathways."
     },
     {
-        title: "Sustainable Healthcare: Elderly Medication Safety and Career Readiness",
-        course: "University of Macau",
-        presenters: ["Chen Ian In"],
-        abstract: "Population ageing is reshaping healthcare delivery, long-term care, and sustainable urban wellbeing across East Asian societies, especially in Macao. In Macao, many community-dwelling older adults face multimorbidity and polypharmacy, struggling to interpret medication information, distinguish similar packaging, maintain complex regimens, and communicate health histories during clinical or telehealth consultations. This project introduces Medication Safety Companion, an ageing-friendly AI-enabled platform fostering inclusive, sustainable healthy ageing through responsible innovation. Integrating wearable first-person visual sensing, intelligent text recognition, voice-based interaction, retrieval-augmented knowledge support, and privacy-preserving data management, it assists older adults with medication verification, personalized reminders, pharmaceutical information access, and structured healthcare communication. A human-audited pharmaceutical knowledge framework is incorporated to enhance reliability and minimize risks associated with AI-generated misinformation. By curbing medication mismanagement, the platform also drives sustainable healthcare—fewer avoidable hospital visits, lower pharmaceutical waste, and reduced environmental burden—advancing the nexus between sustainable development and community wellbeing. Beyond individual safety, this initiative strengthens community resilience by lowering technology and accessibility barriers, supporting intergenerational caregiving, and promoting sustainable practices. The project also embodies student workplace readiness: through internships and industry-partnered projects, undergraduates work alongside healthcare professionals, developers, and community organizations, applying classroom knowledge to real-world challenges, cultivating critical thinking and professional skills while contributing to sustainable development and informing policy for age-friendly, environmentally responsible communities."
-    },
-        {
         title: "How could traditional fishing culture survive differing stakeholder interests in Kelab Alami?",
         course: "RVC2000W",
         presenters: [
@@ -125,18 +119,6 @@ export const thread2Posters = [
         abstract: "Our presentation is on the concept of privilege in relation to race in Singapore. Specifically, we will be focusing within the field of education to provide deeper insight into how racial privilege can be seen in daily life, and because the audience of students will likely be able to relate personal experiences to the topic. We will be looking at this through the concept of intersectionality, e.g. how race and other social identities such as class and religion intersect, and how that creates privileges for certain groups."
     },
     {
-        title: "How does Food Culture in Borneo Vary Across Time and Space?",
-        course: "RVSS1000",
-        presenters: [
-            "Regine Koh Wei Shan",
-            "Phoon Yu Ying",
-            "Poh How Ee",
-            "Dylan, Tan Teong Kai",
-            "Nathan Tew Ci Heng",
-        ],
-        abstract: "The poster presents their insights on the topic of food culture in Borneo by looking at how it is shaped by the pressures of conservation, commercialisation and urbanisation. It also examines the balance between adaptation and preservation through the diverse perspectives and examples from different communities in Sabah and Sarawak."
-    },
-    {
         title: "Artscapes, Eco-Art, and Sense of Place",
         course: "RVSS1000",
         presenters: [
@@ -162,6 +144,18 @@ export const thread2InteractivePosters = [
         course: "Universiti Sains Malaysia",
         presenters: ["Wismen A Bendula"],
         abstract: "Aquaculture and fisheries play important roles in Bangladesh’s socio-economic development, producing 5.02 million tonnes of fish and contributing approximately 2.5% to national Gross Domestic Product (GDP) in 2024. Most aquatic foods are consumed domestically, with per capita daily fish intake reaching 67.8g in 2022. Bangladesh has made substantial progress in reducing hunger and malnutrition, and is self-sufficient in rice, fish, and vegetables. However, micronutrient deficiencies persist, particularly among vulnerable groups such as women and children. Nutrition-sensitive pond polyculture systems, in which small indigenous fish species (SIS), such as mola carplet (Amblypharyngodon mola), are cultured alongside carps, have been introduced to enhance household food and nutrition security. Although evidence demonstrates the nutritional benefits of pond polyculture, barriers remain to women’s access to ponds and their participation in harvesting the fish for household consumption. To address this constraint, a low-cost, gender-specific mola gill net system was introduced and evaluated for its efficiency in facilitating fish harvesting and improving women’s access to SIS. This study assesses the potential of the technology to strengthen women’s participation in small-scale aquaculture and opportunities to scale in other countries."
+    },
+    {
+        title: "How does Food Culture in Borneo Vary Across Time and Space?",
+        course: "RVC2000W",
+        presenters: [
+            "Regine Koh Wei Shan",
+            "Phoon Yu Ying",
+            "Poh How Ee",
+            "Dylan, Tan Teong Kai",
+            "Nathan Tew Ci Heng",
+        ],
+        abstract: "The poster presents their insights on the topic of food culture in Borneo by looking at how it is shaped by the pressures of conservation, commercialisation and urbanisation. It also examines the balance between adaptation and preservation through the diverse perspectives and examples from different communities in Sabah and Sarawak."
     },
 ];
 

@@ -20,7 +20,7 @@ const communityPartners = [
   {
     name: "A1 Environment",
     title: "Lightning Workshops",
-    biography: "Biography for A1 Environment.",
+    biography: "A1 Environment is a Singapore-based circular economy company transforming used coffee grounds into sustainable materials and products. We collect coffee waste from cafés, hotels, offices and malls, and work with research partners and manufacturers to convert it into innovative, usable materials. Our goal is simple: turn waste into resources.",
     image: A1,
   },
   {

@@ -1,11 +1,10 @@
 import React from "react";
-import { Grid, Grow, Stack, Typography } from "@mui/material";
+import { Grow, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/2027/Footer";
 import Title from "../../components/2027/Title";
 // import Thread1Image from "../../assets/2026/thread-1.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import ProjectCard from "../../components/ProjectCard";
 import {
   thread1Events,
 } from "../../constants/2027/ProgrammeEvents";
@@ -63,7 +62,8 @@ const Thread1 = () => {
               projects that provide authentic learning experiences beyond the classroom. By applying 
               their knowledge to real-world challenges, students are empowered to think critically, 
               develop professional skills, and develop their capacity to drive meaningful change in support 
-              of the sustainable development goals.  
+              of the sustainable development goals. Abstracts for the presentations can be found here: 
+              RVRC Symposium 2027 Programme Booklet.
             </Typography>
           </Stack>
         </Grow>
@@ -76,24 +76,25 @@ const Thread1 = () => {
           events={thread1Events}
         />
 
-        <Grid container 
-          spacing={2} 
-          justifyContent="center" 
-          sx={{ paddingInline: "10%" }}>
+        <Stack component="ul" spacing={2} sx={{ listStyle: "none", m: 0, p: 0, px: "10%" }}>
+          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+            Oral Presentations
+          </Typography>
           {thread1Events.filter(e => e.abstract) // ignore breaks in timeline
           .map((project) => (
-            <Grid item sm={12} md={6} lg={4}
-              sx={{ display: "flex", width: "100%" }}>
-              <ProjectCard
-                key={project.titles[0]}
-                title={project.titles[0]}
-                subtitle={project.course}
-                presenters={project.locations}
-                abstract={project.abstract}
-              />
-            </Grid>
+            <Stack component="li" key={project.titles[0]} spacing={0.5}>
+              <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693" }}>
+                {project.titles[0]}
+              </Typography>
+              <Typography color="text.secondary">
+                {project.locations.join(", ")}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {project.course}
+              </Typography>
+            </Stack>
           ))}
-        </Grid>
+        </Stack>
       </div>
 
       <Footer />

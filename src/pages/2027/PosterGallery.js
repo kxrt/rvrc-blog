@@ -1,16 +1,10 @@
-import React from "react";
-import { useEffect, useState } from "react";
 import {
-  Box,
-  Breadcrumbs,
   Grow,
-  Link,
   Stack,
   Typography,
 } from "@mui/material";
 import Footer from "../../components/2027/Footer";
 import Title from "../../components/2027/Title";
-import PosterTypeAccordion from "../../components/2027/PosterTypeAccordion";
 // import PosterGalleryImage from "../../assets/2027/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import { posterGalleryEvents } from "../../constants/2027/ProgrammeEvents";
@@ -23,21 +17,23 @@ import {
 import { COLOURS } from "../../constants/Colours";
 
 const PosterGallery = () => {
-  const [thread1Expanded, setThread1Expanded] = useState(null);
-  const [thread2Expanded, setThread2Expanded] = useState(null);
-
-  useEffect(() => {
-    const animationFrame = requestAnimationFrame(() => {
-      setThread1Expanded("interactive");
-      setThread2Expanded("interactive");
-    });
-
-    return () => cancelAnimationFrame(animationFrame);
-  }, []);
-
-  const handleAccordionChange = (setExpanded, section) => (_event, isExpanded) => {
-    setExpanded(isExpanded ? section : null);
-  };
+  const renderPosterList = (posters) => (
+    <Stack component="ul" spacing={1.5} sx={{ listStyle: "none", m: 0, p: 0, mx: "5%" }}>
+      {posters.map((poster) => (
+        <Stack component="li" key={poster.title} spacing={0.5}>
+          <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693" }}>
+            {poster.title}
+          </Typography>
+          <Typography color="text.secondary">
+            {poster.presenters.join(", ")}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {poster.course}
+          </Typography>
+        </Stack>
+      ))}
+    </Stack>
+  );
 
   return (
     <Stack spacing={0}>
@@ -59,7 +55,7 @@ const PosterGallery = () => {
         > 
           <Stack spacing={1}>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
-              The Poster Gallery, featuring works from Threads 1 and 2, will showcase the breadth 
+              The Poster Gallery will showcase the breadth 
               of students' academic learning and student-led initiatives. Attendees will have the 
               opportunity to explore the exhibited projects at their own pace, engage with the 
               presented materials, and interact directly with student presenters, fostering a 
@@ -83,73 +79,15 @@ const PosterGallery = () => {
       />
 
       <Stack gap={2} marginBottom={4}>
-        <Stack id="thread1-posters" gap={2}>
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: "bold",
-              color: "#1d9077",
-              marginTop: 2,
-            }}
-          >
-            Thread 1: Re-Synergy Posters
+        <Stack gap={2}>
+          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+            Interactive Display Posters
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
-            <Breadcrumbs>
-              <Typography sx={{ color: 'text.primary' }}>Thread 1 Re-Synergy</Typography>
-              <Link underline="hover" color="inherit" href="#thread2-posters">
-                Thread 2 In-Synergy
-              </Link>
-            </Breadcrumbs>
-          </Box>
-          <PosterTypeAccordion
-            id="thread1-interactive-posters"
-            title="Interactive Display Posters"
-            projects={thread1InteractivePosters}
-            expanded={thread1Expanded === "interactive"}
-            onChange={handleAccordionChange(setThread1Expanded, "interactive")}
-          />
-          <PosterTypeAccordion
-            id="thread1-standard-posters"
-            title="Standard Posters"
-            projects={thread1Posters}
-            expanded={thread1Expanded === "standard"}
-            onChange={handleAccordionChange(setThread1Expanded, "standard")}
-          />
-        </Stack>
-        <Stack id="thread2-posters" gap={2}>
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: "bold",
-              color: "#1d9077",
-              marginTop: 2,
-            }}
-          >
-            Thread 2: In-Synergy Posters
+          {renderPosterList([...thread1InteractivePosters, ...thread2InteractivePosters])}
+          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+            Standard Posters
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center", marginX: "10%" }}>
-            <Breadcrumbs>
-              <Link underline="hover" color="inherit" href="#thread1-posters">
-                Thread 1 Re-Synergy
-              </Link>
-              <Typography sx={{ color: 'text.primary' }}>Thread 2 In-Synergy</Typography>
-            </Breadcrumbs>
-          </Box>
-          <PosterTypeAccordion
-            id="thread2-interactive-posters"
-            title="Interactive Display Posters"
-            projects={thread2InteractivePosters}
-            expanded={thread2Expanded === "interactive"}
-            onChange={handleAccordionChange(setThread2Expanded, "interactive")}
-          />
-          <PosterTypeAccordion
-            id="thread2-standard-posters"
-            title="Standard Posters"
-            projects={thread2Posters}
-            expanded={thread2Expanded === "standard"}
-            onChange={handleAccordionChange(setThread2Expanded, "standard")}
-          />
+          {renderPosterList([...thread1Posters, ...thread2Posters])}
         </Stack>
       </Stack>
       <Footer />

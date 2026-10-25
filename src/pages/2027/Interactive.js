@@ -82,8 +82,20 @@ const Interactive = () => {
           >
             Overview
           </Typography>
+          <Typography sx={{ fontSize: "16pt", textAlign: "center", fontStyle: "italic"}}>
+            Key Discussion Question: Is a shift to ecotourism in Southeast Asian viable?
+          </Typography>
           <Typography sx={{ fontSize: "16pt", textAlign: "justify" }}>
-            Topic of Roundtable Discussion here: Ecotourism in ASEAN
+            As Southeast Asia's natural landscapes face mounting pressure from mass tourism 
+            and development, ecotourism has emerged as a proposed middle path — one that 
+            promises economic opportunity without the environmental cost. Yet its viability 
+            remains contested: while countries like Indonesia and the Philippines have built 
+            ecotourism into national conservation strategy, questions persist over whether 
+            it genuinely protects ecosystems and local communities, or merely rebrands 
+            tourism for a more conscientious market. This roundtable invites students and 
+            delegates to examine ecotourism not as a settled solution, but as a model still 
+            being tested — weighing its promise against its practical and ethical limitations 
+            across different national contexts.
           </Typography>
         </Stack>
       </Box>

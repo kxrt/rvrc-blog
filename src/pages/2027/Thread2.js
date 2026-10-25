@@ -1,11 +1,10 @@
 import React from "react";
-import { Grid, Grow, Stack, Typography } from "@mui/material";
+import { Grow, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/2027/Footer";
 import Title from "../../components/2027/Title";
 // import Thread1Image from "../../assets/2026/thread-1.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import ProjectCard from "../../components/ProjectCard";
 import {
   thread2Events,
 } from "../../constants/2027/ProgrammeEvents";
@@ -63,7 +62,8 @@ const Thread2 = () => {
               places while deepening understanding of the diverse perspectives across ASEAN. The thread 
               also showcases student workplace readiness through internships and projects with industry 
               and community partners, where students develop professional, communication, and intercultural 
-              competencies while applying their learning to real-world contexts. 
+              competencies while applying their learning to real-world contexts. Abstracts for the presentations 
+              can be found here: RVRC Symposium 2027 Programme Booklet.
             </Typography>
           </Stack>
         </Grow>
@@ -76,52 +76,26 @@ const Thread2 = () => {
           events={thread2Events}
         />
 
-        <Grid container 
-          spacing={2} 
-          justifyContent="center" 
-          sx={{ paddingInline: "10%" }}>
+        <Stack component="ul" spacing={2} sx={{ listStyle: "none", m: 0, p: 0, px: "10%" }}>
+          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+            Oral Presentations
+          </Typography>
           {thread2Events.filter(e => e.abstract) // ignore breaks in timeline
           .map((project) => (
-            <Grid item sm={12} md={6} lg={4}
-              sx={{ display: "flex", width: "100%" }}>
-              <ProjectCard
-                key={project.titles[0]}
-                title={project.titles[0]}
-                subtitle={project.course}
-                presenters={project.locations}
-                abstract={project.abstract}
-              />
-            </Grid>
+            <Stack component="li" key={project.titles[0]} spacing={0.5}>
+              <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693" }}>
+                {project.titles[0]}
+              </Typography>
+              <Typography color="text.secondary">
+                {project.locations.join(", ")}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {project.course}
+              </Typography>
+            </Stack>
           ))}
-        </Grid>
+        </Stack>
       </div>
-
-      { /* <div id="MPR2" style={{ marginBottom: "32px" }}>
-        <ProgrammeHighlights
-          title="Thread 2 Presentations"
-          subtitle="MPR 2 (Level 3, RVRC Block G)"
-          events={thread2Events}
-        />
-
-        <Grid container 
-          spacing={2} 
-          justifyContent="center" 
-          sx={{ paddingInline: "10%" }}>
-          {thread2Events.filter(e => e.abstract) // ignore breaks in timeline
-          .map((project) => (
-            <Grid item sm={12} md={6} lg={4}
-              sx={{ display: "flex", width: "100%" }}>
-              <ProjectCard
-                key={project.titles[0]}
-                title={project.titles[0]}
-                subtitle={project.course}
-                presenters={project.locations}
-                abstract={project.abstract}
-              />
-            </Grid>
-          ))}
-        </Grid>
-      </div> */ }
 
       <Footer />
     </Stack>

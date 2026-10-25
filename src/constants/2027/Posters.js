@@ -2,7 +2,7 @@ export const thread1Posters = [
 // title course presenters abstract
     {
         title: "SL2i",
-        course: "RVR2001",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Lu Yiying",
             "Cheerly Tannia Hartono"
@@ -17,7 +17,7 @@ export const thread1Posters = [
     },
     {
         title: "How could traditional fishing culture survive differing stakeholder interests in Kelab Alami?",
-        course: "RVC2000W",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Chye Pin Ke",
             "Lim Yi Hui",
@@ -35,7 +35,7 @@ export const thread1Posters = [
     },
     {
         title: "Life on the Surface: Cataloguing the semi-aquatic true bugs (Hemiptera: Gerromorpha) for ecosystems monitoring and bioresource management in  the Philippine Archipelago",
-        course: "Ateneo de Manila University",
+        course: "Ateneo Institute of Sustainability, Ateneo de Manila University",
         presenters: ["Shaira Aiko A. Valmeo"],
         abstract: "Infraorder Gerromorpha Popov, 1971 (Insecta: Hemiptera: Heteroptera) is a taxonomic group composed of semi-aquatic true bugs, including water striders and riffle bugs. Despite harboring high endemism of true bugs, the diversity and distribution of Gerromorpha in the Philippines remain understudied especially in several provinces. Thus, this study seeks to update the checklist of gerromorphs across the Philippine biogeographic regions to develop a policy framework for freshwater conservation. Through examining new and existing specimens from the Ateneo Biodiversity Research Laboratory and the Natural History Museum of Vienna, the survey presents at least 20 genera from five families. Families Gerridae Leach, 1815 and Veliidae Amyot & Serville, 1843 dominated the results including new species and records of the speciose genus Rhagovelia Mayr, 1865 that makes up about half of the recorded species of its family. New records from various islands and provinces like Luzon, Samar, Leyte, Mindanao, and Basilan were also presented. Overall, this study primarily targets UN SDGs 14 Life Below Water and 15 Life on Land, while also contributing to other SDGs focusing on education (SDG 4) and partnerships (SDGs 16, 17). Biodiversity surveys like this provide essential baseline knowledge for future taxonomic research, community engagement, conservation initiatives, and policymaking. Despite being a biodiversity hotspot with high levels of endemism, the Philippine biodiversity is at risk from overlapping threats that may originate from natural causes or from various anthropogenic factors. As a result, taxonomists find themselves “racing against time” as species may disappear before they are formally identified, but this is further burdened by a severe shortage of expertise and resources in the Global South. Hence, this study provides baseline data in the study of freshwater ecosystems and marine-associated habitats, promoting knowledge about life below water and on land. This study about the Philippine Gerromoropha reflects the current theme of the RVRC Symposium 2027 as it goes beyond the current knowledge of true bugs in the country while strengthening the partnerships of the local communities and local governments. This study also contributes to the bigger project called the #ClosetheGap of the Ateneo Biodiversity Research Laboratory. This project seeks to address research gaps concerning aquatic bodies and the community’s understanding of the dynamic nature of adjacent river systems. Ultimately, the goal of the project is to translate the taxonomic data into actionable outcomes by providing proper scientific knowledge as a basis for conservation policies at the local level, delivering clear assessments of biodiversity across taxa, and empowering local communities through targeted training and capacity-building workshops."
     },
@@ -51,7 +51,7 @@ export const thread1InteractivePosters = [
     },
     {
         title: "Navigating Complexity: Lessons in Sustainability Practice from a Healthcare Internship",
-        course: "RVR2001",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: ["Yasmin Binte Noh"],
         abstract: "This poster presents findings from my internship in the healthcare industry with the SingHealth sustainability team, examining how real-world sustainability work develops professional competencies that extend far beyond classroom learning. Key insights are organised across thematic panels spanning stakeholder coordination, data governance, and behavioural change, to invite dialogue on the tensions between technical and relational dimensions of sustainability practice. As an intern supporting Scope 1 and 2 greenhouse gas emissions reporting, I encountered the operational realities of sustainability management, particularly the challenge of consolidating fragmented data across multiple public health institutions with disparate equipment, data ownership structures, and reporting practices. This experience revealed that sustainability work is fundamentally a coordination exercise, requiring stakeholder engagement, organisational navigation, and professional communication rather than technical expertise alone. Drawing on the concept of Corporate Change Agents for Sustainability (Schaltegger et al., 2023, 2024), this poster illustrates how sustainability professionals function as facilitators and coordinators of systemic change. Direct engagement opportunities with local stakeholders during my internship further reinforced the importance of systems thinking and behavioural competencies in addressing interconnected environmental challenges. As I wrap up a co-authored paper from the findings of this internship, these experiences underscore the transferable value of authentic workplace learning for undergraduates in cultivating the adaptive, cross-disciplinary capabilities needed to advance sustainable development goals."
     },
@@ -67,7 +67,7 @@ export const thread2Posters = [
 // title course presenters abstract
     {
         title: "Food as Intersection",
-        course: "RVSS1002",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Darren Ong Yan En",
             "Chow Jeng Weng",
@@ -84,7 +84,7 @@ export const thread2Posters = [
     },
     {
         title: "How Community-based Tourism Impacts the Cultural Identity of Local Communities",
-        course: "RVC2000W",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Zachary Pek",
             "Joel Rhys Chee",
@@ -96,7 +96,7 @@ export const thread2Posters = [
     },
         {
         title: "How Does Urbanisation Affect the Preservation of Cultural Heritage? From Cultural Loss to Adaptive Preservation",
-        course: "RVC2000W",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Charmaine Chieng Jia Yee",
             "Teng Tzen Xiang Justin",
@@ -108,7 +108,7 @@ export const thread2Posters = [
     },
     {
         title: "Finding Common Ground",
-        course: "RVSS1004",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Gao Yilun",
             "Ting Pin Hao",
@@ -120,7 +120,7 @@ export const thread2Posters = [
     },
     {
         title: "Artscapes, Eco-Art, and Sense of Place",
-        course: "RVSS1000",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Hathwar Abhay",
             "Yu Jiaxin",
@@ -135,7 +135,7 @@ export const thread2InteractivePosters = [
 // title course presenters abstract
     {
         title: "From Classroom Learning to Community Empowerment: Advancing Disability Inclusion through Social Enterprise",
-        course: "RVN2003",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: ["Kuah Sze Min, Shermaine"],
         abstract: "Inspired by the course’s focus on disability awareness, accessibility, advocacy, and inclusive participation, Shermaine pursued an internship with a social enterprise providing training for persons with disabilities. Using an interactive screen, the poster will feature photos and visual highlights from Shermaine’s course project and internship experience, illustrating how classroom learning was extended into real-world community engagement. Through the internship, Shermaine contributed to efforts that support persons with disabilities in developing skills, confidence, and meaningful pathways for participation. Her journey reflects the spirit of InSynergy, where inclusive futures are co-created through partnerships between individuals, communities, and organisations. Rather than viewing inclusion as a concept confined to coursework, Shermaine translated learning into purposeful action. This experience demonstrates workplace readiness, social responsibility, and a growing identity as an advocate for the disability community."
     },
@@ -147,7 +147,7 @@ export const thread2InteractivePosters = [
     },
     {
         title: "How does Food Culture in Borneo Vary Across Time and Space?",
-        course: "RVC2000W",
+        course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Regine Koh Wei Shan",
             "Phoon Yu Ying",

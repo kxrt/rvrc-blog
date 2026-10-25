@@ -76,6 +76,9 @@ const Thread1 = () => {
         />
 
         <Stack component="ul" spacing={2} sx={{ listStyle: "none", m: 0, p: 0, px: "10%" }}>
+          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+            Oral Presentations
+          </Typography>
           {thread1Events.filter(e => e.abstract) // ignore breaks in timeline
           .map((project) => (
             <Stack component="li" key={project.titles[0]} spacing={0.5}>

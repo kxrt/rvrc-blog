@@ -4,20 +4,20 @@ import Partner3Logo from "../../assets/2027/partners/partner-3.webp";
 
 const humanLibrarySpeakers = [
   {
-    name: "Alumni 1",
-    title: "Alumni 1 Title",
+    name: "Pethanakshi A",
+    title: "NUS Class of 2020, Business Development at CARMA",
     biography: "Biography for Alumni 1.",
     image: Partner1Logo,
   },
   {
-    name: "Alumni 2",
-    title: "Alumni 2 Title",
+    name: "Toh Xin Le",
+    title: "NUS Class of 2021, Team Leader at Singapore Police Force",
     biography: "Biography for Alumni 2.",
     image: Partner2Logo,
   },
   {
-    name: "Alumni 3",
-    title: "Alumni 3 Title",
+    name: "Benjamin Fheng",
+    title: "NUS Class of 2022, Solutions Architect @ Amazon Web Services (AWS) | AWS AI/ML Specialty",
     biography: "Biography for Alumni 3.",
     image: Partner3Logo,
   },

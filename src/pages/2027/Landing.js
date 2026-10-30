@@ -91,7 +91,7 @@ const Landing = () => {
               Empowering youth to shape a sustainable and equitable future
               together
             </Typography>
-            <SignupButton link="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-grzkewHkqIpDniq8iCMLTwdURDAwNjFHUFQyM09YM0s5RkxTSVRRVzJUUy4u" />
+            <SignupButton link="https://forms.cloud.microsoft/r/yjxvJVyPPS" />
           </Stack>
         </Grow>
       </Box>

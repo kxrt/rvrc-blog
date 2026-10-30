@@ -1,4 +1,5 @@
 import {
+  Box,
   Grow,
   Stack,
   Typography,
@@ -8,6 +9,8 @@ import Title from "../../components/2027/Title";
 // import PosterGalleryImage from "../../assets/2027/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import { posterGalleryEvents } from "../../constants/2027/ProgrammeEvents";
+import { interactiveDisplayEvents } from "../../constants/2027/ProgrammeEvents";
+import PosterGrid from "../../components/2027/PosterGrid";
 import {
   thread1InteractivePosters,
   thread1Posters,
@@ -17,24 +20,6 @@ import {
 import { COLOURS } from "../../constants/Colours";
 
 const PosterGallery = () => {
-  const renderPosterList = (posters) => (
-    <Stack component="ul" spacing={1.5} sx={{ listStyle: "none", m: 0, p: 0, mx: "5%" }}>
-      {posters.map((poster) => (
-        <Stack component="li" key={poster.title} spacing={0.5}>
-          <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693" }}>
-            {poster.title}
-          </Typography>
-          <Typography color="text.secondary">
-            {poster.presenters.join(", ")}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {poster.course}
-          </Typography>
-        </Stack>
-      ))}
-    </Stack>
-  );
-
   return (
     <Stack spacing={0}>
       <Title title="Poster Gallery" />
@@ -59,7 +44,16 @@ const PosterGallery = () => {
               of students' academic learning and student-led initiatives. Attendees will have the 
               opportunity to explore the exhibited projects at their own pace, engage with the 
               presented materials, and interact directly with student presenters, fostering a 
-              deeper understanding of and personalised insight into each initiative.
+              deeper understanding of and personalised insight into each initiative. The abstracts can 
+              be viewed in the {" "}
+              <a
+                href={`${process.env.PUBLIC_URL}/RVRC%20Symposium%20Abstract%20Booklet%202027.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: COLOURS.white, fontWeight: "bold" }}
+              >
+                Poster Gallery Abstract Booklet.
+              </a>
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               Alongside the Poster Gallery, Interactive Booths hosted by community partners 
@@ -80,14 +74,49 @@ const PosterGallery = () => {
 
       <Stack gap={2} marginBottom={4}>
         <Stack gap={2}>
-          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
-            Interactive Display Posters
-          </Typography>
-          {renderPosterList([...thread1InteractivePosters, ...thread2InteractivePosters])}
-          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
-            Standard Posters
-          </Typography>
-          {renderPosterList([...thread1Posters, ...thread2Posters])}
+          <Box
+            sx={{
+              backgroundColor: COLOURS.lightPurple,
+              paddingInline: "10%",
+              paddingBlock: { xs: "28px", md: "32px" },
+            }}
+          >
+            <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
+              Interactive Display Posters
+            </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
+              Interactive Display Posters use ClassIn screens to share their projects through interactive 
+              activities, mini-games, and videos. Some presentations feature peer-teaching projects 
+              or collaborations with external stakeholders, giving visitors an engaging way to learn 
+              about their project work.
+            </Typography>
+            <PosterGrid
+              posters={[...thread1InteractivePosters, ...thread2InteractivePosters]}
+            />
+            <ProgrammeHighlights
+              title="Programme"
+              events={interactiveDisplayEvents}
+            />
+          </Box>
+          <Box
+            sx={{
+              backgroundColor: COLOURS.white,
+              paddingInline: "10%",
+              paddingBlock: { xs: "28px", md: "10px" },
+            }}
+          >
+            <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
+              Standard Posters
+            </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
+              Standard Posters are printed posters showcasing student projects from research, 
+              coursework, and industry collaborations, as well as initiatives from interest groups 
+              within RVRC. They will be displayed across the Atrium.
+            </Typography>
+            <PosterGrid
+              posters={[...thread1Posters, ...thread2Posters]}
+            />
+          </Box>
         </Stack>
       </Stack>
       <Footer />

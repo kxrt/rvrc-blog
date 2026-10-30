@@ -1,10 +1,11 @@
 import React from "react";
-import { Grow, Stack, Typography } from "@mui/material";
+import { Grow, Grid, Stack, Typography } from "@mui/material";
 
 import Footer from "../../components/2027/Footer";
 import Title from "../../components/2027/Title";
 // import Thread1Image from "../../assets/2026/thread-1.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
+import ProjectCard from "../../components/ProjectCard";
 import {
   thread2Events,
 } from "../../constants/2027/ProgrammeEvents";
@@ -62,8 +63,7 @@ const Thread2 = () => {
               places while deepening understanding of the diverse perspectives across ASEAN. The thread 
               also showcases student workplace readiness through internships and projects with industry 
               and community partners, where students develop professional, communication, and intercultural 
-              competencies while applying their learning to real-world contexts. Abstracts for the presentations 
-              can be found here: RVRC Symposium 2027 Programme Booklet.
+              competencies while applying their learning to real-world contexts. 
             </Typography>
           </Stack>
         </Grow>
@@ -76,24 +76,22 @@ const Thread2 = () => {
           events={thread2Events}
         />
 
-        <Stack component="ul" spacing={2} sx={{ listStyle: "none", m: 0, p: 0, px: "10%" }}>
-          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
-            Oral Presentations
+        <Stack spacing={2} sx={{ px: { xs: "5%", md: "10%" } }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
+            Presentation Abstracts
           </Typography>
-          {thread2Events.filter(e => e.abstract) // ignore breaks in timeline
-          .map((project) => (
-            <Stack component="li" key={project.titles[0]} spacing={0.5}>
-              <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693" }}>
-                {project.titles[0]}
-              </Typography>
-              <Typography color="text.secondary">
-                {project.locations.join(", ")}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {project.course}
-              </Typography>
-            </Stack>
-          ))}
+          <Grid container spacing={2}>
+            {thread2Events.filter((event) => event.abstract).map((project) => (
+              <Grid item xs={12} md={6} key={project.titles[0]}>
+                <ProjectCard
+                  title={project.titles[0]}
+                  subtitle={project.course}
+                  presenters={project.locations}
+                  abstract={project.abstract}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </Stack>
       </div>
 

@@ -36,7 +36,7 @@ export const thread1Posters = [
         abstract: "This paper examines the Singapore government’s decade-long hesitation and subsequent 2020 policy pivot regarding electric vehicle (EV) adoption. Moving beyond traditional technical and economic explanations, it argues that the state's initial reluctance was a deliberate social construction of risk. Using an integrated framework of Critical Discourse Analysis (CDA) and framing theory, the study analyzes official government communications and state-aligned news articles to deconstruct the rhetoric surrounding EV policy.   Findings show that between 2011 and 2019, the government framed EV adoption as an existential threat to national stability, casting charging infrastructure deployment as an unsolvable social conflict, EV ownership as an ideological risk to car-lite public transit goals, and electrification as an incomplete environmental solution. Following the 2020 Singapore Green Plan announcement, these same risks were swiftly reconstructed into manageable national targets. This shift demonstrates how risk framing serves as a tool of technocratic statecraft to justify policy inaction, delay free-market disruptions, and maintain centralized control until top-down execution is viable. The paper concludes that this strategy provides a predictive model for how Singapore will navigate future disruptive technologies."
     },
     {
-        title: "SL2i",
+        title: "Repair Together for a Better Future",
         course: "Ridge View Residential College, National University of Singapore",
         presenters: [
             "Lu Yiying",

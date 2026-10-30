@@ -1,6 +1,7 @@
 import {
   AutoAwesome,
   AutoStories,
+  CameraAlt,
   Collections,
   CoPresent,
   EmojiEvents,
@@ -10,7 +11,9 @@ import {
   Groups,
   Hiking,
   HowToReg,
+  Kayaking,
   Lightbulb,
+  LocalHospital,
   LocationCity,
   Map,
   MicExternalOn,
@@ -181,6 +184,36 @@ export const posterGalleryEvents = [
     ],
     locations: ["Atrium (Level 3, RVRC Block G)"],
     icon: <Collections />,
+  },
+];
+
+export const interactiveDisplayEvents = [
+  {
+    time: "10:00 am",
+    titles: [
+      "Navigating Complexity: Lessons in Sustainability Practice from a Healthcare Internship",
+      "Seeing Reefs in 3D: Accessible Photogrammetry for Post-Bleaching Coral Reef Monitoring in Kota Kinabalu, Sabah, Malaysia",
+    ],
+    locations: ["Yasmin Binte Noh", "Timothy Ong Zhan Fei"],
+    icon: <CameraAlt />,
+  },
+  {
+    time: "10:20 am",
+    titles: [
+      "Sustainable Healthcare: Elderly Medication Safety and Career Readiness",
+      "From Classroom Learning to Community Empowerment: Advancing Disability Inclusion through Social Enterprise",
+    ],
+    locations: ["Chen Ian In", "Kuah Sze Min, Shermaine"],
+    icon: <LocalHospital />,
+  },
+  {
+    time: "10:40 am",
+    titles: [
+      "How does Food Culture in Borneo Vary Across Time and Space?",
+      "Improving Women’s Access to Small Indigenous Fish through a Gender-Responsive Mola Gill Net System in Rural Bangladesh.",
+    ],
+    locations: ["Regine Koh Wei Shan, Phoon Yu Ying, Poh How Ee, Dylan, Tan Teong Kai, Nathan Tew Ci Heng", "Wismen A Bendula"],
+    icon: <Kayaking />,
   },
 ];
 

@@ -9,6 +9,7 @@ import Title from "../../components/2027/Title";
 // import PosterGalleryImage from "../../assets/2027/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import { posterGalleryEvents } from "../../constants/2027/ProgrammeEvents";
+import { interactiveDisplayEvents } from "../../constants/2027/ProgrammeEvents";
 import PosterGrid from "../../components/2027/PosterGrid";
 import {
   thread1InteractivePosters,
@@ -51,7 +52,7 @@ const PosterGallery = () => {
                 rel="noopener noreferrer"
                 style={{ color: COLOURS.white, fontWeight: "bold" }}
               >
-                Poster Gallery Abstract Booklet
+                Poster Gallery Abstract Booklet.
               </a>
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
@@ -75,16 +76,26 @@ const PosterGallery = () => {
         <Stack gap={2}>
           <Box
             sx={{
-              backgroundColor: COLOURS.white,
+              backgroundColor: COLOURS.lightPurple,
               paddingInline: "10%",
-              paddingBlock: { xs: "28px", md: "60px" },
+              paddingBlock: { xs: "28px", md: "32px" },
             }}
           >
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
               Interactive Display Posters
             </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
+              Interactive Display Posters use ClassIn screens to share their projects through interactive 
+              activities, mini-games, and videos. Some presentations feature peer-teaching projects 
+              or collaborations with external stakeholders, giving visitors an engaging way to learn 
+              about their project work.
+            </Typography>
             <PosterGrid
               posters={[...thread1InteractivePosters, ...thread2InteractivePosters]}
+            />
+            <ProgrammeHighlights
+              title="Programme"
+              events={interactiveDisplayEvents}
             />
           </Box>
           <Box
@@ -96,6 +107,11 @@ const PosterGallery = () => {
           >
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
               Standard Posters
+            </Typography>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
+              Standard Posters are printed posters showcasing student projects from research, 
+              coursework, and industry collaborations, as well as initiatives from interest groups 
+              within RVRC. They will be displayed across the Atrium.
             </Typography>
             <PosterGrid
               posters={[...thread1Posters, ...thread2Posters]}

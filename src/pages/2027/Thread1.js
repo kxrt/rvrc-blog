@@ -63,8 +63,7 @@ const Thread1 = () => {
               projects that provide authentic learning experiences beyond the classroom. By applying 
               their knowledge to real-world challenges, students are empowered to think critically, 
               develop professional skills, and develop their capacity to drive meaningful change in support 
-              of the sustainable development goals. Abstracts for the presentations can be found here: 
-              RVRC Symposium 2027 Programme Booklet.
+              of the sustainable development goals. 
             </Typography>
           </Stack>
         </Grow>
@@ -78,7 +77,7 @@ const Thread1 = () => {
         />
 
         <Stack spacing={2} sx={{ px: { xs: "5%", md: "10%" } }}>
-          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
             Presentation Abstracts
           </Typography>
           <Grid container spacing={2}>

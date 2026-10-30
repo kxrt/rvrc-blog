@@ -63,8 +63,7 @@ const Thread2 = () => {
               places while deepening understanding of the diverse perspectives across ASEAN. The thread 
               also showcases student workplace readiness through internships and projects with industry 
               and community partners, where students develop professional, communication, and intercultural 
-              competencies while applying their learning to real-world contexts. Abstracts for the presentations 
-              can be found here: RVRC Symposium 2027 Programme Booklet.
+              competencies while applying their learning to real-world contexts. 
             </Typography>
           </Stack>
         </Grow>
@@ -78,7 +77,7 @@ const Thread2 = () => {
         />
 
         <Stack spacing={2} sx={{ px: { xs: "5%", md: "10%" } }}>
-          <Typography variant="h5" sx={{ mx: "5%", fontWeight: "bold" }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
             Presentation Abstracts
           </Typography>
           <Grid container spacing={2}>

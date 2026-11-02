@@ -15,6 +15,7 @@ import LandingBanner4 from "../../assets/2027/landing-banner-4.webp";
 import Footer from "../../components/2027/Footer";
 
 import Anne from "../../assets/2027/anne.webp";
+import Rector from "../../assets/2027/rector.webp";
 
 import { ELEMENT_PADDING } from "../../constants/SIZES";
 
@@ -269,6 +270,79 @@ const Landing = () => {
                   }}
                 />
               </Box>
+            </Stack>
+          </Stack>
+        </Grow>
+      </Box>
+
+      <Box
+        id="guest-of-honour"
+        sx={{
+          backgroundColor: COLOURS.lightPurple,
+          paddingInline: "10%",
+          paddingBlock: ELEMENT_PADDING,
+        }}
+      >
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Stack
+            spacing={{ xs: 3, md: 4 }}
+          >
+            <Typography
+              variant="h4"
+              textAlign="center"
+              sx={{ color: COLOURS.brandPurple, fontWeight: "bold" }}
+            >
+              Guest of Honour
+            </Typography>
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              spacing={{ xs: 3, md: 6 }}
+              alignItems="center"
+            >
+              <Box
+                component="img"
+                src={Rector}
+                alt="Guest of Honour"
+                sx={{
+                  width: { xs: "100%", sm: "280px", md: "320px" },
+                  height: "auto",
+                  aspectRatio: "5 / 6",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+              <Stack
+                spacing={1.5}
+                alignItems="flex-end"
+                sx={{ flex: 1 }}
+              >
+              <Typography
+                textAlign="right"
+                sx={{
+                  color: COLOURS.brandTeal,
+                  fontSize: { xs: "18pt", md: "24pt" },
+                  fontWeight: "bold",
+                }}
+              >
+                Dr Noeleen Heyzer
+              </Typography>
+              <Typography sx={{ color: COLOURS.brandPurple, fontSize: { xs: "12pt", md: "14pt" }, textAlign: "right" }}>
+                NUS Pro-Chancellor | Rector of Ridge View Residential College | Former UN Under-Secretary-General
+              </Typography>
+              <Typography sx={{ color: COLOURS.black, fontSize: "16pt", textAlign: "justify" }}>
+                It is an immense honour to invite Dr. Noeleen Heyzer as our Guest of Honour for the RVRC Symposium 2027. 
+                Dr. Heyzer is a distinguished social scientist, diplomat, and the Pro-Chancellor of the National 
+                University of Singapore (NUS), as well as the Rector of Ridge View Residential College (RVRC). 
+                Dr. Heyzer served as the United Nations Under-Secretary-General and Executive Secretary 
+                of the UN Economic and Social Commission for Asia and the Pacific (ESCAP). During her tenure, 
+                she was the highest-ranking Singaporean in the UN system, and subsequently served as 
+                the UN Special Envoy on Myanmar from 2021 to 2023. She led the United Nations Development Fund for Women 
+                (UNIFEM) for over a decade, playing an instrumental role in establishing UN Women to ensure 
+                a permanent institutional voice for women at the highest global decision-making tables. 
+                In recognition of her lifelong advocacy for peace, justice, and the empowerment of women, 
+                she was nominated for the Nobel Peace Prize in 2005. 
+              </Typography>
+              </Stack>
             </Stack>
           </Stack>
         </Grow>

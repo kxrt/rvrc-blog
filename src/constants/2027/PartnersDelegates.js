@@ -33,12 +33,12 @@ const communityPartners = [
 
 const partnerInstitutions = [
   {
-    name: "Ateneo Institute of Sustainability",
+    name: "Ateneo de Manila University",
     country: "Philippines",
     image: Ateneo,
   },
   {
-    name: "Macau University",
+    name: "University of Macau",
     country: "Macau",
     image: Macau,
   },

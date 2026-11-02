@@ -106,10 +106,10 @@ const PosterGallery = () => {
             }}
           >
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
-              Standard Posters
+              Posters (Print Display)
             </Typography>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
-              Standard Posters are printed posters showcasing student projects from research, 
+              Posters (Print Display) are printed posters showcasing student projects from research, 
               coursework, and industry collaborations, as well as initiatives from interest groups 
               within RVRC. They will be displayed across the Atrium.
             </Typography>

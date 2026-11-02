@@ -111,6 +111,41 @@ const Landing = () => {
         </p>
       </Box>
 
+      <Box sx={{ backgroundColor: COLOURS.lightPurple }}>
+        <Stack py="32px" px="10%" spacing={3}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { xs: "20pt", md: "26pt" },
+              color: COLOURS.brandPurple,
+              textAlign: "center",
+            }}
+          >
+            Symposium Theme
+          </Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: "24pt",
+              color: COLOURS.accentGreen,
+              fontWeight: "bold",
+              textAlign: "center",
+            }}
+          >
+            'Beyond Borders: Shaping Sustainable Futures Together'
+          </Typography>
+          <p style={{ fontSize: "16pt", color: COLOURS.black, textAlign: "justify" }}>
+            Beyond Borders: Forging Sustainable Futures Together marks a new chapter for the annual RVRC Symposium, evolving 
+            from a college platform into a regional stage for cross-institutional dialogue and collective action. 
+            Grounded in RVRC's commitment to experiential learning and its established foundations in sustainability 
+            and workplace readiness, the 2027 edition brings together students, educators, and industry experts from RVRC, 
+            ASEAN, and Asia to exchange research, practice, and lived experience centered on socio-environmental sustainable futures. 
+            Through project presentations, interactive sessions, and student roundtables, Beyond Borders puts conversation 
+            at the heart of how participants and partners come together and co-create resilient, sustainable futures.
+          </p>
+        </Stack>
+      </Box>
+
       {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
       <Box
         id="keynote"
@@ -215,41 +250,6 @@ const Landing = () => {
             </Stack>
           </Stack>
         </Grow>
-      </Box>
-
-      <Box sx={{ backgroundColor: COLOURS.lightPurple }}>
-        <Stack py="32px" px="10%" spacing={3}>
-          <Typography
-            variant="h1"
-            sx={{
-              fontSize: { xs: "20pt", md: "26pt" },
-              color: COLOURS.brandPurple,
-              textAlign: "center",
-            }}
-          >
-            Symposium Theme
-          </Typography>
-          <Typography
-            variant="h1"
-            sx={{
-              fontSize: "24pt",
-              color: COLOURS.accentGreen,
-              fontWeight: "bold",
-              textAlign: "center",
-            }}
-          >
-            'Beyond Borders: Shaping Sustainable Futures Together'
-          </Typography>
-          <p style={{ fontSize: "16pt", color: COLOURS.black, textAlign: "justify" }}>
-            Beyond Borders: Forging Sustainable Futures Together marks a new chapter for the annual RVRC Symposium, evolving 
-            from a college platform into a regional stage for cross-institutional dialogue and collective action. 
-            Grounded in RVRC's commitment to experiential learning and its established foundations in sustainability 
-            and workplace readiness, the 2027 edition brings together students, educators, and industry experts from RVRC, 
-            ASEAN, and Asia to exchange research, practice, and lived experience centered on socio-environmental sustainable futures. 
-            Through project presentations, interactive sessions, and student roundtables, Beyond Borders puts conversation 
-            at the heart of how participants and partners come together and co-create resilient, sustainable futures.
-          </p>
-        </Stack>
       </Box>
 
       <ProgrammeHighlights title="Programme" events={programmeEvents} />

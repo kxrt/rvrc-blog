@@ -4,7 +4,7 @@ import { Box, Grow, Stack, Typography } from "@mui/material";
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
 import SignupButton from "../../components/2027/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import PastSymposia from "../../components/PastSymposia";
+import PastSymposia from "../../components/2027/PastSymposia";
 import { programmeEvents } from "../../constants/2027/ProgrammeEvents";
 import { COLOURS } from "../../constants/Colours";
 
@@ -92,6 +92,14 @@ const Landing = () => {
               together
             </Typography>
             <SignupButton link="https://forms.cloud.microsoft/r/yjxvJVyPPS" />
+            <Typography
+              sx={{
+                color: COLOURS.white,
+                fontSize: { xs: "12pt", md: "14pt" },
+              }}
+            >
+              30 January 2027 | Ridge View Residential College
+            </Typography>
           </Stack>
         </Grow>
       </Box>

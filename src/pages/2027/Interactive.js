@@ -4,6 +4,7 @@ import { Box, Stack, Grow, Typography } from "@mui/material";
 import Title from "../../components/2027/Title";
 import Footer from "../../components/2027/Footer";
 import { COLOURS } from "../../constants/Colours";
+import { ELEMENT_PADDING } from "../../constants/SIZES";
 
 import SpeakerBiography from "../../components/SpeakerBiography";
 import humanLibrarySpeakers from "../../constants/2027/Programme";
@@ -21,7 +22,7 @@ const Interactive = () => {
         sx={{
           backgroundColor: COLOURS.brandTeal,
           paddingInline: "10%",
-          paddingBlock: "20px",
+          paddingBlock: ELEMENT_PADDING,
         }}
         id="roundtable"
       >
@@ -176,7 +177,7 @@ const Interactive = () => {
         sx={{
           backgroundColor: COLOURS.brandTeal,
           paddingInline: "10%",
-          paddingBlock: "20px",
+          paddingBlock: ELEMENT_PADDING,
         }}
       >
         <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>

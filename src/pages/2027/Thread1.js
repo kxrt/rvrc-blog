@@ -10,6 +10,7 @@ import {
   thread1Events,
 } from "../../constants/2027/ProgrammeEvents";
 import { COLOURS } from "../../constants/Colours";
+import { ELEMENT_PADDING } from "../../constants/SIZES";
 
 const Thread1 = () => {
   return (
@@ -21,7 +22,7 @@ const Thread1 = () => {
         sx={{
           backgroundColor: COLOURS.brandTeal,
           paddingInline: "10%",
-          paddingBlock: "20px",
+          paddingBlock: ELEMENT_PADDING,
         }}
       >
         <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>

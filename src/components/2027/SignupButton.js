@@ -9,11 +9,13 @@ const SignupButton = ({ link }) => {
       href={link}
       target="_blank"
       sx={{
+        alignSelf: "center",
         textTransform: "none",
         fontSize: "16pt",
         backgroundColor: COLOURS.brandPurple,
         borderRadius: "16px",
         color: COLOURS.white,
+        whiteSpace: "nowrap",
         ":hover": {
           backgroundColor: "#3e1b67",
         },

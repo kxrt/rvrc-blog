@@ -2,12 +2,12 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
 import { COLOURS } from "../../constants/Colours";
-import logoIconWhite from "../../assets/logo-2027.png";
+import logoIcon from "../../assets/logo-2027.png";
 
 const Footer = () => {
   return (
     <>
-      <Box py="32px" px="10%" sx={{ background: COLOURS.brandPurple, color: "white" }}>
+      <Box py="28px" px="10%" sx={{ background: COLOURS.brandPurple, color: "white" }}>
         <Stack
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 3, md: 0 }}
@@ -16,6 +16,7 @@ const Footer = () => {
             justifyContent: { xs: "none", md: "space-evenly" },
           }}
         >
+          {/* Logo and Title Stack */}
           <Stack
             direction={{ xs: "column", md: "row" }}
             spacing={{ xs: 2, md: 3 }}
@@ -25,13 +26,18 @@ const Footer = () => {
             }}
           >
             <img
-              src={logoIconWhite}
+              src={logoIcon}
               alt="logo"
-              style={{ height: "124px", padding: "0px" }}
+              style={{ 
+                height: "120px", 
+                padding: "0px", 
+                marginTop: "0px"
+              }}
             />
             <Typography
               variant="h1"
               sx={{
+                mt: { xs: 0, md: 0 },
                 textAlign: "left",
                 color: "white",
                 fontSize: "24pt",
@@ -43,16 +49,26 @@ const Footer = () => {
             </Typography>
           </Stack>
 
-          <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
-            <Typography mb="10px" sx={{ fontWeight: "bold" }}>
+          <Stack
+            sx={{
+              mt: { xs: 0, md: 0 },
+              alignItems: { xs: "center", md: "flex-start" },
+            }}
+          >
+            <Typography mb="10px" sx={{ fontWeight: "bold", fontSize: "16pt" }}>
               Address
             </Typography>
             <Typography>25 Lower Kent Ridge Road</Typography>
             <Typography>Block G, Level 3</Typography>
             <Typography>Singapore 119081</Typography>
           </Stack>
-          <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
-            <Typography mb="10px" sx={{ fontWeight: "bold" }}>
+          <Stack
+            sx={{
+              mt: { xs: 0, md: 0 },
+              alignItems: { xs: "center", md: "flex-start" },
+            }}
+          >
+            <Typography mb="10px" sx={{ fontWeight: "bold", fontSize: "16pt" }}>
               Contact Us
             </Typography>
             <Stack direction="row" spacing={3}>

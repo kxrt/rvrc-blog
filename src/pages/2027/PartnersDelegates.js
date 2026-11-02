@@ -7,6 +7,7 @@ import Footer from "../../components/2027/Footer";
 import SpeakerBiography from "../../components/SpeakerBiography";
 import { communityPartners, partnerInstitutions } from "../../constants/2027/PartnersDelegates";
 import { COLOURS } from "../../constants/Colours";
+import { ELEMENT_PADDING } from "../../constants/SIZES";
 import PartnerUniversityCard from "../../components/PartnerUniversityCard";
 
 const PartnersDelegates = () => {
@@ -18,11 +19,13 @@ const PartnersDelegates = () => {
         sx={{
           backgroundColor: COLOURS.brandTeal,
           paddingInline: "10%",
-          paddingBlock: "20px",
+          paddingBlock: ELEMENT_PADDING,
         }}
       >
         <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
-          <Stack spacing={1}>
+          <Stack 
+            spacing={1}
+          >
             <Typography
               variant="h4"
               sx={{
@@ -92,11 +95,11 @@ const PartnersDelegates = () => {
         sx={{
           backgroundColor: COLOURS.brandTeal,
           paddingInline: "10%",
-          paddingBlock: "20px",
+          paddingBlock: ELEMENT_PADDING,
         }}
       >
         <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
-          <Stack spacing={1}>
+          <Stack spacing={2}>
             <Typography
               variant="h4"
               sx={{
@@ -114,7 +117,7 @@ const PartnersDelegates = () => {
           timeout={1000}
           style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
         >
-          <Stack spacing={1}>
+          <Stack spacing={2}>
           <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
             The RVRC Symposium 2027 extends a formal invitation to outstanding student delegates 
             from selected partner universities across ASEAN and Asia to engage in a rigorous 

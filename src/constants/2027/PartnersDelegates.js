@@ -14,7 +14,7 @@ const communityPartners = [
   {
     name: "WWF Singapore",
     title: "Lightning Workshops",
-    biography: "Biography for WWF Singapore.",
+    biography: "WWF-Singapore is a non-profit organization dedicated to stopping the degradation of the planet’s natural environment and build a future where people live in harmony with nature. We unite individuals, communities, businesses and government to address conservation issues, harnessing Singapore’s strengths in finance, science and innovation to scale conservation and climate solutions across the region.",
     image: WWF,
   },
   {
@@ -26,19 +26,19 @@ const communityPartners = [
   {
     name: "NUS Entrepreneurship Society",
     title: "Community Booths",
-    biography: "Biography for NUS Entrepreneurship Society.",
+    biography: "NUS Entrepreneurship Society is NUS's premier entrepreneurship organisation, empowering students through learning, networking and venture-building opportunities. Its initiatives include NES Foundry, UNICON, NES Start, Ground Zero and CatalystX, offering incubation, accredited education, conferences, competitions, mentorship and industry connections to help aspiring founders transform ideas into ventures.",
     image: NES,
   },
 ];
 
 const partnerInstitutions = [
   {
-    name: "Ateneo Institute of Sustainability",
+    name: "Ateneo de Manila University",
     country: "Philippines",
     image: Ateneo,
   },
   {
-    name: "Macau University",
+    name: "University of Macau",
     country: "Macau",
     image: Macau,
   },

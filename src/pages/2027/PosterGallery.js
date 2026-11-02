@@ -18,6 +18,7 @@ import {
   thread2Posters,
 } from "../../constants/2027/Posters";
 import { COLOURS } from "../../constants/Colours";
+import { ELEMENT_PADDING, TEXT_PADDING } from "../../constants/SIZES";
 
 const PosterGallery = () => {
   return (
@@ -30,7 +31,7 @@ const PosterGallery = () => {
         sx={{
           backgroundColor: COLOURS.brandTeal,
           paddingInline: "10%",
-          paddingBlock: "20px",
+          paddingBlock: ELEMENT_PADDING,
         }}
       >
         <Grow
@@ -38,7 +39,7 @@ const PosterGallery = () => {
           timeout={1000}
           style={{ transformOrigin: "center bottom"}}
         > 
-          <Stack spacing={1}>
+          <Stack spacing={2}>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               The Poster Gallery will showcase the breadth 
               of students' academic learning and student-led initiatives. Attendees will have the 
@@ -78,13 +79,13 @@ const PosterGallery = () => {
             sx={{
               backgroundColor: COLOURS.lightPurple,
               paddingInline: "10%",
-              paddingBlock: { xs: "28px", md: "32px" },
+              paddingBlock: { xs: "28px", md: ELEMENT_PADDING },
             }}
           >
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
               Interactive Display Posters
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, padding: { md: TEXT_PADDING }, color: "black", textAlign: "center" }}>
               Interactive Display Posters use ClassIn screens to share their projects through interactive 
               activities, mini-games, and videos. Some presentations feature peer-teaching projects 
               or collaborations with external stakeholders, giving visitors an engaging way to learn 
@@ -102,14 +103,14 @@ const PosterGallery = () => {
             sx={{
               backgroundColor: COLOURS.white,
               paddingInline: "10%",
-              paddingBlock: { xs: "28px", md: "10px" },
+              paddingBlock: { xs: "28px", md: ELEMENT_PADDING },
             }}
           >
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
-              Standard Posters
+              Posters (Print Display)
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "black", textAlign: "center" }}>
-              Standard Posters are printed posters showcasing student projects from research, 
+            <Typography sx={{ fontSize: { md: "16pt" }, padding: { md: TEXT_PADDING }, color: "black", textAlign: "center" }}>
+              Posters (Print Display) are printed posters showcasing student projects from research, 
               coursework, and industry collaborations, as well as initiatives from interest groups 
               within RVRC. They will be displayed across the Atrium.
             </Typography>

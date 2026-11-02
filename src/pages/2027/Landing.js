@@ -16,6 +16,8 @@ import Footer from "../../components/2027/Footer";
 
 import Anne from "../../assets/2027/anne.webp";
 
+import { ELEMENT_PADDING } from "../../constants/SIZES";
+
 const images = [
   {
     label: "Banner 1",
@@ -104,7 +106,7 @@ const Landing = () => {
         </Grow>
       </Box>
 
-      <Box py="20px" px="10%">
+      <Box sx={{paddingBlock: ELEMENT_PADDING, paddingInline: "10%"}}>
         <p style={{ fontSize: "16pt", textAlign: "justify" }}>
           The Ridge View Residential College (RVRC) Symposium 2027, themed {" "}
           <b style={{ color: COLOURS.accentGreen }}>
@@ -119,8 +121,8 @@ const Landing = () => {
         </p>
       </Box>
 
-      <Box sx={{ backgroundColor: COLOURS.lightPurple }}>
-        <Stack py="32px" px="10%" spacing={3}>
+      <Box sx={{ backgroundColor: COLOURS.lightPurple, paddingBlock: ELEMENT_PADDING, paddingInline: "10%" }}>
+        <Stack spacing={4}>
           <Typography
             variant="h1"
             sx={{
@@ -154,7 +156,6 @@ const Landing = () => {
         </Stack>
       </Box>
 
-      {/* <Box component="img" src={Thread2Image} sx={{ width: "100%" }} /> */}
       <Box
         id="keynote"
         sx={{
@@ -164,47 +165,54 @@ const Landing = () => {
         }}
       >
         <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
-          <Stack spacing={{ xs: 2.5, md: 3 }}>
+          <Stack spacing={{ xs: 3, md: 4 }}>
+            <Typography
+              variant="h4"
+              sx={{
+                color: COLOURS.white,
+                textAlign: "center",
+                fontWeight: "bold",
+              }}
+            >
+              Keynote Speaker
+            </Typography>
+
             <Stack
               direction={{ xs: "column", md: "row" }}
-              spacing={{ xs: 3, md: 5 }}
-              alignItems={{ xs: "center", md: "stretch" }}
+              spacing={{ xs: 4, md: 6 }}
+              alignItems={{ xs: "center", md: "flex-start" }}
             >
               <Stack spacing={1.5} sx={{ flex: 1 }}>
                 <Typography
-                  variant="h4"
-                  sx={{
-                    color: COLOURS.white,
-                    textAlign: { xs: "center", md: "center" },
-                    fontWeight: "bold",
-                  }}
-                >
-                  Keynote Speaker
-                </Typography>
-                <Typography
                   sx={{
                     fontSize: { xs: "18pt", md: "24pt" },
-                    color: COLOURS.white,
-                    textAlign: { xs: "center", md: "center" },
-                    paddingTop: "8px",
+                    color: COLOURS.brandYellow,
+                    textAlign: "left",
+                    fontWeight: "bold",
                   }}
                 >
                   Anne Langourieux
                 </Typography>
-                <Typography
-                  sx={{
-                    fontSize: { xs: "12pt", md: "16pt" },
-                    color: COLOURS.white,
-                    textAlign: { xs: "center", md: "center" },
-                  }}
-                >
-                  Founding Member & Leader, The Matcha Initiative  |  Co-Founder, AlterCOP Singapore
-                </Typography>
+
+                <Stack spacing={0.5}>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "12pt", md: "14pt" },
+                      color: COLOURS.white,
+                      textAlign: "left",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Founding Member & Leader, The Matcha Initiative | Co-Founder, AlterCOP Singapore
+                  </Typography>
+                </Stack>
+
                 <Typography
                   sx={{
                     fontSize: "16pt",
                     color: COLOURS.white,
                     textAlign: "justify",
+                    paddingTop: "8px",
                   }}
                 >
                   <b>Dr. Anne Langourieux</b> is a seasoned professional with over two 
@@ -239,21 +247,27 @@ const Landing = () => {
                   doing business.
                 </Typography>
               </Stack>
-              <Box sx={{ width: { xs: "100%", md: "auto" }, display: "flex", alignItems: "center", justifyContent: { xs: "center", md: "flex-end" } }}>
+
+              <Box
+                sx={{
+                  width: { xs: "100%", md: "auto" },
+                  display: "flex",
+                  justifyContent: "center",
+                  pt: { md: 1 },
+                }}
+              >
                 <Box
+                  component="img"
+                  src={Anne}
+                  alt="Keynote Speaker"
                   sx={{
-                    display: "flex",
-                    gap: "20px",
-                    height: { xs: "220px", md: "300px" },
+                    width: { xs: "100%", sm: "280px", md: "320px" },
+                    height: "auto",
+                    aspectRatio: "4 / 5",
+                    objectFit: "cover",
+                    borderRadius: "8px",
                   }}
-                >
-                  <Box
-                    component="img"
-                    src={Anne}
-                    alt="Keynote Speaker"
-                    sx={{ height: "100%", borderRadius: "8px" }}
-                  />
-                </Box>
+                />
               </Box>
             </Stack>
           </Stack>

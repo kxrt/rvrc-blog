@@ -15,7 +15,7 @@ import { ExpandMore } from "@mui/icons-material";
 import { Link, Outlet } from "react-router-dom";
 
 import menuIcon from "../../assets/bars-solid.svg";
-import logoIconWhite from "../../assets/logo-2027.png";
+import logoIcon from "../../assets/logo-2027.png";
 import { COLOURS } from "../../constants/Colours";
 import AccordionMenuItem from "../header/AccordionMenuItem";
 
@@ -46,7 +46,10 @@ const Header = ({ headerLinks }) => {
     <>
       <AppBar position="static" elevation={0} sx={{ bgcolor: COLOURS.brandPurple }}>
         <Container maxwidth="xl">
-          <Toolbar disableGutters>
+          <Toolbar 
+            disableGutters
+            sx={{ py: 1 }}
+          >
             <Stack
               direction="row"
               spacing={0}
@@ -58,9 +61,9 @@ const Header = ({ headerLinks }) => {
             >
               <a href="/">
                 <img
-                  src={logoIconWhite}
+                  src={logoIcon}
                   alt="logo"
-                  style={{ height: "128px", padding: "4px" }}
+                  style={{ height: "120px", padding: "0px" }}
                 />
               </a>
               <IconButton
@@ -143,10 +146,10 @@ const Header = ({ headerLinks }) => {
             >
               <a href="/">
                 <img
-                  src={logoIconWhite}
+                  src={logoIcon}
                   alt="logo"
                   style={{
-                    height: "120px",
+                    height: "100px",
                     padding: "0px",
                   }}
                 />

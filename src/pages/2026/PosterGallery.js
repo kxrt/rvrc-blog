@@ -27,7 +27,7 @@ const PosterGallery = () => {
           timeout={1000}
           style={{ transformOrigin: "center bottom"}}
         > 
-          <Stack spacing={1}>
+          <Stack spacing={2}>
             <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
               Featuring posters from Threads 1 and 2, the Poster Gallery showcased both 
               academic learning and student-led initiatives. Attendees were able to explore 

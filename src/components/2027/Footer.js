@@ -29,9 +29,9 @@ const Footer = () => {
               src={logoIcon}
               alt="logo"
               style={{ 
-                height: "160px", 
+                height: "120px", 
                 padding: "0px", 
-                marginTop: "-24px"
+                marginTop: "0px"
               }}
             />
             <Typography

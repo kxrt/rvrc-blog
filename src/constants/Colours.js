@@ -3,6 +3,7 @@ export const COLOURS = {
   brandTeal: "#49968B",
   accentGreen: "#1d9077",
   lightPurple: "#e1d0f5",
+  brandYellow: "#FFCB04",
   white: "#ffffff",
   black: "#000000",
 };

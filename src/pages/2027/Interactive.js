@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Grow, Typography } from "@mui/material";
+import { Box, Stack, Grow, Typography, Grid } from "@mui/material";
 
 import Title from "../../components/2027/Title";
 import Footer from "../../components/2027/Footer";
@@ -7,9 +7,10 @@ import { COLOURS } from "../../constants/Colours";
 import { ELEMENT_PADDING } from "../../constants/SIZES";
 
 import SpeakerBiography from "../../components/SpeakerBiography";
-import humanLibrarySpeakers from "../../constants/2027/Programme";
+import humanLibrarySpeakers, { lightningWorkshops } from "../../constants/2027/Programme";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import { studentRoundtableEvents, dialogueSessionsEvents } from "../../constants/2027/ProgrammeEvents";
+import WorkshopCard from "../../components/WorkshopCard";
+import { lightningWorkshopEvents, studentRoundtableEvents, dialogueSessionsEvents } from "../../constants/2027/ProgrammeEvents";
 
 import Movin from "../../assets/2027/movin.webp";
 
@@ -17,6 +18,66 @@ const Interactive = () => {
   return (
     <Stack>
       <Title title="Interactive" />
+      <Stack
+        spacing={2}
+        sx={{
+          backgroundColor: COLOURS.brandTeal,
+          paddingInline: "10%",
+          paddingBlock: ELEMENT_PADDING,
+        }}
+        id="lightning"
+      >
+        <Grow in timeout={1000} style={{ transformOrigin: "center bottom" }}>
+          <Stack spacing={1}>
+            <Typography
+              variant="h4"
+              sx={{
+                color: COLOURS.white,
+                textAlign: "center",
+                fontWeight: "bold",
+              }}
+            >
+              Lightning Workshops
+            </Typography>
+          </Stack>
+        </Grow>
+        <Grow
+          in
+          timeout={1000}
+          style={{ transformOrigin: "center bottom", transitionDelay: "250ms" }}
+        >
+          <Stack spacing={1}>
+          <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
+            Lightning Workshops are short, hands-on sessions where community partners
+            share their work through activities such as case studies, skills workshops, and interactive
+            scenarios. In two 30-minute sessions, participants can try out the kinds of tasks and processes
+            involved in each presenter’s work. With two workshops running simultaneously, participants
+            can choose the activity that interests them most.
+          </Typography>
+          </Stack>
+        </Grow>
+      </Stack>
+      <Box
+        sx={{
+          backgroundColor: COLOURS.white,
+          paddingInline: "10%",
+          paddingBlock: ELEMENT_PADDING,
+        }}
+      >
+        <Stack spacing={2}>
+          <ProgrammeHighlights 
+            title="Lightning Workshop Programme"
+            events={lightningWorkshopEvents}
+          />
+          <Grid container spacing={2} alignItems="stretch">
+            {lightningWorkshops.map((workshop) => (
+              <Grid item xs={12} md={6} key={workshop.partner} sx={{ display: "flex" }}>
+                <WorkshopCard {...workshop} />
+              </Grid>
+            ))}
+          </Grid>
+        </Stack>
+      </Box>
       <Stack
         spacing={2}
         sx={{

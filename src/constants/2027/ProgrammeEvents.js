@@ -102,6 +102,18 @@ export const programmeEvents = [
 
 export const lightningWorkshopEvents = [
     // time, course, titles, abstract, locations, icon
+    {
+      time: "10:15 am",
+      titles: [
+        "A1 Environment: From Coffee Grounds to Circular Materials",
+        "WWF Singapore: Cyber Spotter Challenge",
+      ],
+      locations: [
+        "MPR1 (Level 3, RVRC Block G)",
+        "MPR2 (Level 3, RVRC Block G)"
+      ],
+      icon: <Collections />,
+    },
 ];
 
 export const thread1Events = [

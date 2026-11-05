@@ -67,6 +67,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
               fontSize: { xs: "12pt", md: "14pt", lg: "16pt" },
               fontFamily: "Jost",
               fontWeight: "bold",
+              whiteSpace: "pre-line",
             }}
           >
             {title}

@@ -17,7 +17,7 @@ const humanLibrarySpeakers = [
   },
   {
     name: "Benjamin Fheng",
-    title: "NUS Class of 2022, Solutions Architect @ Amazon Web Services (AWS) | AWS AI/ML Specialty",
+    title: "NUS Class of 2022, Solutions Architect @ Amazon Web Services (AWS)\nAWS AI/ML Specialty",
     biography: "Biography for Alumni 3.",
     image: Partner3Logo,
   },

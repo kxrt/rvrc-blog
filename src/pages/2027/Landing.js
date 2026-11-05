@@ -327,7 +327,9 @@ const Landing = () => {
                 Dr Noeleen Heyzer
               </Typography>
               <Typography sx={{ color: COLOURS.brandPurple, fontSize: { xs: "12pt", md: "14pt" }, textAlign: "right" }}>
-                NUS Pro-Chancellor | Rector of Ridge View Residential College | Former UN Under-Secretary-General
+                NUS Pro-Chancellor | Rector of Ridge View Residential College
+                <br />
+                Former UN Under-Secretary-General
               </Typography>
               <Typography sx={{ color: COLOURS.black, fontSize: "16pt", textAlign: "justify" }}>
                 It is an immense honour to invite Dr. Noeleen Heyzer as our Guest of Honour for the RVRC Symposium 2027. 

@@ -83,7 +83,7 @@ const Thread2 = () => {
           </Typography>
           <Grid container spacing={2}>
             {thread2Events.filter((event) => event.abstract).map((project) => (
-              <Grid item xs={12} md={6} key={project.titles[0]}>
+              <Grid item xs={12} md={6} key={project.titles[0]} sx={{ display: "flex" }}>
                 <ProjectCard
                   title={project.titles[0]}
                   subtitle={project.course}

@@ -21,7 +21,7 @@ const SignupButton = ({ link }) => {
         },
       }}
     >
-      Register Now!
+      Register Here!
     </Button>
   );
 };

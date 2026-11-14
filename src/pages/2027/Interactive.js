@@ -309,6 +309,7 @@ const Interactive = () => {
             title={speaker.title}
             biography={speaker.biography}
             image={speaker.image}
+            imagePosition={speaker.imagePosition}
             isAlignedLeft={true}
           />
         ))}

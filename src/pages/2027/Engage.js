@@ -14,10 +14,10 @@ import { lightningWorkshopEvents, studentRoundtableEvents, dialogueSessionsEvent
 
 import Movin from "../../assets/2027/movin.webp";
 
-const Interactive = () => {
+const Engage = () => {
   return (
     <Stack>
-      <Title title="Interactive" />
+      <Title title="Engage" />
       <Stack
         spacing={2}
         sx={{
@@ -319,4 +319,4 @@ const Interactive = () => {
   );
 };
 
-export default Interactive;
+export default Engage;

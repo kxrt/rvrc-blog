@@ -22,7 +22,6 @@ const humanLibrarySpeakers = [
     title: "NUS Class of 2022, Solutions Architect @ Amazon Web Services (AWS)\nAWS AI/ML Specialty",
     biography: "Benjamin is currently a Solutions Architect at Amazon Web Services, where he helps enterprises around the world adopt and achieve technical value from Cloud Services and Compute. He specialises in Agentic AI and Agentic Harnesses that help companies accelerate their AI capabilities. Benjamin graduated from NUS Computing in 2022 with a Bachelors of Computer Science. He resided in Ridge View Residential College (RVRC) for about 3.5 years, serving as a Resident's Assistant for a year and also the Vice President of the RVRC Student Committee in 2019. On the side, he loves reading the history of ancient civilisations and also has a big collection of whisky and wine.",
     image: Benjamin,
-    imagePosition: "center top",
   },
 ];
 

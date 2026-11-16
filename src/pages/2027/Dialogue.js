@@ -14,10 +14,10 @@ import { lightningWorkshopEvents, studentRoundtableEvents, dialogueSessionsEvent
 
 import Movin from "../../assets/2027/movin.webp";
 
-const Engage = () => {
+const Dialogue = () => {
   return (
     <Stack>
-      <Title title="Engage" />
+      <Title title="Dialogue" />
       <Stack
         spacing={2}
         sx={{
@@ -319,4 +319,4 @@ const Engage = () => {
   );
 };
 
-export default Engage;
+export default Dialogue;

@@ -21,9 +21,9 @@ const headerLinks = [
     ],
   },
   {
-    key: "engage",
-    link: "/engage",
-    label: "Engage",
+    key: "dialogue",
+    link: "/dialogue",
+    label: "Dialogue",
   },
   {
     key: "poster",

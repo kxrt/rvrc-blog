@@ -42,7 +42,7 @@ import PartnersDelegates2027 from "./pages/2027/PartnersDelegates";
 import Thread12027 from "./pages/2027/Thread1";
 import Thread22027 from "./pages/2027/Thread2";
 import PosterGallery2027 from "./pages/2027/PosterGallery";
-import Engage2027 from "./pages/2027/Engage";
+import Dialogue2027 from "./pages/2027/Dialogue";
 import headerLinks2027 from "./constants/2027/HeaderLinks";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -67,7 +67,7 @@ function App() {
               <Route path="thread-1" element={<Thread12027 />} />
               <Route path="thread-2" element={<Thread22027 />} />
               <Route path="poster-gallery" element={<PosterGallery2027 />} />
-              <Route path="engage" element={<Engage2027 />} />
+              <Route path="dialogue" element={<Dialogue2027 />} />
             </Route>
 
             <Route path="2026" element={<Header headerLinks={headerLinks2026} />}>
